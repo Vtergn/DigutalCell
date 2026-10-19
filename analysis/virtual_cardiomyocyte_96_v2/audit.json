@@ -1,0 +1,156 @@
+{
+  "sampled_cells": 96,
+  "passed_cells": 94,
+  "electrical_beats_used_q50_q95_max": [
+    12.0,
+    20.0,
+    20.0
+  ],
+  "max_passed_calcium_cycle_drift": 0.009802467479730124,
+  "max_passed_land_cycle_drift": 0.009050533327451907,
+  "strocchi_active_peak_sanity": {
+    "1.0": {
+      "ours_n": 94,
+      "ours_tpeak_q05_q50_q95_kPa": [
+        1.6902745068073273,
+        20.042351722717285,
+        52.378045654296876
+      ],
+      "strocchi_n": 1584,
+      "strocchi_tpeak_q05_q50_q95_kPa": [
+        14.334600000000002,
+        41.519999999999996,
+        96.44621999999997
+      ],
+      "ours_fraction_inside_strocchi_q05_q95": 0.6063829787234043
+    },
+    "1.1": {
+      "ours_n": 94,
+      "ours_tpeak_q05_q50_q95_kPa": [
+        9.210102605819703,
+        48.53683090209961,
+        110.16787338256835
+      ],
+      "strocchi_n": 1017,
+      "strocchi_tpeak_q05_q50_q95_kPa": [
+        19.645960000000002,
+        60.3583,
+        128.89279999999997
+      ],
+      "ours_fraction_inside_strocchi_q05_q95": 0.8723404255319149
+    }
+  },
+  "held_out_cell_ridge_pilot": {
+    "AP": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.19830838253787303,
+      "electrical_parameter_absolute_error": 0.06477886047518085,
+      "mechanical_parameter_absolute_error": 0.26507314356921907,
+      "parameter_r2": {
+        "ICaL": 0.9828716629775217,
+        "Jup": 0.9119946330200883,
+        "INaCa": 0.8084855034254905,
+        "IKr": 0.9190797432401047,
+        "Tref": -0.16396198104062787,
+        "ca50": -0.18822934950719494,
+        "TRPN_n": -0.13531138449294233,
+        "nperm": -0.09720468998240106,
+        "beta0": -0.20838125426916543,
+        "beta1": -0.13032790671795613,
+        "phi": -0.08759019888433661,
+        "perm50": -0.1416747272743193
+      }
+    },
+    "AP+Ca": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.18746972885657798,
+      "electrical_parameter_absolute_error": 0.0365396345287539,
+      "mechanical_parameter_absolute_error": 0.26293477602049004,
+      "parameter_r2": {
+        "ICaL": 0.9914025784869598,
+        "Jup": 0.9354046142062694,
+        "INaCa": 0.9812112801308567,
+        "IKr": 0.9731442965993016,
+        "Tref": -0.14514528656722447,
+        "ca50": -0.1609037213246538,
+        "TRPN_n": -0.13452840877956485,
+        "nperm": -0.06924699933748601,
+        "beta0": -0.19811375123070563,
+        "beta1": -0.06263405391778543,
+        "phi": -0.07288928131994599,
+        "perm50": -0.11717105164239916
+      }
+    },
+    "AP+Ca+T1.0": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.17014725066885938,
+      "electrical_parameter_absolute_error": 0.03704205510959201,
+      "mechanical_parameter_absolute_error": 0.23669984844849307,
+      "parameter_r2": {
+        "ICaL": 0.9908622914755375,
+        "Jup": 0.9359135576696298,
+        "INaCa": 0.981175370036808,
+        "IKr": 0.9707035220890793,
+        "Tref": -0.0714071021707472,
+        "ca50": 0.13354540561756412,
+        "TRPN_n": 0.21170862679697078,
+        "nperm": 0.34003318184133224,
+        "beta0": -0.22718174734942975,
+        "beta1": -0.05902735767049583,
+        "phi": -0.06159339388619656,
+        "perm50": 0.1142350262582138
+      }
+    },
+    "AP+Ca+T1.0+T1.1": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.15936571722281784,
+      "electrical_parameter_absolute_error": 0.03763613847611584,
+      "mechanical_parameter_absolute_error": 0.22023050659616883,
+      "parameter_r2": {
+        "ICaL": 0.9907400242556883,
+        "Jup": 0.9341687380690022,
+        "INaCa": 0.9806351838476308,
+        "IKr": 0.9707793061265398,
+        "Tref": -0.06935853983754225,
+        "ca50": 0.36018160753209516,
+        "TRPN_n": 0.32023534481919136,
+        "nperm": 0.3420052206772469,
+        "beta0": -0.20315304119506328,
+        "beta1": 0.447385324769498,
+        "phi": -0.12009205187710159,
+        "perm50": 0.09747124168519561
+      }
+    }
+  },
+  "frozen_split_ridge_pilot": {
+    "AP": {
+      "train_n": 67,
+      "validation_n": 13,
+      "test_n": 14,
+      "alpha_selected_on_validation": 1.0,
+      "test_electrical_parameter_absolute_error": 0.024760293026964964,
+      "test_mechanical_parameter_absolute_error": 0.2448532689067122
+    },
+    "AP+Ca": {
+      "train_n": 67,
+      "validation_n": 13,
+      "test_n": 14,
+      "alpha_selected_on_validation": 1.0,
+      "test_electrical_parameter_absolute_error": 0.01978437673831385,
+      "test_mechanical_parameter_absolute_error": 0.242750840743919
+    },
+    "AP+Ca+T1.0": {
+      "train_n": 67,
+      "validation_n": 13,
+      "test_n": 14,
+      "alpha_selected_on_validation": 1.0,
+      "test_electrical_parameter_absolute_error": 0.018865489667624132,
+      "test_mechanical_parameter_absolute_error": 0.21496177088379367
+    },
+    "AP+Ca+T1.0+T1.1": {
+      "train_n": 67,
+      "validation_n": 13,
+      "test_n": 14,
+      "alpha_selected_on_validation": 1.0,
+      "test_electrical_parameter_absolute_error": 0.022802851108928702,
+      "test_mechanical_parameter_absolute_error": 0.20864100185626785
+    }
+  },
+  "scope": "small-sample diagnostic, not posterior inference or counterfactual prediction"
+}

@@ -1,0 +1,63 @@
+{
+  "scope": "Descriptive external biomarker check; no individual experimental validation",
+  "baseline_lambda_1_00": {
+    "resting_voltage_mV": -89.56524316929742,
+    "voltage_peak_mV": 34.10676814545548,
+    "APD90_ms": 265.0,
+    "diastolic_cai_uM": 0.07362915105614458,
+    "peak_cai_uM": 0.49664904073324223,
+    "active_tension_peak_kPa": 15.786801230143958,
+    "active_tension_time_to_peak_ms": 100.0
+  },
+  "sustained_lambda_1_10": {
+    "resting_voltage_mV": -89.56524316929742,
+    "voltage_peak_mV": 34.322019303003245,
+    "APD90_ms": null,
+    "diastolic_cai_uM": 0.07362915105614458,
+    "peak_cai_uM": 0.39286890081816395,
+    "active_tension_peak_kPa": 41.93321886541976,
+    "active_tension_time_to_peak_ms": 118.0
+  },
+  "human_in_vitro_window_checks_at_baseline_only": {
+    "APD90_ms": {
+      "value": 265.0,
+      "reference_window": [
+        180.0,
+        440.0
+      ],
+      "inside": true
+    },
+    "active_tension_peak_kPa": {
+      "value": 15.786801230143958,
+      "reference_window": [
+        15.0,
+        25.0
+      ],
+      "inside": true
+    },
+    "active_tension_time_to_peak_ms": {
+      "value": 100.0,
+      "reference_window": [
+        147.0,
+        172.0
+      ],
+      "inside": false
+    }
+  },
+  "model_stretch_tension_peak_ratio_1_10_over_1_00": 2.656220107804409,
+  "model_stretch_cai_peak_ratio_1_10_over_1_00": 0.7910392824642136,
+  "human_hpsc_Ballan_ratio_at_40_percent_stretch": 2.4313725490196076,
+  "rabbit_example_fura2_peak_load_free": 2.028880698,
+  "rabbit_example_fura2_peak_in_gel": 3.067682007,
+  "rabbit_example_fura2_peak_ratio_gel_over_free": 1.5120070933811014,
+  "sources": {
+    "human_biomarker_windows": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.906146/full#T4",
+    "human_hpsc_stretch": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7486198/",
+    "rabbit_archive": "https://datadryad.org/dataset/doi:10.25338/B8T935"
+  },
+  "interpretation": [
+    "The human windows apply to resting 1-Hz adult ventricular conditions, not to sustained stretch.",
+    "Ballan uses hPSC-CM and 40% stretch; the model ratio is at 10% and is not a matched effect-size comparison.",
+    "Rabbit Fura-2 is a fluorescence ratio, not absolute intracellular calcium; specimens and loading differ."
+  ]
+}

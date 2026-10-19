@@ -1,0 +1,140 @@
+{
+  "n_cells": 16,
+  "mean": {
+    "ridge_twin_waveform_MAE_kPa": 3.3001504605636,
+    "posterior_twin_waveform_MAE_kPa": 7.4453452825546265,
+    "direct_waveform_MAE_kPa": 3.2127793729305267,
+    "linear_waveform_MAE_kPa": 3.6144593730568886
+  },
+  "per_cell": [
+    {
+      "cell": 227,
+      "ridge_twin_waveform_MAE_kPa": 2.767019271850586,
+      "ridge_twin_peak_MAE_kPa": 6.043510437011719,
+      "posterior_twin_waveform_MAE_kPa": 2.9336628913879395,
+      "direct_waveform_MAE_kPa": 1.2094683647155762,
+      "linear_waveform_MAE_kPa": 1.6090962886810303
+    },
+    {
+      "cell": 273,
+      "ridge_twin_waveform_MAE_kPa": 7.68806266784668,
+      "ridge_twin_peak_MAE_kPa": 10.158798217773438,
+      "posterior_twin_waveform_MAE_kPa": 22.660507202148438,
+      "direct_waveform_MAE_kPa": 14.027074813842773,
+      "linear_waveform_MAE_kPa": 12.458870887756348
+    },
+    {
+      "cell": 383,
+      "ridge_twin_waveform_MAE_kPa": 1.3978015184402466,
+      "ridge_twin_peak_MAE_kPa": 2.8871078491210938,
+      "posterior_twin_waveform_MAE_kPa": 3.9281959533691406,
+      "direct_waveform_MAE_kPa": 2.0953691005706787,
+      "linear_waveform_MAE_kPa": 3.298438787460327
+    },
+    {
+      "cell": 996,
+      "ridge_twin_waveform_MAE_kPa": 3.134805679321289,
+      "ridge_twin_peak_MAE_kPa": 4.317983627319336,
+      "posterior_twin_waveform_MAE_kPa": 2.4870758056640625,
+      "direct_waveform_MAE_kPa": 0.6428478360176086,
+      "linear_waveform_MAE_kPa": 1.7883992195129395
+    },
+    {
+      "cell": 1175,
+      "ridge_twin_waveform_MAE_kPa": 8.281122207641602,
+      "ridge_twin_peak_MAE_kPa": 1.9320755004882812,
+      "posterior_twin_waveform_MAE_kPa": 18.80609703063965,
+      "direct_waveform_MAE_kPa": 8.175979614257812,
+      "linear_waveform_MAE_kPa": 8.232192993164062
+    },
+    {
+      "cell": 1556,
+      "ridge_twin_waveform_MAE_kPa": 0.9407175183296204,
+      "ridge_twin_peak_MAE_kPa": 0.97222900390625,
+      "posterior_twin_waveform_MAE_kPa": 5.348367691040039,
+      "direct_waveform_MAE_kPa": 1.737381935119629,
+      "linear_waveform_MAE_kPa": 1.469361424446106
+    },
+    {
+      "cell": 1587,
+      "ridge_twin_waveform_MAE_kPa": 0.5097284317016602,
+      "ridge_twin_peak_MAE_kPa": 1.1437454223632812,
+      "posterior_twin_waveform_MAE_kPa": 7.258540630340576,
+      "direct_waveform_MAE_kPa": 2.088014841079712,
+      "linear_waveform_MAE_kPa": 1.8378723859786987
+    },
+    {
+      "cell": 2095,
+      "ridge_twin_waveform_MAE_kPa": 2.627164840698242,
+      "ridge_twin_peak_MAE_kPa": 3.971538543701172,
+      "posterior_twin_waveform_MAE_kPa": 1.4710993766784668,
+      "direct_waveform_MAE_kPa": 1.4468352794647217,
+      "linear_waveform_MAE_kPa": 2.4939253330230713
+    },
+    {
+      "cell": 2388,
+      "ridge_twin_waveform_MAE_kPa": 0.23457737267017365,
+      "ridge_twin_peak_MAE_kPa": 0.6006393432617188,
+      "posterior_twin_waveform_MAE_kPa": 5.749870300292969,
+      "direct_waveform_MAE_kPa": 1.884121060371399,
+      "linear_waveform_MAE_kPa": 3.191511392593384
+    },
+    {
+      "cell": 2428,
+      "ridge_twin_waveform_MAE_kPa": 1.957680583000183,
+      "ridge_twin_peak_MAE_kPa": 2.6635894775390625,
+      "posterior_twin_waveform_MAE_kPa": 3.1549270153045654,
+      "direct_waveform_MAE_kPa": 1.6998779773712158,
+      "linear_waveform_MAE_kPa": 1.5827295780181885
+    },
+    {
+      "cell": 2612,
+      "ridge_twin_waveform_MAE_kPa": 3.2467057704925537,
+      "ridge_twin_peak_MAE_kPa": 4.7005157470703125,
+      "posterior_twin_waveform_MAE_kPa": 5.318309783935547,
+      "direct_waveform_MAE_kPa": 2.860783100128174,
+      "linear_waveform_MAE_kPa": 3.926933765411377
+    },
+    {
+      "cell": 2904,
+      "ridge_twin_waveform_MAE_kPa": 2.110806703567505,
+      "ridge_twin_peak_MAE_kPa": 3.897857666015625,
+      "posterior_twin_waveform_MAE_kPa": 8.364437103271484,
+      "direct_waveform_MAE_kPa": 0.9198152422904968,
+      "linear_waveform_MAE_kPa": 2.129082202911377
+    },
+    {
+      "cell": 3087,
+      "ridge_twin_waveform_MAE_kPa": 15.475493431091309,
+      "ridge_twin_peak_MAE_kPa": 22.22222137451172,
+      "posterior_twin_waveform_MAE_kPa": 14.018481254577637,
+      "direct_waveform_MAE_kPa": 7.420836925506592,
+      "linear_waveform_MAE_kPa": 7.41734504699707
+    },
+    {
+      "cell": 3923,
+      "ridge_twin_waveform_MAE_kPa": 1.1274733543395996,
+      "ridge_twin_peak_MAE_kPa": 1.5706558227539062,
+      "posterior_twin_waveform_MAE_kPa": 11.556486129760742,
+      "direct_waveform_MAE_kPa": 3.219503164291382,
+      "linear_waveform_MAE_kPa": 3.0111427307128906
+    },
+    {
+      "cell": 4442,
+      "ridge_twin_waveform_MAE_kPa": 0.4503035843372345,
+      "ridge_twin_peak_MAE_kPa": 1.6123313903808594,
+      "posterior_twin_waveform_MAE_kPa": 3.000309705734253,
+      "direct_waveform_MAE_kPa": 0.9499646425247192,
+      "linear_waveform_MAE_kPa": 2.1324100494384766
+    },
+    {
+      "cell": 4635,
+      "ridge_twin_waveform_MAE_kPa": 0.8529444336891174,
+      "ridge_twin_peak_MAE_kPa": 1.684906005859375,
+      "posterior_twin_waveform_MAE_kPa": 3.0691566467285156,
+      "direct_waveform_MAE_kPa": 1.0265960693359375,
+      "linear_waveform_MAE_kPa": 1.2520378828048706
+    }
+  ],
+  "note": "All methods compared on identical 16 frozen-test cells; ridge was fit on other cells only."
+}

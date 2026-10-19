@@ -1,0 +1,70 @@
+{
+  "assumptions": [
+    "same cell and co-localized mechanical/electrical measurements",
+    "known gate family and sufficiently rich noiseless input curve",
+    "positive lambda and k; calibrated physical units for tension observations"
+  ],
+  "sigmoid_static": {
+    "model": "I=G sigmoid((T0+lambda F-T50)/k)",
+    "gauge": "(T0,lambda,T50,k,G)->(aT0+b,a lambda,aT50+b,a k,G), a>0",
+    "identifiable_force_domain": [
+      "F50=(T50-T0)/lambda",
+      "sF=k/lambda",
+      "G"
+    ],
+    "generic_rank_by_observation": {
+      "force_current_sigmoid": 3,
+      "plus_calibrated_delta_tension": 4,
+      "plus_absolute_tension": 5
+    }
+  },
+  "hard_threshold": {
+    "model": "I=G H(T0+lambda F-Tth)",
+    "identifiable_force_domain": [
+      "Fth=(Tth-T0)/lambda",
+      "G"
+    ],
+    "generic_rank_force_current": 2
+  },
+  "hill": {
+    "model": "I=G T^h/(K^h+T^h), T=T0+lambda F, T>0",
+    "scale_gauge": "(T0,lambda,K)->a(T0,lambda,K)",
+    "generic_force_domain_combinations": [
+      "T0/lambda",
+      "K/lambda",
+      "h",
+      "G"
+    ],
+    "generic_rank_force_current": 4,
+    "qualification": "The zero of tension is fixed in this Hill form, so the sigmoid translation gauge does not apply. Structural rank does not guarantee practical estimability near a narrow response range."
+  },
+  "latent_linear_mechanics": {
+    "model": "dT/dt=(T0+lambda F-T)/tau_m; I=G sigmoid((T-T50)/k)",
+    "affine_tension_gauge_survives": true,
+    "additional_identifiable_candidate": "tau_m under time-resolved, sufficiently varied F(t), absent confounding electrical kinetics"
+  },
+  "two_stage_linear_dynamics": {
+    "model": "tau_m dm/dt=F-m; tau_g dq/dt=m-q; I=Gq",
+    "force_current_transfer": "G/((1+tau_m*s)(1+tau_g*s))",
+    "exact_output_equivalence": "swap tau_m and tau_g",
+    "intermediate_mechanics_transfer": "1/(1+tau_m*s); measuring m breaks label swap if sampling is adequate",
+    "qualification": "This is a local linear-cascade example, not proof that every nonlinear Piezo model has the same swap ambiguity."
+  },
+  "unrestricted_latent_dynamics": {
+    "equivalence": "For any invertible state transform z=phi(T), use dz/dt=phi'(T)f(T,F) and readout h(phi^-1(z)); F-to-I is unchanged.",
+    "example_checked": "z=T^2 for T>0",
+    "implication": "A flexible NODE latent coordinate has no intrinsic tension unit or molecular interpretation without a measured intermediate or strong physical constraints."
+  },
+  "adaptation": {
+    "example": "dr/dt=(1-r)/tau_r-c p(T)r; I=G p(T)r(V-E)",
+    "exact_tension_gauge_survives": true,
+    "qualification": "Dynamics may identify recovery parameters only when the protocol varies p and recovery interval; one fixed pulse cannot establish this generically."
+  },
+  "voltage_and_count": {
+    "one_voltage": "G=N gamma (V-E) is one product",
+    "multiple_voltages": "Can identify E and B=N gamma if gating and conductance are voltage-invariant over the tested range",
+    "rank_voltage_only_for_N_gamma_E": 2,
+    "rank_after_channel_count": 3
+  },
+  "cross_dataset_rule": "Observations from different cell types, perturbations or mechanics geometries constrain priors; they do not break a same-cell gauge without justified parameter transport."
+}

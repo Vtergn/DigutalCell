@@ -1,0 +1,32 @@
+{
+  "case": "train_036 at CL 0.10 for 100 beats, 1000ms pacing",
+  "last10_APD_ms": [
+    343,
+    254,
+    342,
+    253,
+    341,
+    253,
+    341,
+    252,
+    340,
+    252
+  ],
+  "last10_Ca_peak_uM": [
+    0.6243819819951801,
+    0.7641072601148009,
+    0.6239372477448797,
+    0.7633599670752816,
+    0.6235338871867909,
+    0.7626313527451466,
+    0.6231387765424369,
+    0.7619310519335304,
+    0.6228045824145375,
+    0.7612506686159949
+  ],
+  "last10_APD_range_ms": 91.0,
+  "last10_Ca_peak_range_fraction": 0.18561911801951017,
+  "even_minus_odd_last10_APD_ms": -88.59999999999997,
+  "even_minus_odd_last10_Ca_uM": 0.13909676492018597,
+  "interpretation": "Exploratory model sequence. Alternating pattern alone does not establish biological arrhythmia or numerical convergence."
+}

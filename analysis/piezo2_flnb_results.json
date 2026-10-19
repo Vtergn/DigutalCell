@@ -1,0 +1,98 @@
+{
+  "comparisons": {
+    "Piezo2_indentation_threshold_um": {
+      "control_n": 29,
+      "perturbation_n": 28,
+      "control_mean": 3.3448275862068964,
+      "perturbation_mean": 4.714285714285714,
+      "control_median": 3.5,
+      "perturbation_median": 4.25,
+      "mean_difference": 1.369458128078818,
+      "bootstrap_95pct_mean_difference": [
+        0.5209359605911326,
+        2.2955818965517225
+      ],
+      "mean_ratio": 1.4094256259204714,
+      "bootstrap_95pct_mean_ratio": [
+        1.1453123637275422,
+        1.7433551589390355
+      ],
+      "Mann_Whitney_two_sided_p": 0.01061579092113829
+    },
+    "Piezo2_peak_current_density_pA_per_pF": {
+      "control_n": 19,
+      "perturbation_n": 19,
+      "control_mean": 183.45263157894738,
+      "perturbation_mean": 90.18947368421053,
+      "control_median": 164.2,
+      "perturbation_median": 96.0,
+      "mean_difference": -93.26315789473685,
+      "bootstrap_95pct_mean_difference": [
+        -139.91631578947369,
+        -46.83131578947373
+      ],
+      "mean_ratio": 0.4916226761533165,
+      "bootstrap_95pct_mean_ratio": [
+        0.3398120852763187,
+        0.6971189209435236
+      ],
+      "Mann_Whitney_two_sided_p": 0.0010200109897157224
+    },
+    "Piezo1_indentation_threshold_um": {
+      "control_n": 7,
+      "perturbation_n": 7,
+      "control_mean": 4.642857142857143,
+      "perturbation_mean": 3.9285714285714284,
+      "control_median": 5.0,
+      "perturbation_median": 3.5,
+      "mean_difference": -0.7142857142857149,
+      "bootstrap_95pct_mean_difference": [
+        -2.3571428571428568,
+        1.0
+      ],
+      "mean_ratio": 0.846153846153846,
+      "bootstrap_95pct_mean_ratio": [
+        0.576923076923077,
+        1.2745098039215688
+      ],
+      "Mann_Whitney_two_sided_p": 0.55874426279071
+    },
+    "Piezo1_peak_current_density_pA_per_pF": {
+      "control_n": 7,
+      "perturbation_n": 7,
+      "control_mean": 327.42857142857144,
+      "perturbation_mean": 397.42857142857144,
+      "control_median": 333.0,
+      "perturbation_median": 398.0,
+      "mean_difference": 70.0,
+      "bootstrap_95pct_mean_difference": [
+        -99.57499999999997,
+        223.0
+      ],
+      "mean_ratio": 1.2137870855148343,
+      "bootstrap_95pct_mean_ratio": [
+        0.7734558066802087,
+        1.9609980271148835
+      ],
+      "Mann_Whitney_two_sided_p": 0.25932400932400934
+    }
+  },
+  "swelling_CytoD": {
+    "Untransfected": {
+      "n": 5,
+      "median": 0.083,
+      "mean": 0.33360000000000006
+    },
+    "Piezo2": {
+      "n": 7,
+      "median": -0.596,
+      "mean": -0.7798571428571428
+    },
+    "Piezo2_CytoD": {
+      "n": 5,
+      "median": 48.24,
+      "mean": 46.4584
+    }
+  },
+  "limitations": "Different conditions are independent; threshold and peak are not cell-paired; Fig3j contains group means with varying cell counts."
+}

@@ -1,0 +1,176 @@
+{
+  "fixed_mbar_per_nN": 2.935104280122756,
+  "conditions": {
+    "Control": {
+      "heldout": [
+        {
+          "repeat": 1,
+          "test_cells": 67,
+          "pressure_only": {
+            "brier": 0.1422863848181285,
+            "logloss": 0.42125653382823663
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.0922525151802918,
+            "logloss": 0.2913563322431806
+          },
+          "free_additive": {
+            "brier": 0.0876416132833238,
+            "logloss": 0.2794516193962704
+          }
+        },
+        {
+          "repeat": 2,
+          "test_cells": 74,
+          "pressure_only": {
+            "brier": 0.1173437588962986,
+            "logloss": 0.36354650992143794
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.09222561705310352,
+            "logloss": 0.30820226463585654
+          },
+          "free_additive": {
+            "brier": 0.09869226240472477,
+            "logloss": 0.3313744860857046
+          }
+        },
+        {
+          "repeat": 3,
+          "test_cells": 79,
+          "pressure_only": {
+            "brier": 0.12092346970501719,
+            "logloss": 0.36275410600773517
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.07404647220878394,
+            "logloss": 0.23789979393424845
+          },
+          "free_additive": {
+            "brier": 0.06961069334447814,
+            "logloss": 0.22858043640564907
+          }
+        }
+      ],
+      "weighted_brier": {
+        "pressure_only": 0.12622536385380484,
+        "fixed_stepwise_ratio": 0.08570584310683246,
+        "free_additive": 0.08488391037339137
+      }
+    },
+    "MargAc": {
+      "heldout": [
+        {
+          "repeat": 1,
+          "test_cells": 28,
+          "pressure_only": {
+            "brier": 0.08021426480538972,
+            "logloss": 0.24555151390242594
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.07097936131003792,
+            "logloss": 0.22333361402644253
+          },
+          "free_additive": {
+            "brier": 0.0722312554826413,
+            "logloss": 0.23077269173398363
+          }
+        },
+        {
+          "repeat": 2,
+          "test_cells": 47,
+          "pressure_only": {
+            "brier": 0.0925606813566892,
+            "logloss": 0.28070000330785666
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.07372723739146095,
+            "logloss": 0.2350477433515561
+          },
+          "free_additive": {
+            "brier": 0.0724776212756989,
+            "logloss": 0.23215692865124743
+          }
+        },
+        {
+          "repeat": 3,
+          "test_cells": 31,
+          "pressure_only": {
+            "brier": 0.08840062855684895,
+            "logloss": 0.264825726375263
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.07748327895006746,
+            "logloss": 0.23593501656948024
+          },
+          "free_additive": {
+            "brier": 0.075447446000012,
+            "logloss": 0.2309242739214284
+          }
+        }
+      ],
+      "weighted_brier": {
+        "pressure_only": 0.08808274456205303,
+        "fixed_stepwise_ratio": 0.07409984831633791,
+        "free_additive": 0.07328107716483186
+      }
+    },
+    "CytoD": {
+      "heldout": [
+        {
+          "repeat": 1,
+          "test_cells": 36,
+          "pressure_only": {
+            "brier": 0.10220471654584468,
+            "logloss": 0.3183808602493923
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.09137728835656372,
+            "logloss": 0.28458735758434295
+          },
+          "free_additive": {
+            "brier": 0.08971517178888949,
+            "logloss": 0.28476183887997514
+          }
+        },
+        {
+          "repeat": 2,
+          "test_cells": 27,
+          "pressure_only": {
+            "brier": 0.10331801909106042,
+            "logloss": 0.3223737105086173
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.08115309025384311,
+            "logloss": 0.2612740063935012
+          },
+          "free_additive": {
+            "brier": 0.07594006927290066,
+            "logloss": 0.24849614108053422
+          }
+        },
+        {
+          "repeat": 3,
+          "test_cells": 10,
+          "pressure_only": {
+            "brier": 0.1730314122772164,
+            "logloss": 0.5498057596736983
+          },
+          "fixed_stepwise_ratio": {
+            "brier": 0.14969907306654037,
+            "logloss": 0.5118923296554121
+          },
+          "free_additive": {
+            "brier": 0.14444081859245,
+            "logloss": 0.49545826664421755
+          }
+        }
+      ],
+      "weighted_brier": {
+        "pressure_only": 0.1123187730668658,
+        "fixed_stepwise_ratio": 0.09558502121034879,
+        "free_additive": 0.0921169348040115
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "n_particles": 16384,
+  "split": {
+    "train": 558,
+    "likelihood_cal": 93,
+    "interval_cal": 93,
+    "test": 187
+  },
+  "gp_train_counts": [
+    1211,
+    644,
+    727
+  ],
+  "prior": "Gaussian copula fitted only to 558 paired training parameter vectors; rank marginals with correlation shrinkage 0.1",
+  "scoring": "all held-out output errors standardized using the 558 paired training parameter vectors; likelihood and conformal calibration use disjoint halves",
+  "tasks": {
+    "L1_to_L3": {
+      "twin_mae_standardized": 0.42579548249318505,
+      "direct_ridge_mae_standardized": 0.33817278361818787,
+      "twin_conformal_90pct_coverage": 0.93048128342246,
+      "twin_conformal_90pct_width_standardized": 2.0237915268777966,
+      "twin_ess_median": 2817.360721171723,
+      "twin_ess_min": 33.03185556373502,
+      "theta_posterior_mean_mae_standardized": 0.8081473358048723,
+      "particle_predictive_variance_z_mean": 0.7835266699958335
+    },
+    "L1_L2_to_L3": {
+      "twin_mae_standardized": 0.3516323081269932,
+      "direct_ridge_mae_standardized": 0.25952073299064765,
+      "twin_conformal_90pct_coverage": 0.93048128342246,
+      "twin_conformal_90pct_width_standardized": 1.6485483462099535,
+      "twin_ess_median": 1003.8003341259279,
+      "twin_ess_min": 5.464122020165618,
+      "theta_posterior_mean_mae_standardized": 0.794097709081195,
+      "particle_predictive_variance_z_mean": 0.707965266310447
+    },
+    "L1_to_L2": {
+      "twin_mae_standardized": 0.40330512069287144,
+      "direct_ridge_mae_standardized": 0.266819049377681,
+      "twin_conformal_90pct_coverage": 0.8761140819964349,
+      "twin_conformal_90pct_width_standardized": 1.6191867145352805,
+      "twin_ess_median": 2817.360721171723,
+      "twin_ess_min": 33.03185556373502,
+      "theta_posterior_mean_mae_standardized": 0.8081473358048723,
+      "particle_predictive_variance_z_mean": 0.6049962933470918
+    },
+    "L1_L3_to_L2": {
+      "twin_mae_standardized": 0.330173445016435,
+      "direct_ridge_mae_standardized": 0.1826316134917887,
+      "twin_conformal_90pct_coverage": 0.8859180035650623,
+      "twin_conformal_90pct_width_standardized": 1.3512318297438473,
+      "twin_ess_median": 867.7313939899489,
+      "twin_ess_min": 4.4009706708843135,
+      "theta_posterior_mean_mae_standardized": 0.7905851229760554,
+      "particle_predictive_variance_z_mean": 0.5362930804226211
+    }
+  }
+}

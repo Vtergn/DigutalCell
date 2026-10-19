@@ -1,0 +1,82 @@
+{
+  "seed": 2.0260929E+7,
+  "nCells": 4,
+  "nBeats": 12,
+  "checkpoint_every": 2,
+  "adaptive_electrical_prepacing": true,
+  "max_electrical_beats": 60,
+  "mechanical_cycles": 5,
+  "adaptive_mechanical_cycles": 7,
+  "electrical_cycle_drift_limit": 0.01,
+  "mechanical_cycle_drift_limit": 0.01,
+  "lambda": [
+    0.975,
+    1,
+    1.025,
+    1.05,
+    1.075,
+    1.1,
+    1.125
+  ],
+  "theta_names": [
+    "ICaL_Multiplier",
+    "Jup_Multiplier",
+    "INaCa_Multiplier",
+    "IKr_Multiplier",
+    "Tref",
+    "ca50",
+    "TRPN_n",
+    "nperm",
+    "beta_0",
+    "beta_1",
+    "phi",
+    "perm50"
+  ],
+  "lower_bounds": [
+    0.75,
+    0.75,
+    0.75,
+    0.75,
+    90,
+    0.65,
+    1.6,
+    1.3,
+    1.6,
+    -3.1,
+    1.6,
+    0.27
+  ],
+  "upper_bounds": [
+    1.25,
+    1.25,
+    1.25,
+    1.25,
+    150,
+    0.96,
+    2.4,
+    3,
+    3,
+    -1.7,
+    2.9,
+    0.44
+  ],
+  "split_code_meanings": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "coupling": "one-way Ca to active tension",
+  "calibration_loads": [
+    1,
+    1.1
+  ],
+  "in_range_test_loads": [
+    1.025,
+    1.05,
+    1.075
+  ],
+  "outside_range_test_loads": [
+    0.975,
+    1.125
+  ]
+}

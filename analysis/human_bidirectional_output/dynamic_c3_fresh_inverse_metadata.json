@@ -1,0 +1,8 @@
+{
+  "selected_arm": 4,
+  "method": 0,
+  "n_development_cells": 47,
+  "n_fresh_qc_cells": 48,
+  "new_seed_truth_parameters_used_for_fitting": false,
+  "fresh_target_used_for_fitting": false
+}

@@ -1,0 +1,77 @@
+{
+  "model": "ToR-ORd/SAC-Land + upstream H\u00e4rtter sarcomere drift",
+  "sarcomere_source": "external/SarcomereModel, MIT, quickstart parameters",
+  "bridge": "Land thin-filament availability drives original motor activation; mean sarcomere x drives lambda back to SAC and Land",
+  "limits": "Deterministic drift only; abstract source force and load units; length_scale 0.3 and activation_scale 0.2 exploratory; no human-cell joint calibration",
+  "pulse": "source prestrain p=-5 on 250-350 ms; this is not a kPa load",
+  "scenario_metrics": {
+    "closed_pulse": {
+      "voltage_min_mV": -89.56524316929742,
+      "voltage_max_mV": 34.10741399972953,
+      "calcium_peak_uM": 0.4998091746283084,
+      "lambda_min": 0.9680123108359134,
+      "lambda_max": 1.0352645408639738,
+      "local_lambda_std_peak": 0.006169373033050565,
+      "activation_peak": 0.8837830189459889,
+      "tension_peak_kpa": 11.451148994475414,
+      "rhs_calls": 7550,
+      "runtime_s": 35.557288400130346
+    },
+    "no_external_pulse": {
+      "voltage_min_mV": -89.56568882920374,
+      "voltage_max_mV": 34.10741399972953,
+      "calcium_peak_uM": 0.4998091746283084,
+      "lambda_min": 0.9680123108359134,
+      "lambda_max": 1.008919674796657,
+      "local_lambda_std_peak": 0.006169373033050565,
+      "activation_peak": 0.8837830189459889,
+      "tension_peak_kpa": 11.451148994475414,
+      "rhs_calls": 7243,
+      "runtime_s": 33.98558819992468,
+      "voltage_max_difference_mV": 3.381982384718299,
+      "calcium_max_difference_uM": 0.016302040292546217
+    },
+    "pulse_no_sac": {
+      "voltage_min_mV": -89.57150163674045,
+      "voltage_max_mV": 34.10741399972953,
+      "calcium_peak_uM": 0.4998091746283084,
+      "lambda_min": 0.9680123108359134,
+      "lambda_max": 1.0352791911326251,
+      "local_lambda_std_peak": 0.006169373033050565,
+      "activation_peak": 0.8837830189459889,
+      "tension_peak_kpa": 11.451148994475414,
+      "rhs_calls": 6945,
+      "runtime_s": 31.88179809995927,
+      "voltage_max_difference_mV": 3.860410919027146,
+      "calcium_max_difference_uM": 0.014980885531173152
+    },
+    "pulse_no_motor": {
+      "voltage_min_mV": -89.56524316929742,
+      "voltage_max_mV": 34.10732761019111,
+      "calcium_peak_uM": 0.49748128918415907,
+      "lambda_min": 0.984431882843496,
+      "lambda_max": 1.0397519556907255,
+      "local_lambda_std_peak": 0.006169373033050565,
+      "activation_peak": 0.0,
+      "tension_peak_kpa": 15.803292363864568,
+      "rhs_calls": 7492,
+      "runtime_s": 35.093245199881494,
+      "voltage_max_difference_mV": 0.9425621962300212,
+      "calcium_max_difference_uM": 0.022485767241444136
+    },
+    "pulse_no_mechanical_feedback": {
+      "voltage_min_mV": -89.57352167305967,
+      "voltage_max_mV": 34.10743521054125,
+      "calcium_peak_uM": 0.4966364139038354,
+      "lambda_min": 0.9658522718721947,
+      "lambda_max": 1.034897525726256,
+      "local_lambda_std_peak": 0.006169373033050565,
+      "activation_peak": 0.9259855581426263,
+      "tension_peak_kpa": 13.791862301843903,
+      "rhs_calls": 5923,
+      "runtime_s": 27.883489800151438,
+      "voltage_max_difference_mV": 3.3633024773381237,
+      "calcium_max_difference_uM": 0.02166570178308892
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "species_model": "rabbit Shannon-Bers/Negroni MCT2024; not ToR-ORd/Land",
+  "CL_low_high": [
+    0.02,
+    0.1
+  ],
+  "beats": 20,
+  "PCL_ms": 1000,
+  "definition": "MCT-off fixes the model's pCa multiplier to one; all other native ODEs remain unchanged",
+  "per_case_last_four_beats": {
+    "lo_on": [
+      {
+        "beat": 17,
+        "Ca_peak_uM": 0.4253917447252851,
+        "Ca_amplitude_uM": 0.336760105681679,
+        "APD_above_minus67_mV_ms": 267,
+        "sarcomere_state_excursion": 0.07748801858544818,
+        "force_peak_kPa": 0.666940488207752,
+        "gel_stress_peak_kPa": 0.02859285963094833,
+        "pCa_multiplier_peak": 1.0864552781792618
+      },
+      {
+        "beat": 18,
+        "Ca_peak_uM": 0.4254789715390913,
+        "Ca_amplitude_uM": 0.3368452752893953,
+        "APD_above_minus67_mV_ms": 266,
+        "sarcomere_state_excursion": 0.07748097971503998,
+        "force_peak_kPa": 0.6668871829527191,
+        "gel_stress_peak_kPa": 0.02859953299848345,
+        "pCa_multiplier_peak": 1.086456178252598
+      },
+      {
+        "beat": 19,
+        "Ca_peak_uM": 0.425524788358485,
+        "Ca_amplitude_uM": 0.3368916122813609,
+        "APD_above_minus67_mV_ms": 265,
+        "sarcomere_state_excursion": 0.07750608134766312,
+        "force_peak_kPa": 0.667098341607021,
+        "gel_stress_peak_kPa": 0.028603224529517458,
+        "pCa_multiplier_peak": 1.0864566761516083
+      },
+      {
+        "beat": 20,
+        "Ca_peak_uM": 0.42550175586752464,
+        "Ca_amplitude_uM": 0.3368716368267197,
+        "APD_above_minus67_mV_ms": 264,
+        "sarcomere_state_excursion": 0.07753835626359562,
+        "force_peak_kPa": 0.6673795147596365,
+        "gel_stress_peak_kPa": 0.028604056290728767,
+        "pCa_multiplier_peak": 1.0864567883364622
+      }
+    ],
+    "lo_off": [
+      {
+        "beat": 17,
+        "Ca_peak_uM": 0.360675114860725,
+        "Ca_amplitude_uM": 0.27467747182683644,
+        "APD_above_minus67_mV_ms": 244,
+        "sarcomere_state_excursion": 0.06579407713049479,
+        "force_peak_kPa": 0.5623368064197126,
+        "gel_stress_peak_kPa": 0.02526860876126417,
+        "pCa_multiplier_peak": 1.0
+      },
+      {
+        "beat": 18,
+        "Ca_peak_uM": 0.36095061707771087,
+        "Ca_amplitude_uM": 0.27494196856466996,
+        "APD_above_minus67_mV_ms": 243,
+        "sarcomere_state_excursion": 0.06586040795513148,
+        "force_peak_kPa": 0.5629138342409453,
+        "gel_stress_peak_kPa": 0.025285989549058047,
+        "pCa_multiplier_peak": 1.0
+      },
+      {
+        "beat": 19,
+        "Ca_peak_uM": 0.36119111864524117,
+        "Ca_amplitude_uM": 0.27517369707769945,
+        "APD_above_minus67_mV_ms": 242,
+        "sarcomere_state_excursion": 0.06591823576715994,
+        "force_peak_kPa": 0.5634165266810525,
+        "gel_stress_peak_kPa": 0.025300302517366598,
+        "pCa_multiplier_peak": 1.0
+      },
+      {
+        "beat": 20,
+        "Ca_peak_uM": 0.36138779701155926,
+        "Ca_amplitude_uM": 0.2753631931136362,
+        "APD_above_minus67_mV_ms": 242,
+        "sarcomere_state_excursion": 0.06597992376990847,
+        "force_peak_kPa": 0.5639487353587981,
+        "gel_stress_peak_kPa": 0.025311563382398476,
+        "pCa_multiplier_peak": 1.0
+      }
+    ],
+    "hi_on": [
+      {
+        "beat": 17,
+        "Ca_peak_uM": 0.6750615400065997,
+        "Ca_amplitude_uM": 0.5774225670840937,
+        "APD_above_minus67_mV_ms": 356,
+        "sarcomere_state_excursion": 0.03716368671756076,
+        "force_peak_kPa": 3.4511263132396737,
+        "gel_stress_peak_kPa": 2.4642066956150597,
+        "pCa_multiplier_peak": 1.443689653361139
+      },
+      {
+        "beat": 18,
+        "Ca_peak_uM": 0.6744598783570728,
+        "Ca_amplitude_uM": 0.5768446630755072,
+        "APD_above_minus67_mV_ms": 354,
+        "sarcomere_state_excursion": 0.03713270883439179,
+        "force_peak_kPa": 3.4484614580293704,
+        "gel_stress_peak_kPa": 2.4619009565624097,
+        "pCa_multiplier_peak": 1.4436748779366446
+      },
+      {
+        "beat": 19,
+        "Ca_peak_uM": 0.6737669144310986,
+        "Ca_amplitude_uM": 0.576179849083702,
+        "APD_above_minus67_mV_ms": 353,
+        "sarcomere_state_excursion": 0.03709702249943714,
+        "force_peak_kPa": 3.445294914388633,
+        "gel_stress_peak_kPa": 2.4594799220978985,
+        "pCa_multiplier_peak": 1.4436900361437706
+      },
+      {
+        "beat": 20,
+        "Ca_peak_uM": 0.6729400939598257,
+        "Ca_amplitude_uM": 0.5753847896420088,
+        "APD_above_minus67_mV_ms": 351,
+        "sarcomere_state_excursion": 0.037058360133906953,
+        "force_peak_kPa": 3.4417832791317537,
+        "gel_stress_peak_kPa": 2.4569196322759232,
+        "pCa_multiplier_peak": 1.443688841276702
+      }
+    ],
+    "hi_off": [
+      {
+        "beat": 17,
+        "Ca_peak_uM": 0.3606761468351038,
+        "Ca_amplitude_uM": 0.27467841662887127,
+        "APD_above_minus67_mV_ms": 244,
+        "sarcomere_state_excursion": 0.014333295991905026,
+        "force_peak_kPa": 1.4448054809256934,
+        "gel_stress_peak_kPa": 1.0815826926772187,
+        "pCa_multiplier_peak": 1.0
+      },
+      {
+        "beat": 18,
+        "Ca_peak_uM": 0.3609537158336345,
+        "Ca_amplitude_uM": 0.2749452485495873,
+        "APD_above_minus67_mV_ms": 243,
+        "sarcomere_state_excursion": 0.014358067260228036,
+        "force_peak_kPa": 1.4471488641239518,
+        "gel_stress_peak_kPa": 1.0832189310242601,
+        "pCa_multiplier_peak": 1.0
+      },
+      {
+        "beat": 19,
+        "Ca_peak_uM": 0.36119527950285446,
+        "Ca_amplitude_uM": 0.27517821144465654,
+        "APD_above_minus67_mV_ms": 242,
+        "sarcomere_state_excursion": 0.014379220739082932,
+        "force_peak_kPa": 1.4491413260661536,
+        "gel_stress_peak_kPa": 1.0846188724775236,
+        "pCa_multiplier_peak": 1.0
+      },
+      {
+        "beat": 20,
+        "Ca_peak_uM": 0.3614023005385785,
+        "Ca_amplitude_uM": 0.2753776290331856,
+        "APD_above_minus67_mV_ms": 242,
+        "sarcomere_state_excursion": 0.014399770637697151,
+        "force_peak_kPa": 1.451023214879025,
+        "gel_stress_peak_kPa": 1.0859730863617776,
+        "pCa_multiplier_peak": 1.0
+      }
+    ]
+  },
+  "last_beat_load_x_feedback_contrast": {
+    "Ca_peak_uM": {
+      "load_effect_with_MCT_on": 0.24743833809230104,
+      "load_effect_with_MCT_off": 1.450352701926061e-05,
+      "feedback_specific_load_interaction": 0.24742383456528177
+    },
+    "Ca_amplitude_uM": {
+      "load_effect_with_MCT_on": 0.23851315281528906,
+      "load_effect_with_MCT_off": 1.443591954936041e-05,
+      "feedback_specific_load_interaction": 0.2384987168957397
+    },
+    "APD_above_minus67_mV_ms": {
+      "load_effect_with_MCT_on": 87,
+      "load_effect_with_MCT_off": 0,
+      "feedback_specific_load_interaction": 87
+    },
+    "sarcomere_state_excursion": {
+      "load_effect_with_MCT_on": -0.04047999612968867,
+      "load_effect_with_MCT_off": -0.051580153132211315,
+      "feedback_specific_load_interaction": 0.011100157002522648
+    },
+    "force_peak_kPa": {
+      "load_effect_with_MCT_on": 2.774403764372117,
+      "load_effect_with_MCT_off": 0.8870744795202269,
+      "feedback_specific_load_interaction": 1.8873292848518903
+    },
+    "gel_stress_peak_kPa": {
+      "load_effect_with_MCT_on": 2.4283155759851947,
+      "load_effect_with_MCT_off": 1.0606615229793792,
+      "feedback_specific_load_interaction": 1.3676540530058154
+    },
+    "pCa_multiplier_peak": {
+      "load_effect_with_MCT_on": 0.35723205294023974,
+      "load_effect_with_MCT_off": 0.0,
+      "feedback_specific_load_interaction": 0.35723205294023974
+    }
+  },
+  "mechanical_challenge_amplification": {
+    "Ca_peak_uM": {
+      "MCT_on_minus_off_at_low_load": 0.06411395885596538,
+      "MCT_on_minus_off_at_high_load": 0.31153779342124716,
+      "high_to_low_gap_ratio": 4.85912582813876
+    },
+    "APD_above_minus67_mV_ms": {
+      "MCT_on_minus_off_at_low_load": 22,
+      "MCT_on_minus_off_at_high_load": 109,
+      "high_to_low_gap_ratio": 4.954545454545454
+    }
+  },
+  "scope": "Model ablation using common initial state. Check last-beat drift before claiming steady-state physiology."
+}

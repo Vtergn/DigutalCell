@@ -1,0 +1,11 @@
+{
+  "duration_ms": 0.1,
+  "step_ms": 0.001,
+  "final_voltage_mV": -84.21365075497442,
+  "autograd_dV_dgain_mV": 0.11204803120320862,
+  "finite_difference_dV_dgain_mV": 0.11204803136877217,
+  "relative_gradient_difference": 1.4776122967905687e-09,
+  "autodiff_runtime_seconds": 22.80350079992786,
+  "two_finite_difference_rollouts_seconds": 3.94684370001778,
+  "finite_state": true
+}

@@ -1,0 +1,205 @@
+{
+  "n_cells_total": 128,
+  "n_cells_valid": 128,
+  "prediction_failures": 0,
+  "truth_failures": 0,
+  "calibration_lambdas": [
+    1.0,
+    1.1
+  ],
+  "targets": [
+    {
+      "target_lambda": 0.95,
+      "distance_from_calibration_interval": 0.050000000000000044,
+      "side": "below",
+      "n_valid_cells": 128,
+      "true_mean_peak_tension_kPa": 12.879917021654208,
+      "waveform_MAE_kPa": {
+        "refined_twin": 0.3897660553415928,
+        "direct_NN": 2.4804624243936475,
+        "direct_NN_noise_augmented": 2.6881501060112645,
+        "linear": 3.8205154116027362
+      },
+      "waveform_MAE_divided_by_mean_true_peak": {
+        "refined_twin": 0.0302615346578944,
+        "direct_NN": 0.1925837270708654,
+        "direct_NN_noise_augmented": 0.20870865095573551,
+        "linear": 0.29662577834775955
+      },
+      "peak_MAE_kPa": {
+        "refined_twin": 0.8279238764430492,
+        "direct_NN": 2.8612077792970796,
+        "direct_NN_noise_augmented": 3.5392489394315723,
+        "linear": 5.614554581652035
+      },
+      "twin_minus_direct_mean_MAE_kPa": -2.090696369052055,
+      "direct_minus_twin_mean_MAE_95pct_CI_kPa": [
+        1.991901454948156,
+        2.203363536914117
+      ],
+      "cells_twin_better_than_direct": 128,
+      "cells_twin_better_than_augmented_direct": 128
+    },
+    {
+      "target_lambda": 0.975,
+      "distance_from_calibration_interval": 0.025000000000000022,
+      "side": "below",
+      "n_valid_cells": 128,
+      "true_mean_peak_tension_kPa": 16.213043068380266,
+      "waveform_MAE_kPa": {
+        "refined_twin": 0.44754203652666524,
+        "direct_NN": 1.3593055889960768,
+        "direct_NN_noise_augmented": 1.4666270400947758,
+        "linear": 1.7270187423935806
+      },
+      "waveform_MAE_divided_by_mean_true_peak": {
+        "refined_twin": 0.02760382703229173,
+        "direct_NN": 0.0838402503011346,
+        "direct_NN_noise_augmented": 0.09045970172959619,
+        "linear": 0.10652033274134239
+      },
+      "peak_MAE_kPa": {
+        "refined_twin": 0.9123528998979487,
+        "direct_NN": 1.5274151635892297,
+        "direct_NN_noise_augmented": 2.2117928917561476,
+        "linear": 3.134546125791387
+      },
+      "twin_minus_direct_mean_MAE_kPa": -0.9117635524694119,
+      "direct_minus_twin_mean_MAE_95pct_CI_kPa": [
+        0.8300468851509376,
+        1.0037319766430284
+      ],
+      "cells_twin_better_than_direct": 127,
+      "cells_twin_better_than_augmented_direct": 123
+    },
+    {
+      "target_lambda": 1.105,
+      "distance_from_calibration_interval": 0.004999999999999893,
+      "side": "above",
+      "n_valid_cells": 128,
+      "true_mean_peak_tension_kPa": 53.04044499342504,
+      "waveform_MAE_kPa": {
+        "refined_twin": 0.8597437681408725,
+        "direct_NN": 1.08474229593836,
+        "direct_NN_noise_augmented": 1.1158238763050723,
+        "linear": 0.47325764738744897
+      },
+      "waveform_MAE_divided_by_mean_true_peak": {
+        "refined_twin": 0.016209211069919332,
+        "direct_NN": 0.020451229171867355,
+        "direct_NN_noise_augmented": 0.021037226901912138,
+        "linear": 0.00892258063532677
+      },
+      "peak_MAE_kPa": {
+        "refined_twin": 1.4649932983515153,
+        "direct_NN": 1.7069803366263097,
+        "direct_NN_noise_augmented": 1.9099433066590665,
+        "linear": 0.7087251868732343
+      },
+      "twin_minus_direct_mean_MAE_kPa": -0.2249985277974873,
+      "direct_minus_twin_mean_MAE_95pct_CI_kPa": [
+        0.055059647307455266,
+        0.4060937356103099
+      ],
+      "cells_twin_better_than_direct": 69,
+      "cells_twin_better_than_augmented_direct": 73
+    },
+    {
+      "target_lambda": 1.115,
+      "distance_from_calibration_interval": 0.014999999999999902,
+      "side": "above",
+      "n_valid_cells": 128,
+      "true_mean_peak_tension_kPa": 57.7181728539061,
+      "waveform_MAE_kPa": {
+        "refined_twin": 0.9994949192762086,
+        "direct_NN": 1.7037638193355398,
+        "direct_NN_noise_augmented": 1.6704329555287951,
+        "linear": 1.6230102131683894
+      },
+      "waveform_MAE_divided_by_mean_true_peak": {
+        "refined_twin": 0.017316814962353187,
+        "direct_NN": 0.029518672111261003,
+        "direct_NN_noise_augmented": 0.02894119603815123,
+        "linear": 0.028119570196313858
+      },
+      "peak_MAE_kPa": {
+        "refined_twin": 1.751832634881099,
+        "direct_NN": 2.5234402728413223,
+        "direct_NN_noise_augmented": 2.7480918918850703,
+        "linear": 2.3356768561367405
+      },
+      "twin_minus_direct_mean_MAE_kPa": -0.7042689000593311,
+      "direct_minus_twin_mean_MAE_95pct_CI_kPa": [
+        0.4564904560248921,
+        0.9648309083994383
+      ],
+      "cells_twin_better_than_direct": 86,
+      "cells_twin_better_than_augmented_direct": 88
+    },
+    {
+      "target_lambda": 1.125,
+      "distance_from_calibration_interval": 0.02499999999999991,
+      "side": "above",
+      "n_valid_cells": 128,
+      "true_mean_peak_tension_kPa": 62.674472075421605,
+      "waveform_MAE_kPa": {
+        "refined_twin": 1.1930499431594888,
+        "direct_NN": 2.5302270353156775,
+        "direct_NN_noise_augmented": 2.3979739843674226,
+        "linear": 3.072925474195175
+      },
+      "waveform_MAE_divided_by_mean_true_peak": {
+        "refined_twin": 0.01903566003274489,
+        "direct_NN": 0.04037093495212591,
+        "direct_NN_noise_augmented": 0.038260776755833434,
+        "linear": 0.04902993790673272
+      },
+      "peak_MAE_kPa": {
+        "refined_twin": 2.1086914004770216,
+        "direct_NN": 3.52713075702298,
+        "direct_NN_noise_augmented": 3.778695375754192,
+        "linear": 4.23897914536774
+      },
+      "twin_minus_direct_mean_MAE_kPa": -1.337177092156189,
+      "direct_minus_twin_mean_MAE_95pct_CI_kPa": [
+        0.9712322473014575,
+        1.7054873323173667
+      ],
+      "cells_twin_better_than_direct": 99,
+      "cells_twin_better_than_augmented_direct": 98
+    },
+    {
+      "target_lambda": 1.15,
+      "distance_from_calibration_interval": 0.04999999999999982,
+      "side": "above",
+      "n_valid_cells": 128,
+      "true_mean_peak_tension_kPa": 76.25343925225138,
+      "waveform_MAE_kPa": {
+        "refined_twin": 1.9901940976093422,
+        "direct_NN": 5.839129677576862,
+        "direct_NN_noise_augmented": 5.276201033610338,
+        "linear": 8.311636995412472
+      },
+      "waveform_MAE_divided_by_mean_true_peak": {
+        "refined_twin": 0.02609972897124875,
+        "direct_NN": 0.07657529594515255,
+        "direct_NN_noise_augmented": 0.06919295818456553,
+        "linear": 0.1090001589032205
+      },
+      "peak_MAE_kPa": {
+        "refined_twin": 3.3105732997912805,
+        "direct_NN": 6.8870949310731095,
+        "direct_NN_noise_augmented": 7.189357100347181,
+        "linear": 10.180196093883442
+      },
+      "twin_minus_direct_mean_MAE_kPa": -3.8489355799675193,
+      "direct_minus_twin_mean_MAE_95pct_CI_kPa": [
+        3.1168075257540986,
+        4.639099032989555
+      ],
+      "cells_twin_better_than_direct": 115,
+      "cells_twin_better_than_augmented_direct": 110
+    }
+  ],
+  "scope": "Same Land generator supplies both virtual truth and refinement; fixed, clean calibration and no retraining across target loads."
+}

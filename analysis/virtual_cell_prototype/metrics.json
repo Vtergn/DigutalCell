@@ -1,0 +1,8 @@
+{
+  "training_traces": 8,
+  "training_points": 8008,
+  "rmse_V_mV": 3.4317922592163086,
+  "rmse_Ca_uM": 0.006036657374352217,
+  "rmse_TRPN": 0.00399283692240715,
+  "status": "representation/reconstruction prototype; no independent generalization claim"
+}

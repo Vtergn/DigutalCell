@@ -1,0 +1,93 @@
+{
+  "seed": 20260928,
+  "cells_per_family": 40,
+  "same_action_multiset": [
+    [
+      200.0,
+      5.0,
+      800.0
+    ],
+    [
+      260.0,
+      5.0,
+      800.0
+    ],
+    [
+      330.0,
+      5.0,
+      200.0
+    ],
+    [
+      420.0,
+      20.0,
+      50.0
+    ],
+    [
+      420.0,
+      20.0,
+      200.0
+    ]
+  ],
+  "fixed_sixth_anchor": [
+    330.0,
+    10.0,
+    800.0
+  ],
+  "fixed_seventh_challenge": [
+    310.0,
+    10.0,
+    200.0
+  ],
+  "permutations_per_cell": 24,
+  "summary": {
+    "no_history": {
+      "median_relative_true_challenge_span": 0.0,
+      "median_true_peak_low_high_minus_high_low": 0.0,
+      "median_error_low_high_minus_high_low": -0.0002189292202994242,
+      "cells_low_high_more_accurate": 21,
+      "median_low_high_error": 0.03518504003207096,
+      "median_high_low_error": 0.03174543538842034
+    },
+    "single_sigmoid": {
+      "median_relative_true_challenge_span": 0.0071203565067178756,
+      "median_true_peak_low_high_minus_high_low": -0.0030563127041982607,
+      "median_error_low_high_minus_high_low": -0.006339954277083892,
+      "cells_low_high_more_accurate": 26,
+      "median_low_high_error": 0.018148685190688407,
+      "median_high_low_error": 0.029041869632910805
+    },
+    "dual_sigmoid": {
+      "median_relative_true_challenge_span": 0.02940248875068814,
+      "median_true_peak_low_high_minus_high_low": -0.010019575025304789,
+      "median_error_low_high_minus_high_low": -0.0012225990101285555,
+      "cells_low_high_more_accurate": 22,
+      "median_low_high_error": 0.030633287736220816,
+      "median_high_low_error": 0.037573161407196964
+    },
+    "force_fatigue": {
+      "median_relative_true_challenge_span": 0.013209118370643116,
+      "median_true_peak_low_high_minus_high_low": -0.0031773094988067074,
+      "median_error_low_high_minus_high_low": -0.008658996985952391,
+      "cells_low_high_more_accurate": 27,
+      "median_low_high_error": 0.11888892034141266,
+      "median_high_low_error": 0.11441845509611487
+    },
+    "mechanical_hysteresis": {
+      "median_relative_true_challenge_span": 0.009500497669781009,
+      "median_true_peak_low_high_minus_high_low": -0.0038111031817400776,
+      "median_error_low_high_minus_high_low": -0.0003031752481260641,
+      "cells_low_high_more_accurate": 21,
+      "median_low_high_error": 0.03265351727352872,
+      "median_high_low_error": 0.030722208547274255
+    },
+    "late_gain_switch": {
+      "median_relative_true_challenge_span": 0.0133660677667037,
+      "median_true_peak_low_high_minus_high_low": -0.004363047970585898,
+      "median_error_low_high_minus_high_low": 0.004507301903921512,
+      "cells_low_high_more_accurate": 16,
+      "median_low_high_error": 0.051299421479266194,
+      "median_high_low_error": 0.030901113731285484
+    }
+  },
+  "limitations": "Synthetic counterfactual. Order is not randomized in Duke/wedge; no direct biological order effect is established."
+}

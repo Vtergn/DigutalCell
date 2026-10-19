@@ -1,0 +1,430 @@
+{
+  "method": "whole-stiffness held-out spatial decoder",
+  "n_independent_cells": 6,
+  "future_global_LOI_trace": "given to all models (oracle)",
+  "calibration": "first 300 frames per LOI, approximately 4.9 s",
+  "horizon_frames": 10,
+  "stride_frames": 10,
+  "per_cell": {
+    "load5_cell01": {
+      "load_kpa": 5,
+      "persistence": {
+        "mae": 0.0196672947520141,
+        "local_residual_mae": 0.015733700590597012,
+        "spatial_pattern_r2": 0.1654412045765844,
+        "n_windows": 520,
+        "n_lois": 4
+      },
+      "uniform": {
+        "mae": 0.015764387743533278,
+        "local_residual_mae": 0.015733700590597012,
+        "spatial_pattern_r2": 0.1654412045765845,
+        "n_windows": 520,
+        "n_lois": 4
+      },
+      "gain": {
+        "mae": 0.01567082275128283,
+        "local_residual_mae": 0.01564028928901887,
+        "spatial_pattern_r2": 0.1877889218490949,
+        "n_windows": 520,
+        "n_lois": 4
+      },
+      "independent": {
+        "mae": 0.014374649812076526,
+        "local_residual_mae": 0.01433106822695571,
+        "spatial_pattern_r2": 0.31938520880661286,
+        "n_windows": 520,
+        "n_lois": 4
+      },
+      "coupled": {
+        "mae": 0.014233865943354258,
+        "local_residual_mae": 0.014193435098051183,
+        "spatial_pattern_r2": 0.3490855079447376,
+        "n_windows": 520,
+        "n_lois": 4
+      },
+      "shuffled_topology": {
+        "mae": 0.014358625191915294,
+        "local_residual_mae": 0.014312810902767745,
+        "spatial_pattern_r2": 0.3487459662976903,
+        "n_windows": 520.0,
+        "n_lois": 4.0
+      }
+    },
+    "load5_cell02": {
+      "load_kpa": 5,
+      "persistence": {
+        "mae": 0.01675611265913718,
+        "local_residual_mae": 0.01611228825205697,
+        "spatial_pattern_r2": 0.2409095926904611,
+        "n_windows": 412,
+        "n_lois": 4
+      },
+      "uniform": {
+        "mae": 0.01613950306620552,
+        "local_residual_mae": 0.016112288252056968,
+        "spatial_pattern_r2": 0.24090959269046117,
+        "n_windows": 412,
+        "n_lois": 4
+      },
+      "gain": {
+        "mae": 0.01605835079080026,
+        "local_residual_mae": 0.016029121977499363,
+        "spatial_pattern_r2": 0.25766265469810745,
+        "n_windows": 412,
+        "n_lois": 4
+      },
+      "independent": {
+        "mae": 0.014542418051589272,
+        "local_residual_mae": 0.014521017707986186,
+        "spatial_pattern_r2": 0.4020091886705799,
+        "n_windows": 412,
+        "n_lois": 4
+      },
+      "coupled": {
+        "mae": 0.0141220961823985,
+        "local_residual_mae": 0.014103129128724747,
+        "spatial_pattern_r2": 0.45129175502782737,
+        "n_windows": 412,
+        "n_lois": 4
+      },
+      "shuffled_topology": {
+        "mae": 0.014594406208640807,
+        "local_residual_mae": 0.014576993259211659,
+        "spatial_pattern_r2": 0.42632131592322214,
+        "n_windows": 412.0,
+        "n_lois": 4.0
+      }
+    },
+    "load15_cell01": {
+      "load_kpa": 15,
+      "persistence": {
+        "mae": 0.02638233197805067,
+        "local_residual_mae": 0.02559851538168531,
+        "spatial_pattern_r2": -0.054081587939303094,
+        "n_windows": 380,
+        "n_lois": 4
+      },
+      "uniform": {
+        "mae": 0.02561490733217262,
+        "local_residual_mae": 0.025598515381685307,
+        "spatial_pattern_r2": -0.054081587939303066,
+        "n_windows": 380,
+        "n_lois": 4
+      },
+      "gain": {
+        "mae": 0.025098696794153434,
+        "local_residual_mae": 0.025082423763514557,
+        "spatial_pattern_r2": -0.00688066995793199,
+        "n_windows": 380,
+        "n_lois": 4
+      },
+      "independent": {
+        "mae": 0.022678729337342385,
+        "local_residual_mae": 0.022678205763247545,
+        "spatial_pattern_r2": 0.1916169211853574,
+        "n_windows": 380,
+        "n_lois": 4
+      },
+      "coupled": {
+        "mae": 0.02144542287064169,
+        "local_residual_mae": 0.02144933148074798,
+        "spatial_pattern_r2": 0.2816048538753305,
+        "n_windows": 380,
+        "n_lois": 4
+      },
+      "shuffled_topology": {
+        "mae": 0.02175961065921527,
+        "local_residual_mae": 0.02176552792985296,
+        "spatial_pattern_r2": 0.2780616759182239,
+        "n_windows": 380.0,
+        "n_lois": 4.0
+      }
+    },
+    "load15_cell02": {
+      "load_kpa": 15,
+      "persistence": {
+        "mae": 0.017822546261935454,
+        "local_residual_mae": 0.017687156356427838,
+        "spatial_pattern_r2": 0.0837991779534529,
+        "n_windows": 480,
+        "n_lois": 4
+      },
+      "uniform": {
+        "mae": 0.01769744350303846,
+        "local_residual_mae": 0.01768715635642784,
+        "spatial_pattern_r2": 0.08379917795345287,
+        "n_windows": 480,
+        "n_lois": 4
+      },
+      "gain": {
+        "mae": 0.017593354960898304,
+        "local_residual_mae": 0.017584177576729833,
+        "spatial_pattern_r2": 0.09680619850132788,
+        "n_windows": 480,
+        "n_lois": 4
+      },
+      "independent": {
+        "mae": 0.015896249763387257,
+        "local_residual_mae": 0.015893433392134667,
+        "spatial_pattern_r2": 0.27510869701093577,
+        "n_windows": 480,
+        "n_lois": 4
+      },
+      "coupled": {
+        "mae": 0.015205318409053353,
+        "local_residual_mae": 0.015201316992590816,
+        "spatial_pattern_r2": 0.3378910283859403,
+        "n_windows": 480,
+        "n_lois": 4
+      },
+      "shuffled_topology": {
+        "mae": 0.015415968959915904,
+        "local_residual_mae": 0.015414010979824574,
+        "spatial_pattern_r2": 0.33619171063252384,
+        "n_windows": 480.0,
+        "n_lois": 4.0
+      }
+    },
+    "load85_cell01": {
+      "load_kpa": 85,
+      "persistence": {
+        "mae": 0.03327296990872644,
+        "local_residual_mae": 0.03258462049756229,
+        "spatial_pattern_r2": -0.02286953203755343,
+        "n_windows": 408,
+        "n_lois": 4
+      },
+      "uniform": {
+        "mae": 0.03278565881498632,
+        "local_residual_mae": 0.03258462049756229,
+        "spatial_pattern_r2": -0.02286953203755354,
+        "n_windows": 408,
+        "n_lois": 4
+      },
+      "gain": {
+        "mae": 0.0315464042904991,
+        "local_residual_mae": 0.03134882025637605,
+        "spatial_pattern_r2": 0.053451856234237594,
+        "n_windows": 408,
+        "n_lois": 4
+      },
+      "independent": {
+        "mae": 0.02789700250117462,
+        "local_residual_mae": 0.027774249627645218,
+        "spatial_pattern_r2": 0.2512483865677637,
+        "n_windows": 408,
+        "n_lois": 4
+      },
+      "coupled": {
+        "mae": 0.026514252125002448,
+        "local_residual_mae": 0.026404866090761828,
+        "spatial_pattern_r2": 0.3186237084679976,
+        "n_windows": 408,
+        "n_lois": 4
+      },
+      "shuffled_topology": {
+        "mae": 0.02663893593387357,
+        "local_residual_mae": 0.026534821621622136,
+        "spatial_pattern_r2": 0.3284662271828761,
+        "n_windows": 408.0,
+        "n_lois": 4.0
+      }
+    },
+    "load85_cell02": {
+      "load_kpa": 85,
+      "persistence": {
+        "mae": 0.023867337545114196,
+        "local_residual_mae": 0.023493630423262656,
+        "spatial_pattern_r2": 0.020667231614282744,
+        "n_windows": 404,
+        "n_lois": 4
+      },
+      "uniform": {
+        "mae": 0.023514121238718284,
+        "local_residual_mae": 0.02349363042326266,
+        "spatial_pattern_r2": 0.020667231614282328,
+        "n_windows": 404,
+        "n_lois": 4
+      },
+      "gain": {
+        "mae": 0.023085816071326464,
+        "local_residual_mae": 0.023068878184459258,
+        "spatial_pattern_r2": 0.0619028875500455,
+        "n_windows": 404,
+        "n_lois": 4
+      },
+      "independent": {
+        "mae": 0.020586549079861162,
+        "local_residual_mae": 0.020574422097284946,
+        "spatial_pattern_r2": 0.24745797985988377,
+        "n_windows": 404,
+        "n_lois": 4
+      },
+      "coupled": {
+        "mae": 0.01972822597688039,
+        "local_residual_mae": 0.01971964426192512,
+        "spatial_pattern_r2": 0.3200985358176765,
+        "n_windows": 404,
+        "n_lois": 4
+      },
+      "shuffled_topology": {
+        "mae": 0.01985997211504951,
+        "local_residual_mae": 0.019847129831797476,
+        "spatial_pattern_r2": 0.31833352692706834,
+        "n_windows": 404.0,
+        "n_lois": 4.0
+      }
+    }
+  },
+  "selected_coefficients": {
+    "5": {
+      "coupled": [
+        0.03,
+        0.04,
+        1.0
+      ],
+      "independent": [
+        0,
+        0.04,
+        1.0
+      ],
+      "shuffled_topology": [
+        0.03,
+        0.04,
+        1.0
+      ],
+      "gain": 1.0
+    },
+    "15": {
+      "coupled": [
+        0.03,
+        0.04,
+        1.0
+      ],
+      "independent": [
+        0,
+        0.04,
+        1.0
+      ],
+      "shuffled_topology": [
+        0.03,
+        0.04,
+        1.0
+      ],
+      "gain": 1.0
+    },
+    "85": {
+      "coupled": [
+        0.03,
+        0.04,
+        1.0
+      ],
+      "independent": [
+        0,
+        0.04,
+        1.0
+      ],
+      "shuffled_topology": [
+        0.03,
+        0.04,
+        1.0
+      ],
+      "gain": 1.0
+    }
+  },
+  "summary": {
+    "persistence": {
+      "cell_macro_mae": 0.022961432184163008,
+      "cell_macro_spatial_pattern_r2": 0.07231101447632078,
+      "cells_better_than_uniform": 0
+    },
+    "uniform": {
+      "cell_macro_mae": 0.021919336949775745,
+      "cell_macro_spatial_pattern_r2": 0.07231101447632071,
+      "cells_better_than_uniform": 0
+    },
+    "gain": {
+      "cell_macro_mae": 0.021508907609826728,
+      "cell_macro_spatial_pattern_r2": 0.10845530814581356,
+      "cells_better_than_uniform": 6
+    },
+    "independent": {
+      "cell_macro_mae": 0.019329266424238534,
+      "cell_macro_spatial_pattern_r2": 0.2811377303501889,
+      "cells_better_than_uniform": 6
+    },
+    "coupled": {
+      "cell_macro_mae": 0.018541530251221777,
+      "cell_macro_spatial_pattern_r2": 0.343099231586585,
+      "cells_better_than_uniform": 6
+    },
+    "shuffled_topology": {
+      "cell_macro_mae": 0.018771253178101726,
+      "cell_macro_spatial_pattern_r2": 0.33935340381360074,
+      "cells_better_than_uniform": 6
+    }
+  },
+  "paired_cell_contrasts": {
+    "gain_vs_uniform": {
+      "mean_absolute_gain": 0.00041042933994901433,
+      "cell_bootstrap_95": [
+        0.00014697137414056496,
+        0.0007926407118538521
+      ],
+      "per_cell_gain": {
+        "load5_cell01": 9.356499225044931e-05,
+        "load5_cell02": 8.115227540525863e-05,
+        "load15_cell01": 0.0005162105380191843,
+        "load15_cell02": 0.0001040885421401544,
+        "load85_cell01": 0.0012392545244872197,
+        "load85_cell02": 0.0004283051673918195
+      }
+    },
+    "independent_vs_uniform": {
+      "mean_absolute_gain": 0.0025900705255372087,
+      "cell_bootstrap_95": [
+        0.001749717177603228,
+        0.0036518085317676814
+      ],
+      "per_cell_gain": {
+        "load5_cell01": 0.0013897379314567523,
+        "load5_cell02": 0.0015970850146162473,
+        "load15_cell01": 0.0029361779948302337,
+        "load15_cell02": 0.001801193739651201,
+        "load85_cell01": 0.004888656313811697,
+        "load85_cell02": 0.0029275721588571217
+      }
+    },
+    "coupled_vs_uniform": {
+      "mean_absolute_gain": 0.0033778066985539726,
+      "cell_bootstrap_95": [
+        0.0022269518083908608,
+        0.00474226213778423
+      ],
+      "per_cell_gain": {
+        "load5_cell01": 0.0015305218001790202,
+        "load5_cell02": 0.00201740688380702,
+        "load15_cell01": 0.004169484461530929,
+        "load15_cell02": 0.0024921250939851057,
+        "load85_cell01": 0.006271406689983869,
+        "load85_cell02": 0.0037858952618378926
+      }
+    },
+    "shuffled_topology_vs_uniform": {
+      "mean_absolute_gain": 0.0031480837716740193,
+      "cell_bootstrap_95": [
+        0.0019728904141927866,
+        0.0045824518829215115
+      ],
+      "per_cell_gain": {
+        "load5_cell01": 0.0014057625516179836,
+        "load5_cell02": 0.001545096857564713,
+        "load15_cell01": 0.003855296672957347,
+        "load15_cell02": 0.0022814745431225542,
+        "load85_cell01": 0.0061467228811127456,
+        "load85_cell02": 0.003654149123668772
+      }
+    }
+  }
+}

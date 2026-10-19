@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "message": "The solver successfully reached the end of the integration interval.",
+  "computed_ms": 1000.0,
+  "runtime_seconds": 25.522063200129196,
+  "rhs_calls": 4592,
+  "solver_nfev": 2389,
+  "solver_njev": 43,
+  "V_MAE_mV": 0.011440418662476418,
+  "V_max_error_mV": 0.12352994128749728,
+  "Ca_MAE_uM": 9.833663040859998e-05,
+  "T_MAE_kPa": 0.011233513754202926
+}

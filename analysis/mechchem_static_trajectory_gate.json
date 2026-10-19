@@ -1,0 +1,48 @@
+{
+  "model": "ORd-MechChem, static-preload independent equation family",
+  "valid_cells": 19,
+  "cell_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "neighbor_count": 3,
+  "loads": [
+    1.0,
+    1.05,
+    1.075,
+    1.1
+  ],
+  "truth": "Full 0-999 ms V/Ca/T trajectories at 5-ms sampling",
+  "scale_V_Ca_T": [
+    1.0,
+    0.026846307805378326,
+    3.5204751760278614
+  ],
+  "baseline_future_neighbor_distance": 0.5131043149642256,
+  "plus_105_future_neighbor_distance": 0.5086978855985744,
+  "improvement": 0.004406429365651221,
+  "improvement_bootstrap95": [
+    0.0,
+    0.013219288096953651
+  ],
+  "n_cells_improved": 2,
+  "shuffle_p_one_sided": 0.000999000999000999,
+  "caveat": "Exploratory 19 cells, static lengths with no direct SAC. Not the same dynamic protocol, so it does not validate ToR-ORd/SAC-Land trajectory coordinates."
+}

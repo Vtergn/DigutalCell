@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "target_lambda": 1.125,
+      "n_calibration_cells": 64,
+      "n_test_cells": 64,
+      "k": 59,
+      "q_kPa": 4.725493889002962,
+      "point_MAE_kPa": 1.2377285440203838,
+      "simultaneous_coverage": 0.890625,
+      "covered_cells": 57,
+      "pointwise_coverage": 0.9794954318936877,
+      "mean_width_kPa": 8.698145830337346,
+      "interval_score_kPa": 9.048670556845321
+    },
+    {
+      "target_lambda": 1.15,
+      "n_calibration_cells": 64,
+      "n_test_cells": 64,
+      "k": 59,
+      "q_kPa": 7.826938669314554,
+      "point_MAE_kPa": 2.2219376729669844,
+      "simultaneous_coverage": 0.875,
+      "covered_cells": 56,
+      "pointwise_coverage": 0.9490240863787376,
+      "mean_width_kPa": 14.408308085972202,
+      "interval_score_kPa": 17.15121590413734
+    }
+  ],
+  "split": "First 64 vs last 64 clean held-out cells in frozen order",
+  "score": "Maximum absolute error over 301 target waveform samples per cell",
+  "scope": "Exploratory only: the same 128-cell cohort informed earlier model choices. These two target loads do not constitute a newly sealed independent UQ test."
+}

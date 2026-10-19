@@ -1,0 +1,1 @@
+This is a real RK4 rollout test with a bounded derivative residual. The prior is a fitted three-output reduced vector field, not the full native ToR-ORd/SAC-Land RHS. Results are therefore a feasibility gate, not a full cardiac UDE claim.

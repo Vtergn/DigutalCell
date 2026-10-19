@@ -1,0 +1,71 @@
+{
+  "n_calibration": 32,
+  "n_evaluation": 32,
+  "results": [
+    {
+      "target_lambda": 1.125,
+      "calibration_top_5_scores": [
+        5.573843833273088,
+        6.368925995871704,
+        6.619939759087186,
+        7.129609179396752,
+        8.327042544480252
+      ],
+      "calibration_top_5_cell_ids": [
+        4346,
+        2880,
+        3024,
+        4531,
+        3190
+      ],
+      "calibration_q_rank30": 6.619939759087186,
+      "test_score_median": 3.873736763555665,
+      "test_score_max": 7.60385209210692,
+      "missed_test_cell_ids": [
+        234,
+        1004,
+        4277
+      ],
+      "missed_test_observed_T11_peaks_kPa": [
+        50.65554195863214,
+        106.44343439291973,
+        62.632088470019454
+      ],
+      "observed_T11_peak_mean_cal_kPa": 52.46919352492792,
+      "observed_T11_peak_mean_test_kPa": 54.97188697106337,
+      "true_target_peak_mean_cal_kPa": 63.68535204231739,
+      "true_target_peak_mean_test_kPa": 67.62503391504288,
+      "ensemble_ESS_median_cal": 17.560629292991,
+      "ensemble_ESS_median_test": 17.811961522903125
+    },
+    {
+      "target_lambda": 1.15,
+      "calibration_top_5_scores": [
+        6.205016685330378,
+        6.48405916881145,
+        8.305428103640748,
+        9.438403144775544,
+        9.573937063890474
+      ],
+      "calibration_top_5_cell_ids": [
+        2880,
+        3024,
+        4346,
+        3190,
+        4531
+      ],
+      "calibration_q_rank30": 8.305428103640748,
+      "test_score_median": 4.415810340478668,
+      "test_score_max": 8.18350754669552,
+      "missed_test_cell_ids": [],
+      "missed_test_observed_T11_peaks_kPa": [],
+      "observed_T11_peak_mean_cal_kPa": 52.46919352492792,
+      "observed_T11_peak_mean_test_kPa": 54.97188697106337,
+      "true_target_peak_mean_cal_kPa": 76.31454649106504,
+      "true_target_peak_mean_test_kPa": 82.42097503684236,
+      "ensemble_ESS_median_cal": 17.560629292991,
+      "ensemble_ESS_median_test": 17.811961522903125
+    }
+  ],
+  "scope": "Post-score descriptive audit only; no changes to the pre-registered prediction or interval method."
+}

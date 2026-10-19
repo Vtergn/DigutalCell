@@ -1,0 +1,2419 @@
+{
+  "design": "48 train and 16 off-grid test variants; 3 parameters; 3 loads; 40 beats",
+  "convergence_gate": "last-four-beat APD range <=5ms AND Ca peak range <=1%",
+  "convergence_failures": [
+    {
+      "id": "train_016",
+      "split": "train",
+      "load": "l06",
+      "APD_range_ms": 5.0,
+      "Ca_range_fraction": 0.01238282301044305
+    },
+    {
+      "id": "train_036",
+      "split": "train",
+      "load": "l06",
+      "APD_range_ms": 6.0,
+      "Ca_range_fraction": 0.013830832212985936
+    },
+    {
+      "id": "train_036",
+      "split": "train",
+      "load": "l10",
+      "APD_range_ms": 6.0,
+      "Ca_range_fraction": 0.008322724540906348
+    },
+    {
+      "id": "train_041",
+      "split": "train",
+      "load": "l06",
+      "APD_range_ms": 5.0,
+      "Ca_range_fraction": 0.012387648489507295
+    },
+    {
+      "id": "train_041",
+      "split": "train",
+      "load": "l10",
+      "APD_range_ms": 6.0,
+      "Ca_range_fraction": 0.009179614314875252
+    },
+    {
+      "id": "test_006",
+      "split": "test",
+      "load": "l06",
+      "APD_range_ms": 5.0,
+      "Ca_range_fraction": 0.011774089770812112
+    }
+  ],
+  "all_conditions_pass_convergence": false,
+  "rows": [
+    {
+      "id": "train_000",
+      "split": "train",
+      "mct_gain": 0.44405680845115236,
+      "pCa0_scale": 1.04673032610975,
+      "serca_scale": 1.0280354016229565,
+      "l02": {
+        "APD_above_minus67_mV_ms": 250.0,
+        "Ca_peak_uM": 0.4237907712736036,
+        "gel_stress_peak_kPa": 0.028519519681575088,
+        "pCa_multiplier_peak": 1.0383866625471498,
+        "force_peak_kPa": 0.6599130071743348,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0007015300645090702,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 259.0,
+        "Ca_peak_uM": 0.4507978172360115,
+        "gel_stress_peak_kPa": 0.6350163977763291,
+        "pCa_multiplier_peak": 1.0857787419687626,
+        "force_peak_kPa": 1.155355812139613,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0013945193221215296,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 287.0,
+        "Ca_peak_uM": 0.5340073454735778,
+        "gel_stress_peak_kPa": 1.9568330783590482,
+        "pCa_multiplier_peak": 1.1970233651463358,
+        "force_peak_kPa": 2.6687204991095155,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0035453673319006925,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_001",
+      "split": "train",
+      "mct_gain": 0.518771355159038,
+      "pCa0_scale": 0.9541630181687759,
+      "serca_scale": 0.8778787441649445,
+      "l02": {
+        "APD_above_minus67_mV_ms": 232.0,
+        "Ca_peak_uM": 0.3634184609921011,
+        "gel_stress_peak_kPa": 0.02552889196927011,
+        "pCa_multiplier_peak": 1.0446364132244694,
+        "force_peak_kPa": 0.5992080500893128,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0006320658484480685,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 240.0,
+        "Ca_peak_uM": 0.3807217883594227,
+        "gel_stress_peak_kPa": 0.547843116382271,
+        "pCa_multiplier_peak": 1.090444855240066,
+        "force_peak_kPa": 0.9991795336281712,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00032757535593403754,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 262.0,
+        "Ca_peak_uM": 0.43061700896948535,
+        "gel_stress_peak_kPa": 1.4799517221110357,
+        "pCa_multiplier_peak": 1.2154532233922426,
+        "force_peak_kPa": 2.024603255343431,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0014363156529211914,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_002",
+      "split": "train",
+      "mct_gain": 0.3291795656373937,
+      "pCa0_scale": 0.9180994086088637,
+      "serca_scale": 0.9332140477064615,
+      "l02": {
+        "APD_above_minus67_mV_ms": 222.0,
+        "Ca_peak_uM": 0.33188165497885747,
+        "gel_stress_peak_kPa": 0.023670005095537138,
+        "pCa_multiplier_peak": 1.0282411958647983,
+        "force_peak_kPa": 0.5287064279683128,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0010439064833226302,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 225.0,
+        "Ca_peak_uM": 0.33920544540421355,
+        "gel_stress_peak_kPa": 0.47816136383803487,
+        "pCa_multiplier_peak": 1.0527395030615023,
+        "force_peak_kPa": 0.8527205552442395,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0009568599295712239,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 231.0,
+        "Ca_peak_uM": 0.3505671006349567,
+        "gel_stress_peak_kPa": 1.0372392117976674,
+        "pCa_multiplier_peak": 1.0975047082186804,
+        "force_peak_kPa": 1.3961672915023389,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0008721664892255128,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_003",
+      "split": "train",
+      "mct_gain": 0.7434049610695457,
+      "pCa0_scale": 0.9361683907544386,
+      "serca_scale": 0.8655304326543037,
+      "l02": {
+        "APD_above_minus67_mV_ms": 232.0,
+        "Ca_peak_uM": 0.3629721765647049,
+        "gel_stress_peak_kPa": 0.02551205927550365,
+        "pCa_multiplier_peak": 1.0639627793558053,
+        "force_peak_kPa": 0.6018295890743075,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0006254190947329047,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 243.0,
+        "Ca_peak_uM": 0.38847413003323383,
+        "gel_stress_peak_kPa": 0.5601113324558034,
+        "pCa_multiplier_peak": 1.1315200410395163,
+        "force_peak_kPa": 1.0267260256932649,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00011243605892621197,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 284.0,
+        "Ca_peak_uM": 0.4909681647164556,
+        "gel_stress_peak_kPa": 1.7702972295878385,
+        "pCa_multiplier_peak": 1.3298414742435964,
+        "force_peak_kPa": 2.453988802699919,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0037034595878252625,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_004",
+      "split": "train",
+      "mct_gain": 0.940868465191478,
+      "pCa0_scale": 0.9950440815993331,
+      "serca_scale": 1.1074890206032697,
+      "l02": {
+        "APD_above_minus67_mV_ms": 246.0,
+        "Ca_peak_uM": 0.41186286986212994,
+        "gel_stress_peak_kPa": 0.02785696227639923,
+        "pCa_multiplier_peak": 1.0812496885493297,
+        "force_peak_kPa": 0.6223791719962415,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00044454205926155684,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 265.0,
+        "Ca_peak_uM": 0.4682182945911568,
+        "gel_stress_peak_kPa": 0.6512354564791162,
+        "pCa_multiplier_peak": 1.185178937155227,
+        "force_peak_kPa": 1.178706947210382,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0017697142668291169,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 313.0,
+        "Ca_peak_uM": 0.62722653893659,
+        "gel_stress_peak_kPa": 2.316187467622764,
+        "pCa_multiplier_peak": 1.417447201113983,
+        "force_peak_kPa": 3.1794238709213096,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0030859258426394324,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_005",
+      "split": "train",
+      "mct_gain": 0.8807213171998718,
+      "pCa0_scale": 1.0238068531581235,
+      "serca_scale": 1.0879144484455257,
+      "l02": {
+        "APD_above_minus67_mV_ms": 252.0,
+        "Ca_peak_uM": 0.43343002819616483,
+        "gel_stress_peak_kPa": 0.02891381605133582,
+        "pCa_multiplier_peak": 1.0761811371659993,
+        "force_peak_kPa": 0.6598863210899744,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0009533989635113556,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 272.0,
+        "Ca_peak_uM": 0.49785419889666327,
+        "gel_stress_peak_kPa": 0.6881014501903057,
+        "pCa_multiplier_peak": 1.1807892749381985,
+        "force_peak_kPa": 1.2586635782775815,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0027141706782191966,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 317.0,
+        "Ca_peak_uM": 0.6459145953683043,
+        "gel_stress_peak_kPa": 2.381772752594598,
+        "pCa_multiplier_peak": 1.3907459255559869,
+        "force_peak_kPa": 3.286460717562996,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.003688518730062389,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_006",
+      "split": "train",
+      "mct_gain": 1.2335893442670265,
+      "pCa0_scale": 1.0194880869040155,
+      "serca_scale": 0.9784664667600251,
+      "l02": {
+        "APD_above_minus67_mV_ms": 260.0,
+        "Ca_peak_uM": 0.4593471284373558,
+        "gel_stress_peak_kPa": 0.030204774118287623,
+        "pCa_multiplier_peak": 1.1069186822790809,
+        "force_peak_kPa": 0.729735287066327,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0016357899948772339,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 299.0,
+        "Ca_peak_uM": 0.5940608246343543,
+        "gel_stress_peak_kPa": 0.7959703115959825,
+        "pCa_multiplier_peak": 1.2854010602372157,
+        "force_peak_kPa": 1.5181797531088053,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.006603839619654551,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 343.0,
+        "Ca_peak_uM": 0.7257966223587894,
+        "gel_stress_peak_kPa": 2.6114895615575398,
+        "pCa_multiplier_peak": 1.5473305136307296,
+        "force_peak_kPa": 3.7039467372560275,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.005402334449949359,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_007",
+      "split": "train",
+      "mct_gain": 0.5848458133864081,
+      "pCa0_scale": 0.9743804170545353,
+      "serca_scale": 0.8933132385441676,
+      "l02": {
+        "APD_above_minus67_mV_ms": 238.0,
+        "Ca_peak_uM": 0.3802148882293649,
+        "gel_stress_peak_kPa": 0.02643433507943034,
+        "pCa_multiplier_peak": 1.0503928946511336,
+        "force_peak_kPa": 0.6246619315609102,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00034887623430045764,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 247.0,
+        "Ca_peak_uM": 0.4040899761245613,
+        "gel_stress_peak_kPa": 0.5809776759381916,
+        "pCa_multiplier_peak": 1.106060452459587,
+        "force_peak_kPa": 1.0647978326040282,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00022355590985968484,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 280.0,
+        "Ca_peak_uM": 0.48911537620204254,
+        "gel_stress_peak_kPa": 1.7635295490693712,
+        "pCa_multiplier_peak": 1.2594901938340362,
+        "force_peak_kPa": 2.431669780720003,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0033374465890713212,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_008",
+      "split": "train",
+      "mct_gain": 0.2742409396765326,
+      "pCa0_scale": 0.9084278281327617,
+      "serca_scale": 0.8965630994912182,
+      "l02": {
+        "APD_above_minus67_mV_ms": 219.0,
+        "Ca_peak_uM": 0.3250541209401768,
+        "gel_stress_peak_kPa": 0.02327386026243506,
+        "pCa_multiplier_peak": 1.0235132741758104,
+        "force_peak_kPa": 0.5242306544936034,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0011584984788397942,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 222.0,
+        "Ca_peak_uM": 0.33057768752190986,
+        "gel_stress_peak_kPa": 0.46582598433137823,
+        "pCa_multiplier_peak": 1.0432743387348662,
+        "force_peak_kPa": 0.8332031482365223,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0011083593336952233,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 226.0,
+        "Ca_peak_uM": 0.33810812450807337,
+        "gel_stress_peak_kPa": 0.9731536535039954,
+        "pCa_multiplier_peak": 1.0763047845534663,
+        "force_peak_kPa": 1.3149417804996302,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0010428862228293978,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_009",
+      "split": "train",
+      "mct_gain": 1.0206889265736558,
+      "pCa0_scale": 1.014656974922159,
+      "serca_scale": 0.9879867781051022,
+      "l02": {
+        "APD_above_minus67_mV_ms": 254.0,
+        "Ca_peak_uM": 0.4382978312388495,
+        "gel_stress_peak_kPa": 0.029242860277511707,
+        "pCa_multiplier_peak": 1.0883334521197414,
+        "force_peak_kPa": 0.6937840598514,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0010236979233801654,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 281.0,
+        "Ca_peak_uM": 0.5219622019807315,
+        "gel_stress_peak_kPa": 0.7218658754552175,
+        "pCa_multiplier_peak": 1.2176366927234086,
+        "force_peak_kPa": 1.3487526643258236,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.003743557187802383,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 329.0,
+        "Ca_peak_uM": 0.6751804214396946,
+        "gel_stress_peak_kPa": 2.470746257265112,
+        "pCa_multiplier_peak": 1.4528664663517084,
+        "force_peak_kPa": 3.471044979024404,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.0046752530973064674,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_010",
+      "split": "train",
+      "mct_gain": 1.1803445462324405,
+      "pCa0_scale": 0.9071048888358746,
+      "serca_scale": 1.103572315937597,
+      "l02": {
+        "APD_above_minus67_mV_ms": 230.0,
+        "Ca_peak_uM": 0.3586245771901425,
+        "gel_stress_peak_kPa": 0.02507873912347737,
+        "pCa_multiplier_peak": 1.1014883948008298,
+        "force_peak_kPa": 0.5401520946987058,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0005985026059203467,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 246.0,
+        "Ca_peak_uM": 0.3994739042609802,
+        "gel_stress_peak_kPa": 0.5600485402495773,
+        "pCa_multiplier_peak": 1.2088059214907467,
+        "force_peak_kPa": 0.9947857760940788,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 8.074945888908455e-05,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 304.0,
+        "Ca_peak_uM": 0.581878841870541,
+        "gel_stress_peak_kPa": 2.142502298870988,
+        "pCa_multiplier_peak": 1.5237065926716422,
+        "force_peak_kPa": 2.9222361311233116,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0020522999817814886,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_011",
+      "split": "train",
+      "mct_gain": 0.6115761348334758,
+      "pCa0_scale": 1.0572723497573546,
+      "serca_scale": 1.0381655444040574,
+      "l02": {
+        "APD_above_minus67_mV_ms": 256.0,
+        "Ca_peak_uM": 0.44524056274645585,
+        "gel_stress_peak_kPa": 0.029510338991589082,
+        "pCa_multiplier_peak": 1.0529496935211284,
+        "force_peak_kPa": 0.6902623135028604,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0012757139600288413,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 271.0,
+        "Ca_peak_uM": 0.4920598894643249,
+        "gel_stress_peak_kPa": 0.68487861725011,
+        "pCa_multiplier_peak": 1.1250828677741824,
+        "force_peak_kPa": 1.2591177413477195,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.002662036581589802,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 307.0,
+        "Ca_peak_uM": 0.6098408951176006,
+        "gel_stress_peak_kPa": 2.2565536637252954,
+        "pCa_multiplier_peak": 1.2713494795053355,
+        "force_peak_kPa": 3.113821901103945,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.004280519286251051,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_012",
+      "split": "train",
+      "mct_gain": 0.8497490518699673,
+      "pCa0_scale": 1.0707234705113957,
+      "serca_scale": 1.0847579148454076,
+      "l02": {
+        "APD_above_minus67_mV_ms": 264.0,
+        "Ca_peak_uM": 0.4768215293246986,
+        "gel_stress_peak_kPa": 0.030856142205645663,
+        "pCa_multiplier_peak": 1.0737249316758055,
+        "force_peak_kPa": 0.7244233363487419,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0021762449739218207,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 289.0,
+        "Ca_peak_uM": 0.5671463523961809,
+        "gel_stress_peak_kPa": 0.7636198386595758,
+        "pCa_multiplier_peak": 1.1897728237637886,
+        "force_peak_kPa": 1.4227884191921927,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.005184256586113649,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 327.0,
+        "Ca_peak_uM": 0.6916818340362214,
+        "gel_stress_peak_kPa": 2.5261890004156564,
+        "pCa_multiplier_peak": 1.3770133816749983,
+        "force_peak_kPa": 3.5121729970299307,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.004731747066076898,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_013",
+      "split": "train",
+      "mct_gain": 1.2893356217546417,
+      "pCa0_scale": 0.9654627286145874,
+      "serca_scale": 1.0026032082142995,
+      "l02": {
+        "APD_above_minus67_mV_ms": 247.0,
+        "Ca_peak_uM": 0.41254833118820444,
+        "gel_stress_peak_kPa": 0.027999290022361623,
+        "pCa_multiplier_peak": 1.1113666742390522,
+        "force_peak_kPa": 0.6489477780767956,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0003937830109767955,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 275.0,
+        "Ca_peak_uM": 0.49963644197192847,
+        "gel_stress_peak_kPa": 0.6955684615950398,
+        "pCa_multiplier_peak": 1.266912584146931,
+        "force_peak_kPa": 1.2889864792858154,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0028171826022525795,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 331.0,
+        "Ca_peak_uM": 0.6778318311063104,
+        "gel_stress_peak_kPa": 2.4807884880117235,
+        "pCa_multiplier_peak": 1.5720616742006441,
+        "force_peak_kPa": 3.479642007060189,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.0038765326754181114,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_014",
+      "split": "train",
+      "mct_gain": 0.9314370681632436,
+      "pCa0_scale": 1.0366657908733337,
+      "serca_scale": 1.0589150040799569,
+      "l02": {
+        "APD_above_minus67_mV_ms": 257.0,
+        "Ca_peak_uM": 0.45024726347093147,
+        "gel_stress_peak_kPa": 0.029718253923212107,
+        "pCa_multiplier_peak": 1.0806690981780542,
+        "force_peak_kPa": 0.6922545560864239,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0014144363786930466,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 282.0,
+        "Ca_peak_uM": 0.531696283296483,
+        "gel_stress_peak_kPa": 0.7280524979947144,
+        "pCa_multiplier_peak": 1.1999827261468128,
+        "force_peak_kPa": 1.349171651114661,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.003916821023041848,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 325.0,
+        "Ca_peak_uM": 0.6747708247768206,
+        "gel_stress_peak_kPa": 2.474376408719549,
+        "pCa_multiplier_peak": 1.4132690874619374,
+        "force_peak_kPa": 3.442194000390097,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.004285238483846225,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_015",
+      "split": "train",
+      "mct_gain": 0.2166303592945597,
+      "pCa0_scale": 1.0835115052765136,
+      "serca_scale": 1.1332520443456415,
+      "l02": {
+        "APD_above_minus67_mV_ms": 252.0,
+        "Ca_peak_uM": 0.43436530476864216,
+        "gel_stress_peak_kPa": 0.028903502305481256,
+        "pCa_multiplier_peak": 1.0187379155246068,
+        "force_peak_kPa": 0.6503200750252041,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0010352584964118227,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 257.0,
+        "Ca_peak_uM": 0.4478740239437525,
+        "gel_stress_peak_kPa": 0.624340744980708,
+        "pCa_multiplier_peak": 1.0413320470281948,
+        "force_peak_kPa": 1.119589403470056,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0013868266535567845,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 269.0,
+        "Ca_peak_uM": 0.48326735527365905,
+        "gel_stress_peak_kPa": 1.7139237256819064,
+        "pCa_multiplier_peak": 1.0960968591719178,
+        "force_peak_kPa": 2.2912534278354215,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.002369519216707262,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_016",
+      "split": "train",
+      "mct_gain": 1.2308110327961699,
+      "pCa0_scale": 1.0609810898215937,
+      "serca_scale": 0.9249264645522676,
+      "l02": {
+        "APD_above_minus67_mV_ms": 274.0,
+        "Ca_peak_uM": 0.5053784563196628,
+        "gel_stress_peak_kPa": 0.03218719538456376,
+        "pCa_multiplier_peak": 1.10700769064263,
+        "force_peak_kPa": 0.8186392298414485,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0032387876803174546,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 328.0,
+        "Ca_peak_uM": 0.7180581975442764,
+        "gel_stress_peak_kPa": 0.8993406821046935,
+        "pCa_multiplier_peak": 1.3177351290846295,
+        "force_peak_kPa": 1.7845836426711965,
+        "beat37_to40_APD_range_ms": 5.0,
+        "beat37_to40_Ca_range_fraction": 0.01238282301044305,
+        "convergence_pass": false
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 356.0,
+        "Ca_peak_uM": 0.7753021826159611,
+        "gel_stress_peak_kPa": 2.713826915688586,
+        "pCa_multiplier_peak": 1.5460958530709528,
+        "force_peak_kPa": 3.91439579198297,
+        "beat37_to40_APD_range_ms": 5.0,
+        "beat37_to40_Ca_range_fraction": 0.0086789310776529,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_017",
+      "split": "train",
+      "mct_gain": 0.3443566997925346,
+      "pCa0_scale": 1.0398274238220702,
+      "serca_scale": 0.9107370713372523,
+      "l02": {
+        "APD_above_minus67_mV_ms": 248.0,
+        "Ca_peak_uM": 0.41370856579697796,
+        "gel_stress_peak_kPa": 0.02813313511234363,
+        "pCa_multiplier_peak": 1.0297501064236048,
+        "force_peak_kPa": 0.6769839388797102,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00044510632286995816,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 255.0,
+        "Ca_peak_uM": 0.43261679012633564,
+        "gel_stress_peak_kPa": 0.619200860160554,
+        "pCa_multiplier_peak": 1.0653102118364735,
+        "force_peak_kPa": 1.1412816618187542,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0009472822711240174,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 276.0,
+        "Ca_peak_uM": 0.4875835811121333,
+        "gel_stress_peak_kPa": 1.7606060573540518,
+        "pCa_multiplier_peak": 1.1527872550050555,
+        "force_peak_kPa": 2.4183935808947603,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0030279720002410154,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_018",
+      "split": "train",
+      "mct_gain": 0.30618753954944716,
+      "pCa0_scale": 1.0765168038241033,
+      "serca_scale": 0.9730531993314602,
+      "l02": {
+        "APD_above_minus67_mV_ms": 255.0,
+        "Ca_peak_uM": 0.4402807807180734,
+        "gel_stress_peak_kPa": 0.029346816515160162,
+        "pCa_multiplier_peak": 1.0265026749548802,
+        "force_peak_kPa": 0.7013766146472028,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0011489042597768928,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 262.0,
+        "Ca_peak_uM": 0.46128469684378287,
+        "gel_stress_peak_kPa": 0.6521658525495969,
+        "pCa_multiplier_peak": 1.060327389365984,
+        "force_peak_kPa": 1.1999323818485317,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0017275152172989646,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 282.0,
+        "Ca_peak_uM": 0.5194426908400458,
+        "gel_stress_peak_kPa": 1.9006110172655404,
+        "pCa_multiplier_peak": 1.1358497616601642,
+        "force_peak_kPa": 2.6026466317829735,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0036477832834294083,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_019",
+      "split": "train",
+      "mct_gain": 0.6388145357431216,
+      "pCa0_scale": 0.9990424208160703,
+      "serca_scale": 1.014251155902812,
+      "l02": {
+        "APD_above_minus67_mV_ms": 243.0,
+        "Ca_peak_uM": 0.39892338186408094,
+        "gel_stress_peak_kPa": 0.027307476033281465,
+        "pCa_multiplier_peak": 1.0551181992117433,
+        "force_peak_kPa": 0.6241281929925563,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00012302379023100142,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 254.0,
+        "Ca_peak_uM": 0.4308564582344868,
+        "gel_stress_peak_kPa": 0.6097739714121913,
+        "pCa_multiplier_peak": 1.1198324629366836,
+        "force_peak_kPa": 1.1053954682074412,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0008536778013554194,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 292.0,
+        "Ca_peak_uM": 0.5439986115578689,
+        "gel_stress_peak_kPa": 1.9978708918895458,
+        "pCa_multiplier_peak": 1.283435785675696,
+        "force_peak_kPa": 2.7350539098713105,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.00336971382375105,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_020",
+      "split": "train",
+      "mct_gain": 1.2624670059991867,
+      "pCa0_scale": 0.9330349037275778,
+      "serca_scale": 0.8572741820054067,
+      "l02": {
+        "APD_above_minus67_mV_ms": 240.0,
+        "Ca_peak_uM": 0.3874495585684128,
+        "gel_stress_peak_kPa": 0.02683708444978171,
+        "pCa_multiplier_peak": 1.108848190984097,
+        "force_peak_kPa": 0.6481773783462809,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00020549332874234653,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 265.0,
+        "Ca_peak_uM": 0.45200476378419013,
+        "gel_stress_peak_kPa": 0.6471437798525881,
+        "pCa_multiplier_peak": 1.2473082715438977,
+        "force_peak_kPa": 1.2133258591026304,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.001603358512921458,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 332.0,
+        "Ca_peak_uM": 0.6445551826511737,
+        "gel_stress_peak_kPa": 2.3571759564718957,
+        "pCa_multiplier_peak": 1.5601251516489532,
+        "force_peak_kPa": 3.3677582426901553,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.00481964148919183,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_021",
+      "split": "train",
+      "mct_gain": 0.48839038126677947,
+      "pCa0_scale": 0.9691998274825012,
+      "serca_scale": 1.1195705070067223,
+      "l02": {
+        "APD_above_minus67_mV_ms": 232.0,
+        "Ca_peak_uM": 0.36543833337132814,
+        "gel_stress_peak_kPa": 0.02543929722168809,
+        "pCa_multiplier_peak": 1.042016470190801,
+        "force_peak_kPa": 0.5480261745000937,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0004225588370959711,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 239.0,
+        "Ca_peak_uM": 0.38200751253699916,
+        "gel_stress_peak_kPa": 0.533803624257297,
+        "pCa_multiplier_peak": 1.0837260967923088,
+        "force_peak_kPa": 0.9411993871795838,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00019845140311592076,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 256.0,
+        "Ca_peak_uM": 0.42745517085658924,
+        "gel_stress_peak_kPa": 1.427517769351979,
+        "pCa_multiplier_peak": 1.1971787495594564,
+        "force_peak_kPa": 1.8980094033319912,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0007304518301490591,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_022",
+      "split": "train",
+      "mct_gain": 0.38680452550913547,
+      "pCa0_scale": 1.0088049976578033,
+      "serca_scale": 0.9169584586968971,
+      "l02": {
+        "APD_above_minus67_mV_ms": 241.0,
+        "Ca_peak_uM": 0.3929534091051452,
+        "gel_stress_peak_kPa": 0.027084302477092828,
+        "pCa_multiplier_peak": 1.0333626407538645,
+        "force_peak_kPa": 0.6401553850524212,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 8.169120870853722e-05,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 248.0,
+        "Ca_peak_uM": 0.4104040943551962,
+        "gel_stress_peak_kPa": 0.5884612775044218,
+        "pCa_multiplier_peak": 1.0707679122799592,
+        "force_peak_kPa": 1.0760504481733069,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.000366536037722215,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 268.0,
+        "Ca_peak_uM": 0.46127580292420345,
+        "gel_stress_peak_kPa": 1.6327656694349004,
+        "pCa_multiplier_peak": 1.169841904178277,
+        "force_peak_kPa": 2.2310872098314447,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.002220819812641837,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_023",
+      "split": "train",
+      "mct_gain": 1.0480225428830858,
+      "pCa0_scale": 1.0330064203316645,
+      "serca_scale": 0.9570934106540439,
+      "l02": {
+        "APD_above_minus67_mV_ms": 261.0,
+        "Ca_peak_uM": 0.45849822235027893,
+        "gel_stress_peak_kPa": 0.030186067769449428,
+        "pCa_multiplier_peak": 1.0908324342974016,
+        "force_peak_kPa": 0.7351953612917173,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0016765003640163978,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 293.0,
+        "Ca_peak_uM": 0.5650740518104038,
+        "gel_stress_peak_kPa": 0.769110518411064,
+        "pCa_multiplier_peak": 1.2354682690139098,
+        "force_peak_kPa": 1.4613499674741703,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.005562592257658574,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 337.0,
+        "Ca_peak_uM": 0.7033825072219564,
+        "gel_stress_peak_kPa": 2.5472842471470636,
+        "pCa_multiplier_peak": 1.4649761695681907,
+        "force_peak_kPa": 3.6119952850154204,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.0055618595366728266,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_024",
+      "split": "train",
+      "mct_gain": 0.8133699095714269,
+      "pCa0_scale": 0.9165174886948071,
+      "serca_scale": 1.068337294812302,
+      "l02": {
+        "APD_above_minus67_mV_ms": 227.0,
+        "Ca_peak_uM": 0.3487274939938977,
+        "gel_stress_peak_kPa": 0.024553104053610764,
+        "pCa_multiplier_peak": 1.069877696857291,
+        "force_peak_kPa": 0.5306688796647688,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0007493814172612238,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 237.0,
+        "Ca_peak_uM": 0.37247690052016585,
+        "gel_stress_peak_kPa": 0.5225940632128805,
+        "pCa_multiplier_peak": 1.1375666000648081,
+        "force_peak_kPa": 0.924678004023714,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0004841760129379088,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 272.0,
+        "Ca_peak_uM": 0.46624040431294395,
+        "gel_stress_peak_kPa": 1.6295635205519918,
+        "pCa_multiplier_peak": 1.35689160321221,
+        "force_peak_kPa": 2.19071833627531,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0017443811000328348,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_025",
+      "split": "train",
+      "mct_gain": 0.6289442142630131,
+      "pCa0_scale": 1.0264769425105587,
+      "serca_scale": 0.9667662634559091,
+      "l02": {
+        "APD_above_minus67_mV_ms": 250.0,
+        "Ca_peak_uM": 0.42136612113930677,
+        "gel_stress_peak_kPa": 0.028460634400985615,
+        "pCa_multiplier_peak": 1.054364331106161,
+        "force_peak_kPa": 0.6730571510209644,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0005859210273809278,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 263.0,
+        "Ca_peak_uM": 0.4607423625082249,
+        "gel_stress_peak_kPa": 0.6515967785286916,
+        "pCa_multiplier_peak": 1.1238383480888725,
+        "force_peak_kPa": 1.200247387654712,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0017247466244965138,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 303.0,
+        "Ca_peak_uM": 0.5800028940010997,
+        "gel_stress_peak_kPa": 2.145757786448277,
+        "pCa_multiplier_peak": 1.2790563791330967,
+        "force_peak_kPa": 2.974443184388678,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0042097407289701195,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_026",
+      "split": "train",
+      "mct_gain": 0.4570899598599369,
+      "pCa0_scale": 0.9232970144014918,
+      "serca_scale": 0.903358823832254,
+      "l02": {
+        "APD_above_minus67_mV_ms": 225.0,
+        "Ca_peak_uM": 0.34106111172121345,
+        "gel_stress_peak_kPa": 0.02423761846333646,
+        "pCa_multiplier_peak": 1.0392498284553362,
+        "force_peak_kPa": 0.5521584902205783,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.000951170581378548,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 230.0,
+        "Ca_peak_uM": 0.3526066115070847,
+        "gel_stress_peak_kPa": 0.5022211727653054,
+        "pCa_multiplier_peak": 1.0754211939572254,
+        "force_peak_kPa": 0.9037164785273841,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0008077379288585642,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 242.0,
+        "Ca_peak_uM": 0.3756512989428679,
+        "gel_stress_peak_kPa": 1.1814482639236124,
+        "pCa_multiplier_peak": 1.1543077822974723,
+        "force_peak_kPa": 1.5991651413954937,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.000384285492572127,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_027",
+      "split": "train",
+      "mct_gain": 0.9973401026258204,
+      "pCa0_scale": 0.9857272759927308,
+      "serca_scale": 1.0792870543718502,
+      "l02": {
+        "APD_above_minus67_mV_ms": 245.0,
+        "Ca_peak_uM": 0.40877259606366334,
+        "gel_stress_peak_kPa": 0.027736226769454517,
+        "pCa_multiplier_peak": 1.0861101263003021,
+        "force_peak_kPa": 0.624013583711612,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00033423738017519106,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 265.0,
+        "Ca_peak_uM": 0.4677825034975552,
+        "gel_stress_peak_kPa": 0.6526248140430655,
+        "pCa_multiplier_peak": 1.196607146185489,
+        "force_peak_kPa": 1.1854423192725125,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0017138431475157295,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 315.0,
+        "Ca_peak_uM": 0.6324526139242327,
+        "gel_stress_peak_kPa": 2.335224524377424,
+        "pCa_multiplier_peak": 1.442505156290931,
+        "force_peak_kPa": 3.218971584296413,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.003215911435814617,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_028",
+      "split": "train",
+      "mct_gain": 0.5647998348979589,
+      "pCa0_scale": 1.0058493363642564,
+      "serca_scale": 1.1295805981654228,
+      "l02": {
+        "APD_above_minus67_mV_ms": 241.0,
+        "Ca_peak_uM": 0.39572213409476065,
+        "gel_stress_peak_kPa": 0.027025842413777385,
+        "pCa_multiplier_peak": 1.0487106339143044,
+        "force_peak_kPa": 0.5933253067455252,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 7.840817220146504e-05,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 251.0,
+        "Ca_peak_uM": 0.4223043769461589,
+        "gel_stress_peak_kPa": 0.5905445063570557,
+        "pCa_multiplier_peak": 1.1035867860328408,
+        "force_peak_kPa": 1.0521637601980487,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0006022105844533732,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 281.0,
+        "Ca_peak_uM": 0.5156783837930226,
+        "gel_stress_peak_kPa": 1.8613918391541089,
+        "pCa_multiplier_peak": 1.2505953102798801,
+        "force_peak_kPa": 2.50367255324392,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0026407502234160464,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_029",
+      "split": "train",
+      "mct_gain": 0.7827106226349787,
+      "pCa0_scale": 1.0915813540505088,
+      "serca_scale": 1.1471776254517936,
+      "l02": {
+        "APD_above_minus67_mV_ms": 267.0,
+        "Ca_peak_uM": 0.49041414408490436,
+        "gel_stress_peak_kPa": 0.03135111645200997,
+        "pCa_multiplier_peak": 1.0679609856695471,
+        "force_peak_kPa": 0.7269295493176341,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.002638501377563089,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 291.0,
+        "Ca_peak_uM": 0.5787950565131726,
+        "gel_stress_peak_kPa": 0.7713916424807955,
+        "pCa_multiplier_peak": 1.1762986917464413,
+        "force_peak_kPa": 1.4296313227752644,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.005414475418396414,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 325.0,
+        "Ca_peak_uM": 0.6942751296406474,
+        "gel_stress_peak_kPa": 2.535174843431533,
+        "pCa_multiplier_peak": 1.3472796861751966,
+        "force_peak_kPa": 3.5005113739407174,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.004594616481597748,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_030",
+      "split": "train",
+      "mct_gain": 1.102141444649473,
+      "pCa0_scale": 0.9282111432572335,
+      "serca_scale": 0.9456491639050026,
+      "l02": {
+        "APD_above_minus67_mV_ms": 235.0,
+        "Ca_peak_uM": 0.37412139010942247,
+        "gel_stress_peak_kPa": 0.02607290547910241,
+        "pCa_multiplier_peak": 1.094911745944481,
+        "force_peak_kPa": 0.6001254809181538,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0003607178767833929,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 253.0,
+        "Ca_peak_uM": 0.42021846143236463,
+        "gel_stress_peak_kPa": 0.5996725815799205,
+        "pCa_multiplier_peak": 1.204316469585626,
+        "force_peak_kPa": 1.0954322769426574,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0005340186837906515,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 314.0,
+        "Ca_peak_uM": 0.5983037234217187,
+        "gel_stress_peak_kPa": 2.2101885975709985,
+        "pCa_multiplier_peak": 1.4890000265696113,
+        "force_peak_kPa": 3.0851311775095565,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0034286604733690536,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_031",
+      "split": "train",
+      "mct_gain": 0.25798647389068347,
+      "pCa0_scale": 1.0432594060113318,
+      "serca_scale": 1.1423678583429013,
+      "l02": {
+        "APD_above_minus67_mV_ms": 244.0,
+        "Ca_peak_uM": 0.4041937699949764,
+        "gel_stress_peak_kPa": 0.027438120619500062,
+        "pCa_multiplier_peak": 1.0222641315823344,
+        "force_peak_kPa": 0.6034804703915131,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0002870248720703137,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 248.0,
+        "Ca_peak_uM": 0.4166416855533992,
+        "gel_stress_peak_kPa": 0.582120804868997,
+        "pCa_multiplier_peak": 1.0468484472761954,
+        "force_peak_kPa": 1.0337785203176602,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0005420073987398448,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 259.0,
+        "Ca_peak_uM": 0.4482950321352186,
+        "gel_stress_peak_kPa": 1.5363165601399773,
+        "pCa_multiplier_peak": 1.109913138494128,
+        "force_peak_kPa": 2.0423685923168042,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.001346310357910852,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_032",
+      "split": "train",
+      "mct_gain": 0.7032607270315205,
+      "pCa0_scale": 1.0730784510750317,
+      "serca_scale": 0.98662943270517,
+      "l02": {
+        "APD_above_minus67_mV_ms": 263.0,
+        "Ca_peak_uM": 0.4693077535512452,
+        "gel_stress_peak_kPa": 0.030634567367776356,
+        "pCa_multiplier_peak": 1.0609944284004715,
+        "force_peak_kPa": 0.7423841280764927,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.001990775492810868,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 284.0,
+        "Ca_peak_uM": 0.5383456420176538,
+        "gel_stress_peak_kPa": 0.7398896265655336,
+        "pCa_multiplier_peak": 1.1529942704372078,
+        "force_peak_kPa": 1.388403272749329,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.004437636745228098,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 322.0,
+        "Ca_peak_uM": 0.6599581831356993,
+        "gel_stress_peak_kPa": 2.4234581656676863,
+        "pCa_multiplier_peak": 1.3120299210850581,
+        "force_peak_kPa": 3.396205345011284,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.0053856811804660005,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_033",
+      "split": "train",
+      "mct_gain": 1.1361740769270467,
+      "pCa0_scale": 1.000333786228897,
+      "serca_scale": 1.0960696585318461,
+      "l02": {
+        "APD_above_minus67_mV_ms": 251.0,
+        "Ca_peak_uM": 0.4301514862991791,
+        "gel_stress_peak_kPa": 0.02874955843393986,
+        "pCa_multiplier_peak": 1.098252260224588,
+        "force_peak_kPa": 0.6526655284655392,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0008517961641338525,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 278.0,
+        "Ca_peak_uM": 0.516278466769557,
+        "gel_stress_peak_kPa": 0.7084636335098335,
+        "pCa_multiplier_peak": 1.238648489369382,
+        "force_peak_kPa": 1.301142894584494,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0031979372527527676,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 326.0,
+        "Ca_peak_uM": 0.6785090723949511,
+        "gel_stress_peak_kPa": 2.487888066811485,
+        "pCa_multiplier_peak": 1.50407165279759,
+        "force_peak_kPa": 3.4473804909943584,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.0035285631506300954,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_034",
+      "split": "train",
+      "mct_gain": 0.4258907174390465,
+      "pCa0_scale": 1.0638666996318098,
+      "serca_scale": 1.0196731754281778,
+      "l02": {
+        "APD_above_minus67_mV_ms": 254.0,
+        "Ca_peak_uM": 0.4373321557363649,
+        "gel_stress_peak_kPa": 0.029167609591425323,
+        "pCa_multiplier_peak": 1.0368535232138398,
+        "force_peak_kPa": 0.6835341116907895,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0010639321940957328,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 264.0,
+        "Ca_peak_uM": 0.46644565548497013,
+        "gel_stress_peak_kPa": 0.6553669649538855,
+        "pCa_multiplier_peak": 1.0842212216135032,
+        "force_peak_kPa": 1.1992144517136352,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.001875774276900338,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 291.0,
+        "Ca_peak_uM": 0.5505830560796607,
+        "gel_stress_peak_kPa": 2.0283237944320223,
+        "pCa_multiplier_peak": 1.1889566335911084,
+        "force_peak_kPa": 2.7766984408783117,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.003929572031543878,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_035",
+      "split": "train",
+      "mct_gain": 0.23151848958253876,
+      "pCa0_scale": 0.9006196362842144,
+      "serca_scale": 0.9377730109386732,
+      "l02": {
+        "APD_above_minus67_mV_ms": 217.0,
+        "Ca_peak_uM": 0.31822133016341764,
+        "gel_stress_peak_kPa": 0.02282484409751253,
+        "pCa_multiplier_peak": 1.0198363177279972,
+        "force_peak_kPa": 0.5029022816870792,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0011601035190666248,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 219.0,
+        "Ca_peak_uM": 0.3225009665577189,
+        "gel_stress_peak_kPa": 0.44916267326453224,
+        "pCa_multiplier_peak": 1.035785602729105,
+        "force_peak_kPa": 0.7964107688597029,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0012020807552785573,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 222.0,
+        "Ca_peak_uM": 0.32774898735322283,
+        "gel_stress_peak_kPa": 0.9082475676279889,
+        "pCa_multiplier_peak": 1.0603188632438354,
+        "force_peak_kPa": 1.2214581303474654,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0011511737042225194,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_036",
+      "split": "train",
+      "mct_gain": 1.0791677333599117,
+      "pCa0_scale": 1.0827020095921276,
+      "serca_scale": 0.8506685009411404,
+      "l02": {
+        "APD_above_minus67_mV_ms": 279.0,
+        "Ca_peak_uM": 0.5161899081475281,
+        "gel_stress_peak_kPa": 0.03265148756946512,
+        "pCa_multiplier_peak": 1.0938914977672916,
+        "force_peak_kPa": 0.8664798014086503,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0037908137787210964,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 330.0,
+        "Ca_peak_uM": 0.7127023148555129,
+        "gel_stress_peak_kPa": 0.8966405393696147,
+        "pCa_multiplier_peak": 1.277810498901663,
+        "force_peak_kPa": 1.805380083882209,
+        "beat37_to40_APD_range_ms": 6.0,
+        "beat37_to40_Ca_range_fraction": 0.013830832212985936,
+        "convergence_pass": false
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 359.0,
+        "Ca_peak_uM": 0.7762695215741274,
+        "gel_stress_peak_kPa": 2.6898090999919595,
+        "pCa_multiplier_peak": 1.4787798649006387,
+        "force_peak_kPa": 3.9350084014586892,
+        "beat37_to40_APD_range_ms": 6.0,
+        "beat37_to40_Ca_range_fraction": 0.008322724540906348,
+        "convergence_pass": false
+      }
+    },
+    {
+      "id": "train_037",
+      "split": "train",
+      "mct_gain": 1.188219138410831,
+      "pCa0_scale": 1.0521589049822062,
+      "serca_scale": 1.0459750576323872,
+      "l02": {
+        "APD_above_minus67_mV_ms": 268.0,
+        "Ca_peak_uM": 0.48854696947502735,
+        "gel_stress_peak_kPa": 0.03139188569314009,
+        "pCa_multiplier_peak": 1.1031769180698476,
+        "force_peak_kPa": 0.7526061532204472,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0025801543258915072,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 310.0,
+        "Ca_peak_uM": 0.6504675088992024,
+        "gel_stress_peak_kPa": 0.8430350171924739,
+        "pCa_multiplier_peak": 1.289151579726957,
+        "force_peak_kPa": 1.612508681074205,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.00823958666789581,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 344.0,
+        "Ca_peak_uM": 0.7481381299766554,
+        "gel_stress_peak_kPa": 2.6779865967398253,
+        "pCa_multiplier_peak": 1.5271498664570462,
+        "force_peak_kPa": 3.774332576006187,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.005434199000665541,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_038",
+      "split": "train",
+      "mct_gain": 1.0263853797469518,
+      "pCa0_scale": 0.9787370375518645,
+      "serca_scale": 0.9532178916545634,
+      "l02": {
+        "APD_above_minus67_mV_ms": 246.0,
+        "Ca_peak_uM": 0.40830877349077405,
+        "gel_stress_peak_kPa": 0.027834211706277038,
+        "pCa_multiplier_peak": 1.088631444416867,
+        "force_peak_kPa": 0.6554693177614941,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0002328150544686095,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 268.0,
+        "Ca_peak_uM": 0.47057657512939194,
+        "gel_stress_peak_kPa": 0.6644206800808424,
+        "pCa_multiplier_peak": 1.2050869653934788,
+        "force_peak_kPa": 1.2306019848626486,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.002066825895083547,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 322.0,
+        "Ca_peak_uM": 0.6381872833337419,
+        "gel_stress_peak_kPa": 2.350675585357912,
+        "pCa_multiplier_peak": 1.4553972124406402,
+        "force_peak_kPa": 3.2993501643041467,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.004217517368147845,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_039",
+      "split": "train",
+      "mct_gain": 0.7705352109657289,
+      "pCa0_scale": 0.9880214540414451,
+      "serca_scale": 1.0551062025935918,
+      "l02": {
+        "APD_above_minus67_mV_ms": 242.0,
+        "Ca_peak_uM": 0.39726765233233036,
+        "gel_stress_peak_kPa": 0.027182985899735133,
+        "pCa_multiplier_peak": 1.0664704000713618,
+        "force_peak_kPa": 0.6118357765731377,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 9.46481927760561e-05,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 256.0,
+        "Ca_peak_uM": 0.43598839649471716,
+        "gel_stress_peak_kPa": 0.6137367167888513,
+        "pCa_multiplier_peak": 1.1452113782945543,
+        "force_peak_kPa": 1.1080979149575612,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.000932261264093296,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 300.0,
+        "Ca_peak_uM": 0.572810082565013,
+        "gel_stress_peak_kPa": 2.1128092599849175,
+        "pCa_multiplier_peak": 1.3418783942918866,
+        "force_peak_kPa": 2.8922132177036506,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0031401581695998395,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_040",
+      "split": "train",
+      "mct_gain": 0.8327360711366423,
+      "pCa0_scale": 0.9407388951594586,
+      "serca_scale": 0.9992030278359951,
+      "l02": {
+        "APD_above_minus67_mV_ms": 233.0,
+        "Ca_peak_uM": 0.36782802888277805,
+        "gel_stress_peak_kPa": 0.025685708163467783,
+        "pCa_multiplier_peak": 1.0716683086207879,
+        "force_peak_kPa": 0.5765956608388656,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0004992389455457604,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 245.0,
+        "Ca_peak_uM": 0.3985711277028286,
+        "gel_stress_peak_kPa": 0.5658620854970916,
+        "pCa_multiplier_peak": 1.1483351348588426,
+        "force_peak_kPa": 1.018277341115622,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 7.75455878323118e-05,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 291.0,
+        "Ca_peak_uM": 0.5290665738631324,
+        "gel_stress_peak_kPa": 1.9316311794651395,
+        "pCa_multiplier_peak": 1.369476654440019,
+        "force_peak_kPa": 2.6439486391941913,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.003011704915408265,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_041",
+      "split": "train",
+      "mct_gain": 0.9681339052633795,
+      "pCa0_scale": 1.0933420766404507,
+      "serca_scale": 0.8689841645962998,
+      "l02": {
+        "APD_above_minus67_mV_ms": 279.0,
+        "Ca_peak_uM": 0.5178126304627892,
+        "gel_stress_peak_kPa": 0.032706551819815854,
+        "pCa_multiplier_peak": 1.084238367761041,
+        "force_peak_kPa": 0.8611343519385612,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0038231135870736353,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 323.0,
+        "Ca_peak_uM": 0.6848888525638875,
+        "gel_stress_peak_kPa": 0.8766919364405048,
+        "pCa_multiplier_peak": 1.2441043604239308,
+        "force_peak_kPa": 1.7461212611873662,
+        "beat37_to40_APD_range_ms": 5.0,
+        "beat37_to40_Ca_range_fraction": 0.012387648489507295,
+        "convergence_pass": false
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 353.0,
+        "Ca_peak_uM": 0.7613180419270424,
+        "gel_stress_peak_kPa": 2.6635253421012117,
+        "pCa_multiplier_peak": 1.4295513482229487,
+        "force_peak_kPa": 3.873466787648565,
+        "beat37_to40_APD_range_ms": 6.0,
+        "beat37_to40_Ca_range_fraction": 0.009179614314875252,
+        "convergence_pass": false
+      }
+    },
+    {
+      "id": "train_042",
+      "split": "train",
+      "mct_gain": 0.7202272069208766,
+      "pCa0_scale": 1.0985361588301557,
+      "serca_scale": 1.035923763423189,
+      "l02": {
+        "APD_above_minus67_mV_ms": 270.0,
+        "Ca_peak_uM": 0.49654688201007124,
+        "gel_stress_peak_kPa": 0.03173267449398388,
+        "pCa_multiplier_peak": 1.0625728491854887,
+        "force_peak_kPa": 0.7674814768027655,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0028410129560934552,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 294.0,
+        "Ca_peak_uM": 0.5838101373826774,
+        "gel_stress_peak_kPa": 0.7832344236000174,
+        "pCa_multiplier_peak": 1.1643385628466627,
+        "force_peak_kPa": 1.4756317901093519,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.006161592189445874,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 327.0,
+        "Ca_peak_uM": 0.6929180485285114,
+        "gel_stress_peak_kPa": 2.5258091784280676,
+        "pCa_multiplier_peak": 1.3195577595803365,
+        "force_peak_kPa": 3.5344904889788693,
+        "beat37_to40_APD_range_ms": 4.0,
+        "beat37_to40_Ca_range_fraction": 0.005728720314258627,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_043",
+      "split": "train",
+      "mct_gain": 0.36985104431003984,
+      "pCa0_scale": 0.9447093614447294,
+      "serca_scale": 0.8850609473966725,
+      "l02": {
+        "APD_above_minus67_mV_ms": 228.0,
+        "Ca_peak_uM": 0.35019851800954044,
+        "gel_stress_peak_kPa": 0.02478118500541389,
+        "pCa_multiplier_peak": 1.0317857380479596,
+        "force_peak_kPa": 0.573250988547195,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0008170021345617036,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 233.0,
+        "Ca_peak_uM": 0.360524246795736,
+        "gel_stress_peak_kPa": 0.5161844062447883,
+        "pCa_multiplier_peak": 1.0620703585004796,
+        "force_peak_kPa": 0.9339528136425695,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0006663093510196627,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 243.0,
+        "Ca_peak_uM": 0.3810738722792595,
+        "gel_stress_peak_kPa": 1.2158533152280988,
+        "pCa_multiplier_peak": 1.1285044459338223,
+        "force_peak_kPa": 1.6498714204893847,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00021286657599116303,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_044",
+      "split": "train",
+      "mct_gain": 1.1513013153793692,
+      "pCa0_scale": 0.9793739823115643,
+      "serca_scale": 1.1125044054078859,
+      "l02": {
+        "APD_above_minus67_mV_ms": 246.0,
+        "Ca_peak_uM": 0.4120733854773748,
+        "gel_stress_peak_kPa": 0.02786227185082725,
+        "pCa_multiplier_peak": 1.099422663223002,
+        "force_peak_kPa": 0.6218630673810471,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.000446555387395823,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 269.0,
+        "Ca_peak_uM": 0.48462750498445856,
+        "gel_stress_peak_kPa": 0.6707566376600282,
+        "pCa_multiplier_peak": 1.2317177783040234,
+        "force_peak_kPa": 1.2189335526891596,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0021292759080045387,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 321.0,
+        "Ca_peak_uM": 0.6582346531574906,
+        "gel_stress_peak_kPa": 2.4229321681781224,
+        "pCa_multiplier_peak": 1.510803266608824,
+        "force_peak_kPa": 3.3405425822770787,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0030262114927609436,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_045",
+      "split": "train",
+      "mct_gain": 0.9007620670467913,
+      "pCa0_scale": 0.9556767810234525,
+      "serca_scale": 0.9288024103797641,
+      "l02": {
+        "APD_above_minus67_mV_ms": 238.0,
+        "Ca_peak_uM": 0.38361347775748916,
+        "gel_stress_peak_kPa": 0.026590284058384726,
+        "pCa_multiplier_peak": 1.0776325456388012,
+        "force_peak_kPa": 0.6207967514913165,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0002376659354394331,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 254.0,
+        "Ca_peak_uM": 0.42415103439633145,
+        "gel_stress_peak_kPa": 0.6063079146372702,
+        "pCa_multiplier_peak": 1.1682869906657685,
+        "force_peak_kPa": 1.1118407574164333,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.000687983991739757,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 307.0,
+        "Ca_peak_uM": 0.5775394837024963,
+        "gel_stress_peak_kPa": 2.1330755306759803,
+        "pCa_multiplier_peak": 1.3996542141671564,
+        "force_peak_kPa": 2.9736611033543934,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0038654075453837845,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_046",
+      "split": "train",
+      "mct_gain": 0.6609510898142517,
+      "pCa0_scale": 0.9475737478180652,
+      "serca_scale": 1.0092487146495532,
+      "l02": {
+        "APD_above_minus67_mV_ms": 232.0,
+        "Ca_peak_uM": 0.36344147067195254,
+        "gel_stress_peak_kPa": 0.025435846930090614,
+        "pCa_multiplier_peak": 1.0568616479892838,
+        "force_peak_kPa": 0.5670460411035444,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0005443095397132419,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 241.0,
+        "Ca_peak_uM": 0.3860298583744302,
+        "gel_stress_peak_kPa": 0.546973172236292,
+        "pCa_multiplier_peak": 1.115113207750103,
+        "force_peak_kPa": 0.9790332030361397,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0001796746861145255,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 272.0,
+        "Ca_peak_uM": 0.46767187173937363,
+        "gel_stress_peak_kPa": 1.6471712812689412,
+        "pCa_multiplier_peak": 1.291056595894914,
+        "force_peak_kPa": 2.2287741622765846,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0021506491400196497,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "train_047",
+      "split": "train",
+      "mct_gain": 0.5400619963746585,
+      "pCa0_scale": 0.9619540112655691,
+      "serca_scale": 1.0704474432673385,
+      "l02": {
+        "APD_above_minus67_mV_ms": 232.0,
+        "Ca_peak_uM": 0.365006755464333,
+        "gel_stress_peak_kPa": 0.025464930536027844,
+        "pCa_multiplier_peak": 1.046463667476178,
+        "force_peak_kPa": 0.5567888232397264,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0004999384809423943,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 239.0,
+        "Ca_peak_uM": 0.3833916409300317,
+        "gel_stress_peak_kPa": 0.5390707336190735,
+        "pCa_multiplier_peak": 1.0931721409680972,
+        "force_peak_kPa": 0.9563852617843949,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00012914034790858288,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 261.0,
+        "Ca_peak_uM": 0.4385849777575429,
+        "gel_stress_peak_kPa": 1.4929995656843347,
+        "pCa_multiplier_peak": 1.2257300730649823,
+        "force_peak_kPa": 1.9975544221511898,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.001092704149886057,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_000",
+      "split": "test",
+      "mct_gain": 1.1338059253620743,
+      "pCa0_scale": 0.9454175733802079,
+      "serca_scale": 0.9193186010026373,
+      "l02": {
+        "APD_above_minus67_mV_ms": 240.0,
+        "Ca_peak_uM": 0.3890015642366292,
+        "gel_stress_peak_kPa": 0.026875812936058147,
+        "pCa_multiplier_peak": 1.0977611211443863,
+        "force_peak_kPa": 0.6329097515372314,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00012809847461761793,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 262.0,
+        "Ca_peak_uM": 0.446065346930464,
+        "gel_stress_peak_kPa": 0.6357565239786297,
+        "pCa_multiplier_peak": 1.219205567994369,
+        "force_peak_kPa": 1.175877146570038,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0013295072742546402,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 323.0,
+        "Ca_peak_uM": 0.6273411429065467,
+        "gel_stress_peak_kPa": 2.3108664621316812,
+        "pCa_multiplier_peak": 1.5030560571284508,
+        "force_peak_kPa": 3.2553550413413914,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.004044698624117218,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_001",
+      "split": "test",
+      "mct_gain": 0.452336334644166,
+      "pCa0_scale": 1.0730342541257527,
+      "serca_scale": 1.0302353061584002,
+      "l02": {
+        "APD_above_minus67_mV_ms": 257.0,
+        "Ca_peak_uM": 0.4473067844108795,
+        "gel_stress_peak_kPa": 0.029614891177544355,
+        "pCa_multiplier_peak": 1.0391692433766588,
+        "force_peak_kPa": 0.6955698344354821,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0013154671152507279,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 267.0,
+        "Ca_peak_uM": 0.48113415329439024,
+        "gel_stress_peak_kPa": 0.6725310018867355,
+        "pCa_multiplier_peak": 1.0912243045548238,
+        "force_peak_kPa": 1.233872699923686,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0023147740689248328,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 297.0,
+        "Ca_peak_uM": 0.5728757684507104,
+        "gel_stress_peak_kPa": 2.117857569022383,
+        "pCa_multiplier_peak": 1.2006967830582205,
+        "force_peak_kPa": 2.9066185390558386,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.00418236188394372,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_002",
+      "split": "test",
+      "mct_gain": 0.22117170546987505,
+      "pCa0_scale": 1.0531558360971434,
+      "serca_scale": 0.9472549838345375,
+      "l02": {
+        "APD_above_minus67_mV_ms": 248.0,
+        "Ca_peak_uM": 0.4152458466223753,
+        "gel_stress_peak_kPa": 0.028179253911856824,
+        "pCa_multiplier_peak": 1.0191091253764974,
+        "force_peak_kPa": 0.6685363812026508,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00050767845720078,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 252.0,
+        "Ca_peak_uM": 0.4272011278467299,
+        "gel_stress_peak_kPa": 0.6096297187632068,
+        "pCa_multiplier_peak": 1.041481656644099,
+        "force_peak_kPa": 1.1147472320954706,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0008059535702710539,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 264.0,
+        "Ca_peak_uM": 0.45742709313615265,
+        "gel_stress_peak_kPa": 1.6137128573079536,
+        "pCa_multiplier_peak": 1.09667858004773,
+        "force_peak_kPa": 2.1932332015789378,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.001852496594596,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_003",
+      "split": "test",
+      "mct_gain": 0.29673487330243,
+      "pCa0_scale": 1.02186048133099,
+      "serca_scale": 0.8694810937404999,
+      "l02": {
+        "APD_above_minus67_mV_ms": 243.0,
+        "Ca_peak_uM": 0.3975392307296489,
+        "gel_stress_peak_kPa": 0.027351420951259964,
+        "pCa_multiplier_peak": 1.0256046368428826,
+        "force_peak_kPa": 0.6620760036768927,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 3.1879773625037564e-05,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 249.0,
+        "Ca_peak_uM": 0.41131971311399323,
+        "gel_stress_peak_kPa": 0.5929417937642303,
+        "pCa_multiplier_peak": 1.05457614244808,
+        "force_peak_kPa": 1.0936414584569119,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.00042250251040078956,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 264.0,
+        "Ca_peak_uM": 0.4473420527217619,
+        "gel_stress_peak_kPa": 1.5713482958505964,
+        "pCa_multiplier_peak": 1.1280805424437241,
+        "force_peak_kPa": 2.155939937706718,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0017717411268248777,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_004",
+      "split": "test",
+      "mct_gain": 0.5506507437947816,
+      "pCa0_scale": 1.084990565404497,
+      "serca_scale": 1.136843928728515,
+      "l02": {
+        "APD_above_minus67_mV_ms": 260.0,
+        "Ca_peak_uM": 0.46292314502148996,
+        "gel_stress_peak_kPa": 0.0301920999305323,
+        "pCa_multiplier_peak": 1.0477255169673705,
+        "force_peak_kPa": 0.6909693395843264,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.001740370931528518,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 274.0,
+        "Ca_peak_uM": 0.5097675347270806,
+        "gel_stress_peak_kPa": 0.6987541805164824,
+        "pCa_multiplier_peak": 1.1144040324472289,
+        "force_peak_kPa": 1.273937320857183,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0031911112390165352,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 306.0,
+        "Ca_peak_uM": 0.6178080041990287,
+        "gel_stress_peak_kPa": 2.2817888167898466,
+        "pCa_multiplier_peak": 1.244315271617351,
+        "force_peak_kPa": 3.1166012352897163,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.00407729541910751,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_005",
+      "split": "test",
+      "mct_gain": 0.6712370188289372,
+      "pCa0_scale": 0.9725673496339096,
+      "serca_scale": 1.1222022702662828,
+      "l02": {
+        "APD_above_minus67_mV_ms": 236.0,
+        "Ca_peak_uM": 0.37762113215659415,
+        "gel_stress_peak_kPa": 0.026094737404269888,
+        "pCa_multiplier_peak": 1.0578060570426668,
+        "force_peak_kPa": 0.5668950188394867,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00024164895486710237,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 246.0,
+        "Ca_peak_uM": 0.4043267088324242,
+        "gel_stress_peak_kPa": 0.5660234756104059,
+        "pCa_multiplier_peak": 1.1195902608833255,
+        "force_peak_kPa": 1.004261362800433,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0002075165461903093,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 280.0,
+        "Ca_peak_uM": 0.5062173031841378,
+        "gel_stress_peak_kPa": 1.8170943786022462,
+        "pCa_multiplier_peak": 1.2978181004089797,
+        "force_peak_kPa": 2.4428502976620465,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.002336745990101727,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_006",
+      "split": "test",
+      "mct_gain": 1.2995735171286023,
+      "pCa0_scale": 1.0478124593089082,
+      "serca_scale": 0.9291944229390718,
+      "l02": {
+        "APD_above_minus67_mV_ms": 272.0,
+        "Ca_peak_uM": 0.49641509994362426,
+        "gel_stress_peak_kPa": 0.03182581549434726,
+        "pCa_multiplier_peak": 1.1129224314633575,
+        "force_peak_kPa": 0.803591633558362,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0029200368386657527,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 327.0,
+        "Ca_peak_uM": 0.7104019699325007,
+        "gel_stress_peak_kPa": 0.8939139484669184,
+        "pCa_multiplier_peak": 1.3336052533021903,
+        "force_peak_kPa": 1.7694703892761343,
+        "beat37_to40_APD_range_ms": 5.0,
+        "beat37_to40_Ca_range_fraction": 0.011774089770812112,
+        "convergence_pass": false
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 356.0,
+        "Ca_peak_uM": 0.77328974180757,
+        "gel_stress_peak_kPa": 2.712285288583546,
+        "pCa_multiplier_peak": 1.5765904881371124,
+        "force_peak_kPa": 3.9072968692842474,
+        "beat37_to40_APD_range_ms": 5.0,
+        "beat37_to40_Ca_range_fraction": 0.007446536994565061,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_007",
+      "split": "test",
+      "mct_gain": 1.064685384523433,
+      "pCa0_scale": 0.9057550908953922,
+      "serca_scale": 0.9722390875759614,
+      "l02": {
+        "APD_above_minus67_mV_ms": 229.0,
+        "Ca_peak_uM": 0.35619294184809763,
+        "gel_stress_peak_kPa": 0.025061087888571615,
+        "pCa_multiplier_peak": 1.0915412605427273,
+        "force_peak_kPa": 0.5630967183372231,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0006893562678816095,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 244.0,
+        "Ca_peak_uM": 0.39156846283972824,
+        "gel_stress_peak_kPa": 0.5573961739582526,
+        "pCa_multiplier_peak": 1.1877513753578564,
+        "force_peak_kPa": 1.005055236532798,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 9.542573649780482e-05,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 302.0,
+        "Ca_peak_uM": 0.5563962945785987,
+        "gel_stress_peak_kPa": 2.046474816778798,
+        "pCa_multiplier_peak": 1.472379432589059,
+        "force_peak_kPa": 2.8254312257101746,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.002959096512802099,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_008",
+      "split": "test",
+      "mct_gain": 0.7611446177502588,
+      "pCa0_scale": 0.9850047655524804,
+      "serca_scale": 1.0477501049268914,
+      "l02": {
+        "APD_above_minus67_mV_ms": 241.0,
+        "Ca_peak_uM": 0.3946091315140535,
+        "gel_stress_peak_kPa": 0.02705565343210604,
+        "pCa_multiplier_peak": 1.0656472626149025,
+        "force_peak_kPa": 0.6092125959262152,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 2.5354887842100198e-05,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 254.0,
+        "Ca_peak_uM": 0.43175251594468705,
+        "gel_stress_peak_kPa": 0.6086283644696423,
+        "pCa_multiplier_peak": 1.1425888839057405,
+        "force_peak_kPa": 1.0985905737912867,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0009089762683335763,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 298.0,
+        "Ca_peak_uM": 0.5660803133353642,
+        "gel_stress_peak_kPa": 2.0860432063203334,
+        "pCa_multiplier_peak": 1.3377109351651657,
+        "force_peak_kPa": 2.854994182139044,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.003151911322679316,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_009",
+      "split": "test",
+      "mct_gain": 0.9641235449010068,
+      "pCa0_scale": 0.9276269523616983,
+      "serca_scale": 1.0847137001888345,
+      "l02": {
+        "APD_above_minus67_mV_ms": 231.0,
+        "Ca_peak_uM": 0.36282053462502606,
+        "gel_stress_peak_kPa": 0.025331874086497133,
+        "pCa_multiplier_peak": 1.0829301021924704,
+        "force_peak_kPa": 0.5504625530183404,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0005329432764267201,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 245.0,
+        "Ca_peak_uM": 0.3968956931023095,
+        "gel_stress_peak_kPa": 0.5577158485190923,
+        "pCa_multiplier_peak": 1.1700826365655053,
+        "force_peak_kPa": 0.9919924216107563,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 4.403786505866478e-05,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 295.0,
+        "Ca_peak_uM": 0.5484037902623636,
+        "gel_stress_peak_kPa": 2.0067493301117736,
+        "pCa_multiplier_peak": 1.4277722420703287,
+        "force_peak_kPa": 2.7277436628323377,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0023374835110282276,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_010",
+      "split": "test",
+      "mct_gain": 1.1717856182418611,
+      "pCa0_scale": 0.9954535631768482,
+      "serca_scale": 1.0131188531387831,
+      "l02": {
+        "APD_above_minus67_mV_ms": 252.0,
+        "Ca_peak_uM": 0.43088341104555994,
+        "gel_stress_peak_kPa": 0.028870658555071222,
+        "pCa_multiplier_peak": 1.1013509613393033,
+        "force_peak_kPa": 0.6753122251060536,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0008426341660934702,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 281.0,
+        "Ca_peak_uM": 0.5236640304117665,
+        "gel_stress_peak_kPa": 0.7220913779470914,
+        "pCa_multiplier_peak": 1.2499173270059845,
+        "force_peak_kPa": 1.3446549390821005,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.003654085784284166,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 332.0,
+        "Ca_peak_uM": 0.6856665327763497,
+        "gel_stress_peak_kPa": 2.5049323616689025,
+        "pCa_multiplier_peak": 1.5199054433078887,
+        "force_peak_kPa": 3.5124186470421117,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.004214903439991832,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_011",
+      "split": "test",
+      "mct_gain": 0.8396570110076826,
+      "pCa0_scale": 0.9524661742963351,
+      "serca_scale": 0.9943702733086569,
+      "l02": {
+        "APD_above_minus67_mV_ms": 236.0,
+        "Ca_peak_uM": 0.3765200426459912,
+        "gel_stress_peak_kPa": 0.0261609761393637,
+        "pCa_multiplier_peak": 1.07231765318797,
+        "force_peak_kPa": 0.592284127346375,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00034452891268888126,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 249.0,
+        "Ca_peak_uM": 0.4108471800582226,
+        "gel_stress_peak_kPa": 0.5836438598783705,
+        "pCa_multiplier_peak": 1.1527498435366896,
+        "force_peak_kPa": 1.0549642759773517,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0003179445826332168,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 297.0,
+        "Ca_peak_uM": 0.5501605460275297,
+        "gel_stress_peak_kPa": 2.0223051177007267,
+        "pCa_multiplier_peak": 1.3725469394982834,
+        "force_peak_kPa": 2.7796234080793467,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0031840284193355153,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_012",
+      "split": "test",
+      "mct_gain": 0.891162086648096,
+      "pCa0_scale": 0.9200203999934309,
+      "serca_scale": 0.8544719092573604,
+      "l02": {
+        "APD_above_minus67_mV_ms": 231.0,
+        "Ca_peak_uM": 0.35966196691418073,
+        "gel_stress_peak_kPa": 0.02533027598407868,
+        "pCa_multiplier_peak": 1.0766540539528404,
+        "force_peak_kPa": 0.5989371708522855,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0007230623770383052,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 245.0,
+        "Ca_peak_uM": 0.3896832827771809,
+        "gel_stress_peak_kPa": 0.562503409965132,
+        "pCa_multiplier_peak": 1.158110043772305,
+        "force_peak_kPa": 1.0338194441948123,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.0001237705244618073,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 297.0,
+        "Ca_peak_uM": 0.5235929380559854,
+        "gel_stress_peak_kPa": 1.912447746298423,
+        "pCa_multiplier_peak": 1.3953999567934914,
+        "force_peak_kPa": 2.6729910225679245,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.004153256188134001,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_013",
+      "split": "test",
+      "mct_gain": 0.5054497994175513,
+      "pCa0_scale": 1.097617800021815,
+      "serca_scale": 0.8972096464126101,
+      "l02": {
+        "APD_above_minus67_mV_ms": 267.0,
+        "Ca_peak_uM": 0.4777274554525239,
+        "gel_stress_peak_kPa": 0.03106674644859989,
+        "pCa_multiplier_peak": 1.043867629293194,
+        "force_peak_kPa": 0.7863238635293395,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0023258925806878506,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 283.0,
+        "Ca_peak_uM": 0.5285489210511197,
+        "gel_stress_peak_kPa": 0.734751860466621,
+        "pCa_multiplier_peak": 1.1093345805665047,
+        "force_peak_kPa": 1.3967277462612628,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.004382712695910931,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 316.0,
+        "Ca_peak_uM": 0.6284325609703727,
+        "gel_stress_peak_kPa": 2.315027001370599,
+        "pCa_multiplier_peak": 1.2242583107586735,
+        "force_peak_kPa": 3.271413227383568,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.006206610747921862,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_014",
+      "split": "test",
+      "mct_gain": 0.3898853587180642,
+      "pCa0_scale": 1.0012367326923108,
+      "serca_scale": 1.060992610619557,
+      "l02": {
+        "APD_above_minus67_mV_ms": 238.0,
+        "Ca_peak_uM": 0.38417611827785236,
+        "gel_stress_peak_kPa": 0.02650323219767885,
+        "pCa_multiplier_peak": 1.0335978585992704,
+        "force_peak_kPa": 0.5895462223574586,
+        "beat37_to40_APD_range_ms": 1.0,
+        "beat37_to40_Ca_range_fraction": 0.00012594409834810636,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 244.0,
+        "Ca_peak_uM": 0.4001660329888837,
+        "gel_stress_peak_kPa": 0.5642772142458184,
+        "pCa_multiplier_peak": 1.0693195415144685,
+        "force_peak_kPa": 1.0071148668169125,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 7.753856654329213e-05,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 261.0,
+        "Ca_peak_uM": 0.4445060645561515,
+        "gel_stress_peak_kPa": 1.527746403018808,
+        "pCa_multiplier_peak": 1.1655226729625983,
+        "force_peak_kPa": 2.0467477842761586,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.001380602370962989,
+        "convergence_pass": true
+      }
+    },
+    {
+      "id": "test_015",
+      "split": "test",
+      "mct_gain": 0.7081197452764416,
+      "pCa0_scale": 1.0352179187030366,
+      "serca_scale": 1.1045005575040228,
+      "l02": {
+        "APD_above_minus67_mV_ms": 251.0,
+        "Ca_peak_uM": 0.4304092433609492,
+        "gel_stress_peak_kPa": 0.02875141279999988,
+        "pCa_multiplier_peak": 1.0612358336156877,
+        "force_peak_kPa": 0.6510601943651203,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0009039669012763254,
+        "convergence_pass": true
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 267.0,
+        "Ca_peak_uM": 0.47839738070769655,
+        "gel_stress_peak_kPa": 0.6640578727171279,
+        "pCa_multiplier_peak": 1.1414340940567897,
+        "force_peak_kPa": 1.2055334214685443,
+        "beat37_to40_APD_range_ms": 2.0,
+        "beat37_to40_Ca_range_fraction": 0.0021403438845633885,
+        "convergence_pass": true
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 306.0,
+        "Ca_peak_uM": 0.6097243870978757,
+        "gel_stress_peak_kPa": 2.2532906149310334,
+        "pCa_multiplier_peak": 1.3141838867134876,
+        "force_peak_kPa": 3.085001994006472,
+        "beat37_to40_APD_range_ms": 3.0,
+        "beat37_to40_Ca_range_fraction": 0.0035371391023116794,
+        "convergence_pass": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "source": "https://zenodo.org/api/records/17644763",
+  "zip_name": "The Molecular Basis of Force Selectivity by PIEZO2 - Raw Data.zip",
+  "zip_bytes": 14901567151,
+  "range_bytes_downloaded": 44926,
+  "entries": 240,
+  "extensions": {
+    "<directory>": 26,
+    "": 51,
+    ".mat files": 1,
+    ".ds_store": 26,
+    ".obf": 10,
+    ".nd2": 4,
+    ".mat": 122
+  },
+  "payload_files": 68,
+  "modalities": {
+    "MINFLUX": {
+      "files": 61,
+      "uncompressed_bytes": 13601141359
+    },
+    "Confocal Images": {
+      "files": 2,
+      "uncompressed_bytes": 1813909504
+    },
+    "STED imaging files": {
+      "files": 5,
+      "uncompressed_bytes": 245136807
+    }
+  },
+  "candidate_paths": [],
+  "candidate_count": 0
+}

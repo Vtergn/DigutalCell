@@ -1,0 +1,189 @@
+{
+  "osf_api": "https://api.osf.io/v2/nodes/2cgxn/files/osfstorage/",
+  "listed_files": [
+    {
+      "name": "Electrophysiology Source Data.xlsx",
+      "bytes": 402461,
+      "download": "https://osf.io/download/a8dhz/"
+    }
+  ],
+  "local_bytes": 402461,
+  "sheets": [
+    {
+      "name": "Figure 1",
+      "rows": 1023,
+      "columns": 50,
+      "first_three_rows": [
+        [
+          {
+            "column": 1,
+            "value": "Fig 1 a"
+          },
+          {
+            "column": 3,
+            "value": "PIEZO1"
+          },
+          {
+            "column": 21,
+            "value": "PIEZO2"
+          },
+          {
+            "column": 37,
+            "value": "MscL"
+          }
+        ],
+        [
+          {
+            "column": 2,
+            "value": "Pressure"
+          },
+          {
+            "column": 3,
+            "value": "Normalized Current"
+          },
+          {
+            "column": 20,
+            "value": "Pressure"
+          },
+          {
+            "column": 21,
+            "value": "Normalized Current"
+          },
+          {
+            "column": 36,
+            "value": "Pressure"
+          },
+          {
+            "column": 37,
+            "value": "Normalized Current"
+          }
+        ],
+        [
+          {
+            "column": 2,
+            "value": "mmHg"
+          },
+          {
+            "column": 20,
+            "value": "mmHg"
+          },
+          {
+            "column": 36,
+            "value": "mmHg"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Figure 2",
+      "rows": 65,
+      "columns": 3,
+      "first_three_rows": [
+        [
+          {
+            "column": 1,
+            "value": "Fig 2 C"
+          }
+        ],
+        [
+          {
+            "column": 2,
+            "value": "count / total"
+          }
+        ],
+        [
+          {
+            "column": 1,
+            "value": "current (pA)"
+          },
+          {
+            "column": 2,
+            "value": "0 mmHg"
+          },
+          {
+            "column": 3,
+            "value": "(-40) mmHg"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Figure 6",
+      "rows": 28,
+      "columns": 14,
+      "first_three_rows": [
+        [
+          {
+            "column": 1,
+            "value": "Fig 6 f"
+          },
+          {
+            "column": 3,
+            "value": "Reversla Potential (mV)"
+          }
+        ],
+        [
+          {
+            "column": 3,
+            "value": "PIEZO1"
+          },
+          {
+            "column": 11,
+            "value": "PIEZO2"
+          }
+        ],
+        [
+          {
+            "column": 1,
+            "value": "Cation"
+          },
+          {
+            "column": 2,
+            "value": "Stokes radius (Å) "
+          },
+          {
+            "column": 3,
+            "value": "Cell 1"
+          },
+          {
+            "column": 4,
+            "value": "Cell 2"
+          },
+          {
+            "column": 5,
+            "value": "Cell 3"
+          },
+          {
+            "column": 6,
+            "value": "Cell 4"
+          },
+          {
+            "column": 7,
+            "value": "Cell 5"
+          },
+          {
+            "column": 8,
+            "value": "Cell 6"
+          },
+          {
+            "column": 9,
+            "value": "Cell 7"
+          },
+          {
+            "column": 11,
+            "value": "Cell 1"
+          },
+          {
+            "column": 12,
+            "value": "Cell 2"
+          },
+          {
+            "column": 13,
+            "value": "Cell 3"
+          }
+        ]
+      ]
+    }
+  ],
+  "grain_audit": "Figure 1 holds normalized-current versus pressure columns, not timestamped patch-clamp samples. Figure 2 holds all-point current histograms; Figure 6 holds per-cell reversal potentials. The project lists one source workbook, not raw 10-kHz recordings."
+}

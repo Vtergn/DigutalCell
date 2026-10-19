@@ -1,0 +1,23 @@
+{
+  "method": "partitioned 20-ms electrical BDF / 1-ms Euler-Maruyama refinement of published sarcomere SDE with fixed-point coupling",
+  "sarcomere_original_quickstart_dt_ms": 2.0,
+  "numerical_refinement_dt_ms": 1.0,
+  "original_noise_amplitudes": [
+    2.2,
+    9.0
+  ],
+  "deterministic_split_vs_monolithic_max_abs": {
+    "voltage_mV": 0.3018304588975411,
+    "calcium_uM": 0.00037134216413609554,
+    "lambda": 0.000780775665608191
+  },
+  "stochastic_max_iteration_update": 5.536092856028851e-06,
+  "windows_at_iteration_limit": 0,
+  "stochastic_lambda_range": [
+    0.9685701816977477,
+    1.0359247524608812
+  ],
+  "stochastic_local_lambda_std_peak": 0.00632360032332809,
+  "stochastic_vs_deterministic_V_max_mV": 0.6199744199421247,
+  "interpretation_limit": "Exploratory Land thin-filament activation and length scale; no force-unit matching or synchronized AP/Ca/sarcomere experimental validation"
+}

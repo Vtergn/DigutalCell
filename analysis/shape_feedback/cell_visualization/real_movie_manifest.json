@@ -1,0 +1,13 @@
+{
+  "source_url": "https://zenodo.org/api/records/17564384/files/5kPa.zip/content",
+  "zip_entry": "5kPa/20210915_5kPa_dish5_day27_lif_Series002.tif",
+  "raw_tiff_bytes": 144643129,
+  "frames": 111,
+  "source_frame_start": 73,
+  "source_frame_end": 183,
+  "frame_duration_ms_in_viewer": 16,
+  "display_scale": "fixed using first displayed frame 99.7th percentile",
+  "display_high": 255.0,
+  "resized_width_pixels": 920,
+  "raw_tiff_retained": false
+}

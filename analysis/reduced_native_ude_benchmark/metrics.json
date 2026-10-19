@@ -1,0 +1,55 @@
+{
+  "train_cells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "test_cells": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "held_protocol": 3,
+  "epochs": 20,
+  "elapsed_seconds": 18.853231500135735,
+  "n_parameters": 2739,
+  "prior_MAE_V_Ca_T": [
+    1365.802001953125,
+    6.830248832702637,
+    1425.7784423828125
+  ],
+  "native_reduced_ude_MAE_V_Ca_T": [
+    391.4999084472656,
+    388.6904602050781,
+    438.2384338378906
+  ],
+  "prior_overall_MAE": 932.8035888671875,
+  "native_reduced_ude_overall_MAE": 406.1430358886719,
+  "note": "True RK4 rollout of a reduced vector field; not the full native ToR-ORd/SAC-Land RHS."
+}

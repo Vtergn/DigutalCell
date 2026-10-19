@@ -1,0 +1,1769 @@
+{
+  "n_designed_variants": 25,
+  "domain": "rabbit MCT2024 synthetic parameter grid; not experimental cells",
+  "loads_CL": [
+    0.02,
+    0.06,
+    0.1
+  ],
+  "split": "leave-one-variant-out; held-out high load never used as calibration input",
+  "scores": {
+    "low_no_change": {
+      "MAE": {
+        "APD_above_minus67_mV_ms": 59.36,
+        "Ca_peak_uM": 0.16496208127098275
+      },
+      "median_AE": {
+        "APD_above_minus67_mV_ms": 71.0,
+        "Ca_peak_uM": 0.18447805935902212
+      }
+    },
+    "mid_no_change": {
+      "MAE": {
+        "APD_above_minus67_mV_ms": 35.76,
+        "Ca_peak_uM": 0.09724282261472576
+      },
+      "median_AE": {
+        "APD_above_minus67_mV_ms": 37.0,
+        "Ca_peak_uM": 0.10473996973763822
+      }
+    },
+    "low_ridge_LOO": {
+      "MAE": {
+        "APD_above_minus67_mV_ms": 23.68652762706006,
+        "Ca_peak_uM": 0.06619165185784427
+      },
+      "median_AE": {
+        "APD_above_minus67_mV_ms": 20.484303929938733,
+        "Ca_peak_uM": 0.0619228388532414
+      }
+    },
+    "low_mid_ridge_LOO": {
+      "MAE": {
+        "APD_above_minus67_mV_ms": 20.14082822056497,
+        "Ca_peak_uM": 0.05556306443043201
+      },
+      "median_AE": {
+        "APD_above_minus67_mV_ms": 21.088988252225363,
+        "Ca_peak_uM": 0.0635755071910592
+      }
+    },
+    "per_variant_linear_extrapolation": {
+      "MAE": {
+        "APD_above_minus67_mV_ms": 24.16,
+        "Ca_peak_uM": 0.0804681422914405
+      },
+      "median_AE": {
+        "APD_above_minus67_mV_ms": 22.0,
+        "Ca_peak_uM": 0.06011015909737111
+      }
+    },
+    "low_RBF_LOO_postscore": {
+      "MAE": {
+        "APD_above_minus67_mV_ms": 48.74060404707662,
+        "Ca_peak_uM": 0.1394549539977003
+      },
+      "median_AE": {
+        "APD_above_minus67_mV_ms": 52.091470404802294,
+        "Ca_peak_uM": 0.15465451432360167
+      }
+    },
+    "low_mid_RBF_LOO_postscore": {
+      "MAE": {
+        "APD_above_minus67_mV_ms": 8.006336589654184,
+        "Ca_peak_uM": 0.02357383835380207
+      },
+      "median_AE": {
+        "APD_above_minus67_mV_ms": 7.509079486770361,
+        "Ca_peak_uM": 0.020849248324807723
+      }
+    }
+  },
+  "paired_ridge_comparison": {
+    "APD_above_minus67_mV_ms": {
+      "low_mid_ridge_better": 18,
+      "tied": 0,
+      "worse": 7,
+      "mean_MAE_reduction": 3.5456994064950913
+    },
+    "Ca_peak_uM": {
+      "low_mid_ridge_better": 18,
+      "tied": 0,
+      "worse": 7,
+      "mean_MAE_reduction": 0.01062858742741225
+    }
+  },
+  "maximum_absolute_beat17_to20_change": {
+    "APD_above_minus67_mV_ms": 9.0,
+    "Ca_peak_uM": 0.006559045550097231
+  },
+  "rows": [
+    {
+      "id": "g025_p090",
+      "mct_gain": 0.25,
+      "pCa0_scale": 0.9,
+      "l02": {
+        "APD_above_minus67_mV_ms": 224.0,
+        "Ca_peak_uM": 0.3137746231671443,
+        "gel_stress_peak_kPa": 0.022487540957627367,
+        "pCa_multiplier_peak": 1.0214084816673774,
+        "force_peak_kPa": 0.4821440929796602
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -1.0,
+        "Ca_peak_uM": 0.0008261931954617885
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 226.0,
+        "Ca_peak_uM": 0.31834396349228106,
+        "gel_stress_peak_kPa": 0.4368978161330199,
+        "pCa_multiplier_peak": 1.0380554392100085,
+        "force_peak_kPa": 0.7674497264487368
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.000844925222057924
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 230.0,
+        "Ca_peak_uM": 0.3239613105584448,
+        "gel_stress_peak_kPa": 0.8736089445294203,
+        "pCa_multiplier_peak": 1.0628316507146454,
+        "force_peak_kPa": 1.168411101936466
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -1.0,
+        "Ca_peak_uM": 0.0009059223378603543
+      }
+    },
+    {
+      "id": "g025_p095",
+      "mct_gain": 0.25,
+      "pCa0_scale": 0.95,
+      "l02": {
+        "APD_above_minus67_mV_ms": 235.0,
+        "Ca_peak_uM": 0.34254396209091953,
+        "gel_stress_peak_kPa": 0.024240035367883897,
+        "pCa_multiplier_peak": 1.0214673151685225,
+        "force_peak_kPa": 0.5321086524662316
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -1.0,
+        "Ca_peak_uM": 0.0007870116916226522
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 238.0,
+        "Ca_peak_uM": 0.349240605664747,
+        "gel_stress_peak_kPa": 0.4891645909111133,
+        "pCa_multiplier_peak": 1.040598229151825,
+        "force_peak_kPa": 0.8667725783093829
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0008322503660937453
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 244.0,
+        "Ca_peak_uM": 0.36022891841109567,
+        "gel_stress_peak_kPa": 1.0767665193038491,
+        "pCa_multiplier_peak": 1.076866807380621,
+        "force_peak_kPa": 1.4397455010256697
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0008479069056193667
+      }
+    },
+    {
+      "id": "g025_p100",
+      "mct_gain": 0.25,
+      "pCa0_scale": 1.0,
+      "l02": {
+        "APD_above_minus67_mV_ms": 247.0,
+        "Ca_peak_uM": 0.3757489415884937,
+        "gel_stress_peak_kPa": 0.02609261045036725,
+        "pCa_multiplier_peak": 1.0215296025339768,
+        "force_peak_kPa": 0.5878483808915598
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0006555392421643269
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 251.0,
+        "Ca_peak_uM": 0.3855158319184977,
+        "gel_stress_peak_kPa": 0.5454298560324133,
+        "pCa_multiplier_peak": 1.0434603794536392,
+        "force_peak_kPa": 0.9769822179903586
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.0006310773062033204
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 261.0,
+        "Ca_peak_uM": 0.4070309970709293,
+        "gel_stress_peak_kPa": 1.3353585859193153,
+        "pCa_multiplier_peak": 1.0951502361686802,
+        "force_peak_kPa": 1.791693929079477
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.0005582346675061522
+      }
+    },
+    {
+      "id": "g025_p105",
+      "mct_gain": 0.25,
+      "pCa0_scale": 1.05,
+      "l02": {
+        "APD_above_minus67_mV_ms": 261.0,
+        "Ca_peak_uM": 0.4148677348174809,
+        "gel_stress_peak_kPa": 0.02809188699311013,
+        "pCa_multiplier_peak": 1.0215969309140396,
+        "force_peak_kPa": 0.6506119544289035
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.00026364088345048886
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 267.0,
+        "Ca_peak_uM": 0.4292897376776283,
+        "gel_stress_peak_kPa": 0.6069146483514097,
+        "pCa_multiplier_peak": 1.0467399872156529,
+        "force_peak_kPa": 1.1013529898582066
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.00013112644554219566
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 283.0,
+        "Ca_peak_uM": 0.4686511768362802,
+        "gel_stress_peak_kPa": 1.6535812837592674,
+        "pCa_multiplier_peak": 1.1102157757405582,
+        "force_peak_kPa": 2.2372745553812368
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": -0.00043154993151961474
+      }
+    },
+    {
+      "id": "g025_p110",
+      "mct_gain": 0.25,
+      "pCa0_scale": 1.1,
+      "l02": {
+        "APD_above_minus67_mV_ms": 277.0,
+        "Ca_peak_uM": 0.46221289882788613,
+        "gel_stress_peak_kPa": 0.03028325426203704,
+        "pCa_multiplier_peak": 1.0216708579780576,
+        "force_peak_kPa": 0.7236790271047041
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": -0.0005833524840852533
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 285.0,
+        "Ca_peak_uM": 0.48398877444454547,
+        "gel_stress_peak_kPa": 0.6756947977814853,
+        "pCa_multiplier_peak": 1.05060045490571,
+        "force_peak_kPa": 1.2455446167929949
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0009148951595251975
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 306.0,
+        "Ca_peak_uM": 0.5415528660514384,
+        "gel_stress_peak_kPa": 1.9850553651882514,
+        "pCa_multiplier_peak": 1.110922290663641,
+        "force_peak_kPa": 2.718680538214988
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.0022065257608741007
+      }
+    },
+    {
+      "id": "g050_p090",
+      "mct_gain": 0.5,
+      "pCa0_scale": 0.9,
+      "l02": {
+        "APD_above_minus67_mV_ms": 228.0,
+        "Ca_peak_uM": 0.32403819382915017,
+        "gel_stress_peak_kPa": 0.023129188444480503,
+        "pCa_multiplier_peak": 1.042860025153737,
+        "force_peak_kPa": 0.5002074125245674
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -1.0,
+        "Ca_peak_uM": 0.0008445847914598792
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 233.0,
+        "Ca_peak_uM": 0.3348124784740771,
+        "gel_stress_peak_kPa": 0.46518801439063256,
+        "pCa_multiplier_peak": 1.0788361940510902,
+        "force_peak_kPa": 0.8210512017721942
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0008867555658280679
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 244.0,
+        "Ca_peak_uM": 0.353488465393696,
+        "gel_stress_peak_kPa": 1.036878754863822,
+        "pCa_multiplier_peak": 1.1480515360016632,
+        "force_peak_kPa": 1.3870007767052868
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -1.0,
+        "Ca_peak_uM": 0.0010201297302691037
+      }
+    },
+    {
+      "id": "g050_p095",
+      "mct_gain": 0.5,
+      "pCa0_scale": 0.95,
+      "l02": {
+        "APD_above_minus67_mV_ms": 239.0,
+        "Ca_peak_uM": 0.3550100143294013,
+        "gel_stress_peak_kPa": 0.024953006863880755,
+        "pCa_multiplier_peak": 1.0429825505626658,
+        "force_peak_kPa": 0.5533170758018513
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.000765261140559248
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 247.0,
+        "Ca_peak_uM": 0.37102791137842256,
+        "gel_stress_peak_kPa": 0.5234314333936145,
+        "pCa_multiplier_peak": 1.0846514133561436,
+        "force_peak_kPa": 0.9337133020653134
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0007665419727060363
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 267.0,
+        "Ca_peak_uM": 0.41374219051169103,
+        "gel_stress_peak_kPa": 1.3679808824916337,
+        "pCa_multiplier_peak": 1.1945594477987211,
+        "force_peak_kPa": 1.8379858533636542
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0008119997904194043
+      }
+    },
+    {
+      "id": "g050_p100",
+      "mct_gain": 0.5,
+      "pCa0_scale": 1.0,
+      "l02": {
+        "APD_above_minus67_mV_ms": 252.0,
+        "Ca_peak_uM": 0.3911092336563384,
+        "gel_stress_peak_kPa": 0.026899994315312575,
+        "pCa_multiplier_peak": 1.0431135574190846,
+        "force_peak_kPa": 0.6127747750649623
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.0005048628489646712
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 263.0,
+        "Ca_peak_uM": 0.41518213566395623,
+        "gel_stress_peak_kPa": 0.5876534278832724,
+        "pCa_multiplier_peak": 1.0913906219158398,
+        "force_peak_kPa": 1.06227644550678
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0004674948830862835
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 296.0,
+        "Ca_peak_uM": 0.4993651967689452,
+        "gel_stress_peak_kPa": 1.7956648925377778,
+        "pCa_multiplier_peak": 1.2218446769698965,
+        "force_peak_kPa": 2.442889874929463
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0005321573515744138
+      }
+    },
+    {
+      "id": "g050_p105",
+      "mct_gain": 0.5,
+      "pCa0_scale": 1.05,
+      "l02": {
+        "APD_above_minus67_mV_ms": 267.0,
+        "Ca_peak_uM": 0.43429403995701543,
+        "gel_stress_peak_kPa": 0.02901975762811268,
+        "pCa_multiplier_peak": 1.0432564331884255,
+        "force_peak_kPa": 0.6808803989090274
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": -1.9762302788994823e-05
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 281.0,
+        "Ca_peak_uM": 0.47104410515547124,
+        "gel_stress_peak_kPa": 0.6600238314700438,
+        "pCa_multiplier_peak": 1.0994058950758927,
+        "force_peak_kPa": 1.212598877826782
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.00040409143017899884
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 320.0,
+        "Ca_peak_uM": 0.5797331079608452,
+        "gel_stress_peak_kPa": 2.136504736037755,
+        "pCa_multiplier_peak": 1.2218425527233505,
+        "force_peak_kPa": 2.9462315646765567
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.0021009931284922123
+      }
+    },
+    {
+      "id": "g050_p110",
+      "mct_gain": 0.5,
+      "pCa0_scale": 1.1,
+      "l02": {
+        "APD_above_minus67_mV_ms": 285.0,
+        "Ca_peak_uM": 0.48749951709830086,
+        "gel_stress_peak_kPa": 0.03136393876597176,
+        "pCa_multiplier_peak": 1.043414731111363,
+        "force_peak_kPa": 0.7613943015486642
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0012304619574466935
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 304.0,
+        "Ca_peak_uM": 0.5453869500892919,
+        "gel_stress_peak_kPa": 0.7440057753406109,
+        "pCa_multiplier_peak": 1.1092726304358014,
+        "force_peak_kPa": 1.394860473103352
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.002365292839157318
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 341.0,
+        "Ca_peak_uM": 0.6533194402896382,
+        "gel_stress_peak_kPa": 2.3937990121480057,
+        "pCa_multiplier_peak": 1.221838859745171,
+        "force_peak_kPa": 3.3425177545239206
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -6.0,
+        "Ca_peak_uM": -0.003910725590431263
+      }
+    },
+    {
+      "id": "g075_p090",
+      "mct_gain": 0.75,
+      "pCa0_scale": 0.9,
+      "l02": {
+        "APD_above_minus67_mV_ms": 232.0,
+        "Ca_peak_uM": 0.3348054328136495,
+        "gel_stress_peak_kPa": 0.02378221234682578,
+        "pCa_multiplier_peak": 1.0643558113586207,
+        "force_peak_kPa": 0.5189554854899748
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -1.0,
+        "Ca_peak_uM": 0.000811885771755394
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 241.0,
+        "Ca_peak_uM": 0.354021084387332,
+        "gel_stress_peak_kPa": 0.4966631052128203,
+        "pCa_multiplier_peak": 1.1229163496274654,
+        "force_peak_kPa": 0.8816861222536
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0009042662832169923
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 269.0,
+        "Ca_peak_uM": 0.4121180818183502,
+        "gel_stress_peak_kPa": 1.3565528307843246,
+        "pCa_multiplier_peak": 1.2896279369872454,
+        "force_peak_kPa": 1.8231422748583177
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.001242829442510529
+      }
+    },
+    {
+      "id": "g075_p095",
+      "mct_gain": 0.75,
+      "pCa0_scale": 0.95,
+      "l02": {
+        "APD_above_minus67_mV_ms": 244.0,
+        "Ca_peak_uM": 0.36821345478294765,
+        "gel_stress_peak_kPa": 0.025686784709973935,
+        "pCa_multiplier_peak": 1.0645478487031492,
+        "force_peak_kPa": 0.575270587606601
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0006864635205901526
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 257.0,
+        "Ca_peak_uM": 0.3974702141521591,
+        "gel_stress_peak_kPa": 0.5625539948639239,
+        "pCa_multiplier_peak": 1.1330730624419774,
+        "force_peak_kPa": 1.011703659163908
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.0006826314796756772
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 305.0,
+        "Ca_peak_uM": 0.5215339636446641,
+        "gel_stress_peak_kPa": 1.8929060739571484,
+        "pCa_multiplier_peak": 1.3327671583248408,
+        "force_peak_kPa": 2.585639639339538
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.00023319136522093054
+      }
+    },
+    {
+      "id": "g075_p100",
+      "mct_gain": 0.75,
+      "pCa0_scale": 1.0,
+      "l02": {
+        "APD_above_minus67_mV_ms": 258.0,
+        "Ca_peak_uM": 0.4076631406850578,
+        "gel_stress_peak_kPa": 0.027737298101534764,
+        "pCa_multiplier_peak": 1.0647549442375366,
+        "force_peak_kPa": 0.6393884278661273
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.000359819895136948
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 276.0,
+        "Ca_peak_uM": 0.45295316694400806,
+        "gel_stress_peak_kPa": 0.6373731171457718,
+        "pCa_multiplier_peak": 1.145273255255779,
+        "force_peak_kPa": 1.1651605148680364
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 7.976099749207322e-05
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 329.0,
+        "Ca_peak_uM": 0.6005607531920542,
+        "gel_stress_peak_kPa": 2.2139306288229483,
+        "pCa_multiplier_peak": 1.332760618381182,
+        "force_peak_kPa": 3.0644263246299457
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0015579991741765387
+      }
+    },
+    {
+      "id": "g075_p105",
+      "mct_gain": 0.75,
+      "pCa0_scale": 1.05,
+      "l02": {
+        "APD_above_minus67_mV_ms": 275.0,
+        "Ca_peak_uM": 0.4555122699125893,
+        "gel_stress_peak_kPa": 0.029986994371595688,
+        "pCa_multiplier_peak": 1.0649825665990373,
+        "force_peak_kPa": 0.7133446837526609
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": -0.0004210534069291061
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 300.0,
+        "Ca_peak_uM": 0.5277625923099561,
+        "gel_stress_peak_kPa": 0.725115007174216,
+        "pCa_multiplier_peak": 1.1605005755639897,
+        "force_peak_kPa": 1.3534517128099783
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0013369505940630244
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 348.0,
+        "Ca_peak_uM": 0.6688470800762129,
+        "gel_stress_peak_kPa": 2.4432835764858583,
+        "pCa_multiplier_peak": 1.332760605662529,
+        "force_peak_kPa": 3.4202990819193433
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -6.0,
+        "Ca_peak_uM": -0.0029848895194303227
+      }
+    },
+    {
+      "id": "g075_p110",
+      "mct_gain": 0.75,
+      "pCa0_scale": 1.1,
+      "l02": {
+        "APD_above_minus67_mV_ms": 294.0,
+        "Ca_peak_uM": 0.5157947483674807,
+        "gel_stress_peak_kPa": 0.0325051249899306,
+        "pCa_multiplier_peak": 1.0652378588065294,
+        "force_peak_kPa": 0.8021616639572187
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.002106698326144074
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 330.0,
+        "Ca_peak_uM": 0.6353909034297672,
+        "gel_stress_peak_kPa": 0.829533320753954,
+        "pCa_multiplier_peak": 1.1799042295778792,
+        "force_peak_kPa": 1.5910784320651097
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -7.0,
+        "Ca_peak_uM": -0.004491284110740179
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 367.0,
+        "Ca_peak_uM": 0.7401308731674054,
+        "gel_stress_peak_kPa": 2.6378554517581714,
+        "pCa_multiplier_peak": 1.3327672311943517,
+        "force_peak_kPa": 3.7351512934133475
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -8.0,
+        "Ca_peak_uM": -0.005130227357059369
+      }
+    },
+    {
+      "id": "g100_p090",
+      "mct_gain": 1.0,
+      "pCa0_scale": 0.9,
+      "l02": {
+        "APD_above_minus67_mV_ms": 236.0,
+        "Ca_peak_uM": 0.34617516146279464,
+        "gel_stress_peak_kPa": 0.02444958492196177,
+        "pCa_multiplier_peak": 1.0858974232124872,
+        "force_peak_kPa": 0.5383801184801262
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0008091472453808923
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 251.0,
+        "Ca_peak_uM": 0.37691857236117654,
+        "gel_stress_peak_kPa": 0.5321776599354942,
+        "pCa_multiplier_peak": 1.1710976571806422,
+        "force_peak_kPa": 0.9513925811758601
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0008686474990194926
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 311.0,
+        "Ca_peak_uM": 0.5306532208218168,
+        "gel_stress_peak_kPa": 1.9305180697037663,
+        "pCa_multiplier_peak": 1.4436883871601116,
+        "force_peak_kPa": 2.641797304931075
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.00035369121063744124
+      }
+    },
+    {
+      "id": "g100_p095",
+      "mct_gain": 1.0,
+      "pCa0_scale": 0.95,
+      "l02": {
+        "APD_above_minus67_mV_ms": 249.0,
+        "Ca_peak_uM": 0.3823066213160886,
+        "gel_stress_peak_kPa": 0.026442009409902566,
+        "pCa_multiplier_peak": 1.0861654435490904,
+        "force_peak_kPa": 0.5984334591945147
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.0006289957730519213
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 269.0,
+        "Ca_peak_uM": 0.43057431406026436,
+        "gel_stress_peak_kPa": 0.6081615924764221,
+        "pCa_multiplier_peak": 1.187232659140551,
+        "force_peak_kPa": 1.104775150598445
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.0005203324323093117
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 333.0,
+        "Ca_peak_uM": 0.6086253007833697,
+        "gel_stress_peak_kPa": 2.2425300102883283,
+        "pCa_multiplier_peak": 1.4436832093540224,
+        "force_peak_kPa": 3.108882657861004
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0009588285016520759
+      }
+    },
+    {
+      "id": "g100_p100",
+      "mct_gain": 1.0,
+      "pCa0_scale": 1.0,
+      "l02": {
+        "APD_above_minus67_mV_ms": 264.0,
+        "Ca_peak_uM": 0.42550175586752464,
+        "gel_stress_peak_kPa": 0.028604056290728767,
+        "pCa_multiplier_peak": 1.0864567883364622,
+        "force_peak_kPa": 0.6673795147596365
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.00011001114223951891
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 293.0,
+        "Ca_peak_uM": 0.5033466980546726,
+        "gel_stress_peak_kPa": 0.6978484800898664,
+        "pCa_multiplier_peak": 1.2075492721653134,
+        "force_peak_kPa": 1.2942571468906088
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.00046320303333047264
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 351.0,
+        "Ca_peak_uM": 0.6729400939598257,
+        "gel_stress_peak_kPa": 2.4569196322759232,
+        "pCa_multiplier_peak": 1.443688841276702,
+        "force_peak_kPa": 3.4417832791317537
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.0021214460467740004
+      }
+    },
+    {
+      "id": "g100_p105",
+      "mct_gain": 1.0,
+      "pCa0_scale": 1.05,
+      "l02": {
+        "APD_above_minus67_mV_ms": 282.0,
+        "Ca_peak_uM": 0.4789022772380624,
+        "gel_stress_peak_kPa": 0.03100265743265849,
+        "pCa_multiplier_peak": 1.0867806284121964,
+        "force_peak_kPa": 0.7487302111167161
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0009465092970724065
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 324.0,
+        "Ca_peak_uM": 0.6092330037365389,
+        "gel_stress_peak_kPa": 0.8063444699178409,
+        "pCa_multiplier_peak": 1.2339702239163206,
+        "force_peak_kPa": 1.5372386672779594
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.002553449736207747
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 369.0,
+        "Ca_peak_uM": 0.7380442702642385,
+        "gel_stress_peak_kPa": 2.6358942110898114,
+        "pCa_multiplier_peak": 1.4436902219733105,
+        "force_peak_kPa": 3.7305768743221077
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -6.0,
+        "Ca_peak_uM": -0.0037365361245107476
+      }
+    },
+    {
+      "id": "g100_p110",
+      "mct_gain": 1.0,
+      "pCa0_scale": 1.1,
+      "l02": {
+        "APD_above_minus67_mV_ms": 304.0,
+        "Ca_peak_uM": 0.5477547986119357,
+        "gel_stress_peak_kPa": 0.03370838974244333,
+        "pCa_multiplier_peak": 1.0871467177161926,
+        "force_peak_kPa": 0.8473558847226543
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.003393324133680542
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 364.0,
+        "Ca_peak_uM": 0.7685254756792073,
+        "gel_stress_peak_kPa": 0.9282425753892622,
+        "pCa_multiplier_peak": 1.265930236133246,
+        "force_peak_kPa": 1.835869942753982
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -8.0,
+        "Ca_peak_uM": -0.005321923435280929
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 388.0,
+        "Ca_peak_uM": 0.8106570747939675,
+        "gel_stress_peak_kPa": 2.7961862280242413,
+        "pCa_multiplier_peak": 1.4436776138901508,
+        "force_peak_kPa": 4.001125688249124
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -9.0,
+        "Ca_peak_uM": -0.006038779565013308
+      }
+    },
+    {
+      "id": "g125_p090",
+      "mct_gain": 1.25,
+      "pCa0_scale": 0.9,
+      "l02": {
+        "APD_above_minus67_mV_ms": 241.0,
+        "Ca_peak_uM": 0.35816964415245767,
+        "gel_stress_peak_kPa": 0.025132484750320604,
+        "pCa_multiplier_peak": 1.107486545347398,
+        "force_peak_kPa": 0.5586157087392898
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -1.0,
+        "Ca_peak_uM": 0.0007639069759727835
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 261.0,
+        "Ca_peak_uM": 0.405024708343009,
+        "gel_stress_peak_kPa": 0.5730780263791667,
+        "pCa_multiplier_peak": 1.224576452688899,
+        "force_peak_kPa": 1.0333944580081655
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": 0.0008543637234489365
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 334.0,
+        "Ca_peak_uM": 0.6076143610411916,
+        "gel_stress_peak_kPa": 2.2379569791117357,
+        "pCa_multiplier_peak": 1.5546115920536625,
+        "force_peak_kPa": 3.1027062411730397
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0003766559761778643
+      }
+    },
+    {
+      "id": "g125_p095",
+      "mct_gain": 1.25,
+      "pCa0_scale": 0.95,
+      "l02": {
+        "APD_above_minus67_mV_ms": 255.0,
+        "Ca_peak_uM": 0.3973644879073044,
+        "gel_stress_peak_kPa": 0.027219753191250654,
+        "pCa_multiplier_peak": 1.1078377336732934,
+        "force_peak_kPa": 0.6228345882175923
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -2.0,
+        "Ca_peak_uM": 0.0005105501594203088
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 284.0,
+        "Ca_peak_uM": 0.47371154012072414,
+        "gel_stress_peak_kPa": 0.6628650185905168,
+        "pCa_multiplier_peak": 1.2493244070978278,
+        "force_peak_kPa": 1.2195389170260686
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": 0.00029950963991937085
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 352.0,
+        "Ca_peak_uM": 0.6696206533458139,
+        "gel_stress_peak_kPa": 2.447532891157926,
+        "pCa_multiplier_peak": 1.5546076085738383,
+        "force_peak_kPa": 3.427192687238573
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -4.0,
+        "Ca_peak_uM": -0.0013403295432838913
+      }
+    },
+    {
+      "id": "g125_p100",
+      "mct_gain": 1.25,
+      "pCa0_scale": 1.0,
+      "l02": {
+        "APD_above_minus67_mV_ms": 271.0,
+        "Ca_peak_uM": 0.44490861691218897,
+        "gel_stress_peak_kPa": 0.029507959005396628,
+        "pCa_multiplier_peak": 1.1082234370301238,
+        "force_peak_kPa": 0.6972147067665984
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -3.0,
+        "Ca_peak_uM": -0.000201856414646151
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 314.0,
+        "Ca_peak_uM": 0.5741070955951604,
+        "gel_stress_peak_kPa": 0.7727501982084041,
+        "pCa_multiplier_peak": 1.281970858415297,
+        "force_peak_kPa": 1.4604761032571993
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.000961864154971126
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 368.0,
+        "Ca_peak_uM": 0.7300828182668131,
+        "gel_stress_peak_kPa": 2.6181563124358767,
+        "pCa_multiplier_peak": 1.5546089581064668,
+        "force_peak_kPa": 3.700751795318056
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -6.0,
+        "Ca_peak_uM": -0.002588581941224355
+      }
+    },
+    {
+      "id": "g125_p105",
+      "mct_gain": 1.25,
+      "pCa0_scale": 1.05,
+      "l02": {
+        "APD_above_minus67_mV_ms": 290.0,
+        "Ca_peak_uM": 0.50482031878032,
+        "gel_stress_peak_kPa": 0.03207108713110816,
+        "pCa_multiplier_peak": 1.108656361446819,
+        "force_peak_kPa": 0.7864465198304269
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -5.0,
+        "Ca_peak_uM": -0.0017146255390544374
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 354.0,
+        "Ca_peak_uM": 0.7283370650685173,
+        "gel_stress_peak_kPa": 0.9017375735949268,
+        "pCa_multiplier_peak": 1.323489586036427,
+        "force_peak_kPa": 1.7682261887032036
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -7.0,
+        "Ca_peak_uM": -0.002297035137186265
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 386.0,
+        "Ca_peak_uM": 0.7953015051804393,
+        "gel_stress_peak_kPa": 2.7690338001109334,
+        "pCa_multiplier_peak": 1.554607360376215,
+        "force_peak_kPa": 3.9524065499856333
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -7.0,
+        "Ca_peak_uM": -0.004242452633785532
+      }
+    },
+    {
+      "id": "g125_p110",
+      "mct_gain": 1.25,
+      "pCa0_scale": 1.1,
+      "l02": {
+        "APD_above_minus67_mV_ms": 314.0,
+        "Ca_peak_uM": 0.5843265807420048,
+        "gel_stress_peak_kPa": 0.034975339571019885,
+        "pCa_multiplier_peak": 1.1091480295387162,
+        "force_peak_kPa": 0.8974821423419419
+      },
+      "l02_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -7.0,
+        "Ca_peak_uM": -0.005192416853472492
+      },
+      "l06": {
+        "APD_above_minus67_mV_ms": 401.0,
+        "Ca_peak_uM": 0.9340425538403284,
+        "gel_stress_peak_kPa": 1.0126318748505858,
+        "pCa_multiplier_peak": 1.3615724436508,
+        "force_peak_kPa": 2.073090087267424
+      },
+      "l06_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -8.0,
+        "Ca_peak_uM": -0.0010723272890190705
+      },
+      "l10": {
+        "APD_above_minus67_mV_ms": 406.0,
+        "Ca_peak_uM": 0.8695667804799395,
+        "gel_stress_peak_kPa": 2.905408902125718,
+        "pCa_multiplier_peak": 1.554568186696557,
+        "force_peak_kPa": 4.1916481620724335
+      },
+      "l10_drift_17_to_20": {
+        "APD_above_minus67_mV_ms": -9.0,
+        "Ca_peak_uM": -0.006559045550097231
+      }
+    }
+  ],
+  "predictions": {
+    "low_no_change": [
+      [
+        224.0,
+        0.3137746231671443
+      ],
+      [
+        235.0,
+        0.34254396209091953
+      ],
+      [
+        247.0,
+        0.3757489415884937
+      ],
+      [
+        261.0,
+        0.4148677348174809
+      ],
+      [
+        277.0,
+        0.46221289882788613
+      ],
+      [
+        228.0,
+        0.32403819382915017
+      ],
+      [
+        239.0,
+        0.3550100143294013
+      ],
+      [
+        252.0,
+        0.3911092336563384
+      ],
+      [
+        267.0,
+        0.43429403995701543
+      ],
+      [
+        285.0,
+        0.48749951709830086
+      ],
+      [
+        232.0,
+        0.3348054328136495
+      ],
+      [
+        244.0,
+        0.36821345478294765
+      ],
+      [
+        258.0,
+        0.4076631406850578
+      ],
+      [
+        275.0,
+        0.4555122699125893
+      ],
+      [
+        294.0,
+        0.5157947483674807
+      ],
+      [
+        236.0,
+        0.34617516146279464
+      ],
+      [
+        249.0,
+        0.3823066213160886
+      ],
+      [
+        264.0,
+        0.42550175586752464
+      ],
+      [
+        282.0,
+        0.4789022772380624
+      ],
+      [
+        304.0,
+        0.5477547986119357
+      ],
+      [
+        241.0,
+        0.35816964415245767
+      ],
+      [
+        255.0,
+        0.3973644879073044
+      ],
+      [
+        271.0,
+        0.44490861691218897
+      ],
+      [
+        290.0,
+        0.50482031878032
+      ],
+      [
+        314.0,
+        0.5843265807420048
+      ]
+    ],
+    "mid_no_change": [
+      [
+        226.0,
+        0.31834396349228106
+      ],
+      [
+        238.0,
+        0.349240605664747
+      ],
+      [
+        251.0,
+        0.3855158319184977
+      ],
+      [
+        267.0,
+        0.4292897376776283
+      ],
+      [
+        285.0,
+        0.48398877444454547
+      ],
+      [
+        233.0,
+        0.3348124784740771
+      ],
+      [
+        247.0,
+        0.37102791137842256
+      ],
+      [
+        263.0,
+        0.41518213566395623
+      ],
+      [
+        281.0,
+        0.47104410515547124
+      ],
+      [
+        304.0,
+        0.5453869500892919
+      ],
+      [
+        241.0,
+        0.354021084387332
+      ],
+      [
+        257.0,
+        0.3974702141521591
+      ],
+      [
+        276.0,
+        0.45295316694400806
+      ],
+      [
+        300.0,
+        0.5277625923099561
+      ],
+      [
+        330.0,
+        0.6353909034297672
+      ],
+      [
+        251.0,
+        0.37691857236117654
+      ],
+      [
+        269.0,
+        0.43057431406026436
+      ],
+      [
+        293.0,
+        0.5033466980546726
+      ],
+      [
+        324.0,
+        0.6092330037365389
+      ],
+      [
+        364.0,
+        0.7685254756792073
+      ],
+      [
+        261.0,
+        0.405024708343009
+      ],
+      [
+        284.0,
+        0.47371154012072414
+      ],
+      [
+        314.0,
+        0.5741070955951604
+      ],
+      [
+        354.0,
+        0.7283370650685173
+      ],
+      [
+        401.0,
+        0.9340425538403284
+      ]
+    ],
+    "low_ridge_LOO": [
+      [
+        264.5282539536111,
+        0.3978305011122898
+      ],
+      [
+        280.54423186846924,
+        0.4522194574878975
+      ],
+      [
+        298.87271199629083,
+        0.5127629265716197
+      ],
+      [
+        321.1060990054906,
+        0.5852360527222447
+      ],
+      [
+        348.59060599733186,
+        0.6741315381272671
+      ],
+      [
+        269.1206293008085,
+        0.4154113042469374
+      ],
+      [
+        285.59539993827167,
+        0.47058161678484245
+      ],
+      [
+        305.74068370464846,
+        0.5361467822039943
+      ],
+      [
+        330.37402196097867,
+        0.6156590710964192
+      ],
+      [
+        361.48430392993873,
+        0.7159168994619093
+      ],
+      [
+        273.10332960983385,
+        0.4309620655519195
+      ],
+      [
+        291.3724053993463,
+        0.49020868053415323
+      ],
+      [
+        314.3722325185032,
+        0.5642387325308883
+      ],
+      [
+        342.32094171434557,
+        0.654323759721501
+      ],
+      [
+        376.37371368632665,
+        0.7636677942470889
+      ],
+      [
+        276.4454666471558,
+        0.44320744973526627
+      ],
+      [
+        298.61181840308893,
+        0.5136572237735697
+      ],
+      [
+        323.8604474433356,
+        0.5948858666117595
+      ],
+      [
+        353.8950292908126,
+        0.6918495765592696
+      ],
+      [
+        393.561329084272,
+        0.8184262151320199
+      ],
+      [
+        283.48404506964977,
+        0.4653112402009379
+      ],
+      [
+        307.68906415469525,
+        0.5428375990039637
+      ],
+      [
+        334.7152981731456,
+        0.6299108247239809
+      ],
+      [
+        366.9790505418369,
+        0.7341172390987736
+      ],
+      [
+        412.91367599614483,
+        0.8801097237299478
+      ]
+    ],
+    "low_mid_ridge_LOO": [
+      [
+        267.43428115275384,
+        0.4077456473409622
+      ],
+      [
+        277.603063661031,
+        0.44377175018084125
+      ],
+      [
+        290.16439831691514,
+        0.4858151690928264
+      ],
+      [
+        306.8753702380908,
+        0.5405910827892899
+      ],
+      [
+        327.08898825222536,
+        0.6065199789259393
+      ],
+      [
+        272.4189604323227,
+        0.42651984295727224
+      ],
+      [
+        284.51609114410513,
+        0.4675609305956077
+      ],
+      [
+        299.83751296903046,
+        0.5176141632937556
+      ],
+      [
+        317.93271012616697,
+        0.5765574191276253
+      ],
+      [
+        341.5155141281522,
+        0.6528594300739433
+      ],
+      [
+        277.69476383526495,
+        0.44586290123773464
+      ],
+      [
+        292.2613676219592,
+        0.49293944312513804
+      ],
+      [
+        311.4238294388533,
+        0.5546053796241229
+      ],
+      [
+        335.52610121384373,
+        0.6323853589266667
+      ],
+      [
+        365.84008760745786,
+        0.7301688400793319
+      ],
+      [
+        283.86504250510325,
+        0.4665085734276058
+      ],
+      [
+        302.9029178640801,
+        0.5266686558356445
+      ],
+      [
+        327.20755499681553,
+        0.6045326077722801
+      ],
+      [
+        358.10712870058444,
+        0.7041908533893975
+      ],
+      [
+        400.25961964600106,
+        0.8398370225717634
+      ],
+      [
+        292.65993907048994,
+        0.49385760067110346
+      ],
+      [
+        316.73158859648316,
+        0.5704699056579663
+      ],
+      [
+        346.68735377363,
+        0.6665073110757539
+      ],
+      [
+        387.64913369693255,
+        0.7985789607861417
+      ],
+      [
+        455.6086295567666,
+        1.0148691668365737
+      ]
+    ],
+    "per_variant_linear_extrapolation": [
+      [
+        228.0,
+        0.32291330381741784
+      ],
+      [
+        241.0,
+        0.3559372492385745
+      ],
+      [
+        255.0,
+        0.3952827222485017
+      ],
+      [
+        273.0,
+        0.4437117405377757
+      ],
+      [
+        293.0,
+        0.5057646500612047
+      ],
+      [
+        238.0,
+        0.345586763119004
+      ],
+      [
+        255.0,
+        0.3870458084274438
+      ],
+      [
+        274.0,
+        0.4392550376715741
+      ],
+      [
+        295.0,
+        0.507794170353927
+      ],
+      [
+        323.0,
+        0.603274383080283
+      ],
+      [
+        250.0,
+        0.3732367359610145
+      ],
+      [
+        270.0,
+        0.42672697352137057
+      ],
+      [
+        294.0,
+        0.4982431932029583
+      ],
+      [
+        325.0,
+        0.600012914707323
+      ],
+      [
+        366.0,
+        0.7549870584920537
+      ],
+      [
+        266.0,
+        0.40766198325955844
+      ],
+      [
+        289.0,
+        0.4788420068044401
+      ],
+      [
+        322.0,
+        0.5811916402418205
+      ],
+      [
+        366.0,
+        0.7395637302350153
+      ],
+      [
+        424.0,
+        0.9892961527464789
+      ],
+      [
+        281.0,
+        0.4518797725335604
+      ],
+      [
+        313.0,
+        0.5500585923341439
+      ],
+      [
+        357.0,
+        0.7033055742781318
+      ],
+      [
+        418.0,
+        0.9518538113567145
+      ],
+      [
+        488.0,
+        1.283758526938652
+      ]
+    ],
+    "low_RBF_LOO_postscore": [
+      [
+        219.86874749346742,
+        0.29132234283848973
+      ],
+      [
+        313.5014832251231,
+        0.5372957411895395
+      ],
+      [
+        329.5316715674975,
+        0.5985921983113258
+      ],
+      [
+        352.2779446480889,
+        0.6782724723145672
+      ],
+      [
+        352.41601715221134,
+        0.6828453058588628
+      ],
+      [
+        261.94674471715336,
+        0.3978486379639404
+      ],
+      [
+        370.1683685136782,
+        0.6938058664574716
+      ],
+      [
+        365.8980429353234,
+        0.7024228064360836
+      ],
+      [
+        372.0914704048023,
+        0.738947792581386
+      ],
+      [
+        390.17060034181367,
+        0.8080352998553341
+      ],
+      [
+        213.03194172176927,
+        0.2757837585986713
+      ],
+      [
+        288.1355943775166,
+        0.47741651280753883
+      ],
+      [
+        306.96767671350864,
+        0.5321744017676157
+      ],
+      [
+        325.49263092605054,
+        0.6023239838922496
+      ],
+      [
+        398.3996755723567,
+        0.8396054027670103
+      ],
+      [
+        237.64363515604498,
+        0.340513596607459
+      ],
+      [
+        260.4747205745075,
+        0.4020484507374491
+      ],
+      [
+        285.0550845654077,
+        0.47242908504221537
+      ],
+      [
+        311.74722182101885,
+        0.5594850862661801
+      ],
+      [
+        374.40322760232186,
+        0.7712498409148676
+      ],
+      [
+        234.2769970640648,
+        0.33164590821267526
+      ],
+      [
+        298.63592383427044,
+        0.5149661390222122
+      ],
+      [
+        338.0148303868135,
+        0.6359787974746125
+      ],
+      [
+        345.83670172125665,
+        0.667788884882754
+      ],
+      [
+        413.69801605688576,
+        0.8800786404666779
+      ]
+    ],
+    "low_mid_RBF_LOO_postscore": [
+      [
+        222.8939501458695,
+        0.299278790435721
+      ],
+      [
+        235.33282419488427,
+        0.32488144043865796
+      ],
+      [
+        256.6123279267873,
+        0.39260820657364054
+      ],
+      [
+        290.90186356709785,
+        0.4980565369175586
+      ],
+      [
+        314.0294291120529,
+        0.5680595091737338
+      ],
+      [
+        246.97130993259339,
+        0.36077874635289275
+      ],
+      [
+        280.11157580444063,
+        0.45307584566530845
+      ],
+      [
+        302.80405772503934,
+        0.5202144450937529
+      ],
+      [
+        312.49092051322964,
+        0.5572374785979959
+      ],
+      [
+        332.3735197669588,
+        0.6263947146056227
+      ],
+      [
+        272.69753808104616,
+        0.43126856049228324
+      ],
+      [
+        302.80105330512714,
+        0.51892412842665
+      ],
+      [
+        320.74054118599247,
+        0.5741624268824085
+      ],
+      [
+        343.03912093673176,
+        0.6570275470871587
+      ],
+      [
+        362.8544406795304,
+        0.7234971336875801
+      ],
+      [
+        301.6473892231198,
+        0.5015296488474617
+      ],
+      [
+        328.7547828780437,
+        0.5920972674549312
+      ],
+      [
+        358.6886867242982,
+        0.6886391162247703
+      ],
+      [
+        378.0038218646756,
+        0.7612122591119301
+      ],
+      [
+        397.3605765412331,
+        0.8287769805763197
+      ],
+      [
+        334.03976882035556,
+        0.602280926376592
+      ],
+      [
+        362.3233511786391,
+        0.705451550763955
+      ],
+      [
+        369.80006200485263,
+        0.7371247130831421
+      ],
+      [
+        383.1090254018341,
+        0.800299673421291
+      ],
+      [
+        358.923730456861,
+        0.7599339829235743
+      ]
+    ]
+  },
+  "interpretation_boundary": "25 fixed grid points and 20-beat transient protocol; no population generalization or individual mechanistic inversion established."
+}

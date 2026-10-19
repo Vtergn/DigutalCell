@@ -1,0 +1,77 @@
+{
+  "calibration": "Original -5 abstract prestrain, 250--350 ms",
+  "prediction_input": "Observed no-load and calibration V/Ca/T/lambda; target pulse schedule",
+  "target_access": "None for linear prediction; native model used only as same-equation reference",
+  "single_pulse_regression_max_V_mV_Ca_uM_T_kPa_lambda": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "results": {
+    "long_hold": {
+      "pulses": [
+        [
+          -5.0,
+          250.0,
+          400.0
+        ]
+      ],
+      "MAE_V_mV_Ca_uM_T_kPa_lambda": [
+        0.29523430463049727,
+        0.0006503658936589905,
+        0.025256827813704016,
+        0.00013519225955224264
+      ],
+      "max_abs_error_V_mV_Ca_uM_T_kPa_lambda": [
+        1.346991561483407,
+        0.00289919383235622,
+        0.14711986292436796,
+        0.0008027588210010022
+      ],
+      "max_abs_true_response_V_mV_Ca_uM_T_kPa_lambda": [
+        3.619213397626581,
+        0.019616728039374143,
+        1.045537904260034,
+        0.040036272511014825
+      ],
+      "runtime_s": 40.440152999944985,
+      "rhs_calls": 7493
+    },
+    "compound": {
+      "pulses": [
+        [
+          -5.0,
+          250.0,
+          300.0
+        ],
+        [
+          -5.0,
+          350.0,
+          400.0
+        ]
+      ],
+      "MAE_V_mV_Ca_uM_T_kPa_lambda": [
+        0.5236953623591856,
+        0.0009491728349028506,
+        0.04358547065276605,
+        0.00025661365340174465
+      ],
+      "max_abs_error_V_mV_Ca_uM_T_kPa_lambda": [
+        2.467281828330713,
+        0.00424708811551501,
+        0.2199827163353587,
+        0.001107756314096423
+      ],
+      "max_abs_true_response_V_mV_Ca_uM_T_kPa_lambda": [
+        2.02894180494026,
+        0.009989631905308605,
+        0.7642184937636417,
+        0.026376858668616388
+      ],
+      "runtime_s": 42.39799899980426,
+      "rhs_calls": 7865
+    }
+  },
+  "limits": "One nominal virtual cell; prestrain units abstract; same-model target; no paired real AP/Ca/force/shape validation"
+}

@@ -1,0 +1,93 @@
+{
+  "paired_unseen": {
+    "balanced_random": {
+      "mean_difference": 0.0017246371560650047,
+      "cell_bootstrap_95pct_fixed_seeds_and_families": [
+        -0.0063810162457215176,
+        0.010109100985780066
+      ]
+    },
+    "static_maximin": {
+      "mean_difference": -4.3978082425058516e-05,
+      "cell_bootstrap_95pct_fixed_seeds_and_families": [
+        -0.011384555995203728,
+        0.011107972986979499
+      ]
+    },
+    "monotonic": {
+      "mean_difference": 0.01827984341029715,
+      "cell_bootstrap_95pct_fixed_seeds_and_families": [
+        0.009719569968024682,
+        0.02698908408165756
+      ]
+    }
+  },
+  "per_seed_unseen": {
+    "17": {
+      "monotonic": {
+        "median": 0.041664114966339955,
+        "worst_family_mean": 0.08369686182963597
+      },
+      "balanced_random": {
+        "median": 0.0527131971490008,
+        "worst_family_mean": 0.12092970793166671
+      },
+      "static_maximin": {
+        "median": 0.046047107099828344,
+        "worst_family_mean": 0.10299929703783199
+      },
+      "local_fisher": {
+        "median": 0.04765817496365618,
+        "worst_family_mean": 0.09399044107168322
+      },
+      "predictive_minimax": {
+        "median": 0.056020544655260185,
+        "worst_family_mean": 0.1382371108586839
+      }
+    },
+    "29": {
+      "monotonic": {
+        "median": 0.04801100501103578,
+        "worst_family_mean": 0.08486706721089317
+      },
+      "balanced_random": {
+        "median": 0.059834893403134304,
+        "worst_family_mean": 0.1431316536237623
+      },
+      "static_maximin": {
+        "median": 0.05789797416074724,
+        "worst_family_mean": 0.10448474709218514
+      },
+      "local_fisher": {
+        "median": 0.05534786981397288,
+        "worst_family_mean": 0.11438587924218284
+      },
+      "predictive_minimax": {
+        "median": 0.05867334084889031,
+        "worst_family_mean": 0.13065059472218726
+      }
+    },
+    "43": {
+      "monotonic": {
+        "median": 0.045631439924066874,
+        "worst_family_mean": 0.09525948989915647
+      },
+      "balanced_random": {
+        "median": 0.052618364300949544,
+        "worst_family_mean": 0.1256132831738673
+      },
+      "static_maximin": {
+        "median": 0.07059793316789334,
+        "worst_family_mean": 0.18156749719027304
+      },
+      "local_fisher": {
+        "median": 0.04308175267308531,
+        "worst_family_mean": 0.11099381320936677
+      },
+      "predictive_minimax": {
+        "median": 0.0469426922569203,
+        "worst_family_mean": 0.13085214218228094
+      }
+    }
+  }
+}

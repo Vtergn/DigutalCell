@@ -1,0 +1,336 @@
+{
+  "scope": "Du Eq4/5/7/11 + declared forward shape closure; synthetic only",
+  "n_cells": 120,
+  "axis_noise_fractional_sd": 0.005,
+  "true_parameter_ranges": {
+    "epsilon_mem": [
+      2,
+      8
+    ],
+    "sigma_cyto_S_m": [
+      0.3,
+      1.1
+    ],
+    "mu_microN_m": [
+      1.5,
+      4
+    ]
+  },
+  "model_shifts": {
+    "alternative_shape": "constant c, b=b0/lambda; a,b observed",
+    "field_gain_uncertain": "cell gain lognormal SD 0.15; inverse fixes gain=1",
+    "nonlinear_membrane": "true restoring force multiplied by 1+2(lambda-1)",
+    "membrane_conductivity": "true sigma_mem=1e-5 S/m; inverse 1e-6"
+  },
+  "design_frequencies_MHz": {
+    "full21": [
+      0.1,
+      0.12847083976609122,
+      0.16504756670204687,
+      0.21203799495561917,
+      0.2724069927426661,
+      0.34996355115805833,
+      0.44960111304799183,
+      0.5776063255304482,
+      0.7420556969510295,
+      0.9533251854051086,
+      1.2247448713915894,
+      1.5734400212689086,
+      2.0214116085399314,
+      2.5969244686205024,
+      3.336290672927862,
+      4.2861606445482,
+      5.506466573774781,
+      7.074203848767573,
+      9.088289091276847,
+      11.675801315933427,
+      15.0
+    ],
+    "log3": [
+      0.1,
+      1.2247448713915894,
+      15.0
+    ],
+    "dopt3": [
+      0.21203799495561917,
+      2.0214116085399314,
+      15.0
+    ],
+    "log5": [
+      0.1,
+      0.34996355115805833,
+      1.2247448713915894,
+      4.2861606445482,
+      15.0
+    ],
+    "dopt5": [
+      0.21203799495561917,
+      0.2724069927426661,
+      1.5734400212689086,
+      2.0214116085399314,
+      15.0
+    ]
+  },
+  "results": {
+    "nominal": {
+      "full21": {
+        "median_mean_absolute_log_error": 0.01876086226099319,
+        "p90_mean_absolute_log_error": 0.047122725428253937,
+        "cvar90_mean_absolute_log_error": 0.05933942655646456,
+        "median_by_parameter": [
+          0.016403514144503962,
+          0.025230295791200126,
+          0.00726991387251192
+        ]
+      },
+      "log3": {
+        "median_mean_absolute_log_error": 0.04784668523927544,
+        "p90_mean_absolute_log_error": 0.18416410270670064,
+        "cvar90_mean_absolute_log_error": 0.2898581524237242,
+        "median_by_parameter": [
+          0.05283755375235118,
+          0.05626414205428203,
+          0.02228023453161583
+        ]
+      },
+      "dopt3": {
+        "median_mean_absolute_log_error": 0.03973415377098029,
+        "p90_mean_absolute_log_error": 0.08133377035579949,
+        "cvar90_mean_absolute_log_error": 0.09917407993325213,
+        "median_by_parameter": [
+          0.03312636201911537,
+          0.060128128880510674,
+          0.015584258157803177
+        ]
+      },
+      "log5": {
+        "median_mean_absolute_log_error": 0.03881300900521277,
+        "p90_mean_absolute_log_error": 0.08708366354500523,
+        "cvar90_mean_absolute_log_error": 0.10859798370286207,
+        "median_by_parameter": [
+          0.03369664764026291,
+          0.05016053126310838,
+          0.016529296654382162
+        ]
+      },
+      "dopt5": {
+        "median_mean_absolute_log_error": 0.03458106618484592,
+        "p90_mean_absolute_log_error": 0.07074619393396038,
+        "cvar90_mean_absolute_log_error": 0.09332945204854898,
+        "median_by_parameter": [
+          0.029345905989758954,
+          0.05958226138563917,
+          0.014599263017197267
+        ]
+      }
+    },
+    "alternative_shape": {
+      "full21": {
+        "median_mean_absolute_log_error": 0.017592319071495457,
+        "p90_mean_absolute_log_error": 0.04628558988379908,
+        "cvar90_mean_absolute_log_error": 0.055375941857289675,
+        "median_by_parameter": [
+          0.016128828265144845,
+          0.025439131700215813,
+          0.006599338698452486
+        ]
+      },
+      "log3": {
+        "median_mean_absolute_log_error": 0.04672092560046019,
+        "p90_mean_absolute_log_error": 0.18059745425095816,
+        "cvar90_mean_absolute_log_error": 0.2801009608401026,
+        "median_by_parameter": [
+          0.05273287789156121,
+          0.053003864065038445,
+          0.020591954349156637
+        ]
+      },
+      "dopt3": {
+        "median_mean_absolute_log_error": 0.038332954593077374,
+        "p90_mean_absolute_log_error": 0.07490565567588413,
+        "cvar90_mean_absolute_log_error": 0.09348608326177311,
+        "median_by_parameter": [
+          0.031068285315809997,
+          0.05459031896178272,
+          0.015020959504622592
+        ]
+      },
+      "log5": {
+        "median_mean_absolute_log_error": 0.03676628240992466,
+        "p90_mean_absolute_log_error": 0.08076440274977299,
+        "cvar90_mean_absolute_log_error": 0.10339208905401581,
+        "median_by_parameter": [
+          0.0342024416418155,
+          0.04836901123136593,
+          0.015472667105188766
+        ]
+      },
+      "dopt5": {
+        "median_mean_absolute_log_error": 0.03206251837631202,
+        "p90_mean_absolute_log_error": 0.0669989803787392,
+        "cvar90_mean_absolute_log_error": 0.08828551346196013,
+        "median_by_parameter": [
+          0.02711164807720006,
+          0.05645575022732752,
+          0.013163194957094455
+        ]
+      }
+    },
+    "field_gain_uncertain": {
+      "full21": {
+        "median_mean_absolute_log_error": 0.056078929148862186,
+        "p90_mean_absolute_log_error": 0.10896442149180786,
+        "cvar90_mean_absolute_log_error": 0.15759998298642564,
+        "median_by_parameter": [
+          0.016660884048938084,
+          0.024414039355686465,
+          0.10611694339084468
+        ]
+      },
+      "log3": {
+        "median_mean_absolute_log_error": 0.09095627158722398,
+        "p90_mean_absolute_log_error": 0.20989402230009627,
+        "cvar90_mean_absolute_log_error": 0.29894041422777096,
+        "median_by_parameter": [
+          0.05383007061307517,
+          0.05741112486155364,
+          0.1015800097324935
+        ]
+      },
+      "dopt3": {
+        "median_mean_absolute_log_error": 0.07189975786632344,
+        "p90_mean_absolute_log_error": 0.1301865282392141,
+        "cvar90_mean_absolute_log_error": 0.17099494997067452,
+        "median_by_parameter": [
+          0.03348380819027591,
+          0.05840180940593757,
+          0.10740125212502863
+        ]
+      },
+      "log5": {
+        "median_mean_absolute_log_error": 0.07654468051472527,
+        "p90_mean_absolute_log_error": 0.1280671841845203,
+        "cvar90_mean_absolute_log_error": 0.18524909182940888,
+        "median_by_parameter": [
+          0.03669514369417713,
+          0.048263334727663657,
+          0.10319801911394108
+        ]
+      },
+      "dopt5": {
+        "median_mean_absolute_log_error": 0.0703267644282087,
+        "p90_mean_absolute_log_error": 0.12690319004455142,
+        "cvar90_mean_absolute_log_error": 0.17966073677409036,
+        "median_by_parameter": [
+          0.02853536002811516,
+          0.056850957570845774,
+          0.10415441341528531
+        ]
+      }
+    },
+    "nonlinear_membrane": {
+      "full21": {
+        "median_mean_absolute_log_error": 0.20789366451599184,
+        "p90_mean_absolute_log_error": 0.2806475332930092,
+        "cvar90_mean_absolute_log_error": 0.31676136009318606,
+        "median_by_parameter": [
+          0.13739164529142023,
+          0.15122367877618087,
+          0.33143655935411254
+        ]
+      },
+      "log3": {
+        "median_mean_absolute_log_error": 0.22703679213120587,
+        "p90_mean_absolute_log_error": 0.3602029706795662,
+        "cvar90_mean_absolute_log_error": 0.45175009950064066,
+        "median_by_parameter": [
+          0.13757916709234647,
+          0.15526923668359888,
+          0.3481470230753096
+        ]
+      },
+      "dopt3": {
+        "median_mean_absolute_log_error": 0.22101675944579036,
+        "p90_mean_absolute_log_error": 0.3423816429267618,
+        "cvar90_mean_absolute_log_error": 0.39741285964733036,
+        "median_by_parameter": [
+          0.1547853401306574,
+          0.17341914734253588,
+          0.3417550740454973
+        ]
+      },
+      "log5": {
+        "median_mean_absolute_log_error": 0.21747112565109172,
+        "p90_mean_absolute_log_error": 0.3132353221732559,
+        "cvar90_mean_absolute_log_error": 0.3550476487613418,
+        "median_by_parameter": [
+          0.13935617147384743,
+          0.13986366356716523,
+          0.34068028767656244
+        ]
+      },
+      "dopt5": {
+        "median_mean_absolute_log_error": 0.23335265430327623,
+        "p90_mean_absolute_log_error": 0.32885743428688424,
+        "cvar90_mean_absolute_log_error": 0.38614338617269955,
+        "median_by_parameter": [
+          0.1567191702760189,
+          0.1744284688917105,
+          0.3366308958342715
+        ]
+      }
+    },
+    "membrane_conductivity": {
+      "full21": {
+        "median_mean_absolute_log_error": 0.04482588145504347,
+        "p90_mean_absolute_log_error": 0.1066013474176412,
+        "cvar90_mean_absolute_log_error": 0.1325322551569779,
+        "median_by_parameter": [
+          0.05917216666375118,
+          0.05288658189926535,
+          0.020934768815026164
+        ]
+      },
+      "log3": {
+        "median_mean_absolute_log_error": 0.11216655796456745,
+        "p90_mean_absolute_log_error": 0.27883732155036484,
+        "cvar90_mean_absolute_log_error": 0.39840030309798385,
+        "median_by_parameter": [
+          0.22341707646762443,
+          0.07477458109211708,
+          0.04608069335055128
+        ]
+      },
+      "dopt3": {
+        "median_mean_absolute_log_error": 0.0534266541669844,
+        "p90_mean_absolute_log_error": 0.0967073154454187,
+        "cvar90_mean_absolute_log_error": 0.12856393516560813,
+        "median_by_parameter": [
+          0.06163911834388189,
+          0.06011192722635461,
+          0.01921749895452335
+        ]
+      },
+      "log5": {
+        "median_mean_absolute_log_error": 0.07263973540472018,
+        "p90_mean_absolute_log_error": 0.1352730598914146,
+        "cvar90_mean_absolute_log_error": 0.1743279208244156,
+        "median_by_parameter": [
+          0.11838787862139427,
+          0.07129395754649057,
+          0.037642374644497156
+        ]
+      },
+      "dopt5": {
+        "median_mean_absolute_log_error": 0.04532977628575341,
+        "p90_mean_absolute_log_error": 0.09613471115609638,
+        "cvar90_mean_absolute_log_error": 0.11629521753680339,
+        "median_by_parameter": [
+          0.04481936786504884,
+          0.05764930569225394,
+          0.01713797678114927
+        ]
+      }
+    }
+  }
+}

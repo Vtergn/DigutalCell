@@ -1,0 +1,11 @@
+# Physiological individualization before feedback-form inference
+
+This stage keeps the existing 64-cell confirmation cohort and all C1/C2 plus sealed-target protocols unchanged. Before evaluating any new native ODE target prediction, the inverse pipeline was fixed as follows.
+
+1. Use the 47 QC-complete development cells from the independent source seed. Inputs are either unperturbed V/Ca/tension waveforms alone or those waveforms plus C1/C2 response differences. No target protocol is included.
+2. Compare ridge, RBF kernel ridge and PLS, each with 5, 10 or 20 components. Five-fold development-cell CV selects the configuration separately for baseline-only and baseline+C1/C2 by mean normalized 13-parameter MAE. PCA/scaling is refit inside each fold. Confirmation parameters are used only for a diagnostic parameter-recovery score after selection.
+3. Clip inferred parameters to the original generator's prespecified physiological box. For each distinct inferred parameter vector, start from a development prototype state, **re-pace** the native ToR-ORd/SAC–Land equations until APD changes <0.25 ms and peak Ca changes <0.2% over 5 beats (minimum 20, maximum 160). Do not use the test cell's true pre-paced state.
+4. Simulate only baseline, C1 and C2 in the source-SAC and no-direct-SAC equations; estimate a nonnegative direct-SAC gate from the observed C1/C2 **response difference relative to baseline**. Then blind-predict the unchanged long hold, larger short pulse and compound target under the native source equations, with and without this gate.
+5. Report parameter errors and native waveform errors separately. Primary functional score is the original pulse-plus-200ms window V/Ca/tension MAE, with baseline alignment using the observed unperturbed waveform. Raw absolute native-waveform MAE and all convergence/QC failures are secondary diagnostics.
+
+The protocol does not optimize a residual. The question is whether better physiological-state inference improves original-form target prediction and reveals the original-versus-saturating feedback signal. The two selected inverse models are compared as prespecified alternatives; no choice between them is made using sealed-target scores.

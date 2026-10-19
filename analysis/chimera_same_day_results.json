@@ -1,0 +1,49 @@
+{
+  "source": "D:\\MyProjects\\AI细胞\\Data\\2022_pnas\\2022_pnas\\chimera_experiments\\capchims_summary.csv",
+  "dates": [
+    "20201108",
+    "20201110"
+  ],
+  "construct_definition": "chimA=Piezo1 with Piezo2 cap; chimB molecular identity unverified",
+  "endpoints": {
+    "log_work_threshold": {
+      "observed_mean_of_date_median_A_minus_B": -0.2504740173739548,
+      "conditional_cell_bootstrap_95pct": [
+        -0.5042063638600145,
+        0.15518379523900272
+      ],
+      "within_date_label_permutation_two_sided_p": 0.15221695566088678
+    },
+    "peak_delay_ms": {
+      "observed_mean_of_date_median_A_minus_B": -1.6899999999999997,
+      "conditional_cell_bootstrap_95pct": [
+        -2.8,
+        -0.72
+      ],
+      "within_date_label_permutation_two_sided_p": 0.00017999640007199856
+    },
+    "peak_current_density_pA_per_pF": {
+      "observed_mean_of_date_median_A_minus_B": 38.741618496972286,
+      "conditional_cell_bootstrap_95pct": [
+        -2.2378093255075613,
+        74.31616704810959
+      ],
+      "within_date_label_permutation_two_sided_p": 0.018359632807343852
+    },
+    "peak_force_nN": {
+      "observed_mean_of_date_median_A_minus_B": -61.69228605000001,
+      "conditional_cell_bootstrap_95pct": [
+        -172.56121741875,
+        64.9960418549999
+      ],
+      "within_date_label_permutation_two_sided_p": 0.23445531089378213
+    }
+  },
+  "force_adjusted_delay_sensitivity": {
+    "A_minus_B_ms": -2.1440641776161984,
+    "covariates": "date, log selected peak force, log cell capacitance",
+    "within_date_label_permutation_two_sided_p": 0.008199836003279934,
+    "A_minus_B_ms_excluding_delay_over_8ms": -1.5536116608341206
+  },
+  "limits": "Only two dates; cells may share coverslips; assignment was not verified randomized; chimB raw traces are absent locally; summary-selected peaks have unequal stimulus force."
+}

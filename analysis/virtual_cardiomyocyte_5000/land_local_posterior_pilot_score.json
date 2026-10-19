@@ -1,0 +1,87 @@
+{
+  "n_cells": 16,
+  "n_draws": 24,
+  "conditioned_parameters": [
+    "Tref",
+    "ca50",
+    "nperm",
+    "beta0",
+    "beta1"
+  ],
+  "fixed_parameters": [
+    "TRPN_n",
+    "phi",
+    "perm50",
+    "all_electrical"
+  ],
+  "prior_sd_in_parameter_range_units": 0.2,
+  "sigma_effective_mean_kPa": 0.9705877296557388,
+  "draws_clipped_cell_mean_fraction": 0.08333333333333333,
+  "failed_draws_total": 0,
+  "whitened_jacobian_singular_values_median": [
+    243.24188622204832,
+    57.26768088955957,
+    15.41663455092213,
+    3.3750471987524184,
+    0.57264567452831
+  ],
+  "results": [
+    {
+      "target_lambda": 1.125,
+      "n_valid_cells": 16,
+      "n_total_cells": 16,
+      "point_MAE_kPa": 1.1359100122836612,
+      "posterior_mean_MAE_kPa": 1.1345035704777175,
+      "pointwise_90pct_coverage": 0.22778239202657807,
+      "mean_90pct_interval_width_kPa": 1.1102970732106194,
+      "CRPS_kPa": 0.9805145227385612,
+      "per_cell_90pct_coverage": [
+        0.19269102990033224,
+        0.04983388704318937,
+        0.3853820598006645,
+        0.0,
+        0.22591362126245848,
+        0.10631229235880399,
+        0.08305647840531562,
+        0.4019933554817276,
+        0.0,
+        0.7508305647840532,
+        0.6079734219269103,
+        0.3920265780730897,
+        0.08637873754152824,
+        0.03986710963455149,
+        0.2159468438538206,
+        0.10631229235880399
+      ]
+    },
+    {
+      "target_lambda": 1.15,
+      "n_valid_cells": 16,
+      "n_total_cells": 16,
+      "point_MAE_kPa": 2.0263086243341,
+      "posterior_mean_MAE_kPa": 2.0280781472366476,
+      "pointwise_90pct_coverage": 0.23941029900332225,
+      "mean_90pct_interval_width_kPa": 2.1102275611797388,
+      "CRPS_kPa": 1.713565285996379,
+      "per_cell_90pct_coverage": [
+        0.20930232558139536,
+        0.0664451827242525,
+        0.5382059800664452,
+        0.0,
+        0.18604651162790697,
+        0.053156146179401995,
+        0.08305647840531562,
+        0.4186046511627907,
+        0.0,
+        0.9036544850498339,
+        0.009966777408637873,
+        0.3488372093023256,
+        0.10963455149501661,
+        0.2591362126245847,
+        0.49169435215946844,
+        0.15282392026578073
+      ]
+    }
+  ],
+  "scope": "Exploratory local conditional approximation, not a calibrated full-parameter posterior. Sigma includes a fixed 0.5 kPa floor plus calibration residual RMS; no held-out-target tuning."
+}

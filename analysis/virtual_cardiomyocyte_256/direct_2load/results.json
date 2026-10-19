@@ -1,0 +1,45 @@
+{
+  "cohort": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_256\\cohort.mat",
+  "calibration_loads": [
+    1.0,
+    1.1
+  ],
+  "training_target_loads": [
+    1.025,
+    1.05,
+    1.075
+  ],
+  "train_n_cells": 179,
+  "validation_n_cells": 38,
+  "test_n_cells": 39,
+  "epochs_run": 60,
+  "in_range_test": [
+    {
+      "lambda": 1.05,
+      "waveform_MAE_kPa": 1.8342857360839844,
+      "peak_MAE_kPa": 2.087221622467041
+    }
+  ],
+  "outside_range_test": [
+    {
+      "lambda": 1.125,
+      "waveform_MAE_kPa": 7.314162254333496,
+      "peak_MAE_kPa": 10.774675369262695
+    }
+  ],
+  "static_in_range_test": [
+    {
+      "lambda": 1.05,
+      "waveform_MAE_kPa": 1.9719716310501099,
+      "peak_MAE_kPa": 3.4790406227111816
+    }
+  ],
+  "static_outside_range_test": [
+    {
+      "lambda": 1.125,
+      "waveform_MAE_kPa": 3.3578102588653564,
+      "peak_MAE_kPa": 4.750195503234863
+    }
+  ],
+  "note": "Direct neural baseline; target lambda=1.125 excluded from all training targets."
+}

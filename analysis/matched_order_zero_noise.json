@@ -1,0 +1,14 @@
+{
+  "no_history": {
+    "median_true_span": 0.0,
+    "median_prediction_span": 0.01263809409361455
+  },
+  "single_sigmoid": {
+    "median_true_span": 0.010179464537738964,
+    "median_prediction_span": 0.031033877428612133
+  },
+  "force_fatigue": {
+    "median_true_span": 0.005032695172787718,
+    "median_prediction_span": 0.04101631426646005
+  }
+}

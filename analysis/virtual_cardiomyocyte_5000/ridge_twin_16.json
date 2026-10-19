@@ -1,0 +1,27 @@
+{
+  "cohort": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\merged_cohort.h5",
+  "selected_test_cells": [
+    227,
+    273,
+    383,
+    996,
+    1175,
+    1556,
+    1587,
+    2095,
+    2388,
+    2428,
+    2612,
+    2904,
+    3087,
+    3923,
+    4442,
+    4635
+  ],
+  "alpha": 1.0,
+  "fit_n": 4240,
+  "test_parameter_MAE_prior_scaled": 0.12286919703008288,
+  "test_mechanical_MAE_prior_scaled": 0.17956765954895615,
+  "n_clipped_coordinates": 7,
+  "scope": "Ridge-initialized point twin; parameters sent through true ODE at sealed target load."
+}

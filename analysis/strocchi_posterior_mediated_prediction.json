@@ -1,0 +1,374 @@
+{
+  "design": "same 10 outer splits as direct benchmark; Gaussian conditional posterior over 27 parameters; ridge surrogate from true parameters to target-load features; calibrated prediction intervals",
+  "summary": {
+    "L1_to_L3": {
+      "direct_ridge_mae": 0.3440229840546386,
+      "parameter_mediated_mae": 0.4086116469390615,
+      "parameter_mediated_coverage_90pct": 0.9090909090909092,
+      "parameter_mediated_interval_fullwidth": 1.7316466878715135,
+      "posterior_covariance_trace_z": 25.0910524158463,
+      "mediated_wins_splits": 0
+    },
+    "L1_L2_to_L3": {
+      "direct_ridge_mae": 0.26985213113660095,
+      "parameter_mediated_mae": 0.3691421000113686,
+      "parameter_mediated_coverage_90pct": 0.9038961038961038,
+      "parameter_mediated_interval_fullwidth": 1.570734236240875,
+      "posterior_covariance_trace_z": 24.124251901627932,
+      "mediated_wins_splits": 0
+    },
+    "L1_to_L2": {
+      "direct_ridge_mae": 0.2602321489697467,
+      "parameter_mediated_mae": 0.34953555861910574,
+      "parameter_mediated_coverage_90pct": 0.9016042780748663,
+      "parameter_mediated_interval_fullwidth": 1.4001319319014442,
+      "posterior_covariance_trace_z": 25.0910524158463,
+      "mediated_wins_splits": 0
+    },
+    "L1_L3_to_L2": {
+      "direct_ridge_mae": 0.18360988243892012,
+      "parameter_mediated_mae": 0.3035745099256526,
+      "parameter_mediated_coverage_90pct": 0.899108734402852,
+      "parameter_mediated_interval_fullwidth": 1.2102526860017786,
+      "posterior_covariance_trace_z": 23.892386620355452,
+      "mediated_wins_splits": 0
+    }
+  },
+  "splits": [
+    {
+      "seed": 0,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.3767931919150157,
+          "parameter_mediated_mae": 0.4437708143273239,
+          "parameter_mediated_coverage_90pct": 0.8823529411764706,
+          "parameter_mediated_interval_fullwidth": 1.7484276762485131,
+          "posterior_covariance_trace_z": 25.100625856055743
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.2984550469646923,
+          "parameter_mediated_mae": 0.4009053803927876,
+          "parameter_mediated_coverage_90pct": 0.8831168831168831,
+          "parameter_mediated_interval_fullwidth": 1.648111442906238,
+          "posterior_covariance_trace_z": 24.113571714780598
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.2786976087136729,
+          "parameter_mediated_mae": 0.37870117145634835,
+          "parameter_mediated_coverage_90pct": 0.8618538324420677,
+          "parameter_mediated_interval_fullwidth": 1.4072685721778875,
+          "posterior_covariance_trace_z": 25.100625856055743
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.19658925698575355,
+          "parameter_mediated_mae": 0.3338856126144687,
+          "parameter_mediated_coverage_90pct": 0.8458110516934046,
+          "parameter_mediated_interval_fullwidth": 1.1763047773067024,
+          "posterior_covariance_trace_z": 23.89928246427631
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.338144950121285,
+          "parameter_mediated_mae": 0.4054354397870219,
+          "parameter_mediated_coverage_90pct": 0.9129106187929718,
+          "parameter_mediated_interval_fullwidth": 1.78662775249189,
+          "posterior_covariance_trace_z": 25.117240401498986
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.25952073299064765,
+          "parameter_mediated_mae": 0.35951498905494456,
+          "parameter_mediated_coverage_90pct": 0.9129106187929718,
+          "parameter_mediated_interval_fullwidth": 1.6203679470047379,
+          "posterior_covariance_trace_z": 24.147106921966135
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.266819049377681,
+          "parameter_mediated_mae": 0.3593768437604971,
+          "parameter_mediated_coverage_90pct": 0.8832442067736186,
+          "parameter_mediated_interval_fullwidth": 1.3929619379812135,
+          "posterior_covariance_trace_z": 25.117240401498986
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.18208002940874157,
+          "parameter_mediated_mae": 0.30397845680046404,
+          "parameter_mediated_coverage_90pct": 0.8778966131907309,
+          "parameter_mediated_interval_fullwidth": 1.1293129529560824,
+          "posterior_covariance_trace_z": 23.926811149663646
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.3625641066759958,
+          "parameter_mediated_mae": 0.4185085292003008,
+          "parameter_mediated_coverage_90pct": 0.8991596638655462,
+          "parameter_mediated_interval_fullwidth": 1.749737111574186,
+          "posterior_covariance_trace_z": 25.19320696922872
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.2858618127247145,
+          "parameter_mediated_mae": 0.38231226471554225,
+          "parameter_mediated_coverage_90pct": 0.8854087089381207,
+          "parameter_mediated_interval_fullwidth": 1.5629558137711501,
+          "posterior_covariance_trace_z": 24.204109313959396
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.25799209196316897,
+          "parameter_mediated_mae": 0.34010690168284435,
+          "parameter_mediated_coverage_90pct": 0.8992869875222816,
+          "parameter_mediated_interval_fullwidth": 1.355110311673431,
+          "posterior_covariance_trace_z": 25.19320696922872
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.17622341726619264,
+          "parameter_mediated_mae": 0.30319555495351447,
+          "parameter_mediated_coverage_90pct": 0.9206773618538324,
+          "parameter_mediated_interval_fullwidth": 1.3030554319238403,
+          "posterior_covariance_trace_z": 24.010088321336845
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.340774648848641,
+          "parameter_mediated_mae": 0.3968435116900145,
+          "parameter_mediated_coverage_90pct": 0.9236058059587471,
+          "parameter_mediated_interval_fullwidth": 1.7107403924836433,
+          "posterior_covariance_trace_z": 25.079466926075394
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.27142167351443186,
+          "parameter_mediated_mae": 0.3577520778668975,
+          "parameter_mediated_coverage_90pct": 0.9113827349121467,
+          "parameter_mediated_interval_fullwidth": 1.5197107098893026,
+          "posterior_covariance_trace_z": 24.087077066812505
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.2540561843594788,
+          "parameter_mediated_mae": 0.34490446764095334,
+          "parameter_mediated_coverage_90pct": 0.9251336898395722,
+          "parameter_mediated_interval_fullwidth": 1.4285252133170332,
+          "posterior_covariance_trace_z": 25.079466926075394
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.18308454648353553,
+          "parameter_mediated_mae": 0.3083149869378601,
+          "parameter_mediated_coverage_90pct": 0.9099821746880571,
+          "parameter_mediated_interval_fullwidth": 1.2537184690802878,
+          "posterior_covariance_trace_z": 23.82038645376
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.3417415949342363,
+          "parameter_mediated_mae": 0.4119102874240312,
+          "parameter_mediated_coverage_90pct": 0.8808250572956455,
+          "parameter_mediated_interval_fullwidth": 1.6055449055886615,
+          "posterior_covariance_trace_z": 25.03517225731997
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.26776476568285784,
+          "parameter_mediated_mae": 0.37272956253285616,
+          "parameter_mediated_coverage_90pct": 0.8739495798319328,
+          "parameter_mediated_interval_fullwidth": 1.4280671043084427,
+          "posterior_covariance_trace_z": 24.12819688530273
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.2635080695663731,
+          "parameter_mediated_mae": 0.34352149977008445,
+          "parameter_mediated_coverage_90pct": 0.9090909090909091,
+          "parameter_mediated_interval_fullwidth": 1.396977718434805,
+          "posterior_covariance_trace_z": 25.03517225731997
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.1823198602947839,
+          "parameter_mediated_mae": 0.2935098877088833,
+          "parameter_mediated_coverage_90pct": 0.9064171122994652,
+          "parameter_mediated_interval_fullwidth": 1.1999239837359343,
+          "posterior_covariance_trace_z": 23.8712436114965
+        }
+      }
+    },
+    {
+      "seed": 5,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.32459104518548815,
+          "parameter_mediated_mae": 0.39248280005793224,
+          "parameter_mediated_coverage_90pct": 0.919022154316272,
+          "parameter_mediated_interval_fullwidth": 1.6653973394998267,
+          "posterior_covariance_trace_z": 25.076648561182136
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.2578830428595377,
+          "parameter_mediated_mae": 0.3550320695902765,
+          "parameter_mediated_coverage_90pct": 0.9213139801375095,
+          "parameter_mediated_interval_fullwidth": 1.5636802468992284,
+          "posterior_covariance_trace_z": 24.116363050436256
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.24833913884877332,
+          "parameter_mediated_mae": 0.34042598631797827,
+          "parameter_mediated_coverage_90pct": 0.8983957219251337,
+          "parameter_mediated_interval_fullwidth": 1.3735281304731712,
+          "posterior_covariance_trace_z": 25.076648561182136
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.1763780138218937,
+          "parameter_mediated_mae": 0.2946398487291736,
+          "parameter_mediated_coverage_90pct": 0.9144385026737968,
+          "parameter_mediated_interval_fullwidth": 1.235693933668025,
+          "posterior_covariance_trace_z": 23.876426663384095
+        }
+      }
+    },
+    {
+      "seed": 6,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.33870718856641,
+          "parameter_mediated_mae": 0.398967958609077,
+          "parameter_mediated_coverage_90pct": 0.9182582123758595,
+          "parameter_mediated_interval_fullwidth": 1.7933334712529267,
+          "posterior_covariance_trace_z": 25.073451524814217
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.26216697520426774,
+          "parameter_mediated_mae": 0.3581122878681131,
+          "parameter_mediated_coverage_90pct": 0.919022154316272,
+          "parameter_mediated_interval_fullwidth": 1.6217244388424892,
+          "posterior_covariance_trace_z": 24.10705679599515
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.269069917656397,
+          "parameter_mediated_mae": 0.3621633132974857,
+          "parameter_mediated_coverage_90pct": 0.9099821746880571,
+          "parameter_mediated_interval_fullwidth": 1.4531094736491712,
+          "posterior_covariance_trace_z": 25.073451524814217
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.1863054149442276,
+          "parameter_mediated_mae": 0.3173174187934247,
+          "parameter_mediated_coverage_90pct": 0.9037433155080213,
+          "parameter_mediated_interval_fullwidth": 1.2228341392690991,
+          "posterior_covariance_trace_z": 23.848490213277383
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.341622176231544,
+          "parameter_mediated_mae": 0.3993975808074186,
+          "parameter_mediated_coverage_90pct": 0.9113827349121467,
+          "parameter_mediated_interval_fullwidth": 1.6171363947237274,
+          "posterior_covariance_trace_z": 25.033940379565006
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.26532684545465124,
+          "parameter_mediated_mae": 0.3591933588628338,
+          "parameter_mediated_coverage_90pct": 0.8961038961038961,
+          "parameter_mediated_interval_fullwidth": 1.4563038856505546,
+          "posterior_covariance_trace_z": 24.096637201214513
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.24933365709949848,
+          "parameter_mediated_mae": 0.3250081217460193,
+          "parameter_mediated_coverage_90pct": 0.9126559714795008,
+          "parameter_mediated_interval_fullwidth": 1.320993377729372,
+          "posterior_covariance_trace_z": 25.033940379565006
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.17992207613230263,
+          "parameter_mediated_mae": 0.28234913275953083,
+          "parameter_mediated_coverage_90pct": 0.9001782531194296,
+          "parameter_mediated_interval_fullwidth": 1.1438824422694118,
+          "posterior_covariance_trace_z": 23.866051758167355
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.32752400668140946,
+          "parameter_mediated_mae": 0.3923984649693281,
+          "parameter_mediated_coverage_90pct": 0.922077922077922,
+          "parameter_mediated_interval_fullwidth": 1.7653355522166805,
+          "posterior_covariance_trace_z": 25.102469228558835
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.26008770056231534,
+          "parameter_mediated_mae": 0.3603653096564873,
+          "parameter_mediated_coverage_90pct": 0.9136745607333843,
+          "parameter_mediated_interval_fullwidth": 1.56662767132249,
+          "posterior_covariance_trace_z": 24.140102581364744
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.24516297718462235,
+          "parameter_mediated_mae": 0.33421087785646464,
+          "parameter_mediated_coverage_90pct": 0.9376114081996435,
+          "parameter_mediated_interval_fullwidth": 1.5130529757324835,
+          "posterior_covariance_trace_z": 25.102469228558835
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.17724231567192938,
+          "parameter_mediated_mae": 0.29105441895915,
+          "parameter_mediated_coverage_90pct": 0.9117647058823529,
+          "parameter_mediated_interval_fullwidth": 1.2443269286596963,
+          "posterior_covariance_trace_z": 23.898468892542578
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "scores": {
+        "L1_to_L3": {
+          "direct_ridge_mae": 0.3477669313863605,
+          "parameter_mediated_mae": 0.42640108251816716,
+          "parameter_mediated_coverage_90pct": 0.9213139801375095,
+          "parameter_mediated_interval_fullwidth": 1.8741862826350828,
+          "posterior_covariance_trace_z": 25.098302054163973
+        },
+        "L1_L2_to_L3": {
+          "direct_ridge_mae": 0.2700327154078931,
+          "parameter_mediated_mae": 0.38550369957294744,
+          "parameter_mediated_coverage_90pct": 0.922077922077922,
+          "parameter_mediated_interval_fullwidth": 1.719793101814115,
+          "posterior_covariance_trace_z": 24.102297484447273
+        },
+        "L1_to_L2": {
+          "direct_ridge_mae": 0.26934279492780183,
+          "parameter_mediated_mae": 0.366936402662382,
+          "parameter_mediated_coverage_90pct": 0.8787878787878788,
+          "parameter_mediated_interval_fullwidth": 1.3597916078458752,
+          "posterior_covariance_trace_z": 25.098302054163973
+        },
+        "L1_L3_to_L2": {
+          "direct_ridge_mae": 0.19595389337984112,
+          "parameter_mediated_mae": 0.30749978100005637,
+          "parameter_mediated_coverage_90pct": 0.9001782531194296,
+          "parameter_mediated_interval_fullwidth": 1.1934738011487058,
+          "posterior_covariance_trace_z": 23.906616675649815
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "The forward map is trained from paired CSV rather than the mechanistic ToR-ORd-Land simulator.",
+    "The posterior is a joint-Gaussian approximation; the mapping ignores nonlinearity and may discard information.",
+    "Mediated and direct models use different hyperparameter policies; these are architecture diagnostics, not final tuned model rankings."
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "protocol": "5-fold train-only model selection for each scalar output; fixed seed 20260928; 186 calibration and 187 test paired identities excluded from all forward model fits",
+  "model_definitions": {
+    "gp": "independent scalar GP with output-specific rank-correlation relevance-scaled anisotropic kernel; fixed global length and nugget, not marginal-likelihood-optimized ARD",
+    "xgb": "fixed shallow XGBRegressor hyperparameters",
+    "mlp2": "two-seed small tanh MLP ensemble",
+    "ridge": "standardized ridge"
+  },
+  "targets": {
+    "L1:5:Trest,v": {
+      "n_train": 1211,
+      "selected": "gp_rbf_ard:log",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.5417095956519165,
+          "r2_mean": 0.5409131821034171
+        },
+        "ridge:log": {
+          "mae_standardized": 0.4025095774340929,
+          "r2_mean": 0.5662327499098627
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.4513971054045777,
+          "r2_mean": 0.6414492224965789
+        },
+        "xgb:log": {
+          "mae_standardized": 0.3631252386692573,
+          "r2_mean": 0.6522507567612815
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.5332048523733327,
+          "r2_mean": 0.5418197675052646
+        },
+        "mlp2:log": {
+          "mae_standardized": 0.42636538646178224,
+          "r2_mean": 0.48520164513392106
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.3736512164595381,
+          "r2_mean": 0.7470571325085633
+        },
+        "gp_rbf_ard:log": {
+          "mae_standardized": 0.24263650018114133,
+          "r2_mean": 0.825816232335397
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.3690286078406893,
+          "r2_mean": 0.7480904370948067
+        },
+        "gp_matern_ard:log": {
+          "mae_standardized": 0.24742623196773578,
+          "r2_mean": 0.8138266240308232
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.06973396868200694,
+        "r2": 0.8109765558140695,
+        "mae_original_units": 0.038403339650312306
+      },
+      "test": {
+        "mae_standardized": 0.059536627693136224,
+        "r2": 0.9311564545298949,
+        "mae_original_units": 0.032787540679921866
+      },
+      "distribution": {
+        "train_min": 0.000880391,
+        "train_median": 0.345088,
+        "train_q01": 0.0051984729999999995,
+        "train_q99": 1.9148290000000001,
+        "train_max": 1.98848
+      }
+    },
+    "L2:4:Tdur,v": {
+      "n_train": 644,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.3521728341311071,
+          "r2_mean": 0.7920292234928245
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.37127667822068555,
+          "r2_mean": 0.7804595723645303
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.3765102785265352,
+          "r2_mean": 0.7590782923169106
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.2225285581295934,
+          "r2_mean": 0.9146577384776237
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.23532520999809053,
+          "r2_mean": 0.901207645320311
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.18743373984086276,
+        "r2": 0.9326335907291453,
+        "mae_original_units": 21.407158206173214
+      },
+      "test": {
+        "mae_standardized": 0.18228182609003246,
+        "r2": 0.9296470676398115,
+        "mae_original_units": 20.818748494974894
+      },
+      "distribution": {
+        "train_min": 219.0,
+        "train_median": 516.0,
+        "train_q01": 279.0,
+        "train_q99": 763.4200000000003,
+        "train_max": 806.0
+      }
+    },
+    "L2:5:Trest,v": {
+      "n_train": 644,
+      "selected": "gp_rbf_ard:log",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.554287546465854,
+          "r2_mean": 0.5061708967200842
+        },
+        "ridge:log": {
+          "mae_standardized": 0.3948965475274229,
+          "r2_mean": 0.5934411954407721
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.510328804429786,
+          "r2_mean": 0.5191169492856301
+        },
+        "xgb:log": {
+          "mae_standardized": 0.43292211228926086,
+          "r2_mean": 0.5102620615743223
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.562182889107423,
+          "r2_mean": 0.47306934780113413
+        },
+        "mlp2:log": {
+          "mae_standardized": 0.43188952219144117,
+          "r2_mean": 0.5094040025918698
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.4406638405469314,
+          "r2_mean": 0.6638577773385345
+        },
+        "gp_rbf_ard:log": {
+          "mae_standardized": 0.27471378908257743,
+          "r2_mean": 0.7723904962738393
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.4331148973320754,
+          "r2_mean": 0.6661902084150757
+        },
+        "gp_matern_ard:log": {
+          "mae_standardized": 0.2920409337487521,
+          "r2_mean": 0.7422581795989684
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.3283376751998692,
+        "r2": 0.7046062404143925,
+        "mae_original_units": 0.1676405466173609
+      },
+      "test": {
+        "mae_standardized": 0.3525753161986117,
+        "r2": 0.7343488861050678,
+        "mae_original_units": 0.18001564607334372
+      },
+      "distribution": {
+        "train_min": 0.00198089,
+        "train_median": 0.31950599999999996,
+        "train_q01": 0.0072867724,
+        "train_q99": 1.9049634000000002,
+        "train_max": 1.99352
+      }
+    },
+    "L3:4:Tdur,v": {
+      "n_train": 727,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.3660891037529807,
+          "r2_mean": 0.7806534586748336
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.3509189302508525,
+          "r2_mean": 0.803126178505857
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.36982815842637795,
+          "r2_mean": 0.7694199222850775
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.2153036628201813,
+          "r2_mean": 0.9200681243939887
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.2325436745168974,
+          "r2_mean": 0.9080709343357336
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.17734951167379434,
+        "r2": 0.9187193580553051,
+        "mae_original_units": 22.70845993792653
+      },
+      "test": {
+        "mae_standardized": 0.19887280371951718,
+        "r2": 0.8932682406458733,
+        "mae_original_units": 25.464378522306884
+      },
+      "distribution": {
+        "train_min": 216.0,
+        "train_median": 537.0,
+        "train_q01": 269.56,
+        "train_q99": 824.74,
+        "train_max": 881.0
+      }
+    },
+    "L3:5:Trest,v": {
+      "n_train": 727,
+      "selected": "gp_rbf_ard:log",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.5233156895422086,
+          "r2_mean": 0.5840079214988672
+        },
+        "ridge:log": {
+          "mae_standardized": 0.38799934816177317,
+          "r2_mean": 0.6107023398075299
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.4816862745988858,
+          "r2_mean": 0.61039002143287
+        },
+        "xgb:log": {
+          "mae_standardized": 0.3963590277899246,
+          "r2_mean": 0.601974993859732
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.5242650853063481,
+          "r2_mean": 0.5700215594889789
+        },
+        "mlp2:log": {
+          "mae_standardized": 0.40956343700196457,
+          "r2_mean": 0.5566634882036887
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.40184386682420437,
+          "r2_mean": 0.7249110812046194
+        },
+        "gp_rbf_ard:log": {
+          "mae_standardized": 0.262776189327038,
+          "r2_mean": 0.7945541231613357
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.3974435101430436,
+          "r2_mean": 0.7293012303858981
+        },
+        "gp_matern_ard:log": {
+          "mae_standardized": 0.26791682739209777,
+          "r2_mean": 0.7922063642722111
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.20912051473616677,
+        "r2": 0.8058348059557412,
+        "mae_original_units": 0.12377468606712559
+      },
+      "test": {
+        "mae_standardized": 0.20959796013203963,
+        "r2": 0.8419171908175821,
+        "mae_original_units": 0.1240572774430263
+      },
+      "distribution": {
+        "train_min": 0.00198058,
+        "train_median": 0.376527,
+        "train_q01": 0.0072279362,
+        "train_q99": 1.9669834,
+        "train_max": 1.99808
+      }
+    },
+    "L2:0:Tpeak,v": {
+      "n_train": 644,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.32204598090372627,
+          "r2_mean": 0.8174087562799233
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.3283348212223633,
+          "r2_mean": 0.8136005976094711
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.3168760741354379,
+          "r2_mean": 0.8208550644048275
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.19784638857973041,
+          "r2_mean": 0.9276669635384318
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.2195893293610839,
+          "r2_mean": 0.907060471418983
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.18260837608990815,
+        "r2": 0.9314784791989232,
+        "mae_original_units": 5.973861516123518
+      },
+      "test": {
+        "mae_standardized": 0.2016502867167238,
+        "r2": 0.9222626281689031,
+        "mae_original_units": 6.596799737922228
+      },
+      "distribution": {
+        "train_min": 10.2666,
+        "train_median": 55.592600000000004,
+        "train_q01": 11.412320000000001,
+        "train_q99": 154.54236000000014,
+        "train_max": 179.021
+      }
+    },
+    "L2:1:TTP,t,v": {
+      "n_train": 644,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.24265883225668944,
+          "r2_mean": 0.8981812236916275
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.3460612839174305,
+          "r2_mean": 0.7960162150556463
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.2650293716411337,
+          "r2_mean": 0.8761647651404256
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.1761424072866801,
+          "r2_mean": 0.939345797742291
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.19062948572649277,
+          "r2_mean": 0.9278736616223882
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.14860724146330545,
+        "r2": 0.9608763153557554,
+        "mae_original_units": 5.163575335581859
+      },
+      "test": {
+        "mae_standardized": 0.14644244929139236,
+        "r2": 0.9607591665309249,
+        "mae_original_units": 5.0883564744046845
+      },
+      "distribution": {
+        "train_min": 106.0,
+        "train_median": 187.0,
+        "train_q01": 124.43,
+        "train_q99": 272.1400000000001,
+        "train_max": 300.0
+      }
+    },
+    "L2:2:dT/dtMax,v": {
+      "n_train": 644,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.3312720938688595,
+          "r2_mean": 0.7883202008202573
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.35476883418189853,
+          "r2_mean": 0.7551011629750806
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.3239498488225433,
+          "r2_mean": 0.7948888838712637
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.19583974376459573,
+          "r2_mean": 0.9165421403964988
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.218385348615063,
+          "r2_mean": 0.8918967551216431
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.18540008673191422,
+        "r2": 0.9192311612222317,
+        "mae_original_units": 0.07037796250802149
+      },
+      "test": {
+        "mae_standardized": 0.20712350676035007,
+        "r2": 0.9262741296335888,
+        "mae_original_units": 0.07862418324748617
+      },
+      "distribution": {
+        "train_min": 0.078845,
+        "train_median": 0.567,
+        "train_q01": 0.10951535,
+        "train_q99": 1.6929825000000014,
+        "train_max": 2.7016
+      }
+    },
+    "L2:3:dT/dtMax,v": {
+      "n_train": 644,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.36830260581786234,
+          "r2_mean": 0.7642061206915813
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.38071050657499117,
+          "r2_mean": 0.7330483387322692
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.36630413983158255,
+          "r2_mean": 0.7566248866835549
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.2456445311934668,
+          "r2_mean": 0.8766551334328202
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.26511072315279693,
+          "r2_mean": 0.8582857926292402
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.2142798489428402,
+        "r2": 0.9110046102493642,
+        "mae_original_units": 0.034310537551931634
+      },
+      "test": {
+        "mae_standardized": 0.24676085962923022,
+        "r2": 0.891218722212322,
+        "mae_original_units": 0.03951140428008281
+      },
+      "distribution": {
+        "train_min": -1.03295,
+        "train_median": -0.255775,
+        "train_q01": -0.718262,
+        "train_q99": -0.04478884999999982,
+        "train_max": -0.02647
+      }
+    },
+    "L3:0:Tpeak,v": {
+      "n_train": 727,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.34958793366735336,
+          "r2_mean": 0.7986132384263473
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.3907841273125709,
+          "r2_mean": 0.7416533189255083
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.35113036192086844,
+          "r2_mean": 0.7931334391232645
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.24663823920998032,
+          "r2_mean": 0.8912899662366011
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.26825972484009053,
+          "r2_mean": 0.8697805211110967
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.21309654838163425,
+        "r2": 0.8871062686400091,
+        "mae_original_units": 1.5060400737600679
+      },
+      "test": {
+        "mae_standardized": 0.23627030796861756,
+        "r2": 0.860476850416481,
+        "mae_original_units": 1.6698184684019886
+      },
+      "distribution": {
+        "train_min": 10.036,
+        "train_median": 27.7687,
+        "train_q01": 10.864802,
+        "train_q99": 39.100734,
+        "train_max": 41.2343
+      }
+    },
+    "L3:1:TTP,t,v": {
+      "n_train": 727,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.2739944590156008,
+          "r2_mean": 0.8563781573392879
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.3022556174258656,
+          "r2_mean": 0.8271300926364219
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.28751085819633815,
+          "r2_mean": 0.8438914505629583
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.1802948680844002,
+          "r2_mean": 0.9323131086960581
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.1835312323892215,
+          "r2_mean": 0.9248207758396407
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.14244593450231383,
+        "r2": 0.9539608010278063,
+        "mae_original_units": 7.38503228088276
+      },
+      "test": {
+        "mae_standardized": 0.14963571207646723,
+        "r2": 0.9392717479770206,
+        "mae_original_units": 7.757782402976469
+      },
+      "distribution": {
+        "train_min": 76.0,
+        "train_median": 192.0,
+        "train_q01": 114.0,
+        "train_q99": 359.0,
+        "train_max": 445.0
+      }
+    },
+    "L3:2:dT/dtMax,v": {
+      "n_train": 727,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.3285931706359075,
+          "r2_mean": 0.7997587191518243
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.3620465965693219,
+          "r2_mean": 0.7482516911403555
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.3286589017633855,
+          "r2_mean": 0.795044869689267
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.21256965948055936,
+          "r2_mean": 0.904537422804774
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.23344147322761238,
+          "r2_mean": 0.883874680062702
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.21868125551092596,
+        "r2": 0.913219360951688,
+        "mae_original_units": 0.02838042713964543
+      },
+      "test": {
+        "mae_standardized": 0.24624528506624696,
+        "r2": 0.9063679646710319,
+        "mae_original_units": 0.03195768359284307
+      },
+      "distribution": {
+        "train_min": 0.07218,
+        "train_median": 0.293945,
+        "train_q01": 0.10053329999999999,
+        "train_q99": 0.6912970000000002,
+        "train_max": 1.11605
+      }
+    },
+    "L3:3:dT/dtMax,v": {
+      "n_train": 727,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.37792029586974574,
+          "r2_mean": 0.7426704322404436
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.39198455475440663,
+          "r2_mean": 0.7111006661412412
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.39279553981256093,
+          "r2_mean": 0.7244022782300874
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.28063519364385714,
+          "r2_mean": 0.8350541063955286
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.28602975718483337,
+          "r2_mean": 0.8270670502016451
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.2335020836382092,
+        "r2": 0.882168347223874,
+        "mae_original_units": 0.01622869465794039
+      },
+      "test": {
+        "mae_standardized": 0.2678169065007674,
+        "r2": 0.8238055456132302,
+        "mae_original_units": 0.018613618911295718
+      },
+      "distribution": {
+        "train_min": -0.4115,
+        "train_median": -0.1467,
+        "train_q01": -0.360224,
+        "train_q99": -0.0380278,
+        "train_max": -0.02814
+      }
+    },
+    "L3:6:Dlambda,v": {
+      "n_train": 727,
+      "selected": "gp_rbf_ard:identity",
+      "cv": {
+        "ridge:identity": {
+          "mae_standardized": 0.3461702822391361,
+          "r2_mean": 0.7946399352863408
+        },
+        "xgb:identity": {
+          "mae_standardized": 0.37644740074679145,
+          "r2_mean": 0.7549764745306113
+        },
+        "mlp2:identity": {
+          "mae_standardized": 0.33578811125090136,
+          "r2_mean": 0.8074585529516449
+        },
+        "gp_rbf_ard:identity": {
+          "mae_standardized": 0.234701684954292,
+          "r2_mean": 0.9001651978399237
+        },
+        "gp_matern_ard:identity": {
+          "mae_standardized": 0.2545729898270377,
+          "r2_mean": 0.8795295084691933
+        }
+      },
+      "calibration": {
+        "mae_standardized": 0.2240654833335393,
+        "r2": 0.894195022917369,
+        "mae_original_units": 1.1690813104623334
+      },
+      "test": {
+        "mae_standardized": 0.26733169855147365,
+        "r2": 0.8832270002202517,
+        "mae_original_units": 1.3948265829299946
+      },
+      "distribution": {
+        "train_min": 2.71388,
+        "train_median": 10.6362,
+        "train_q01": 2.8811334,
+        "train_q99": 24.681224,
+        "train_max": 31.6004
+      }
+    }
+  }
+}

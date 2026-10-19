@@ -1,0 +1,69 @@
+{
+  "cohort": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\merged_cohort.h5",
+  "train_n": 3496,
+  "validation_n": 744,
+  "test_n": 760,
+  "best_validation_nll": -11.810241403118257,
+  "epochs_run": 120,
+  "test_modes": {
+    "0": {
+      "nll": -3.398739814758301,
+      "electrical_median_MAE_prior_scaled": 0.1435347944498062,
+      "mechanical_median_MAE_prior_scaled": 0.25223299860954285,
+      "electrical_90pct_marginal_coverage": 0.9128289222717285,
+      "mechanical_90pct_marginal_coverage": 0.8924342393875122,
+      "beta0_90pct_coverage": 0.8736842274665833,
+      "beta1_90pct_coverage": 0.9210526347160339,
+      "beta0_90pct_mean_width_prior_scaled": 0.8828921914100647,
+      "beta1_90pct_mean_width_prior_scaled": 0.8946940898895264,
+      "beta0_median_MAE_prior_scaled": 0.254219651222229,
+      "beta1_median_MAE_prior_scaled": 0.24652869999408722
+    },
+    "1": {
+      "nll": -14.437018394470215,
+      "electrical_median_MAE_prior_scaled": 0.005132401827722788,
+      "mechanical_median_MAE_prior_scaled": 0.25274360179901123,
+      "electrical_90pct_marginal_coverage": 0.9473684430122375,
+      "mechanical_90pct_marginal_coverage": 0.8914473652839661,
+      "beta0_90pct_coverage": 0.8842105269432068,
+      "beta1_90pct_coverage": 0.9276315569877625,
+      "beta0_90pct_mean_width_prior_scaled": 0.8865282535552979,
+      "beta1_90pct_mean_width_prior_scaled": 0.8982577919960022,
+      "beta0_median_MAE_prior_scaled": 0.2542894780635834,
+      "beta1_median_MAE_prior_scaled": 0.24547670781612396
+    },
+    "2": {
+      "nll": -14.820892333984375,
+      "electrical_median_MAE_prior_scaled": 0.005376111716032028,
+      "mechanical_median_MAE_prior_scaled": 0.2342909425497055,
+      "electrical_90pct_marginal_coverage": 0.9398026466369629,
+      "mechanical_90pct_marginal_coverage": 0.89851975440979,
+      "beta0_90pct_coverage": 0.8763157725334167,
+      "beta1_90pct_coverage": 0.9144737124443054,
+      "beta0_90pct_mean_width_prior_scaled": 0.887557327747345,
+      "beta1_90pct_mean_width_prior_scaled": 0.893525242805481,
+      "beta0_median_MAE_prior_scaled": 0.2549022138118744,
+      "beta1_median_MAE_prior_scaled": 0.24622742831707
+    },
+    "3": {
+      "nll": -14.84646224975586,
+      "electrical_median_MAE_prior_scaled": 0.005370997358113527,
+      "mechanical_median_MAE_prior_scaled": 0.2320617139339447,
+      "electrical_90pct_marginal_coverage": 0.9388157725334167,
+      "mechanical_90pct_marginal_coverage": 0.901644766330719,
+      "beta0_90pct_coverage": 0.88289475440979,
+      "beta1_90pct_coverage": 0.9276315569877625,
+      "beta0_90pct_mean_width_prior_scaled": 0.8870452642440796,
+      "beta1_90pct_mean_width_prior_scaled": 0.8910018801689148,
+      "beta0_median_MAE_prior_scaled": 0.25485551357269287,
+      "beta1_median_MAE_prior_scaled": 0.24366924166679382
+    }
+  },
+  "mode_meanings": [
+    "AP",
+    "AP+Ca",
+    "AP+Ca+T1.0",
+    "AP+Ca+T1.0+T1.1"
+  ],
+  "caution": "Synthetic in-distribution posterior only; no true-forward held-out-load prediction yet"
+}

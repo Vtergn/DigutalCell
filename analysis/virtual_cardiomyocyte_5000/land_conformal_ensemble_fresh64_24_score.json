@@ -1,0 +1,128 @@
+{
+  "calibration_cells": 32,
+  "evaluation_cells": 32,
+  "n_draws": 24,
+  "observation_condition": "low_noise",
+  "ensemble_file": "land_uq_fresh64_ensemble24.mat",
+  "split_manifest": "land_uq_fresh64_manifest.json",
+  "calibration_rank": 30,
+  "score": "Per-cell maximum standardized absolute error over 301 time points",
+  "results": [
+    {
+      "target_lambda": 1.125,
+      "methods": {
+        "point_uniform": {
+          "q": 5.302130573894267,
+          "covered_cells": 29,
+          "simultaneous_coverage": 0.90625,
+          "pointwise_coverage": 0.9821428571428571,
+          "mean_width_kPa": 9.771686239879113,
+          "interval_score_kPa": 10.284359826287496,
+          "center_MAE_kPa": 1.4165581571799395
+        },
+        "point_time_scaled": {
+          "q": 2.6840124903813622,
+          "covered_cells": 25,
+          "simultaneous_coverage": 0.78125,
+          "pointwise_coverage": 0.9428986710963455,
+          "mean_width_kPa": 7.7937933853039265,
+          "interval_score_kPa": 8.88701123327868,
+          "center_MAE_kPa": 1.4165581571799395
+        },
+        "mechanistic_scale_point_center": {
+          "q": 7.201783611992757,
+          "covered_cells": 27,
+          "simultaneous_coverage": 0.84375,
+          "pointwise_coverage": 0.9828696013289037,
+          "mean_width_kPa": 8.384793923278595,
+          "interval_score_kPa": 8.456794440331036,
+          "center_MAE_kPa": 1.4165581571799395
+        },
+        "mechanistic_ensemble_scaled": {
+          "q": 6.619939759087186,
+          "covered_cells": 29,
+          "simultaneous_coverage": 0.90625,
+          "pointwise_coverage": 0.9881644518272426,
+          "mean_width_kPa": 7.744456769955016,
+          "interval_score_kPa": 7.78937961586231,
+          "center_MAE_kPa": 1.2684666782940401
+        }
+      },
+      "pre_registered_gate_pass": true,
+      "mechanistic_vs_time_scaled_point_paired_width_gain_kPa": 0.0493366153489094,
+      "paired_width_gain_bootstrap_95pct_CI_kPa": [
+        -0.4745734460053521,
+        0.5182028695791883
+      ],
+      "mechanistic_vs_time_scaled_point_paired_interval_score_gain_kPa": 1.097631617416369,
+      "paired_interval_score_gain_bootstrap_95pct_CI_kPa": [
+        0.21490955678709203,
+        2.172773248259687
+      ],
+      "raw_ensemble_CRPS_kPa": 1.0679627808720689,
+      "raw_ensemble_pointwise_coverage": 0.31447259136212624,
+      "raw_ensemble_simultaneous_coverage": 0.03125,
+      "raw_ensemble_mean_width_kPa": 1.4848857932328603,
+      "ensemble_scale_median_kPa": 0.5
+    },
+    {
+      "target_lambda": 1.15,
+      "methods": {
+        "point_uniform": {
+          "q": 7.87647268310851,
+          "covered_cells": 26,
+          "simultaneous_coverage": 0.8125,
+          "pointwise_coverage": 0.9578488372093024,
+          "mean_width_kPa": 14.638058306741389,
+          "interval_score_kPa": 18.65134772240223,
+          "center_MAE_kPa": 2.4661905745216424
+        },
+        "point_time_scaled": {
+          "q": 3.0306153199854324,
+          "covered_cells": 27,
+          "simultaneous_coverage": 0.84375,
+          "pointwise_coverage": 0.9462209302325582,
+          "mean_width_kPa": 13.714890090311602,
+          "interval_score_kPa": 18.040162047384303,
+          "center_MAE_kPa": 2.4661905745216424
+        },
+        "mechanistic_scale_point_center": {
+          "q": 8.718741394839657,
+          "covered_cells": 31,
+          "simultaneous_coverage": 0.96875,
+          "pointwise_coverage": 0.998546511627907,
+          "mean_width_kPa": 15.619762388859758,
+          "interval_score_kPa": 15.63266033833429,
+          "center_MAE_kPa": 2.4661905745216424
+        },
+        "mechanistic_ensemble_scaled": {
+          "q": 8.305428103640748,
+          "covered_cells": 32,
+          "simultaneous_coverage": 1.0,
+          "pointwise_coverage": 1.0,
+          "mean_width_kPa": 14.917303276986212,
+          "interval_score_kPa": 14.917303276986212,
+          "center_MAE_kPa": 2.2207209215639447
+        }
+      },
+      "pre_registered_gate_pass": false,
+      "mechanistic_vs_time_scaled_point_paired_width_gain_kPa": -1.2024131866746095,
+      "paired_width_gain_bootstrap_95pct_CI_kPa": [
+        -2.945512157965203,
+        0.43655999122518174
+      ],
+      "mechanistic_vs_time_scaled_point_paired_interval_score_gain_kPa": 3.122858770398092,
+      "paired_interval_score_gain_bootstrap_95pct_CI_kPa": [
+        -0.6403516716348086,
+        7.681479460217888
+      ],
+      "raw_ensemble_CRPS_kPa": 1.845955186087325,
+      "raw_ensemble_pointwise_coverage": 0.3229858803986711,
+      "raw_ensemble_simultaneous_coverage": 0.0,
+      "raw_ensemble_mean_width_kPa": 2.769252932744467,
+      "ensemble_scale_median_kPa": 0.7265053799380439
+    }
+  ],
+  "all_targets_pre_registered_gate_pass": false,
+  "scope": "Fixed target-blind ensemble and point twin, split within 64 independent confirmation cells with matching synthetic observation condition. Coverage is across cells and simultaneous over the waveform. Interval bands are conformal predictive sets, not Bayesian credible regions. Small 32-cell test has substantial binomial uncertainty."
+}

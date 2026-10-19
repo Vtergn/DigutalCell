@@ -1,0 +1,29 @@
+{
+  "WT_mp1": {
+    "cells": 11,
+    "sweeps": 27,
+    "median_force_peak_nN": 291.5173841857034,
+    "median_force20_from_current_peak_ratio": 0.8449592568465594,
+    "median_current20_from_current_peak_ratio": 0.5060769969177178,
+    "median_current_minus_force_retention": -0.38997165777048115,
+    "cells_current_faster_than_force": 11
+  },
+  "WT_mp2": {
+    "cells": 11,
+    "sweeps": 34,
+    "median_force_peak_nN": 329.83808223919823,
+    "median_force20_from_current_peak_ratio": 0.8244758292814791,
+    "median_current20_from_current_peak_ratio": 0.40227623930854445,
+    "median_current_minus_force_retention": -0.44190419090422384,
+    "cells_current_faster_than_force": 11
+  },
+  "chimA": {
+    "cells": 11,
+    "sweeps": 11,
+    "median_force_peak_nN": 209.2930092419474,
+    "median_force20_from_current_peak_ratio": 0.7722754838225857,
+    "median_current20_from_current_peak_ratio": 0.1855445773862792,
+    "median_current_minus_force_retention": -0.5820421958497515,
+    "cells_current_faster_than_force": 11
+  }
+}

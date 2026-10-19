@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "model": "Buonocunto ToR-ORd+SAC, author source",
+    "source": "https://github.com/melaniabuonoc/Electrophysiological-effects-of-stretch-activated-ion-channels",
+    "prepace_beats": 120,
+    "convergence_criterion_met": true,
+    "prepace_last10_apd_range_ms": 1,
+    "prepace_last10_ca_relative_range": 0.0005844743070454983,
+    "lambda": [
+      1,
+      1.05,
+      1.1
+    ],
+    "stretch_onset_ms": 600,
+    "stretch_offset_ms": 610,
+    "par": [
+      0.2203,
+      10.3203,
+      12.8208,
+      1.411,
+      0.8742
+    ],
+    "isac_factor": [
+      4.47,
+      0.001248
+    ],
+    "note": "Published human-ventricular ionic SAC module; no Land feedback or human-cell calibration"
+  },
+  "prepace_last10": [
+    [
+      111.0,
+      249.0,
+      0.414811428743851
+    ],
+    [
+      112.0,
+      250.0,
+      0.414789935785508
+    ],
+    [
+      113.0,
+      250.0,
+      0.414765457788662
+    ],
+    [
+      114.0,
+      250.0,
+      0.414734941562094
+    ],
+    [
+      115.0,
+      250.0,
+      0.414710580734334
+    ],
+    [
+      116.0,
+      250.0,
+      0.414677490987861
+    ],
+    [
+      117.0,
+      250.0,
+      0.414657147742454
+    ],
+    [
+      118.0,
+      250.0,
+      0.414625642588961
+    ],
+    [
+      119.0,
+      250.0,
+      0.414598610173444
+    ],
+    [
+      120.0,
+      250.0,
+      0.4145690507388
+    ]
+  ],
+  "scores": [
+    {
+      "lambda": 1.0,
+      "APD_above_minus67_ms": 251,
+      "Ca_peak_uM": 0.414538482094693,
+      "poststretch_max_Vm_mV": -89.2651748382472,
+      "poststretch_max_delta_Vm_vs_control_mV": 0.0,
+      "poststretch_max_delta_Ca_vs_control_uM": 0.0,
+      "poststretch_Vm_crossed_zero": false
+    },
+    {
+      "lambda": 1.05,
+      "APD_above_minus67_ms": 251,
+      "Ca_peak_uM": 0.414538482094693,
+      "poststretch_max_Vm_mV": -85.6476013685953,
+      "poststretch_max_delta_Vm_vs_control_mV": 3.628903624939298,
+      "poststretch_max_delta_Ca_vs_control_uM": 0.0017115586858348075,
+      "poststretch_Vm_crossed_zero": false
+    },
+    {
+      "lambda": 1.1,
+      "APD_above_minus67_ms": 251,
+      "Ca_peak_uM": 0.414538482094693,
+      "poststretch_max_Vm_mV": -81.2306088197272,
+      "poststretch_max_delta_Vm_vs_control_mV": 8.045896173807407,
+      "poststretch_max_delta_Ca_vs_control_uM": 0.0033291446349717063,
+      "poststretch_Vm_crossed_zero": false
+    }
+  ]
+}

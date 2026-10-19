@@ -1,0 +1,16 @@
+{
+  "cell_indices": [
+    2325,
+    2424,
+    4526,
+    2459
+  ],
+  "Tpeak_lambda_1p1_kPa": [
+    25.05888557434082,
+    43.48741912841797,
+    60.86662292480469,
+    81.39755249023438
+  ],
+  "chosen_only_from_training_split": true,
+  "prior_margin_each_parameter": 0.05
+}

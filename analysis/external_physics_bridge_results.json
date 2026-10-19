@@ -1,0 +1,338 @@
+{
+  "eth_main_cells": 399,
+  "eth_by_condition": {
+    "Control": 220,
+    "MargAc": 106,
+    "CytoD": 73
+  },
+  "pressure_grid_mbar": [
+    0.0,
+    25.0,
+    50.0,
+    75.0,
+    100.0,
+    125.0,
+    150.0,
+    175.0,
+    200.0,
+    225.0,
+    250.0,
+    275.0,
+    300.0,
+    325.0,
+    350.0,
+    375.0
+  ],
+  "eth_models": {
+    "Control": {
+      "cells": 220,
+      "repeats": {
+        "1": 67,
+        "2": 74,
+        "3": 79
+      },
+      "heldout": [
+        {
+          "repeat": 1,
+          "train_cells": 153,
+          "test_cells": 67,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.1422863848181285,
+              "logloss": 0.42125653382823663
+            },
+            "additive": {
+              "brier": 0.0876416132833238,
+              "logloss": 0.2794516193962704
+            },
+            "quadratic": {
+              "brier": 0.08946839550364157,
+              "logloss": 0.28230937814377094
+            }
+          },
+          "force_equivalent_mbar_per_nN": 3.4664037099920435
+        },
+        {
+          "repeat": 2,
+          "train_cells": 146,
+          "test_cells": 74,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.1173437588962986,
+              "logloss": 0.36354650992143794
+            },
+            "additive": {
+              "brier": 0.09869226240472477,
+              "logloss": 0.3313744860857046
+            },
+            "quadratic": {
+              "brier": 0.09821130513048695,
+              "logloss": 0.3303003112406403
+            }
+          },
+          "force_equivalent_mbar_per_nN": 4.520632186804705
+        },
+        {
+          "repeat": 3,
+          "train_cells": 141,
+          "test_cells": 79,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.12092346970501719,
+              "logloss": 0.36275410600773517
+            },
+            "additive": {
+              "brier": 0.06961069334447814,
+              "logloss": 0.22858043640564907
+            },
+            "quadratic": {
+              "brier": 0.07000802660185268,
+              "logloss": 0.22877634026005422
+            }
+          },
+          "force_equivalent_mbar_per_nN": 3.651715663467287
+        }
+      ],
+      "full_additive_force_equivalent_mbar_per_nN": 3.8696029991658123,
+      "source_p50_slope_mbar_per_nN": -4.665751296045575,
+      "source_p50_intercept_mbar": 190.1927620596185,
+      "source_p50_points": [
+        [
+          2.0,
+          182.957333182679
+        ],
+        [
+          12.5,
+          133.25335636359
+        ],
+        [
+          25.0,
+          72.637234604125
+        ],
+        [
+          37.5,
+          4.85419898681226
+        ],
+        [
+          50.0,
+          -35.2887274369016
+        ]
+      ]
+    },
+    "MargAc": {
+      "cells": 106,
+      "repeats": {
+        "1": 28,
+        "2": 47,
+        "3": 31
+      },
+      "heldout": [
+        {
+          "repeat": 1,
+          "train_cells": 78,
+          "test_cells": 28,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.08021426480538972,
+              "logloss": 0.24555151390242594
+            },
+            "additive": {
+              "brier": 0.0722312554826413,
+              "logloss": 0.23077269173398363
+            },
+            "quadratic": {
+              "brier": 0.074552140481539,
+              "logloss": 0.24237272536353946
+            }
+          },
+          "force_equivalent_mbar_per_nN": 5.000319059525155
+        },
+        {
+          "repeat": 2,
+          "train_cells": 59,
+          "test_cells": 47,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.0925606813566892,
+              "logloss": 0.28070000330785666
+            },
+            "additive": {
+              "brier": 0.0724776212756989,
+              "logloss": 0.23215692865124743
+            },
+            "quadratic": {
+              "brier": 0.07173928821120393,
+              "logloss": 0.23000491881164273
+            }
+          },
+          "force_equivalent_mbar_per_nN": 3.363648106509582
+        },
+        {
+          "repeat": 3,
+          "train_cells": 75,
+          "test_cells": 31,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.08840062855684895,
+              "logloss": 0.264825726375263
+            },
+            "additive": {
+              "brier": 0.075447446000012,
+              "logloss": 0.2309242739214284
+            },
+            "quadratic": {
+              "brier": 0.07658337462251116,
+              "logloss": 0.23305158074933435
+            }
+          },
+          "force_equivalent_mbar_per_nN": 4.2488013142810965
+        }
+      ],
+      "full_additive_force_equivalent_mbar_per_nN": 4.2634678977397575,
+      "source_p50_slope_mbar_per_nN": -5.578038938505857,
+      "source_p50_intercept_mbar": 117.44352000031127,
+      "source_p50_points": [
+        [
+          2.0,
+          108.114927792512
+        ],
+        [
+          6.0,
+          77.4201419611641
+        ],
+        [
+          12.5,
+          56.3060242247472
+        ],
+        [
+          18.0,
+          13.4910600236707
+        ],
+        [
+          25.0,
+          -22.3200265956595
+        ]
+      ]
+    },
+    "CytoD": {
+      "cells": 73,
+      "repeats": {
+        "1": 36,
+        "2": 27,
+        "3": 10
+      },
+      "heldout": [
+        {
+          "repeat": 1,
+          "train_cells": 37,
+          "test_cells": 36,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.10220471654584468,
+              "logloss": 0.3183808602493923
+            },
+            "additive": {
+              "brier": 0.08971517178888949,
+              "logloss": 0.28476183887997514
+            },
+            "quadratic": {
+              "brier": 0.08970808896998599,
+              "logloss": 0.2846703287378638
+            }
+          },
+          "force_equivalent_mbar_per_nN": 5.793116897417418
+        },
+        {
+          "repeat": 2,
+          "train_cells": 46,
+          "test_cells": 27,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.10331801909106042,
+              "logloss": 0.3223737105086173
+            },
+            "additive": {
+              "brier": 0.07594006927290066,
+              "logloss": 0.24849614108053422
+            },
+            "quadratic": {
+              "brier": 0.07618564070835071,
+              "logloss": 0.2490524696051363
+            }
+          },
+          "force_equivalent_mbar_per_nN": 3.9612269081643534
+        },
+        {
+          "repeat": 3,
+          "train_cells": 63,
+          "test_cells": 10,
+          "scores": {
+            "pressure_only": {
+              "brier": 0.1730314122772164,
+              "logloss": 0.5498057596736983
+            },
+            "additive": {
+              "brier": 0.14444081859245,
+              "logloss": 0.49545826664421755
+            },
+            "quadratic": {
+              "brier": 0.14985051161720292,
+              "logloss": 0.5192493665545916
+            }
+          },
+          "force_equivalent_mbar_per_nN": 4.889562610163533
+        }
+      ],
+      "full_additive_force_equivalent_mbar_per_nN": 4.867706045788275,
+      "source_p50_slope_mbar_per_nN": -6.32010026610922,
+      "source_p50_intercept_mbar": 167.28655419671867,
+      "source_p50_points": [
+        [
+          2.0,
+          165.966663650047
+        ],
+        [
+          6.0,
+          116.148283104383
+        ],
+        [
+          12.5,
+          94.2951157163693
+        ],
+        [
+          18.0,
+          41.4741644317746
+        ],
+        [
+          25.0,
+          17.2221771830841
+        ]
+      ]
+    }
+  },
+  "elife": {
+    "patches": 25,
+    "t50_mN_per_m": {
+      "median": 2.487,
+      "q25": 2.1963,
+      "q75": 2.8562,
+      "range": [
+        1.4474,
+        3.5555
+      ]
+    },
+    "slope_mN_per_m": {
+      "median": 0.680899999999999,
+      "q25": 0.514209999999999,
+      "q75": 0.77692,
+      "range": [
+        0.1635,
+        1.2128
+      ]
+    },
+    "density_spearman_t50": -0.18461538461538463,
+    "density_spearman_t50_p": 0.37699450330835144,
+    "density_spearman_slope": -0.08076923076923077,
+    "density_spearman_slope_p": 0.7011275748533197
+  }
+}

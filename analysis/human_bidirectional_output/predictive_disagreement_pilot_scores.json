@@ -1,0 +1,99 @@
+{
+  "n_cells": 47,
+  "candidate_count": 12,
+  "selected_probe_ids": [
+    12,
+    6,
+    11,
+    8,
+    5,
+    7
+  ],
+  "risk_fallback_to_goal_count": 9,
+  "arms": {
+    "no_probe": {
+      "mean_mV": 12.038784363349945,
+      "median_mV": 7.081664563552117,
+      "p90_mV": 31.461741563413817,
+      "cvar90_mV": 54.00096591300867,
+      "n_gt5_mV": 32
+    },
+    "fixed_prior_C3": {
+      "mean_mV": 9.163606980433437,
+      "median_mV": 3.4894553543566666,
+      "p90_mV": 27.97395972275326,
+      "cvar90_mV": 45.9442129058363,
+      "n_gt5_mV": 22
+    },
+    "fixed_high_energy": {
+      "mean_mV": 11.252028171582811,
+      "median_mV": 6.655143379166072,
+      "p90_mV": 30.285210101761148,
+      "cvar90_mV": 53.61959037361005,
+      "n_gt5_mV": 27
+    },
+    "random_safe_expected": {
+      "mean_mV": 10.289668520851407,
+      "median_mV": 4.8574973510386,
+      "p90_mV": 34.484263797902244,
+      "cvar90_mV": 49.341721036800884,
+      "n_gt5_mV": 23
+    },
+    "parameter_information": {
+      "mean_mV": 11.283806158727474,
+      "median_mV": 4.733087316292092,
+      "p90_mV": 41.623355826992075,
+      "cvar90_mV": 51.381827327848825,
+      "n_gt5_mV": 23
+    },
+    "goal_information": {
+      "mean_mV": 11.093000350402603,
+      "median_mV": 4.842672153812425,
+      "p90_mV": 41.516353152281205,
+      "cvar90_mV": 49.92476406973228,
+      "n_gt5_mV": 23
+    },
+    "risk_targeted": {
+      "mean_mV": 11.093000350402603,
+      "median_mV": 4.842672153812425,
+      "p90_mV": 41.516353152281205,
+      "cvar90_mV": 49.92476406973228,
+      "n_gt5_mV": 23
+    }
+  },
+  "selected_counts": {
+    "parameter_information": {
+      "5": 17,
+      "12": 30
+    },
+    "goal_information": {
+      "5": 16,
+      "6": 3,
+      "12": 28
+    },
+    "risk_targeted": {
+      "5": 16,
+      "6": 3,
+      "12": 28
+    }
+  },
+  "same_development_population_used_to_screen_library": true,
+  "withheld_cell_future_used_to_choose_probe": false,
+  "is_calibrated_posterior": false,
+  "posthoc_oracle_diagnostic": {
+    "mean_mV": 8.367064202735374,
+    "median_mV": 3.636861546119027,
+    "p90_mV": 25.382156029510583,
+    "cvar90_mV": 45.765278630576276,
+    "n_gt5_mV": 18
+  },
+  "random_safe_mixture": {
+    "mean_mV": 10.289668520851407,
+    "median_mV": 4.847641224029298,
+    "p90_mV": 41.62137735607935,
+    "cvar90_mV": 50.289073887401706,
+    "n_gt5_mV": 138,
+    "expected_n_gt5_of_47": 23.0
+  },
+  "risk_equals_goal_on_all_cells": true
+}

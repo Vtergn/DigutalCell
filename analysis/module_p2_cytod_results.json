@@ -1,0 +1,29 @@
+{
+  "Piezo1": {
+    "usable_dates": 6,
+    "date_geomean_threshold_ratio": 0.9377077491123335,
+    "dates_lower_threshold": 4,
+    "dates_higher_peak_current": 4,
+    "dates_lower_peak_force": 3,
+    "dates_lower_peak_work": 4,
+    "dates_lower_postpeak20_retention": 3,
+    "control_responders": 12,
+    "control_total": 12,
+    "treated_responders": 12,
+    "treated_total": 12
+  },
+  "Piezo2": {
+    "usable_dates": 3,
+    "date_geomean_threshold_ratio": 0.5652650475062216,
+    "dates_lower_threshold": 2,
+    "dates_higher_peak_current": 3,
+    "dates_lower_peak_force": 3,
+    "dates_lower_peak_work": 3,
+    "dates_lower_postpeak20_retention": 2,
+    "control_responders": 14,
+    "control_total": 19,
+    "treated_responders": 18,
+    "treated_total": 18
+  },
+  "limits": "Channel dates do not overlap; Piezo1 comparator is not explicit DMSO; responder-only amplitude and shape can be selected; doses and cells differ."
+}

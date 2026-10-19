@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Bleb04",
+    "group": "Bleb",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Bleb04_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1759,
+    "active_duration_s": 70.36,
+    "last_active_s": 70.32,
+    "median_signal_pixels_per_active_line": 83,
+    "ch3_median_active_units": 4434.0
+  },
+  {
+    "name": "Bleb05",
+    "group": "Bleb",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Bleb05_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1949,
+    "active_duration_s": 77.96,
+    "last_active_s": 77.92,
+    "median_signal_pixels_per_active_line": 55,
+    "ch3_median_active_units": 5324.0
+  },
+  {
+    "name": "Bleb06",
+    "group": "Bleb",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Bleb06_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1677,
+    "active_duration_s": 67.08,
+    "last_active_s": 67.04,
+    "median_signal_pixels_per_active_line": 69,
+    "ch3_median_active_units": 4238.0
+  },
+  {
+    "name": "Bleb07",
+    "group": "Bleb",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Bleb07_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1606,
+    "active_duration_s": 64.24,
+    "last_active_s": 64.2,
+    "median_signal_pixels_per_active_line": 65,
+    "ch3_median_active_units": 4531.0
+  },
+  {
+    "name": "Bleb08",
+    "group": "Bleb",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Bleb08_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1450,
+    "active_duration_s": 58.0,
+    "last_active_s": 57.96,
+    "median_signal_pixels_per_active_line": 55,
+    "ch3_median_active_units": 4930.0
+  },
+  {
+    "name": "Cell01",
+    "group": "Cell",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Cell03_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1800,
+    "active_duration_s": 72.0,
+    "last_active_s": 71.96,
+    "median_signal_pixels_per_active_line": 116,
+    "ch3_median_active_units": 4227.0
+  },
+  {
+    "name": "Cell02",
+    "group": "Cell",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Cell03_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1822,
+    "active_duration_s": 72.88,
+    "last_active_s": 72.84,
+    "median_signal_pixels_per_active_line": 100,
+    "ch3_median_active_units": 4398.0
+  },
+  {
+    "name": "Cell03",
+    "group": "Cell",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Cell03_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1714,
+    "active_duration_s": 68.56,
+    "last_active_s": 68.52,
+    "median_signal_pixels_per_active_line": 77,
+    "ch3_median_active_units": 4301.0
+  },
+  {
+    "name": "Cell04",
+    "group": "Cell",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Cell04_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1575,
+    "active_duration_s": 63.0,
+    "last_active_s": 62.96,
+    "median_signal_pixels_per_active_line": 119,
+    "ch3_median_active_units": 4320.0
+  },
+  {
+    "name": "Cell05",
+    "group": "Cell",
+    "scan_mode": "xt",
+    "line_time_s": 0.04,
+    "nominal_lines": 5012,
+    "spatial_pixels": 128,
+    "spatial_extent_um": 25.49,
+    "metadata_source": "Cell05_RT_properties.xml",
+    "tiff_shape": [
+      5012,
+      128
+    ],
+    "active_lines": 1658,
+    "active_duration_s": 66.32,
+    "last_active_s": 66.28,
+    "median_signal_pixels_per_active_line": 96,
+    "ch3_median_active_units": 4359.0
+  }
+]

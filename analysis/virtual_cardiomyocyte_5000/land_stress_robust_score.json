@@ -1,0 +1,120 @@
+{
+  "n_cells": 64,
+  "target_lambda": 1.125,
+  "calibration_lambdas": [
+    1.0,
+    1.1
+  ],
+  "preprocessing": "Training-only noise-augmented Ridge plus fixed Savitzky-Golay filters",
+  "results": [
+    {
+      "condition": "clean",
+      "n_cells": 64,
+      "waveform_MAE_kPa": {
+        "refined_twin": 1.147957884700072,
+        "direct_NN": 2.170351266860962,
+        "linear": 2.7668075561523438,
+        "direct_NN_noise_augmented": 2.0123655796051025
+      },
+      "median_waveform_MAE_kPa": {
+        "refined_twin": 0.9556277876624717,
+        "direct_NN": 1.72349214553833,
+        "linear": 2.4097201824188232,
+        "direct_NN_noise_augmented": 1.7925113439559937
+      },
+      "direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.6556019168486298,
+        1.4381223664827252
+      ],
+      "augmented_direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.5339976801439453,
+        1.2440302567697825
+      ],
+      "cells_twin_better_than_direct": 48,
+      "cells_twin_better_than_augmented_direct": 48,
+      "nonpositive_refinement_exitflags": 3
+    },
+    {
+      "condition": "low_noise",
+      "n_cells": 64,
+      "waveform_MAE_kPa": {
+        "refined_twin": 1.2779972974641216,
+        "direct_NN": 2.172844409942627,
+        "linear": 2.7762596045131214,
+        "direct_NN_noise_augmented": 2.0116772651672363
+      },
+      "median_waveform_MAE_kPa": {
+        "refined_twin": 1.1354409521272677,
+        "direct_NN": 1.7279675006866455,
+        "linear": 2.413669731544173,
+        "direct_NN_noise_augmented": 1.784421443939209
+      },
+      "direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.5333940408015793,
+        1.3094429943246673
+      ],
+      "augmented_direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.4032412152488093,
+        1.1065299040277516
+      ],
+      "cells_twin_better_than_direct": 45,
+      "cells_twin_better_than_augmented_direct": 48,
+      "nonpositive_refinement_exitflags": 7
+    },
+    {
+      "condition": "high_noise",
+      "n_cells": 64,
+      "waveform_MAE_kPa": {
+        "refined_twin": 1.475263612986418,
+        "direct_NN": 2.176328659057617,
+        "linear": 2.843502017549813,
+        "direct_NN_noise_augmented": 2.008622169494629
+      },
+      "median_waveform_MAE_kPa": {
+        "refined_twin": 1.2489281941115609,
+        "direct_NN": 1.7868900299072266,
+        "linear": 2.4761917060017993,
+        "direct_NN_noise_augmented": 1.789176344871521
+      },
+      "direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.3278838500662289,
+        1.1114377716624015
+      ],
+      "augmented_direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.19474588127180587,
+        0.8930873207565078
+      ],
+      "cells_twin_better_than_direct": 43,
+      "cells_twin_better_than_augmented_direct": 45,
+      "nonpositive_refinement_exitflags": 10
+    },
+    {
+      "condition": "drift_sparse",
+      "n_cells": 64,
+      "waveform_MAE_kPa": {
+        "refined_twin": 1.4836894180590008,
+        "direct_NN": 2.336965560913086,
+        "linear": 2.804295749812492,
+        "direct_NN_noise_augmented": 2.1639277935028076
+      },
+      "median_waveform_MAE_kPa": {
+        "refined_twin": 1.2004398745290943,
+        "direct_NN": 2.023477554321289,
+        "linear": 2.6870276204714885,
+        "direct_NN_noise_augmented": 1.95679771900177
+      },
+      "direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.4967527491203454,
+        1.2332268804354347
+      ],
+      "augmented_direct_minus_twin_MAE_95pct_CI_kPa": [
+        0.3462553754151907,
+        1.045001105139749
+      ],
+      "cells_twin_better_than_direct": 48,
+      "cells_twin_better_than_augmented_direct": 43,
+      "nonpositive_refinement_exitflags": 7
+    }
+  ],
+  "caveats": "Synthetic measurement perturbations only; levels are stress assumptions rather than estimates from real instruments. Clean-trained and noise-augmented direct networks are both scored. The robust variant uses training-cell noise augmentation for Ridge. Ground truth target is clean."
+}

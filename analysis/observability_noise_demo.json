@@ -1,0 +1,35 @@
+{
+  "synthetic": true,
+  "noise_sd_pA": 5.0,
+  "tension_noise_sd_mN_m": 0.03,
+  "force_nN": [
+    0.0,
+    450.0
+  ],
+  "profiles": {
+    "F_I": {
+      "loss_range_along_a_at_b0": 1.7763568394002505e-13,
+      "loss_range_along_b_at_a1": 1.1723955140041653e-13,
+      "grid_minimum_a_b": [
+        1.32,
+        0.3400000000000001
+      ]
+    },
+    "F_deltaT_I": {
+      "loss_range_along_a_at_b0": 13795.91791299243,
+      "loss_range_along_b_at_a1": 1.1368683772161603e-13,
+      "grid_minimum_a_b": [
+        1.0,
+        -0.49999999999999994
+      ]
+    },
+    "F_Tabs_I": {
+      "loss_range_along_a_at_b0": 38124.76358214932,
+      "loss_range_along_b_at_a1": 16800.63578566405,
+      "grid_minimum_a_b": [
+        1.01,
+        -0.019999999999999907
+      ]
+    }
+  }
+}

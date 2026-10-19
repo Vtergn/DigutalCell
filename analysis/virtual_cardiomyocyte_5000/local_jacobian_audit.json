@@ -1,0 +1,662 @@
+{
+  "cells": [
+    {
+      "cell_index_zero_based": 2325,
+      "modalities": {
+        "AP+Ca": {
+          "singular_values": [
+            0.2986086319241457,
+            0.2269042189011772,
+            0.058514591680558864,
+            0.020029769752573295,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.2563455992608789,
+            "Jup": 0.08076655032772719,
+            "INaCa": 0.15517414359639792,
+            "IKr": 0.21945949962922776,
+            "Tref": 0.0,
+            "ca50": 0.0,
+            "TRPN_n": 0.0,
+            "nperm": 0.0,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.0
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.44225200837006806,
+              "target_sensitivity_energy_unseen": 0.5577479916299319
+            },
+            "0.05": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.44225200837006806,
+              "target_sensitivity_energy_unseen": 0.5577479916299319
+            },
+            "0.1": {
+              "rank": 3,
+              "target_sensitivity_energy_captured": 0.44207343722764136,
+              "target_sensitivity_energy_unseen": 0.5579265627723586
+            }
+          }
+        },
+        "AP+Ca+T1.0": {
+          "singular_values": [
+            0.3752122327028699,
+            0.2447992650456728,
+            0.15557898273340284,
+            0.06194210010056801,
+            0.020178890785676057,
+            0.014948705158287957,
+            0.0019855699275581223,
+            0.0008988303628799346,
+            0.00062814559928314,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.31162404258522364,
+            "Jup": 0.09470137839528844,
+            "INaCa": 0.17717511209372164,
+            "IKr": 0.22099022018208886,
+            "Tref": 0.04879849843736583,
+            "ca50": 0.10167021224542866,
+            "TRPN_n": 0.08293753903926414,
+            "nperm": 0.141943209669283,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.057776390771233234
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 6,
+              "target_sensitivity_energy_captured": 0.9159486078720138,
+              "target_sensitivity_energy_unseen": 0.08405139212798618
+            },
+            "0.05": {
+              "rank": 5,
+              "target_sensitivity_energy_captured": 0.8421603467774169,
+              "target_sensitivity_energy_unseen": 0.1578396532225831
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.8419590282024539,
+              "target_sensitivity_energy_unseen": 0.15804097179754606
+            }
+          }
+        },
+        "AP+Ca+T1.0+T1.1": {
+          "singular_values": [
+            0.7528393305889485,
+            0.25814482212485196,
+            0.20818506390024863,
+            0.09994856833846219,
+            0.07119105383422136,
+            0.02592244215199789,
+            0.021114898763660215,
+            0.007723981005343691,
+            0.0058829832345556185,
+            0.004574715527770893,
+            0.0007480303749489247,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.5117683028586505,
+            "Jup": 0.14923085366887298,
+            "INaCa": 0.26095522622262174,
+            "IKr": 0.23066428408373132,
+            "Tref": 0.15402026030463994,
+            "ca50": 0.3343094430771766,
+            "TRPN_n": 0.16970553769785393,
+            "nperm": 0.2717904890106584,
+            "beta0": 0.026185233726418674,
+            "beta1": 0.14346672223601634,
+            "phi": 0.0,
+            "perm50": 0.16773354736241347
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 8,
+              "target_sensitivity_energy_captured": 0.9997137352724341,
+              "target_sensitivity_energy_unseen": 0.00028626472756587695
+            },
+            "0.05": {
+              "rank": 5,
+              "target_sensitivity_energy_captured": 0.9978416739779483,
+              "target_sensitivity_energy_unseen": 0.002158326022051682
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.9896324591435564,
+              "target_sensitivity_energy_unseen": 0.010367540856443647
+            }
+          }
+        }
+      },
+      "parameter_target_derivative_RMS": {
+        "ICaL": 0.48221679797114275,
+        "Jup": 0.13123261889433524,
+        "INaCa": 0.22423642424557935,
+        "IKr": 0.07557267761456507,
+        "Tref": 0.19132876713737018,
+        "ca50": 0.41204919907987253,
+        "TRPN_n": 0.16453517877810903,
+        "nperm": 0.24536480110688008,
+        "beta0": 0.04091095210904117,
+        "beta1": 0.23208752594799398,
+        "phi": 0.0,
+        "perm50": 0.19076272099743835
+      }
+    },
+    {
+      "cell_index_zero_based": 2424,
+      "modalities": {
+        "AP+Ca": {
+          "singular_values": [
+            0.2822497479354603,
+            0.2045704883708573,
+            0.054129958246033366,
+            0.020041335140237707,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.2460125218191261,
+            "Jup": 0.07038457386640155,
+            "INaCa": 0.1462191642494031,
+            "IKr": 0.19490900259322996,
+            "Tref": 0.0,
+            "ca50": 0.0,
+            "TRPN_n": 0.0,
+            "nperm": 0.0,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.0
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.34184923203104994,
+              "target_sensitivity_energy_unseen": 0.65815076796895
+            },
+            "0.05": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.34184923203104994,
+              "target_sensitivity_energy_unseen": 0.65815076796895
+            },
+            "0.1": {
+              "rank": 3,
+              "target_sensitivity_energy_captured": 0.34173336838088203,
+              "target_sensitivity_energy_unseen": 0.6582666316191179
+            }
+          }
+        },
+        "AP+Ca+T1.0": {
+          "singular_values": [
+            0.587763059657228,
+            0.24869377311034763,
+            0.20128595772072908,
+            0.06955927733119792,
+            0.038222400769607555,
+            0.02089654461113952,
+            0.00677042239529109,
+            0.0038276740151607304,
+            0.0014272676467166035,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.3870368871006496,
+            "Jup": 0.10344261937880513,
+            "INaCa": 0.20406661683404673,
+            "IKr": 0.20029747328891642,
+            "Tref": 0.09767868502211029,
+            "ca50": 0.16886360250110646,
+            "TRPN_n": 0.23035571279539088,
+            "nperm": 0.3098399468603669,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.15889588723479386
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 7,
+              "target_sensitivity_energy_captured": 0.9371818378421103,
+              "target_sensitivity_energy_unseen": 0.06281816215788971
+            },
+            "0.05": {
+              "rank": 5,
+              "target_sensitivity_energy_captured": 0.9305694057374015,
+              "target_sensitivity_energy_unseen": 0.06943059426259846
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.8725038795592822,
+              "target_sensitivity_energy_unseen": 0.1274961204407178
+            }
+          }
+        },
+        "AP+Ca+T1.0+T1.1": {
+          "singular_values": [
+            1.123115763941685,
+            0.31623908345129886,
+            0.22774369239005174,
+            0.15840462046366313,
+            0.08677499094840943,
+            0.057676963065440054,
+            0.02195284301176687,
+            0.013027227168307624,
+            0.009094808722129066,
+            0.007735692600160019,
+            0.0017010146682331902,
+            1.1034884425821422e-22
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.6544515887712655,
+            "Jup": 0.1656914043675462,
+            "INaCa": 0.31638263795920657,
+            "IKr": 0.21712756083584475,
+            "Tref": 0.23823279429874866,
+            "ca50": 0.43363864430059373,
+            "TRPN_n": 0.4185398408580656,
+            "nperm": 0.5132957499891458,
+            "beta0": 0.0505129690271567,
+            "beta1": 0.17307871737507433,
+            "phi": 0.0,
+            "perm50": 0.3620122465378616
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 8,
+              "target_sensitivity_energy_captured": 0.9996935853484121,
+              "target_sensitivity_energy_unseen": 0.00030641465158787184
+            },
+            "0.05": {
+              "rank": 6,
+              "target_sensitivity_energy_captured": 0.9994081337381633,
+              "target_sensitivity_energy_unseen": 0.0005918662618367154
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.992153141644073,
+              "target_sensitivity_energy_unseen": 0.007846858355927022
+            }
+          }
+        }
+      },
+      "parameter_target_derivative_RMS": {
+        "ICaL": 0.5798805481254561,
+        "Jup": 0.14804161759887194,
+        "INaCa": 0.2703101231684641,
+        "IKr": 0.09848139165380648,
+        "Tref": 0.264801884853636,
+        "ca50": 0.49083146728900023,
+        "TRPN_n": 0.37246309276018935,
+        "nperm": 0.43395645139254285,
+        "beta0": 0.07337022520441758,
+        "beta1": 0.2731132957938957,
+        "phi": 0.0,
+        "perm50": 0.361770409262585
+      }
+    },
+    {
+      "cell_index_zero_based": 4526,
+      "modalities": {
+        "AP+Ca": {
+          "singular_values": [
+            0.29645332339959946,
+            0.2320883823699822,
+            0.06084492984096561,
+            0.021002165321311824,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.25711149340615985,
+            "Jup": 0.08396899879277518,
+            "INaCa": 0.16767889440383282,
+            "IKr": 0.21123319387118045,
+            "Tref": 0.0,
+            "ca50": 0.0,
+            "TRPN_n": 0.0,
+            "nperm": 0.0,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.0
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.38948272257251004,
+              "target_sensitivity_energy_unseen": 0.61051727742749
+            },
+            "0.05": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.38948272257251004,
+              "target_sensitivity_energy_unseen": 0.61051727742749
+            },
+            "0.1": {
+              "rank": 3,
+              "target_sensitivity_energy_captured": 0.38884705699667294,
+              "target_sensitivity_energy_unseen": 0.6111529430033271
+            }
+          }
+        },
+        "AP+Ca+T1.0": {
+          "singular_values": [
+            0.6989923093271908,
+            0.24767039806586597,
+            0.19289701261144243,
+            0.0759887858173232,
+            0.03398955365289468,
+            0.021907570551800388,
+            0.005859752646933584,
+            0.0040055321803058284,
+            0.0009138217415073971,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.4975422630714056,
+            "Jup": 0.1411977744525147,
+            "INaCa": 0.2695726657610253,
+            "IKr": 0.2213944073968545,
+            "Tref": 0.08271471811034331,
+            "ca50": 0.2873928378579125,
+            "TRPN_n": 0.19287205235879692,
+            "nperm": 0.21764912051392454,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.17726736359250858
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 6,
+              "target_sensitivity_energy_captured": 0.8909274447312177,
+              "target_sensitivity_energy_unseen": 0.10907255526878235
+            },
+            "0.05": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.7995893376062024,
+              "target_sensitivity_energy_unseen": 0.20041066239379757
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.7995893376062024,
+              "target_sensitivity_energy_unseen": 0.20041066239379757
+            }
+          }
+        },
+        "AP+Ca+T1.0+T1.1": {
+          "singular_values": [
+            1.5138317279199258,
+            0.31923979833095767,
+            0.26034958485538634,
+            0.21198195930816746,
+            0.11247838998541361,
+            0.07542442691823652,
+            0.03957167184854452,
+            0.029816172848044796,
+            0.021007713473532686,
+            0.010226629503980083,
+            0.0013779218284776429,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.9167361897382102,
+            "Jup": 0.2723414159606955,
+            "INaCa": 0.49057921973715474,
+            "IKr": 0.24947109908337378,
+            "Tref": 0.24941779402193331,
+            "ca50": 0.8132621052675946,
+            "TRPN_n": 0.3945605545216442,
+            "nperm": 0.339002378948382,
+            "beta0": 0.0649177230308442,
+            "beta1": 0.34152169142698313,
+            "phi": 0.0,
+            "perm50": 0.4417311061482444
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 9,
+              "target_sensitivity_energy_captured": 0.9998585485406868,
+              "target_sensitivity_energy_unseen": 0.00014145145931321323
+            },
+            "0.05": {
+              "rank": 5,
+              "target_sensitivity_energy_captured": 0.9948750738494142,
+              "target_sensitivity_energy_unseen": 0.005124926150585796
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.9901092909188698,
+              "target_sensitivity_energy_unseen": 0.009890709081130211
+            }
+          }
+        }
+      },
+      "parameter_target_derivative_RMS": {
+        "ICaL": 0.8725065919019335,
+        "Jup": 0.2276005810875594,
+        "INaCa": 0.4413852504440614,
+        "IKr": 0.13389268137679874,
+        "Tref": 0.2997113253529169,
+        "ca50": 0.9304295454132653,
+        "TRPN_n": 0.2647551250813497,
+        "nperm": 0.24621197170712392,
+        "beta0": 0.09868715972627301,
+        "beta1": 0.5187282886765181,
+        "phi": 0.0,
+        "perm50": 0.4928671543712834
+      }
+    },
+    {
+      "cell_index_zero_based": 2459,
+      "modalities": {
+        "AP+Ca": {
+          "singular_values": [
+            0.3206805771639122,
+            0.2214369761171711,
+            0.06648935932212473,
+            0.02229852150447589,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.26935449534066014,
+            "Jup": 0.08480513424908202,
+            "INaCa": 0.21943088784827183,
+            "IKr": 0.1699845770337453,
+            "Tref": 0.0,
+            "ca50": 0.0,
+            "TRPN_n": 0.0,
+            "nperm": 0.0,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.0
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.20972290116510398,
+              "target_sensitivity_energy_unseen": 0.790277098834896
+            },
+            "0.05": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.20972290116510398,
+              "target_sensitivity_energy_unseen": 0.790277098834896
+            },
+            "0.1": {
+              "rank": 3,
+              "target_sensitivity_energy_captured": 0.20904827705396112,
+              "target_sensitivity_energy_unseen": 0.7909517229460389
+            }
+          }
+        },
+        "AP+Ca+T1.0": {
+          "singular_values": [
+            0.7776644481283307,
+            0.2696845056355501,
+            0.2207947794948599,
+            0.10516841059072733,
+            0.06804692766429879,
+            0.022967285469385753,
+            0.010119316070911375,
+            0.00917305276945311,
+            0.002279032969277782,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.5063836873299894,
+            "Jup": 0.13414102348538992,
+            "INaCa": 0.3438872986719775,
+            "IKr": 0.18715327080995117,
+            "Tref": 0.15760937482058837,
+            "ca50": 0.34570419254483,
+            "TRPN_n": 0.19415731384508655,
+            "nperm": 0.3088885466726054,
+            "beta0": 0.0,
+            "beta1": 0.0,
+            "phi": 0.0,
+            "perm50": 0.193617409381613
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 8,
+              "target_sensitivity_energy_captured": 0.8638810890154512,
+              "target_sensitivity_energy_unseen": 0.13611891098454876
+            },
+            "0.05": {
+              "rank": 5,
+              "target_sensitivity_energy_captured": 0.8488932664780945,
+              "target_sensitivity_energy_unseen": 0.1511067335219055
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.7825064867333025,
+              "target_sensitivity_energy_unseen": 0.21749351326669752
+            }
+          }
+        },
+        "AP+Ca+T1.0+T1.1": {
+          "singular_values": [
+            1.3860679493457553,
+            0.4619486719860854,
+            0.3349787036382708,
+            0.22318365520569353,
+            0.12507128067097376,
+            0.09378933628864715,
+            0.03783681880242861,
+            0.030742461717606164,
+            0.013958352110152476,
+            0.012959037279022504,
+            0.008625541454586104,
+            0.0
+          ],
+          "parameter_observed_derivative_RMS": {
+            "ICaL": 0.7514483238006703,
+            "Jup": 0.20024604058882617,
+            "INaCa": 0.47489214424124776,
+            "IKr": 0.21632283567627894,
+            "Tref": 0.3939661102020608,
+            "ca50": 0.8212175515442186,
+            "TRPN_n": 0.2990065436500213,
+            "nperm": 0.49148266132651225,
+            "beta0": 0.09610272922737535,
+            "beta1": 0.34775168973282344,
+            "phi": 0.0,
+            "perm50": 0.3950062527236279
+          },
+          "target_projection_by_relative_singular_cutoff": {
+            "0.01": {
+              "rank": 9,
+              "target_sensitivity_energy_captured": 0.9995193691003884,
+              "target_sensitivity_energy_unseen": 0.00048063089961158934
+            },
+            "0.05": {
+              "rank": 6,
+              "target_sensitivity_energy_captured": 0.9976567025091102,
+              "target_sensitivity_energy_unseen": 0.0023432974908897952
+            },
+            "0.1": {
+              "rank": 4,
+              "target_sensitivity_energy_captured": 0.9890114543000582,
+              "target_sensitivity_energy_unseen": 0.010988545699941787
+            }
+          }
+        }
+      },
+      "parameter_target_derivative_RMS": {
+        "ICaL": 0.5492317787902443,
+        "Jup": 0.16528907958967987,
+        "INaCa": 0.3220261712614016,
+        "IKr": 0.11136557282995041,
+        "Tref": 0.4384518790841455,
+        "ca50": 0.9063426588880406,
+        "TRPN_n": 0.24984321869229215,
+        "nperm": 0.4220332764758642,
+        "beta0": 0.1394144387609281,
+        "beta1": 0.5108860474792182,
+        "phi": 0.0,
+        "perm50": 0.3774573454475657
+      }
+    }
+  ],
+  "mean_target_energy_captured": {
+    "AP+Ca": {
+      "0.01": 0.34582671603468307,
+      "0.05": 0.34582671603468307,
+      "0.1": 0.34542553491478933
+    },
+    "AP+Ca+T1.0": {
+      "0.01": 0.9019847448651982,
+      "0.05": 0.8553030891497789,
+      "0.1": 0.8241396830253103
+    },
+    "AP+Ca+T1.0+T1.1": {
+      "0.01": 0.9996963095654804,
+      "0.05": 0.997445396018659,
+      "0.1": 0.9902265865016393
+    }
+  },
+  "scope": "Four training cells only; local linearization; equalized trace scales AP100mV, Ca0.5\u00b5M, T50kPa; relative singular cutoffs are exploratory."
+}

@@ -1,0 +1,2913 @@
+{
+  "design": {
+    "prediction_inputs": "Same-cell no-load and calibration V/Ca/T/lambda, plus target stress pulse definition",
+    "sealed_outputs": "Two target V/Ca/T/lambda waveforms; read only for scoring",
+    "model_training": "None: all three baselines are per-cell target-blind rules",
+    "cell_groups": "Separate 12-cell source and 12-cell confirmation Latin-hypercube cohorts",
+    "physics": "Exploratory 51-state embodied model; common nominal pre-paced initial state",
+    "normalization": {
+      "V_mV": 1.0,
+      "Ca_uM": 0.005,
+      "T_kPa": 1.0,
+      "lambda": 0.01
+    },
+    "event_definition": "Descriptive threshold only: peak stress-induced delta V > 40 mV; not a biological arrhythmia diagnosis",
+    "caveat": "Same-equation synthetic experiment. Stress law and mechanical parameters are not calibrated to paired human-cell records."
+  },
+  "summary": {
+    "embodied_cohort": {
+      "target18_300_450": {
+        "zero_response": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 4.239026673560237,
+            "median": 1.9346667477263768,
+            "P90": 3.853334007942988,
+            "CVaR90": 15.9549248480941
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.015793996040318874,
+            "median": 0.009621000370312665,
+            "P90": 0.013191313918305485,
+            "CVaR90": 0.04936125812567339
+          },
+          "T_MAE_kPa": {
+            "mean": 0.625239718229296,
+            "median": 0.517447879217894,
+            "P90": 0.597414314307093,
+            "CVaR90": 1.1787010411886796
+          },
+          "lambda_MAE": {
+            "mean": 0.018359777674252047,
+            "median": 0.017815582350389624,
+            "P90": 0.020206057625741444,
+            "CVaR90": 0.02182232806638084
+          },
+          "joint_normalized_MAE": {
+            "mean": 2.4647608418196287,
+            "median": 1.5238968480123523,
+            "P90": 2.242140452783163,
+            "CVaR90": 7.2842074889719095
+          },
+          "V_error_over_5mV": 1,
+          "true_large_depolarization_events": 1,
+          "missed_large_depolarization_events": 1
+        },
+        "shift_scale": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 3.1930889046287905,
+            "median": 0.9631516133222902,
+            "P90": 2.2635475828483433,
+            "CVaR90": 14.294850200420552
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.009968705236742618,
+            "median": 0.004287812103973812,
+            "P90": 0.005449958692489208,
+            "CVaR90": 0.04096431014301558
+          },
+          "T_MAE_kPa": {
+            "mean": 0.29955668365419147,
+            "median": 0.19890689463841618,
+            "P90": 0.2339685290528891,
+            "CVaR90": 0.8118473557016109
+          },
+          "lambda_MAE": {
+            "mean": 0.006279807447953075,
+            "median": 0.005951372713939342,
+            "P90": 0.006679433303354885,
+            "CVaR90": 0.008182005971292445
+          },
+          "joint_normalized_MAE": {
+            "mean": 1.5285918451067035,
+            "median": 0.6457498118768166,
+            "P90": 1.0428717573982118,
+            "CVaR90": 6.019558302637934
+          },
+          "V_error_over_5mV": 1,
+          "true_large_depolarization_events": 1,
+          "missed_large_depolarization_events": 1
+        },
+        "causal_LTI": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 2.7939094633334913,
+            "median": 0.6134438636988913,
+            "P90": 1.6859248826623479,
+            "CVaR90": 13.56366179796825
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.007366645620966981,
+            "median": 0.0015175158041277263,
+            "P90": 0.0017062617200586695,
+            "CVaR90": 0.03690545864099444
+          },
+          "T_MAE_kPa": {
+            "mean": 0.1926492783194429,
+            "median": 0.09485938435600103,
+            "P90": 0.13121440970514006,
+            "CVaR90": 0.6670572824867465
+          },
+          "lambda_MAE": {
+            "mean": 0.0005983385275789239,
+            "median": 0.00024310096033983267,
+            "P90": 0.0003824280681587309,
+            "CVaR90": 0.0023580129666991422
+          },
+          "joint_normalized_MAE": {
+            "mean": 1.1299304296510557,
+            "median": 0.26989994951028246,
+            "P90": 0.5209746120136941,
+            "CVaR90": 5.447966228300464
+          },
+          "V_error_over_5mV": 1,
+          "true_large_depolarization_events": 1,
+          "missed_large_depolarization_events": 1
+        }
+      },
+      "target12_400_500": {
+        "zero_response": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 0.8421654473179062,
+            "median": 0.7665297014012991,
+            "P90": 1.2946900912535466,
+            "CVaR90": 1.3968150809122875
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.004051869779936664,
+            "median": 0.003961994091128851,
+            "P90": 0.005681160193844405,
+            "CVaR90": 0.00595386686736356
+          },
+          "T_MAE_kPa": {
+            "mean": 0.21551259810801113,
+            "median": 0.21181930197157736,
+            "P90": 0.24122634107672827,
+            "CVaR90": 0.24351530985097788
+          },
+          "lambda_MAE": {
+            "mean": 0.008123650135247214,
+            "median": 0.007982498975189389,
+            "P90": 0.009033095840232866,
+            "CVaR90": 0.009158154230717572
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.6701042537344929,
+            "median": 0.6256041888114601,
+            "P90": 0.879420716823638,
+            "CVaR90": 0.9316170675114913
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        },
+        "shift_scale": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 0.16066718820738105,
+            "median": 0.13768508022210027,
+            "P90": 0.25538578342080615,
+            "CVaR90": 0.317430912839382
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.001216137180680503,
+            "median": 0.0013026553539355764,
+            "P90": 0.0015849386305000358,
+            "CVaR90": 0.0016306279931364589
+          },
+          "T_MAE_kPa": {
+            "mean": 0.021589741310715477,
+            "median": 0.020295766466115268,
+            "P90": 0.026010703728168768,
+            "CVaR90": 0.026424993353970153
+          },
+          "lambda_MAE": {
+            "mean": 8.770278310602836e-05,
+            "median": 8.270504773801688e-05,
+            "P90": 0.00010988187470952065,
+            "CVaR90": 0.00011380437802205175
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.10856366099120002,
+            "median": 0.10475791611295833,
+            "P90": 0.148298363958445,
+            "CVaR90": 0.166793708185758
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        },
+        "causal_LTI": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 0.16066718820738107,
+            "median": 0.13768508022210027,
+            "P90": 0.25538578342080615,
+            "CVaR90": 0.3174309128393821
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.001216137180680503,
+            "median": 0.0013026553539355764,
+            "P90": 0.0015849386305000358,
+            "CVaR90": 0.0016306279931364589
+          },
+          "T_MAE_kPa": {
+            "mean": 0.02158974131071548,
+            "median": 0.020295766466115275,
+            "P90": 0.026010703728168768,
+            "CVaR90": 0.02642499335397015
+          },
+          "lambda_MAE": {
+            "mean": 8.770278310602836e-05,
+            "median": 8.270504773801683e-05,
+            "P90": 0.00010988187470952068,
+            "CVaR90": 0.00011380437802205177
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.10856366099120002,
+            "median": 0.10475791611295832,
+            "P90": 0.148298363958445,
+            "CVaR90": 0.166793708185758
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        }
+      }
+    },
+    "embodied_cohort_confirm": {
+      "target18_300_450": {
+        "zero_response": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 2.2573504342981687,
+            "median": 2.375223012589549,
+            "P90": 3.3589228594439358,
+            "CVaR90": 3.844271361066519
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.010088591602786027,
+            "median": 0.010797529933649238,
+            "P90": 0.012577738256383302,
+            "CVaR90": 0.013038010082989746
+          },
+          "T_MAE_kPa": {
+            "mean": 0.5322539066232833,
+            "median": 0.5206946757349886,
+            "P90": 0.6087983385245861,
+            "CVaR90": 0.6298001435309665
+          },
+          "lambda_MAE": {
+            "mean": 0.018221187885877437,
+            "median": 0.018027216274218813,
+            "P90": 0.02040281516337837,
+            "CVaR90": 0.020811117177897333
+          },
+          "joint_normalized_MAE": {
+            "mean": 1.6573603625166005,
+            "median": 1.6899892024247296,
+            "P90": 2.016903863887668,
+            "CVaR90": 2.168698430391311
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        },
+        "shift_scale": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 1.2138058785838688,
+            "median": 1.2429495910329673,
+            "P90": 1.9228250354909227,
+            "CVaR90": 2.3083492869429927
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.004167081144357348,
+            "median": 0.004275539625420465,
+            "P90": 0.004901879819144982,
+            "CVaR90": 0.005013989931776932
+          },
+          "T_MAE_kPa": {
+            "mean": 0.2051455623621771,
+            "median": 0.20088975175595614,
+            "P90": 0.24010078514142869,
+            "CVaR90": 0.2468985931173217
+          },
+          "lambda_MAE": {
+            "mean": 0.0060699695884624425,
+            "median": 0.005998494742548679,
+            "P90": 0.006778093058186542,
+            "CVaR90": 0.006920984825915201
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.71484115716594,
+            "median": 0.7171299651150078,
+            "P90": 0.8992886920452894,
+            "CVaR90": 1.0067218705188683
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        },
+        "causal_LTI": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 0.8431256040639644,
+            "median": 0.8266284962116499,
+            "P90": 1.4266879026652854,
+            "CVaR90": 1.7566857188738725
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.001572962662363895,
+            "median": 0.001646529827008504,
+            "P90": 0.0017369691010333083,
+            "CVaR90": 0.0017373302589897461
+          },
+          "T_MAE_kPa": {
+            "mean": 0.09663465786823255,
+            "median": 0.09443385922097229,
+            "P90": 0.11587754807216055,
+            "CVaR90": 0.11822968483215388
+          },
+          "lambda_MAE": {
+            "mean": 0.0002453192173763705,
+            "median": 0.0002320220803630339,
+            "P90": 0.0003113806525455066,
+            "CVaR90": 0.0003137758736788237
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.31972117903565334,
+            "median": 0.3172058409194125,
+            "P90": 0.47409275478449786,
+            "CVaR90": 0.5494567358353556
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        }
+      },
+      "target12_400_500": {
+        "zero_response": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 0.8387776908889725,
+            "median": 0.909229522982686,
+            "P90": 1.178088399773948,
+            "CVaR90": 1.2733786582696718
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.00412088086985767,
+            "median": 0.00451887069150803,
+            "P90": 0.005487704640065681,
+            "CVaR90": 0.005704302550912865
+          },
+          "T_MAE_kPa": {
+            "mean": 0.21658595851237858,
+            "median": 0.21228791378840417,
+            "P90": 0.24650668577527834,
+            "CVaR90": 0.2538443936408618
+          },
+          "lambda_MAE": {
+            "mean": 0.008160796959547375,
+            "median": 0.008056609112086879,
+            "P90": 0.00915778558795771,
+            "CVaR90": 0.009359361647625337
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.6739048798319055,
+            "median": 0.6930946918134312,
+            "P90": 0.8083784169311172,
+            "CVaR90": 0.8463331471874962
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        },
+        "shift_scale": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 0.15824660398744786,
+            "median": 0.16230994468406668,
+            "P90": 0.2358060718106364,
+            "CVaR90": 0.2683236431085911
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.0012667229126687612,
+            "median": 0.0013074004234182896,
+            "P90": 0.0014834257938614933,
+            "CVaR90": 0.0015598780894560825
+          },
+          "T_MAE_kPa": {
+            "mean": 0.021644276483614305,
+            "median": 0.021407808270132608,
+            "P90": 0.024291158187565824,
+            "CVaR90": 0.024762408006009633
+          },
+          "lambda_MAE": {
+            "mean": 8.782657387032741e-05,
+            "median": 8.524119197052332e-05,
+            "P90": 9.935183989110323e-05,
+            "CVaR90": 0.0001080450723900316
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.1105045300979618,
+            "median": 0.11241863043087794,
+            "P90": 0.1328465973451727,
+            "CVaR90": 0.14474597782361698
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        },
+        "causal_LTI": {
+          "n_cells": 12,
+          "V_MAE_mV": {
+            "mean": 0.15824660398744786,
+            "median": 0.16230994468406668,
+            "P90": 0.23580607181063631,
+            "CVaR90": 0.268323643108591
+          },
+          "Ca_MAE_uM": {
+            "mean": 0.001266722912668761,
+            "median": 0.0013074004234182894,
+            "P90": 0.001483425793861493,
+            "CVaR90": 0.0015598780894560825
+          },
+          "T_MAE_kPa": {
+            "mean": 0.021644276483614305,
+            "median": 0.02140780827013261,
+            "P90": 0.024291158187565817,
+            "CVaR90": 0.02476240800600963
+          },
+          "lambda_MAE": {
+            "mean": 8.782657387032741e-05,
+            "median": 8.52411919705233e-05,
+            "P90": 9.935183989110333e-05,
+            "CVaR90": 0.0001080450723900316
+          },
+          "joint_normalized_MAE": {
+            "mean": 0.11050453009796178,
+            "median": 0.11241863043087791,
+            "P90": 0.1328465973451727,
+            "CVaR90": 0.14474597782361698
+          },
+          "V_error_over_5mV": 0,
+          "true_large_depolarization_events": 0,
+          "missed_large_depolarization_events": 0
+        }
+      }
+    }
+  },
+  "per_cell": [
+    {
+      "cohort": "embodied_cohort",
+      "cell": 1,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.9563079069329402,
+        "Ca_uM": 0.005761959513162286,
+        "T_kPa": 0.5103722918825551,
+        "lambda": 0.017594931842797527
+      },
+      "normalized_joint_MAE": 1.0946413214319266,
+      "normalized_joint_P90_time": 3.895381393787618,
+      "V_max_abs_error_mV": 4.075102901761227
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 1,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.4310027427092688,
+        "Ca_uM": 0.0023862607710094636,
+        "T_kPa": 0.19738802441347789,
+        "lambda": 0.005892358424343252
+      },
+      "normalized_joint_MAE": 0.4237196909397412,
+      "normalized_joint_P90_time": 1.5327761428425266,
+      "V_max_abs_error_mV": 3.6527553313297716
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 1,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.23619623842211726,
+        "Ca_uM": 0.0012805812607658263,
+        "T_kPa": 0.1298003697787435,
+        "lambda": 0.0003471664747812047
+      },
+      "normalized_joint_MAE": 0.16420737695803664,
+      "normalized_joint_P90_time": 0.3573951101292555,
+      "V_max_abs_error_mV": 1.1975098413453793
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 1,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.40599548472036256,
+        "Ca_uM": 0.002377199524669276,
+        "T_kPa": 0.20998553633680644,
+        "lambda": 0.007887397683942931
+      },
+      "normalized_joint_MAE": 0.47004017359632927,
+      "normalized_joint_P90_time": 2.152773881040236,
+      "V_max_abs_error_mV": 2.476836078203931
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 1,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.06210304741809098,
+        "Ca_uM": 0.0006346624558901594,
+        "T_kPa": 0.02668250142945719,
+        "lambda": 0.00011019407816214411
+      },
+      "normalized_joint_MAE": 0.05668436196044863,
+      "normalized_joint_P90_time": 0.2789897728174522,
+      "V_max_abs_error_mV": 0.4392851194703695
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 1,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.06210304741809098,
+        "Ca_uM": 0.0006346624558901592,
+        "T_kPa": 0.026682501429457182,
+        "lambda": 0.00011019407816214414
+      },
+      "normalized_joint_MAE": 0.05668436196044863,
+      "normalized_joint_P90_time": 0.2789897728174522,
+      "V_max_abs_error_mV": 0.4392851194703695
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 2,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": true,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 28.027807973993266,
+        "Ca_uM": 0.0855144148738568,
+        "T_kPa": 1.7598385831012193,
+        "lambda": 0.02340588785043013
+      },
+      "normalized_joint_MAE": 12.307779579227214,
+      "normalized_joint_P90_time": 46.10472121465779,
+      "V_max_abs_error_mV": 112.97000013975483
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 2,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": true,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 26.301071284377958,
+        "Ca_uM": 0.07645559388720537,
+        "T_kPa": 1.3895318272952188,
+        "lambda": 0.009679503598876467
+      },
+      "normalized_joint_MAE": 10.987418062250478,
+      "normalized_joint_P90_time": 44.74306215325845,
+      "V_max_abs_error_mV": 111.61388493874199
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 2,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": true,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 25.41700613170351,
+        "Ca_uM": 0.07210380021518266,
+        "T_kPa": 1.2027430397209755,
+        "lambda": 0.004329679910419828
+      },
+      "normalized_joint_MAE": 10.368369301375749,
+      "normalized_joint_P90_time": 42.795562710089946,
+      "V_max_abs_error_mV": 105.09516069969466
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 2,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.4932131280396337,
+        "Ca_uM": 0.006209436506148628,
+        "T_kPa": 0.2456698032542468,
+        "lambda": 0.009273561398452644
+      },
+      "normalized_joint_MAE": 0.9770315930922177,
+      "normalized_joint_P90_time": 3.991325984749624,
+      "V_max_abs_error_mV": 9.529003322375871
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 2,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.37605983965006223,
+        "Ca_uM": 0.0016710131032272068,
+        "T_kPa": 0.019792085083628,
+        "lambda": 8.393966609444468e-05
+      },
+      "normalized_joint_MAE": 0.18461212799714413,
+      "normalized_joint_P90_time": 0.8733058011870192,
+      "V_max_abs_error_mV": 1.9181594434571139
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 2,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.3760598396500624,
+        "Ca_uM": 0.0016710131032272068,
+        "T_kPa": 0.019792085083628005,
+        "lambda": 8.393966609444457e-05
+      },
+      "normalized_joint_MAE": 0.18461212799714413,
+      "normalized_joint_P90_time": 0.8733058011870192,
+      "V_max_abs_error_mV": 1.9181594434571139
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 3,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 3.0363420327228097,
+        "Ca_uM": 0.012088187025688929,
+        "T_kPa": 0.5960716495856704,
+        "lambda": 0.019911661716430475
+      },
+      "normalized_joint_MAE": 2.0103043147723287,
+      "normalized_joint_P90_time": 6.963161821389042,
+      "V_max_abs_error_mV": 14.529778831056973
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 3,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.68166933219599,
+        "Ca_uM": 0.004501762163735239,
+        "T_kPa": 0.23221933355686303,
+        "lambda": 0.006633757940173021
+      },
+      "normalized_joint_MAE": 0.8694042231293009,
+      "normalized_joint_P90_time": 3.197752377468183,
+      "V_max_abs_error_mV": 13.181774682408296
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 3,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.2138771916893523,
+        "Ca_uM": 0.001707117066806226,
+        "T_kPa": 0.10478041121586709,
+        "lambda": 0.0002957343683925036
+      },
+      "normalized_joint_MAE": 0.42241361327642885,
+      "normalized_joint_P90_time": 1.1299795202349645,
+      "V_max_abs_error_mV": 7.131166090479589
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 3,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.1000427271268591,
+        "Ca_uM": 0.00518755068157398,
+        "T_kPa": 0.24136081644770896,
+        "lambda": 0.008946234835486152
+      },
+      "normalized_joint_MAE": 0.8183842908594948,
+      "normalized_joint_P90_time": 3.500156920205254,
+      "V_max_abs_error_mV": 6.995699630732233
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 3,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.21323696712785106,
+        "Ca_uM": 0.0013081785420139469,
+        "T_kPa": 0.02331777337583654,
+        "lambda": 0.00010707204363590943
+      },
+      "normalized_joint_MAE": 0.12722441331751705,
+      "normalized_joint_P90_time": 0.6457898704689365,
+      "V_max_abs_error_mV": 1.2487887922143983
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 3,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.21323696712785106,
+        "Ca_uM": 0.0013081785420139469,
+        "T_kPa": 0.02331777337583655,
+        "lambda": 0.00010707204363590945
+      },
+      "normalized_joint_MAE": 0.12722441331751705,
+      "normalized_joint_P90_time": 0.6457898704689365,
+      "V_max_abs_error_mV": 1.2487887922143983
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 4,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.556504951597033,
+        "Ca_uM": 0.00892713331555984,
+        "T_kPa": 0.5975634992761399,
+        "lambda": 0.02023876828233155
+      },
+      "normalized_joint_MAE": 1.4908429855545744,
+      "normalized_joint_P90_time": 4.546857190309127,
+      "V_max_abs_error_mV": 6.746387097401197
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 4,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.757550953207998,
+        "Ca_uM": 0.004538347872780151,
+        "T_kPa": 0.2341628841080031,
+        "lambda": 0.006684508343708425
+      },
+      "normalized_joint_MAE": 0.6419585615607183,
+      "normalized_joint_P90_time": 2.2634178132178455,
+      "V_max_abs_error_mV": 5.423685571251923
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 4,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.46840511713674676,
+        "Ca_uM": 0.0012074114449981863,
+        "T_kPa": 0.07277905842597804,
+        "lambda": 0.0002322790605498441
+      },
+      "normalized_joint_MAE": 0.20147359265433656,
+      "normalized_joint_P90_time": 0.5173261937920471,
+      "V_max_abs_error_mV": 2.366421198862433
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 4,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.6357912785946734,
+        "Ca_uM": 0.0032097652513576355,
+        "T_kPa": 0.240016062737902,
+        "lambda": 0.0090427470629825
+      },
+      "normalized_joint_MAE": 0.605508774475588,
+      "normalized_joint_P90_time": 2.4118826190809357,
+      "V_max_abs_error_mV": 3.806908363580831
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 4,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.12243089725562983,
+        "Ca_uM": 0.0013688775810949312,
+        "T_kPa": 0.018163396070860892,
+        "lambda": 7.772682267872363e-05
+      },
+      "normalized_joint_MAE": 0.1055356229533373,
+      "normalized_joint_P90_time": 0.5112143119622967,
+      "V_max_abs_error_mV": 0.7418142572642807
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 4,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.12243089725562983,
+        "Ca_uM": 0.0013688775810949312,
+        "T_kPa": 0.018163396070860895,
+        "lambda": 7.77268226787236e-05
+      },
+      "normalized_joint_MAE": 0.1055356229533373,
+      "normalized_joint_P90_time": 0.5112143119622967,
+      "V_max_abs_error_mV": 0.7418142572642807
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 5,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.1374356943190902,
+        "Ca_uM": 0.006750566140255807,
+        "T_kPa": 0.49718902933965403,
+        "lambda": 0.017449080933039433
+      },
+      "normalized_joint_MAE": 1.1824115112534626,
+      "normalized_joint_P90_time": 3.943277288231812,
+      "V_max_abs_error_mV": 4.883598442396718
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 5,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.5352910464679221,
+        "Ca_uM": 0.0027701477510742745,
+        "T_kPa": 0.19138172823491437,
+        "lambda": 0.005809088271956417
+      },
+      "normalized_joint_MAE": 0.4654027880283332,
+      "normalized_joint_P90_time": 1.705669929342299,
+      "V_max_abs_error_mV": 4.081973313497187
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 5,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.3257476267551532,
+        "Ca_uM": 0.0015575426821590338,
+        "T_kPa": 0.08978146575358945,
+        "lambda": 0.00019727746227423976
+      },
+      "normalized_joint_MAE": 0.18669134379199329,
+      "normalized_joint_P90_time": 0.41241230532057216,
+      "V_max_abs_error_mV": 1.5515627881635012
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 5,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.47678147144753247,
+        "Ca_uM": 0.002623400818043868,
+        "T_kPa": 0.2038898597100141,
+        "lambda": 0.007794168559338068
+      },
+      "normalized_joint_MAE": 0.4961920876750317,
+      "normalized_joint_P90_time": 2.0913346037852003,
+      "V_max_abs_error_mV": 2.876205203150036
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 5,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.08562304597202125,
+        "Ca_uM": 0.0009104556082018767,
+        "T_kPa": 0.02151603591411166,
+        "lambda": 8.147042938158909e-05
+      },
+      "normalized_joint_MAE": 0.07434431161616678,
+      "normalized_joint_P90_time": 0.3636227547595833,
+      "V_max_abs_error_mV": 0.5497085746506656
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 5,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.08562304597202125,
+        "Ca_uM": 0.0009104556082018767,
+        "T_kPa": 0.021516035914111664,
+        "lambda": 8.147042938158907e-05
+      },
+      "normalized_joint_MAE": 0.07434431161616678,
+      "normalized_joint_P90_time": 0.3636227547595833,
+      "V_max_abs_error_mV": 0.5497085746506656
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 6,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.6731239119322838,
+        "Ca_uM": 0.009097563418702586,
+        "T_kPa": 0.5245234665532331,
+        "lambda": 0.018036232857981716
+      },
+      "normalized_joint_MAE": 1.4551958370060518,
+      "normalized_joint_P90_time": 4.688648836656781,
+      "V_max_abs_error_mV": 7.328214536104213
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 6,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8084304087032672,
+        "Ca_uM": 0.004073862044212386,
+        "T_kPa": 0.20042576486335448,
+        "lambda": 0.0060103870035354305
+      },
+      "normalized_joint_MAE": 0.6061668206906604,
+      "normalized_joint_P90_time": 2.207825510285203,
+      "V_max_abs_error_mV": 6.2776837977890665
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 6,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.4935595991141471,
+        "Ca_uM": 0.0015208955889708265,
+        "T_kPa": 0.08937795204982635,
+        "lambda": 0.00021361437895301252
+      },
+      "normalized_joint_MAE": 0.22711952671335991,
+      "normalized_joint_P90_time": 0.5303873547417535,
+      "V_max_abs_error_mV": 2.5523172402438377
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 6,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.6786201943785497,
+        "Ca_uM": 0.0034933516676135886,
+        "T_kPa": 0.21365306760634828,
+        "lambda": 0.008077600266435845
+      },
+      "normalized_joint_MAE": 0.5996759055378004,
+      "normalized_joint_P90_time": 2.491056813890576,
+      "V_max_abs_error_mV": 4.152183834845417
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 6,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.11669816283382888,
+        "Ca_uM": 0.0012971321658572061,
+        "T_kPa": 0.019982111064499965,
+        "lambda": 7.977022966922705e-05
+      },
+      "normalized_joint_MAE": 0.10102093250917321,
+      "normalized_joint_P90_time": 0.4945760494212624,
+      "V_max_abs_error_mV": 0.7311953831159741
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 6,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.11669816283382888,
+        "Ca_uM": 0.0012971321658572061,
+        "T_kPa": 0.01998211106449997,
+        "lambda": 7.977022966922712e-05
+      },
+      "normalized_joint_MAE": 0.10102093250917324,
+      "normalized_joint_P90_time": 0.4945760494212624,
+      "V_max_abs_error_mV": 0.7311953831159741
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 7,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.0797404219876903,
+        "Ca_uM": 0.010104961265693716,
+        "T_kPa": 0.46972279547052,
+        "lambda": 0.016573473712835657
+      },
+      "normalized_joint_MAE": 1.5569507104701301,
+      "normalized_joint_P90_time": 5.192405215894179,
+      "V_max_abs_error_mV": 9.37279236145092
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 7,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.0635101796438131,
+        "Ca_uM": 0.004017731872758773,
+        "T_kPa": 0.1790381882465508,
+        "lambda": 0.005520695063295413
+      },
+      "normalized_joint_MAE": 0.6495410621929149,
+      "normalized_joint_P90_time": 2.336241434549065,
+      "V_max_abs_error_mV": 8.088107618494135
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 7,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.7056714649614168,
+        "Ca_uM": 0.0016624699770560805,
+        "T_kPa": 0.08410529487010752,
+        "lambda": 0.0001723755960528497
+      },
+      "normalized_joint_MAE": 0.2848770787120062,
+      "normalized_joint_P90_time": 0.6196292991494493,
+      "V_max_abs_error_mV": 3.787527398990008
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 7,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8149821731122838,
+        "Ca_uM": 0.004098130951971271,
+        "T_kPa": 0.1923888414350898,
+        "lambda": 0.007398008908675651
+      },
+      "normalized_joint_MAE": 0.6416995239522985,
+      "normalized_joint_P90_time": 2.666020319535769,
+      "V_max_abs_error_mV": 5.03575319177385
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 7,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.1529392631885707,
+        "Ca_uM": 0.0011799224393186898,
+        "T_kPa": 0.019935219350722254,
+        "lambda": 7.061866687286625e-05
+      },
+      "normalized_joint_MAE": 0.10398020927257937,
+      "normalized_joint_P90_time": 0.5291818432183844,
+      "V_max_abs_error_mV": 0.9002924192541286
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 7,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.1529392631885707,
+        "Ca_uM": 0.0011799224393186896,
+        "T_kPa": 0.019935219350722257,
+        "lambda": 7.061866687286625e-05
+      },
+      "normalized_joint_MAE": 0.10398020927257934,
+      "normalized_joint_P90_time": 0.5291818432183844,
+      "V_max_abs_error_mV": 0.9002924192541286
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 8,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.3798279218184923,
+        "Ca_uM": 0.011012720642631542,
+        "T_kPa": 0.4521216963815584,
+        "lambda": 0.01583864944977012
+      },
+      "normalized_joint_MAE": 1.6545896729258427,
+      "normalized_joint_P90_time": 5.457433435579604,
+      "V_max_abs_error_mV": 10.82329710567717
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 8,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.219224214687862,
+        "Ca_uM": 0.004607513957096687,
+        "T_kPa": 0.16944499749470104,
+        "lambda": 0.005293693952239285
+      },
+      "normalized_joint_MAE": 0.7098853497064576,
+      "normalized_joint_P90_time": 2.610621026852082,
+      "V_max_abs_error_mV": 9.657370147569523
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 8,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.7955990962753208,
+        "Ca_uM": 0.0015141360192846259,
+        "T_kPa": 0.09168587183777532,
+        "lambda": 0.00019729218347557632
+      },
+      "normalized_joint_MAE": 0.3024603475793947,
+      "normalized_joint_P90_time": 0.6574869850542455,
+      "V_max_abs_error_mV": 4.429751485621203
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 8,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.9141854116520464,
+        "Ca_uM": 0.004458028359818274,
+        "T_kPa": 0.18514917543281176,
+        "lambda": 0.007086481951296747
+      },
+      "normalized_joint_MAE": 0.6748971135445471,
+      "normalized_joint_P90_time": 2.8261930294381514,
+      "V_max_abs_error_mV": 5.720769732440743
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 8,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.15663075593651996,
+        "Ca_uM": 0.0013813700849236914,
+        "T_kPa": 0.019165508093594866,
+        "lambda": 6.700643792592143e-05
+      },
+      "normalized_joint_MAE": 0.11469273120186137,
+      "normalized_joint_P90_time": 0.5814538244370995,
+      "V_max_abs_error_mV": 0.9606016339864141
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 8,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.15663075593651996,
+        "Ca_uM": 0.0013813700849236916,
+        "T_kPa": 0.01916550809359487,
+        "lambda": 6.70064379259214e-05
+      },
+      "normalized_joint_MAE": 0.11469273120186137,
+      "normalized_joint_P90_time": 0.5814538244370995,
+      "V_max_abs_error_mV": 0.9606016339864141
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 9,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.7546298920837701,
+        "Ca_uM": 0.004885078650208336,
+        "T_kPa": 0.5550278653460277,
+        "lambda": 0.018785326758213525
+      },
+      "normalized_joint_MAE": 1.0413015408232047,
+      "normalized_joint_P90_time": 3.6596323832853064,
+      "V_max_abs_error_mV": 3.188298816283293
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 9,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.3300807497723848,
+        "Ca_uM": 0.001989891517630834,
+        "T_kPa": 0.21448709497613574,
+        "lambda": 0.006293987769071475
+      },
+      "normalized_joint_MAE": 0.3929862312954587,
+      "normalized_joint_P90_time": 1.4176598830001343,
+      "V_max_abs_error_mV": 2.8287095864782117
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 9,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.17292571874819473,
+        "Ca_uM": 0.0014331262906529792,
+        "T_kPa": 0.13137152525251747,
+        "lambda": 0.00038634602297845603
+      },
+      "normalized_joint_MAE": 0.15738927610728837,
+      "normalized_joint_P90_time": 0.37367519379660796,
+      "V_max_abs_error_mV": 0.8682449637582152
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 9,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.32473162679668416,
+        "Ca_uM": 0.0019144922579409033,
+        "T_kPa": 0.22738270780578237,
+        "lambda": 0.008435072833606956
+      },
+      "normalized_joint_MAE": 0.44463001738783564,
+      "normalized_joint_P90_time": 2.0517253457645914,
+      "V_max_abs_error_mV": 1.9675934988336934
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 9,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.048058186739242725,
+        "Ca_uM": 0.0007250621717836659,
+        "T_kPa": 0.026167485278483116,
+        "lambda": 0.0001174146778819594
+      },
+      "normalized_joint_MAE": 0.057744893540663755,
+      "normalized_joint_P90_time": 0.2676166078861367,
+      "V_max_abs_error_mV": 0.3515027570810929
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 9,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.048058186739242725,
+        "Ca_uM": 0.000725062171783666,
+        "T_kPa": 0.026167485278483116,
+        "lambda": 0.0001174146778819594
+      },
+      "normalized_joint_MAE": 0.057744893540663755,
+      "normalized_joint_P90_time": 0.2676166078861367,
+      "V_max_abs_error_mV": 0.3515027570810929
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 10,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 3.882041722194935,
+        "Ca_uM": 0.01320810137748998,
+        "T_kPa": 0.5804071060292315,
+        "lambda": 0.019384724911442507
+      },
+      "normalized_joint_MAE": 2.2606353987166052,
+      "normalized_joint_P90_time": 7.717000380947091,
+      "V_max_abs_error_mV": 19.421279470530024
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 10,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.2886291164631465,
+        "Ca_uM": 0.005242349335459877,
+        "T_kPa": 0.22425817762083228,
+        "lambda": 0.00645437010925605
+      },
+      "normalized_joint_MAE": 1.0516985430253896,
+      "normalized_joint_P90_time": 4.044110488116598,
+      "V_max_abs_error_mV": 17.82613850488505
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 10,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.710317464232989,
+        "Ca_uM": 0.0014045704930449735,
+        "T_kPa": 0.09362877204574802,
+        "lambda": 0.0002539228601298212
+      },
+      "normalized_joint_MAE": 0.5275631552251784,
+      "normalized_joint_P90_time": 1.787922780723232,
+      "V_max_abs_error_mV": 10.767025408660242
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 10,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.3004170337849412,
+        "Ca_uM": 0.005698297228578493,
+        "T_kPa": 0.23397758620472073,
+        "lambda": 0.008707561020176998
+      },
+      "normalized_joint_MAE": 0.886202541930765,
+      "normalized_joint_P90_time": 3.724524647497385,
+      "V_max_abs_error_mV": 8.366351090101134
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 10,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.2588019860287018,
+        "Ca_uM": 0.0015372003575889594,
+        "T_kPa": 0.02060942186773057,
+        "lambda": 9.049674083262938e-05
+      },
+      "normalized_joint_MAE": 0.14897528837437188,
+      "normalized_joint_P90_time": 0.7446084880273,
+      "V_max_abs_error_mV": 1.48590259085627
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 10,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.25880198602870175,
+        "Ca_uM": 0.0015372003575889594,
+        "T_kPa": 0.020609421867730578,
+        "lambda": 9.049674083262941e-05
+      },
+      "normalized_joint_MAE": 0.14897528837437188,
+      "normalized_joint_P90_time": 0.7446084880273,
+      "V_max_abs_error_mV": 1.48590259085627
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 11,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 3.594964579675462,
+        "Ca_uM": 0.013040226785645037,
+        "T_kPa": 0.4732707834025679,
+        "lambda": 0.016264630373216876
+      },
+      "normalized_joint_MAE": 2.075685939382182,
+      "normalized_joint_P90_time": 7.017723912929101,
+      "V_max_abs_error_mV": 17.541335488157173
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 11,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.0378137803151124,
+        "Ca_uM": 0.0054730263988258,
+        "T_kPa": 0.17739597004846164,
+        "lambda": 0.005439077168857149
+      },
+      "normalized_joint_MAE": 0.9634306867536125,
+      "normalized_joint_P90_time": 3.698279390835581,
+      "V_max_abs_error_mV": 16.227360870777673
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 11,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.4663916485265762,
+        "Ca_uM": 0.0013095328133516915,
+        "T_kPa": 0.09608999666625402,
+        "lambda": 0.0002232268457817109
+      },
+      "normalized_joint_MAE": 0.461677723110335,
+      "normalized_joint_P90_time": 1.482528318926738,
+      "V_max_abs_error_mV": 9.026387786060504
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 11,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.243147608470995,
+        "Ca_uM": 0.00552692688123762,
+        "T_kPa": 0.19233706807289527,
+        "lambda": 0.007290506235741305
+      },
+      "normalized_joint_MAE": 0.8174801690913861,
+      "normalized_joint_P90_time": 3.435827263457733,
+      "V_max_abs_error_mV": 7.986545601005602
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 11,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.22463995994974534,
+        "Ca_uM": 0.001590242883045711,
+        "T_kPa": 0.019145688424321072,
+        "lambda": 6.989951877203948e-05
+      },
+      "normalized_joint_MAE": 0.1422060442151032,
+      "normalized_joint_P90_time": 0.7121770743657118,
+      "V_max_abs_error_mV": 1.354525921188241
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 11,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.22463995994974534,
+        "Ca_uM": 0.001590242883045711,
+        "T_kPa": 0.019145688424321072,
+        "lambda": 6.989951877203942e-05
+      },
+      "normalized_joint_MAE": 0.1422060442151032,
+      "normalized_joint_P90_time": 0.7121770743657118,
+      "V_max_abs_error_mV": 1.354525921188241
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 12,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.7895930734650636,
+        "Ca_uM": 0.009137039474931614,
+        "T_kPa": 0.4867678523831748,
+        "lambda": 0.016833963402535047
+      },
+      "normalized_joint_MAE": 1.446791290272017,
+      "normalized_joint_P90_time": 5.046152630936445,
+      "V_max_abs_error_mV": 7.8982825855329395
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 12,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8627930470007673,
+        "Ca_uM": 0.003567975269122564,
+        "T_kPa": 0.18494621299178418,
+        "lambda": 0.005646261730124503
+      },
+      "normalized_joint_MAE": 0.5814901217073787,
+      "normalized_joint_P90_time": 2.058035129921262,
+      "V_max_abs_error_mV": 7.247941680260453
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 12,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.5212162624363659,
+        "Ca_uM": 0.0016985635993306593,
+        "T_kPa": 0.12564758221593256,
+        "lambda": 0.00033114716715804116
+      },
+      "normalized_joint_MAE": 0.25492282030855873,
+      "normalized_joint_P90_time": 0.5491917442816001,
+      "V_max_abs_error_mV": 2.7485336347470763
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 12,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.7180772296903143,
+        "Ca_uM": 0.003825857230286431,
+        "T_kPa": 0.2003406522518068,
+        "lambda": 0.0075444608668307905
+      },
+      "normalized_joint_MAE": 0.6095088536706216,
+      "normalized_joint_P90_time": 2.6985585380410813,
+      "V_max_abs_error_mV": 4.472747639496163
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 12,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.11078414638830804,
+        "Ca_uM": 0.000989528775219993,
+        "T_kPa": 0.024599669775339627,
+        "lambda": 9.682408536488634e-05
+      },
+      "normalized_joint_MAE": 0.08574299493603373,
+      "normalized_joint_P90_time": 0.4425355065872263,
+      "V_max_abs_error_mV": 0.7216423235010296
+    },
+    {
+      "cohort": "embodied_cohort",
+      "cell": 12,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.11078414638830804,
+        "Ca_uM": 0.0009895287752199923,
+        "T_kPa": 0.02459966977533964,
+        "lambda": 9.682408536488634e-05
+      },
+      "normalized_joint_MAE": 0.08574299493603373,
+      "normalized_joint_P90_time": 0.4425355065872263,
+      "V_max_abs_error_mV": 0.7216423235010296
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 1,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.3555057796439718,
+        "Ca_uM": 0.008933087213340143,
+        "T_kPa": 0.6474725508596664,
+        "lambda": 0.021129851823359084
+      },
+      "normalized_joint_MAE": 1.4756452388768935,
+      "normalized_joint_P90_time": 4.360069992650869,
+      "V_max_abs_error_mV": 5.777368119083988
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 1,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.6236133154507301,
+        "Ca_uM": 0.0050952589346283635,
+        "T_kPa": 0.2518727748812249,
+        "lambda": 0.007034451166616373
+      },
+      "normalized_joint_MAE": 0.6494957484798165,
+      "normalized_joint_P90_time": 2.2299274648754728,
+      "V_max_abs_error_mV": 4.855015082722723
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 1,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.3460055827821378,
+        "Ca_uM": 0.0011227872577540222,
+        "T_kPa": 0.09429138113189725,
+        "lambda": 0.00031248813299785896
+      },
+      "normalized_joint_MAE": 0.17402580719115632,
+      "normalized_joint_P90_time": 0.4706140243034613,
+      "V_max_abs_error_mV": 1.7318144297585003
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 1,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.5649316849460873,
+        "Ca_uM": 0.003044146349533614,
+        "T_kPa": 0.25984554964215517,
+        "lambda": 0.009519472316825916
+      },
+      "normalized_joint_MAE": 0.5963884340443892,
+      "normalized_joint_P90_time": 2.4132614256996647,
+      "V_max_abs_error_mV": 3.4092153801577894
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 1,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.09439641659013885,
+        "Ca_uM": 0.001627738988388231,
+        "T_kPa": 0.01953697422672808,
+        "lambda": 9.580187220379182e-05
+      },
+      "normalized_joint_MAE": 0.11226534392872316,
+      "normalized_joint_P90_time": 0.50314697843521,
+      "V_max_abs_error_mV": 0.6281303053579848
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 1,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.09439641659013885,
+        "Ca_uM": 0.001627738988388231,
+        "T_kPa": 0.019536974226728072,
+        "lambda": 9.580187220379188e-05
+      },
+      "normalized_joint_MAE": 0.11226534392872316,
+      "normalized_joint_P90_time": 0.5031469784352101,
+      "V_max_abs_error_mV": 0.6281303053579848
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 2,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8282838433074716,
+        "Ca_uM": 0.005183369167247224,
+        "T_kPa": 0.5259069284708341,
+        "lambda": 0.018463788028753588
+      },
+      "normalized_joint_MAE": 1.0593108520257777,
+      "normalized_joint_P90_time": 3.582133349965284,
+      "V_max_abs_error_mV": 3.516211915386492
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 2,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.3908737208929379,
+        "Ca_uM": 0.002145786878990621,
+        "T_kPa": 0.20652039456842225,
+        "lambda": 0.006114948055452941
+      },
+      "normalized_joint_MAE": 0.40951157420119455,
+      "normalized_joint_P90_time": 1.4866368128817,
+      "V_max_abs_error_mV": 2.806837610334128
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 2,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.25064353633922365,
+        "Ca_uM": 0.0013345716105703667,
+        "T_kPa": 0.0823993981649451,
+        "lambda": 0.0001863478181385836
+      },
+      "normalized_joint_MAE": 0.15464800960802505,
+      "normalized_joint_P90_time": 0.3336588049577157,
+      "V_max_abs_error_mV": 1.1874833155652738
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 2,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.35330786827096944,
+        "Ca_uM": 0.001998487455277581,
+        "T_kPa": 0.21456000694340785,
+        "lambda": 0.00822233602202067
+      },
+      "normalized_joint_MAE": 0.4474497421179901,
+      "normalized_joint_P90_time": 1.884006633891916,
+      "V_max_abs_error_mV": 2.09429858762806
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 2,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.0707160962619703,
+        "Ca_uM": 0.000693334819820309,
+        "T_kPa": 0.02240519589793525,
+        "lambda": 8.59469756840646e-05
+      },
+      "normalized_joint_MAE": 0.060095738423093424,
+      "normalized_joint_P90_time": 0.29123953676535314,
+      "V_max_abs_error_mV": 0.476803826578319
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 2,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.0707160962619703,
+        "Ca_uM": 0.0006933348198203087,
+        "T_kPa": 0.02240519589793525,
+        "lambda": 8.594697568406461e-05
+      },
+      "normalized_joint_MAE": 0.06009573842309341,
+      "normalized_joint_P90_time": 0.29123953676535314,
+      "V_max_abs_error_mV": 0.476803826578319
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 3,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 3.3605306027851163,
+        "Ca_uM": 0.012584242895041167,
+        "T_kPa": 0.49219019622359234,
+        "lambda": 0.01712140898359545
+      },
+      "normalized_joint_MAE": 2.0204275690941227,
+      "normalized_joint_P90_time": 7.059856126128711,
+      "V_max_abs_error_mV": 16.42318674245763
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 3,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.9292395812559775,
+        "Ca_uM": 0.004598995186591938,
+        "T_kPa": 0.18875931800030685,
+        "lambda": 0.0057111037694510475
+      },
+      "normalized_joint_MAE": 0.9022270783799443,
+      "normalized_joint_P90_time": 3.2489705869745604,
+      "V_max_abs_error_mV": 14.96772469714869
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 3,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.436493964067977,
+        "Ca_uM": 0.001737166336330467,
+        "T_kPa": 0.09751134607472194,
+        "lambda": 0.0002189775861251878
+      },
+      "normalized_joint_MAE": 0.4758340840053282,
+      "normalized_joint_P90_time": 1.3929539227092607,
+      "V_max_abs_error_mV": 8.631273005213206
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 3,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.1767081347278068,
+        "Ca_uM": 0.005468471889005102,
+        "T_kPa": 0.20127833364731135,
+        "lambda": 0.00765972762272464
+      },
+      "normalized_joint_MAE": 0.8094134021121506,
+      "normalized_joint_P90_time": 3.435267239440928,
+      "V_max_abs_error_mV": 7.530671219718855
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 3,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.2389893736622644,
+        "Ca_uM": 0.0013281919097812166,
+        "T_kPa": 0.022244634410958017,
+        "lambda": 8.414955106351982e-05
+      },
+      "normalized_joint_MAE": 0.1338218362839545,
+      "normalized_joint_P90_time": 0.6502444647811824,
+      "V_max_abs_error_mV": 1.3578388672457322
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 3,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.2389893736622643,
+        "Ca_uM": 0.0013281919097812166,
+        "T_kPa": 0.022244634410958013,
+        "lambda": 8.41495510635198e-05
+      },
+      "normalized_joint_MAE": 0.1338218362839545,
+      "normalized_joint_P90_time": 0.6502444647811824,
+      "V_max_abs_error_mV": 1.3578388672457322
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 4,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.3861150217808893,
+        "Ca_uM": 0.010868517023605357,
+        "T_kPa": 0.45035963598766854,
+        "lambda": 0.015929732792794984
+      },
+      "normalized_joint_MAE": 1.6507878354422822,
+      "normalized_joint_P90_time": 5.591112078993978,
+      "V_max_abs_error_mV": 10.938676956998748
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 4,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.2477113438999163,
+        "Ca_uM": 0.004202601826751411,
+        "T_kPa": 0.1705513050829243,
+        "lambda": 0.005317436502889214
+      },
+      "normalized_joint_MAE": 0.6976316661555113,
+      "normalized_joint_P90_time": 2.510482869736455,
+      "V_max_abs_error_mV": 9.6845126286576
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 4,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8470916372577916,
+        "Ca_uM": 0.0016932979524893678,
+        "T_kPa": 0.09048854336398525,
+        "lambda": 0.00018611121345846356
+      },
+      "normalized_joint_MAE": 0.32371272311637433,
+      "normalized_joint_P90_time": 0.6908439912127898,
+      "V_max_abs_error_mV": 4.6833297205571975
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 4,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.9124652991927,
+        "Ca_uM": 0.004511942620177487,
+        "T_kPa": 0.1850028372752692,
+        "lambda": 0.00711647612296023
+      },
+      "normalized_joint_MAE": 0.677876068199872,
+      "normalized_joint_P90_time": 2.8523115249590685,
+      "V_max_abs_error_mV": 5.7085020853133415
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 4,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.16859094722151216,
+        "Ca_uM": 0.001202826723256938,
+        "T_kPa": 0.020356914617951048,
+        "lambda": 7.042814575499745e-05
+      },
+      "normalized_joint_MAE": 0.10913900526658761,
+      "normalized_joint_P90_time": 0.5565428491972864,
+      "V_max_abs_error_mV": 0.993884619680145
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 4,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.16859094722151216,
+        "Ca_uM": 0.001202826723256938,
+        "T_kPa": 0.020356914617951048,
+        "lambda": 7.042814575499748e-05
+      },
+      "normalized_joint_MAE": 0.10913900526658761,
+      "normalized_joint_P90_time": 0.5565428491972864,
+      "V_max_abs_error_mV": 0.993884619680145
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 5,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.421569253017135,
+        "Ca_uM": 0.01110323074822013,
+        "T_kPa": 0.515482422999143,
+        "lambda": 0.01759064451968404
+      },
+      "normalized_joint_MAE": 1.7291905694071767,
+      "normalized_joint_P90_time": 5.763575635925147,
+      "V_max_abs_error_mV": 11.033531545743003
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 5,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.2381878381660183,
+        "Ca_uM": 0.004624309831120331,
+        "T_kPa": 0.19525910894349002,
+        "lambda": 0.0058820414296444174
+      },
+      "normalized_joint_MAE": 0.7366282640745042,
+      "normalized_joint_P90_time": 2.7319191599310306,
+      "V_max_abs_error_mV": 9.960156427805998
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 5,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8061653551655081,
+        "Ca_uM": 0.0015391489586851718,
+        "T_kPa": 0.1027580860631075,
+        "lambda": 0.0002604260192415322
+      },
+      "normalized_joint_MAE": 0.31069895872245074,
+      "normalized_joint_P90_time": 0.6781622906795832,
+      "V_max_abs_error_mV": 4.5124448438388
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 5,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.9289894682915375,
+        "Ca_uM": 0.004525798762838573,
+        "T_kPa": 0.2100158206334005,
+        "lambda": 0.007890882202153088
+      },
+      "normalized_joint_MAE": 0.7083133154269904,
+      "normalized_joint_P90_time": 2.999098395526631,
+      "V_max_abs_error_mV": 5.8317074046317146
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 5,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.15602894214662116,
+        "Ca_uM": 0.0014061032238995245,
+        "T_kPa": 0.020848073388672887,
+        "lambda": 8.368955435515314e-05
+      },
+      "normalized_joint_MAE": 0.11661665393767856,
+      "normalized_joint_P90_time": 0.5858409096320981,
+      "V_max_abs_error_mV": 0.9771474543314866
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 5,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.15602894214662116,
+        "Ca_uM": 0.0014061032238995245,
+        "T_kPa": 0.02084807338867289,
+        "lambda": 8.368955435515304e-05
+      },
+      "normalized_joint_MAE": 0.11661665393767856,
+      "normalized_joint_P90_time": 0.5858409096320981,
+      "V_max_abs_error_mV": 0.9771474543314866
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 6,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 3.344453169373311,
+        "Ca_uM": 0.012519196508462513,
+        "T_kPa": 0.46893263070899893,
+        "lambda": 0.016235369663434834
+      },
+      "normalized_joint_MAE": 1.9851905170295756,
+      "normalized_joint_P90_time": 7.010915530686281,
+      "V_max_abs_error_mV": 16.126171259904737
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 6,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.8650941236054277,
+        "Ca_uM": 0.004526018108205517,
+        "T_kPa": 0.17646891609271634,
+        "lambda": 0.005446061987943338
+      },
+      "normalized_joint_MAE": 0.8728432150333949,
+      "normalized_joint_P90_time": 3.2452639421773393,
+      "V_max_abs_error_mV": 15.178834307794837
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 6,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.3384333500410603,
+        "Ca_uM": 0.001728998498137495,
+        "T_kPa": 0.11930878467210525,
+        "lambda": 0.00030141332847433535
+      },
+      "normalized_joint_MAE": 0.458420791797025,
+      "normalized_joint_P90_time": 1.36591104100551,
+      "V_max_abs_error_mV": 8.001618385073293
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 6,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.1782417625568526,
+        "Ca_uM": 0.0054898416124057456,
+        "T_kPa": 0.19256403951371287,
+        "lambda": 0.007274800766555523
+      },
+      "normalized_joint_MAE": 0.7990635503018165,
+      "normalized_joint_P90_time": 3.5048958406184036,
+      "V_max_abs_error_mV": 7.586537439634668
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 6,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.20715635514598424,
+        "Ca_uM": 0.0012866089370553626,
+        "T_kPa": 0.02310899315782753,
+        "lambda": 8.690651869662256e-05
+      },
+      "normalized_joint_MAE": 0.12406944689613664,
+      "normalized_joint_P90_time": 0.6151428211352763,
+      "V_max_abs_error_mV": 1.2847380237344481
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 6,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.20715635514598424,
+        "Ca_uM": 0.0012866089370553622,
+        "T_kPa": 0.023108993157827537,
+        "lambda": 8.690651869662253e-05
+      },
+      "normalized_joint_MAE": 0.12406944689613664,
+      "normalized_joint_P90_time": 0.6151428211352763,
+      "V_max_abs_error_mV": 1.2847380237344481
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 7,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.0678550430475002,
+        "Ca_uM": 0.007260550445224688,
+        "T_kPa": 0.5788337594254617,
+        "lambda": 0.019596708841863437
+      },
+      "normalized_joint_MAE": 1.2646174439260602,
+      "normalized_joint_P90_time": 3.838393335354569,
+      "V_max_abs_error_mV": 4.515177808129025
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 7,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.4884624622260704,
+        "Ca_uM": 0.0038244040707740125,
+        "T_kPa": 0.22368814923352026,
+        "lambda": 0.00651326421493917
+      },
+      "normalized_joint_MAE": 0.5320894617770777,
+      "normalized_joint_P90_time": 1.8652172806050515,
+      "V_max_abs_error_mV": 3.677414316398938
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 7,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.27847682304684984,
+        "Ca_uM": 0.0013637762992152569,
+        "T_kPa": 0.08451154417276156,
+        "lambda": 0.00022875885524250574
+      },
+      "normalized_joint_MAE": 0.16465487814672833,
+      "normalized_joint_P90_time": 0.4351763175713875,
+      "V_max_abs_error_mV": 1.3172771099929292
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 7,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.45147387688881585,
+        "Ca_uM": 0.002487128477693766,
+        "T_kPa": 0.23447771899666714,
+        "lambda": 0.008784597073754279
+      },
+      "normalized_joint_MAE": 0.5154592496999161,
+      "normalized_joint_P90_time": 2.0881483037942146,
+      "V_max_abs_error_mV": 2.69558605093286
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 7,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.07922957422418629,
+        "Ca_uM": 0.001338796357242142,
+        "T_kPa": 0.01947321100995845,
+        "lambda": 8.453540825698204e-05
+      },
+      "normalized_joint_MAE": 0.09372889937706784,
+      "normalized_joint_P90_time": 0.4259492569923582,
+      "V_max_abs_error_mV": 0.5218005454713506
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 7,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.07922957422418629,
+        "Ca_uM": 0.0013387963572421416,
+        "T_kPa": 0.019473211009958448,
+        "lambda": 8.453540825698199e-05
+      },
+      "normalized_joint_MAE": 0.09372889937706784,
+      "normalized_joint_P90_time": 0.4259492569923582,
+      "V_max_abs_error_mV": 0.5218005454713506
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 8,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.465908183133629,
+        "Ca_uM": 0.01106552721104004,
+        "T_kPa": 0.562102538609462,
+        "lambda": 0.01909782749102268
+      },
+      "normalized_joint_MAE": 1.7877247282633422,
+      "normalized_joint_P90_time": 6.0146131354453205,
+      "V_max_abs_error_mV": 11.378029269336693
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 8,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.3003428551023932,
+        "Ca_uM": 0.004348477424089519,
+        "T_kPa": 0.21787557490887502,
+        "lambda": 0.00635241157828644
+      },
+      "normalized_joint_MAE": 0.7557887681644541,
+      "normalized_joint_P90_time": 2.7349136887849665,
+      "V_max_abs_error_mV": 10.004227423033612
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 8,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8924349718023081,
+        "Ca_uM": 0.001650490974652825,
+        "T_kPa": 0.09202602067246533,
+        "lambda": 0.00023528530548356204
+      },
+      "normalized_joint_MAE": 0.33452192948842374,
+      "normalized_joint_P90_time": 0.7454657124241009,
+      "V_max_abs_error_mV": 4.989046882837278
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 8,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.9391138543102187,
+        "Ca_uM": 0.0045715420784593125,
+        "T_kPa": 0.22799755531890004,
+        "lambda": 0.008559200415221395
+      },
+      "normalized_joint_MAE": 0.7343349667107801,
+      "normalized_joint_P90_time": 3.0882234673265287,
+      "V_max_abs_error_mV": 5.867603352247457
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 8,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.1786757748349082,
+        "Ca_uM": 0.001277501202800564,
+        "T_kPa": 0.02145627603570337,
+        "lambda": 9.125278485869095e-05
+      },
+      "normalized_joint_MAE": 0.11618939247914838,
+      "normalized_joint_P90_time": 0.588598016608556,
+      "V_max_abs_error_mV": 1.049089952875093
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 8,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.1786757748349082,
+        "Ca_uM": 0.0012775012028005636,
+        "T_kPa": 0.021456276035703385,
+        "lambda": 9.125278485869098e-05
+      },
+      "normalized_joint_MAE": 0.11618939247914838,
+      "normalized_joint_P90_time": 0.588598016608556,
+      "V_max_abs_error_mV": 1.049089952875093
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 9,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.3509742009306076,
+        "Ca_uM": 0.008131772481198415,
+        "T_kPa": 0.48355337750614763,
+        "lambda": 0.016655818726686405
+      },
+      "normalized_joint_MAE": 1.2816159868362698,
+      "normalized_joint_P90_time": 4.118452075477375,
+      "V_max_abs_error_mV": 5.79444335500952
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 9,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.6080503369887774,
+        "Ca_uM": 0.0037463397113240357,
+        "T_kPa": 0.18014333306947478,
+        "lambda": 0.005591745032988984
+      },
+      "normalized_joint_MAE": 0.5241590289054895,
+      "normalized_joint_P90_time": 1.8785032731953784,
+      "V_max_abs_error_mV": 5.220777928145452
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 9,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.32006600850726413,
+        "Ca_uM": 0.0017374941816490253,
+        "T_kPa": 0.1171505849922025,
+        "lambda": 0.0003150636143597884
+      },
+      "normalized_joint_MAE": 0.2040554478163126,
+      "normalized_joint_P90_time": 0.4715974573382007,
+      "V_max_abs_error_mV": 1.669609159236714
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 9,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.5608868621483843,
+        "Ca_uM": 0.0030603068328496842,
+        "T_kPa": 0.19860068024582517,
+        "lambda": 0.007466659152001385
+      },
+      "normalized_joint_MAE": 0.5295537060410711,
+      "normalized_joint_P90_time": 2.270086806781688,
+      "V_max_abs_error_mV": 3.437713531860851
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 9,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.07881815526184485,
+        "Ca_uM": 0.001354646830571893,
+        "T_kPa": 0.021359340504561845,
+        "lambda": 8.309554826646896e-05
+      },
+      "normalized_joint_MAE": 0.09485410417685808,
+      "normalized_joint_P90_time": 0.43740546553561693,
+      "V_max_abs_error_mV": 0.5592206101115664
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 9,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.07881815526184485,
+        "Ca_uM": 0.001354646830571893,
+        "T_kPa": 0.021359340504561838,
+        "lambda": 8.309554826646897e-05
+      },
+      "normalized_joint_MAE": 0.09485410417685808,
+      "normalized_joint_P90_time": 0.43740546553561693,
+      "V_max_abs_error_mV": 0.5592206101115664
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 10,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.8146669918122622,
+        "Ca_uM": 0.009195285425421215,
+        "T_kPa": 0.5484271052240909,
+        "lambda": 0.01894220526733572
+      },
+      "normalized_joint_MAE": 1.5240929272135428,
+      "normalized_joint_P90_time": 5.252640922002131,
+      "V_max_abs_error_mV": 8.133688963655544
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 10,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.9315927484185609,
+        "Ca_uM": 0.003774054411088827,
+        "T_kPa": 0.2162504306969197,
+        "lambda": 0.00628434843111107
+      },
+      "normalized_joint_MAE": 0.6327722261110881,
+      "normalized_joint_P90_time": 2.277616781847741,
+      "V_max_abs_error_mV": 6.953580701837957
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 10,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.6403411325510692,
+        "Ca_uM": 0.0016425686793641832,
+        "T_kPa": 0.09457633731004733,
+        "lambda": 0.00022760186938620963
+      },
+      "normalized_joint_MAE": 0.27154784816814354,
+      "normalized_joint_P90_time": 0.5868687818643142,
+      "V_max_abs_error_mV": 3.2950826496453516
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 10,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.724704178579134,
+        "Ca_uM": 0.0038266681575654196,
+        "T_kPa": 0.22330713152224754,
+        "lambda": 0.008464113577778605
+      },
+      "normalized_joint_MAE": 0.6399390748480814,
+      "normalized_joint_P90_time": 2.719143049217621,
+      "V_max_abs_error_mV": 4.4533265371416775
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 10,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.14841789742999892,
+        "Ca_uM": 0.0010265629053893201,
+        "T_kPa": 0.024422509857536745,
+        "lambda": 9.974628074524894e-05
+      },
+      "normalized_joint_MAE": 0.09703190410998117,
+      "normalized_joint_P90_time": 0.4593590935152787,
+      "V_max_abs_error_mV": 0.8589342216044997
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 10,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.14841789742999892,
+        "Ca_uM": 0.0010265629053893201,
+        "T_kPa": 0.024422509857536738,
+        "lambda": 9.974628074524903e-05
+      },
+      "normalized_joint_MAE": 0.09703190410998117,
+      "normalized_joint_P90_time": 0.4593590935152787,
+      "V_max_abs_error_mV": 0.8589342216044997
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 11,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.364331003398209,
+        "Ca_uM": 0.010726542843693121,
+        "T_kPa": 0.6121277362022666,
+        "lambda": 0.020492382532435585
+      },
+      "normalized_joint_MAE": 1.792751390395665,
+      "normalized_joint_P90_time": 6.226349323470223,
+      "V_max_abs_error_mV": 10.92213573725293
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 11,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.2550432243696092,
+        "Ca_uM": 0.0041860064197981,
+        "T_kPa": 0.2419244113534185,
+        "lambda": 0.006807518485214028
+      },
+      "normalized_joint_MAE": 0.7537301920510125,
+      "normalized_joint_P90_time": 2.7007047083676197,
+      "V_max_abs_error_mV": 9.65929339727301
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 11,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.8844774135266142,
+        "Ca_uM": 0.0017351939833588808,
+        "T_kPa": 0.10442021579178294,
+        "lambda": 0.0002988070481978339
+      },
+      "normalized_joint_MAE": 0.34145428270248934,
+      "normalized_joint_P90_time": 0.7652660148621805,
+      "V_max_abs_error_mV": 4.845190899639938
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 11,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.905993746772672,
+        "Ca_uM": 0.004547472713065776,
+        "T_kPa": 0.24784323763956848,
+        "lambda": 0.009199250978424759
+      },
+      "normalized_joint_MAE": 0.745814156216968,
+      "normalized_joint_P90_time": 3.19049287711552,
+      "V_max_abs_error_mV": 5.669639994801784
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 11,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.18028180251502732,
+        "Ca_uM": 0.0011663458632956974,
+        "T_kPa": 0.025102306154482522,
+        "lambda": 0.00011634386403481428
+      },
+      "normalized_joint_MAE": 0.1125719169330327,
+      "normalized_joint_P90_time": 0.5517877604075958,
+      "V_max_abs_error_mV": 1.0500182634293367
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 11,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.18028180251502732,
+        "Ca_uM": 0.0011663458632956974,
+        "T_kPa": 0.02510230615448252,
+        "lambda": 0.00011634386403481418
+      },
+      "normalized_joint_MAE": 0.11257191693303267,
+      "normalized_joint_P90_time": 0.5517877604075958,
+      "V_max_abs_error_mV": 1.0500182634293367
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 12,
+      "target": "target18_300_450",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 4.328012119347922,
+        "Ca_uM": 0.013491777270938327,
+        "T_kPa": 0.5016579972620672,
+        "lambda": 0.017398515959563456
+      },
+      "normalized_joint_MAE": 2.3169692916884994,
+      "normalized_joint_P90_time": 8.024291127744243,
+      "V_max_abs_error_mV": 22.258128260434376
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 12,
+      "target": "target18_300_450",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.687458992630008,
+        "Ca_uM": 0.004932720928925499,
+        "T_kPa": 0.19243303151483218,
+        "lambda": 0.005784304407012274
+      },
+      "normalized_joint_MAE": 1.1112166626577922,
+      "normalized_joint_P90_time": 4.340792134561647,
+      "V_max_abs_error_mV": 20.406148317350784
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 12,
+      "target": "target18_300_450",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 2.076877473679768,
+        "Ca_uM": 0.0015900572161596795,
+        "T_kPa": 0.08017365200876864,
+        "lambda": 0.00017254981741058456
+      },
+      "normalized_joint_MAE": 0.623079387665383,
+      "normalized_joint_P90_time": 2.306749542842617,
+      "V_max_abs_error_mV": 13.361927385456795
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 12,
+      "target": "target12_400_500",
+      "model": "zero_response",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 1.368515553982491,
+        "Ca_uM": 0.005918763489419986,
+        "T_kPa": 0.20353859077007777,
+        "lambda": 0.007772047264148015
+      },
+      "normalized_joint_MAE": 0.8832528922628419,
+      "normalized_joint_P90_time": 3.6660801417856606,
+      "V_max_abs_error_mV": 8.807745253824208
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 12,
+      "target": "target12_400_500",
+      "model": "shift_scale",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.29765791255491775,
+        "Ca_uM": 0.0014920171905239343,
+        "T_kPa": 0.0194168885410559,
+        "lambda": 7.20223825235744e-05
+      },
+      "normalized_joint_MAE": 0.15567011936327943,
+      "normalized_joint_P90_time": 0.7665127132395525,
+      "V_max_abs_error_mV": 1.6175060997295674
+    },
+    {
+      "cohort": "embodied_cohort_confirm",
+      "cell": 12,
+      "target": "target12_400_500",
+      "model": "causal_LTI",
+      "true_event_deltaV_over_40mV": false,
+      "pred_event_deltaV_over_40mV": false,
+      "MAE": {
+        "V_mV": 0.29765791255491775,
+        "Ca_uM": 0.001492017190523934,
+        "T_kPa": 0.019416888541055898,
+        "lambda": 7.202238252357438e-05
+      },
+      "normalized_joint_MAE": 0.15567011936327943,
+      "normalized_joint_P90_time": 0.7665127132395525,
+      "V_max_abs_error_mV": 1.6175060997295674
+    }
+  ]
+}

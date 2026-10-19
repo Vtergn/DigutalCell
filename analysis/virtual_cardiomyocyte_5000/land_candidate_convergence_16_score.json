@@ -1,0 +1,57 @@
+{
+  "n_cells": 16,
+  "nested_candidate_counts": [
+    12,
+    24
+  ],
+  "results": [
+    {
+      "target_lambda": 1.125,
+      "n12": {
+        "ESS_median": 8.58431260113785,
+        "mean_MAE_kPa": 0.9765040224849613,
+        "mean_predictive_sd_kPa": 0.40077287336626277,
+        "CRPS_kPa": 0.8354056758452301
+      },
+      "n24": {
+        "ESS_median": 15.786566036896334,
+        "mean_MAE_kPa": 0.9396645081077405,
+        "mean_predictive_sd_kPa": 0.4151206076669801,
+        "CRPS_kPa": 0.7819637112719235
+      },
+      "mean_absolute_change_in_predicted_mean_kPa": 0.08107380860961756,
+      "mean_absolute_change_in_predicted_sd_kPa": 0.05247939198283648,
+      "median_per_cell_relative_change_in_peak_sd": 0.10905264868446402
+    },
+    {
+      "target_lambda": 1.15,
+      "n12": {
+        "ESS_median": 8.58431260113785,
+        "mean_MAE_kPa": 1.8630868892037913,
+        "mean_predictive_sd_kPa": 0.7264101229666269,
+        "CRPS_kPa": 1.5657563663168337
+      },
+      "n24": {
+        "ESS_median": 15.786566036896334,
+        "mean_MAE_kPa": 1.7886899225625263,
+        "mean_predictive_sd_kPa": 0.7633763526873534,
+        "CRPS_kPa": 1.4664429480900258
+      },
+      "mean_absolute_change_in_predicted_mean_kPa": 0.14078925201786183,
+      "mean_absolute_change_in_predicted_sd_kPa": 0.10107161640795678,
+      "median_per_cell_relative_change_in_peak_sd": 0.09975467314584727
+    }
+  ],
+  "true_parameters_in_candidate_marginal_range_per_parameter": [
+    0.875,
+    0.8125,
+    0.6875,
+    0.8125,
+    0.9375,
+    0.6875,
+    0.625,
+    0.625
+  ],
+  "cells_true_parameters_in_all_eight_marginal_ranges": 3,
+  "scope": "Exploratory clean cells only. Candidate prefixes are nested within each cell. This is a convergence diagnostic, not a new independent prediction test."
+}

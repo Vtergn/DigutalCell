@@ -1,0 +1,176 @@
+{
+  "scope": "synthetic 4-param nonlinear membrane; second field amplitude is an explicit additional intervention",
+  "random_seed": 20261019,
+  "kappa_zero_control": true,
+  "truth_mechanics_form": "qiang2018_regularized",
+  "truth_shape_closure": "fixed_thickness",
+  "n_cells": 100,
+  "axis_noise_fractional_sd": 0.005,
+  "calibration_field_ratios": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "held_out_field_ratio": 1.4,
+  "target_frequencies_MHz": [
+    0.35,
+    1.225,
+    4.286
+  ],
+  "protocols": {
+    "full21_E1": {
+      "linear": {
+        "median_parameter_error": [
+          0.03146192631058537,
+          0.06571905481677301,
+          0.015708307583460108,
+          0.0
+        ],
+        "median_target_lambda_mae": 0.117823889839336,
+        "p90_target_lambda_mae": 0.38472915366567184
+      },
+      "nonlinear": {
+        "median_parameter_error": [
+          0.033369050609300274,
+          0.06659151758786933,
+          0.02015383236434558,
+          3.426342948349124e-15
+        ],
+        "median_target_lambda_mae": 0.09168481560396269,
+        "p90_target_lambda_mae": 0.2950620843476825
+      }
+    },
+    "full21_high_E": {
+      "linear": {
+        "median_parameter_error": [
+          0.12381008811665539,
+          0.23386378005520944,
+          0.14365970169812414,
+          0.0
+        ],
+        "median_target_lambda_mae": 0.05410141436324282,
+        "p90_target_lambda_mae": 0.07378674614094606
+      },
+      "nonlinear": {
+        "median_parameter_error": [
+          0.06231214337951853,
+          0.1327058060473229,
+          0.06876133525883212,
+          0.10316313805607692
+        ],
+        "median_target_lambda_mae": 0.039559040657033376,
+        "p90_target_lambda_mae": 0.06123415969490955
+      }
+    },
+    "five_E1": {
+      "linear": {
+        "median_parameter_error": [
+          0.04058653876774393,
+          0.06486677844829682,
+          0.022318803181739184,
+          0.0
+        ],
+        "median_target_lambda_mae": 0.11245655005006641,
+        "p90_target_lambda_mae": 0.38571841700457515
+      },
+      "nonlinear": {
+        "median_parameter_error": [
+          0.05649975290333045,
+          0.09156814155230394,
+          0.04124457926281534,
+          2.7628935136315796e-14
+        ],
+        "median_target_lambda_mae": 0.08058220263423779,
+        "p90_target_lambda_mae": 0.3360234572583042
+      }
+    },
+    "six_high_E": {
+      "linear": {
+        "median_parameter_error": [
+          0.155818663652038,
+          0.22373256735864827,
+          0.13096737372929976,
+          0.0
+        ],
+        "median_target_lambda_mae": 0.05357129795619908,
+        "p90_target_lambda_mae": 0.07766964411134016
+      },
+      "nonlinear": {
+        "median_parameter_error": [
+          0.0750645958797867,
+          0.131186859745465,
+          0.12944441376956212,
+          0.016055222205698917
+        ],
+        "median_target_lambda_mae": 0.04210403348529057,
+        "p90_target_lambda_mae": 0.06421696938322977
+      }
+    },
+    "ten_high_E": {
+      "linear": {
+        "median_parameter_error": [
+          0.11654116846643597,
+          0.25683861808071085,
+          0.139074792493676,
+          0.0
+        ],
+        "median_target_lambda_mae": 0.05544902776387872,
+        "p90_target_lambda_mae": 0.07568528137406148
+      },
+      "nonlinear": {
+        "median_parameter_error": [
+          0.05757681752761183,
+          0.1363276439846718,
+          0.0892004816975315,
+          0.14320169825500634
+        ],
+        "median_target_lambda_mae": 0.03938294606788939,
+        "p90_target_lambda_mae": 0.06272427744464054
+      }
+    },
+    "three_two_E": {
+      "linear": {
+        "median_parameter_error": [
+          0.07908988376197192,
+          0.15235247339496277,
+          0.14088634001082975,
+          0.0
+        ],
+        "median_target_lambda_mae": 0.06071566522130396,
+        "p90_target_lambda_mae": 0.18496948327605772
+      },
+      "nonlinear": {
+        "median_parameter_error": [
+          0.044064602316042686,
+          0.0985299244042197,
+          0.07081683865259165,
+          0.5383908130078162
+        ],
+        "median_target_lambda_mae": 0.03856090035260551,
+        "p90_target_lambda_mae": 0.06243516485914082
+      }
+    },
+    "five_two_E": {
+      "linear": {
+        "median_parameter_error": [
+          0.08233118467542624,
+          0.12642581773750147,
+          0.14038921066771234,
+          0.0
+        ],
+        "median_target_lambda_mae": 0.05983913639799958,
+        "p90_target_lambda_mae": 0.16444226398057527
+      },
+      "nonlinear": {
+        "median_parameter_error": [
+          0.04419866198241814,
+          0.09735104460312667,
+          0.05867842839049782,
+          0.4924742673902912
+        ],
+        "median_target_lambda_mae": 0.036883898133209955,
+        "p90_target_lambda_mae": 0.057451237322834296
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "upstream_Euler_Maruyama_max_abs_difference": 1.5987211554602254e-14,
+  "strict_solver_vs_default": {
+    "voltage_max_abs_mV": 0.0032317586152998956,
+    "calcium_max_abs_uM": 7.027304049691402e-05,
+    "mean_lambda_max_abs": 7.65385838408239e-06
+  },
+  "mechanical_feedback_off_pulse_vs_no_pulse": {
+    "voltage_max_abs_mV": 0.00032645597356406597,
+    "calcium_max_abs_uM": 2.0836447848013437e-06,
+    "lambda_max_abs": 0.039652410586567766
+  },
+  "pulse_vs_no_pulse_after_250ms": {
+    "V_max_difference_mV": 3.381982384718299,
+    "Ca_max_difference_uM": 0.016302040292546217,
+    "lambda_max_difference": 0.03956639392426886
+  },
+  "SAC_ablation_under_same_pulse": {
+    "V_max_difference_mV": 3.860410919027146,
+    "Ca_max_difference_uM": 0.014980885531173152
+  },
+  "all_mechanical_feedback_ablation_under_same_pulse": {
+    "V_max_difference_mV": 3.3633024773381237,
+    "Ca_max_difference_uM": 0.015196731964594711
+  }
+}

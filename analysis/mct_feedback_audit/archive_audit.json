@@ -1,0 +1,107 @@
+{
+  "Load_free Data/Ca": {
+    "archive_path": "Baseline Cell Experimental Measurements/Load_free Data/FURA2/CELL_FURA2_Load-Free-Traces_smoothed.csv",
+    "header": [
+      "Time (s)",
+      "Ca2+ Fura-2 ratio"
+    ],
+    "n_samples": 1573,
+    "sampling_ms": 4.0000000000000036,
+    "window_s": [
+      0.0,
+      6.288
+    ],
+    "smoothed_min": 1.162304158,
+    "smoothed_max": 2.028880698,
+    "interior_peak_times_s": [
+      2.648,
+      4.792
+    ],
+    "interior_extrema_values": [
+      2.028880698,
+      2.024819252
+    ]
+  },
+  "Load_free Data/SL": {
+    "archive_path": "Baseline Cell Experimental Measurements/Load_free Data/Sarcomere Length/CELL_SL_Load-Free-Traces_smoothed.csv",
+    "header": [
+      "Time (s)",
+      "Sarcomere Length (um)"
+    ],
+    "n_samples": 1573,
+    "sampling_ms": 4.0000000000000036,
+    "window_s": [
+      0.0,
+      6.288
+    ],
+    "smoothed_min": 1.39968364,
+    "smoothed_max": 1.602962132,
+    "interior_peak_times_s": [
+      2.832,
+      4.916
+    ],
+    "interior_extrema_values": [
+      1.39968364,
+      1.403101211
+    ]
+  },
+  "In_Gel Data/Ca": {
+    "archive_path": "Baseline Cell Experimental Measurements/In_Gel Data/FURA2/CELL_FURA2_In-Gel-Traces_smoothed.csv",
+    "header": [
+      "Time (s)",
+      "Ca2+ Fura-2 ratio"
+    ],
+    "n_samples": 1573,
+    "sampling_ms": 4.0000000000000036,
+    "window_s": [
+      0.0,
+      6.288
+    ],
+    "smoothed_min": 1.189098559,
+    "smoothed_max": 3.067682007,
+    "interior_peak_times_s": [
+      2.44,
+      4.624
+    ],
+    "interior_extrema_values": [
+      3.067682007,
+      3.052995881
+    ]
+  },
+  "In_Gel Data/SL": {
+    "archive_path": "Baseline Cell Experimental Measurements/In_Gel Data/Sarcomere Length/CELL_SL_In-Gel-Traces_smoothed.csv",
+    "header": [
+      "Time (s)",
+      "Sarcomere Length (um)"
+    ],
+    "n_samples": 1573,
+    "sampling_ms": 4.0000000000000036,
+    "window_s": [
+      0.0,
+      6.288
+    ],
+    "smoothed_min": 1.380281195,
+    "smoothed_max": 1.540216217,
+    "interior_peak_times_s": [
+      2.812,
+      4.928
+    ],
+    "interior_extrema_values": [
+      1.380281195,
+      1.394720396
+    ]
+  },
+  "descriptive_condition_contrast": {
+    "Fura2_peak_load_free_vs_in_gel": [
+      2.028880698,
+      3.067682007
+    ],
+    "Fura2_peak_direction": "higher in gel example",
+    "fractional_SL_excursion_load_free_vs_in_gel": [
+      0.12681428209808773,
+      0.10383933128007052
+    ],
+    "SL_excursion_direction": "smaller in gel example"
+  },
+  "interpretation_boundary": "One example trace per signal and condition; no cell IDs, replicate counts, or known same-cell pairing. Fura-2 ratio is not absolute Ca concentration. No inferential or causal effect size is estimated from these CSVs."
+}

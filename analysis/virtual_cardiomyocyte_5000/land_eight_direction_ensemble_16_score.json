@@ -1,0 +1,65 @@
+{
+  "n_cells": 16,
+  "n_candidates_per_cell": 24,
+  "n_candidate_failures": 0,
+  "mean_reflected_candidate_fraction": 0.26302083333333337,
+  "ESS_median": 15.786566036896337,
+  "ESS_min": 6.180794456642677,
+  "results": [
+    {
+      "target_lambda": 1.125,
+      "point_MAE_kPa": 1.1359100122836614,
+      "ensemble_mean_MAE_kPa": 0.9396645081077398,
+      "pointwise_90pct_coverage": 0.3972176079734219,
+      "simultaneous_cell_90pct_coverage": 0.0,
+      "mean_90pct_interval_width_kPa": 1.3703165467181662,
+      "CRPS_kPa": 0.7819637112719235,
+      "per_cell_90pct_coverage": [
+        0.48172757475083056,
+        0.11295681063122924,
+        0.3023255813953488,
+        0.0,
+        0.717607973421927,
+        0.6976744186046512,
+        0.11960132890365449,
+        0.3920265780730897,
+        0.0,
+        0.7408637873754153,
+        0.7009966777408638,
+        0.45182724252491696,
+        0.15946843853820597,
+        0.4717607973421927,
+        0.8039867109634552,
+        0.2026578073089701
+      ]
+    },
+    {
+      "target_lambda": 1.15,
+      "point_MAE_kPa": 2.0263086243341,
+      "ensemble_mean_MAE_kPa": 1.7886899225625252,
+      "pointwise_90pct_coverage": 0.4356312292358804,
+      "simultaneous_cell_90pct_coverage": 0.0625,
+      "mean_90pct_interval_width_kPa": 2.5825703621156926,
+      "CRPS_kPa": 1.4664429480900258,
+      "per_cell_90pct_coverage": [
+        0.5016611295681063,
+        0.14285714285714285,
+        0.46179401993355484,
+        0.0,
+        1.0,
+        0.5049833887043189,
+        0.07641196013289037,
+        0.31561461794019935,
+        0.0,
+        0.8637873754152824,
+        0.6013289036544851,
+        0.654485049833887,
+        0.21262458471760798,
+        0.6146179401993356,
+        0.6644518272425249,
+        0.3554817275747508
+      ]
+    }
+  ],
+  "scope": "Exploratory local eight-parameter compatible-twin ensemble. Gaussian Jacobian proposals and ad hoc observed-fit weights are not an exact Bayesian posterior. No target outcome used to generate or weight candidates. The 16 cells were previously used for the five-parameter pilot; they are not an independent confirmation set."
+}

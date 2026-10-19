@@ -1,0 +1,383 @@
+{
+  "target_lambda": 1.125,
+  "n_test_cells": 16,
+  "draws_per_cell_per_mode": 8,
+  "modes": {
+    "2": {
+      "mean_posterior_waveform_MAE_kPa": 8.992206756025553,
+      "mean_posterior_peak_MAE_kPa": 16.972060441970825,
+      "mean_posterior_90pct_pointwise_coverage": 0.8239202657807309,
+      "mean_posterior_90pct_interval_width_kPa": 34.23735744553201,
+      "mean_static_waveform_MAE_kPa": 21.438123673200607,
+      "mean_static_peak_MAE_kPa": 48.7109454870224,
+      "mean_direct_waveform_MAE_kPa": 6.377620197832584,
+      "mean_direct_peak_MAE_kPa": 12.422731518745422,
+      "per_cell": [
+        {
+          "cell": 227,
+          "posterior_waveform_MAE_kPa": 10.765816688537598,
+          "posterior_peak_MAE_kPa": 9.821769714355469,
+          "posterior_90pct_pointwise_coverage": 0.2292358803986711,
+          "posterior_mean_90pct_interval_width_kPa": 30.25774696948272,
+          "static_waveform_MAE_kPa": 14.651631355285645,
+          "static_peak_MAE_kPa": 47.714630126953125,
+          "direct_waveform_MAE_kPa": 9.003740310668945,
+          "direct_peak_MAE_kPa": 18.110366821289062
+        },
+        {
+          "cell": 273,
+          "posterior_waveform_MAE_kPa": 26.500200271606445,
+          "posterior_peak_MAE_kPa": 45.12767028808594,
+          "posterior_90pct_pointwise_coverage": 0.09302325581395349,
+          "posterior_mean_90pct_interval_width_kPa": 24.268446576540846,
+          "static_waveform_MAE_kPa": 44.50474166870117,
+          "static_peak_MAE_kPa": 86.23950958251953,
+          "direct_waveform_MAE_kPa": 24.508132934570312,
+          "direct_peak_MAE_kPa": 43.18320083618164
+        },
+        {
+          "cell": 383,
+          "posterior_waveform_MAE_kPa": 0.8595605492591858,
+          "posterior_peak_MAE_kPa": 3.439849853515625,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 29.657576198519457,
+          "static_waveform_MAE_kPa": 15.325385093688965,
+          "static_peak_MAE_kPa": 41.990745544433594,
+          "direct_waveform_MAE_kPa": 2.3653151988983154,
+          "direct_peak_MAE_kPa": 7.957313537597656
+        },
+        {
+          "cell": 996,
+          "posterior_waveform_MAE_kPa": 2.65164852142334,
+          "posterior_peak_MAE_kPa": 2.3210887908935547,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 24.658861429827205,
+          "static_waveform_MAE_kPa": 10.292922973632812,
+          "static_peak_MAE_kPa": 22.364585876464844,
+          "direct_waveform_MAE_kPa": 2.1112356185913086,
+          "direct_peak_MAE_kPa": 3.669126510620117
+        },
+        {
+          "cell": 1175,
+          "posterior_waveform_MAE_kPa": 32.153526306152344,
+          "posterior_peak_MAE_kPa": 54.674583435058594,
+          "posterior_90pct_pointwise_coverage": 0.45182724252491696,
+          "posterior_mean_90pct_interval_width_kPa": 40.68920521752481,
+          "static_waveform_MAE_kPa": 48.697628021240234,
+          "static_peak_MAE_kPa": 89.32562255859375,
+          "direct_waveform_MAE_kPa": 13.738544464111328,
+          "direct_peak_MAE_kPa": 14.612998962402344
+        },
+        {
+          "cell": 1556,
+          "posterior_waveform_MAE_kPa": 3.308687448501587,
+          "posterior_peak_MAE_kPa": 6.5362396240234375,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 38.63422099320694,
+          "static_waveform_MAE_kPa": 16.548789978027344,
+          "static_peak_MAE_kPa": 41.097896575927734,
+          "direct_waveform_MAE_kPa": 5.0101518630981445,
+          "direct_peak_MAE_kPa": 7.127571105957031
+        },
+        {
+          "cell": 1587,
+          "posterior_waveform_MAE_kPa": 1.870328426361084,
+          "posterior_peak_MAE_kPa": 1.2840499877929688,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 45.85331573168007,
+          "static_waveform_MAE_kPa": 22.52974510192871,
+          "static_peak_MAE_kPa": 40.92472839355469,
+          "direct_waveform_MAE_kPa": 6.006353855133057,
+          "direct_peak_MAE_kPa": 5.29779052734375
+        },
+        {
+          "cell": 2095,
+          "posterior_waveform_MAE_kPa": 4.204480171203613,
+          "posterior_peak_MAE_kPa": 4.2191162109375,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 35.91684374698744,
+          "static_waveform_MAE_kPa": 19.44268035888672,
+          "static_peak_MAE_kPa": 45.48225402832031,
+          "direct_waveform_MAE_kPa": 5.986641883850098,
+          "direct_peak_MAE_kPa": 13.322616577148438
+        },
+        {
+          "cell": 2388,
+          "posterior_waveform_MAE_kPa": 6.148743152618408,
+          "posterior_peak_MAE_kPa": 11.480293273925781,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 56.0241609036582,
+          "static_waveform_MAE_kPa": 17.692914962768555,
+          "static_peak_MAE_kPa": 52.099365234375,
+          "direct_waveform_MAE_kPa": 2.3538730144500732,
+          "direct_peak_MAE_kPa": 7.8317413330078125
+        },
+        {
+          "cell": 2428,
+          "posterior_waveform_MAE_kPa": 3.0554680824279785,
+          "posterior_peak_MAE_kPa": 6.930290222167969,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 37.3824372010621,
+          "static_waveform_MAE_kPa": 16.516212463378906,
+          "static_peak_MAE_kPa": 39.38914489746094,
+          "direct_waveform_MAE_kPa": 8.095817565917969,
+          "direct_peak_MAE_kPa": 17.138046264648438
+        },
+        {
+          "cell": 2612,
+          "posterior_waveform_MAE_kPa": 2.404911756515503,
+          "posterior_peak_MAE_kPa": 3.5252456665039062,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 22.90624173573432,
+          "static_waveform_MAE_kPa": 18.505279541015625,
+          "static_peak_MAE_kPa": 42.824363708496094,
+          "direct_waveform_MAE_kPa": 2.6915929317474365,
+          "direct_peak_MAE_kPa": 5.895652770996094
+        },
+        {
+          "cell": 2904,
+          "posterior_waveform_MAE_kPa": 6.431593894958496,
+          "posterior_peak_MAE_kPa": 22.021728515625,
+          "posterior_90pct_pointwise_coverage": 0.8205980066445183,
+          "posterior_mean_90pct_interval_width_kPa": 36.75328736037288,
+          "static_waveform_MAE_kPa": 18.404945373535156,
+          "static_peak_MAE_kPa": 42.26813507080078,
+          "direct_waveform_MAE_kPa": 3.462357759475708,
+          "direct_peak_MAE_kPa": 7.164482116699219
+        },
+        {
+          "cell": 3087,
+          "posterior_waveform_MAE_kPa": 18.42071533203125,
+          "posterior_peak_MAE_kPa": 51.350093841552734,
+          "posterior_90pct_pointwise_coverage": 0.5880398671096345,
+          "posterior_mean_90pct_interval_width_kPa": 23.037897869054706,
+          "static_waveform_MAE_kPa": 32.809688568115234,
+          "static_peak_MAE_kPa": 86.92306518554688,
+          "direct_waveform_MAE_kPa": 8.925481796264648,
+          "direct_peak_MAE_kPa": 24.163429260253906
+        },
+        {
+          "cell": 3923,
+          "posterior_waveform_MAE_kPa": 12.678836822509766,
+          "posterior_peak_MAE_kPa": 16.09149932861328,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 45.814067754114774,
+          "static_waveform_MAE_kPa": 30.569826126098633,
+          "static_peak_MAE_kPa": 48.81698989868164,
+          "direct_waveform_MAE_kPa": 2.72308349609375,
+          "direct_peak_MAE_kPa": 9.917518615722656
+        },
+        {
+          "cell": 4442,
+          "posterior_waveform_MAE_kPa": 6.6361565589904785,
+          "posterior_peak_MAE_kPa": 13.333173751831055,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 29.283083680937942,
+          "static_waveform_MAE_kPa": 7.669003009796143,
+          "static_peak_MAE_kPa": 23.49782371520996,
+          "direct_waveform_MAE_kPa": 1.2290369272232056,
+          "direct_peak_MAE_kPa": 3.8243446350097656
+        },
+        {
+          "cell": 4635,
+          "posterior_waveform_MAE_kPa": 5.784634113311768,
+          "posterior_peak_MAE_kPa": 19.39627456665039,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 26.660325759807687,
+          "static_waveform_MAE_kPa": 8.848584175109863,
+          "static_peak_MAE_kPa": 28.41626739501953,
+          "direct_waveform_MAE_kPa": 3.830563545227051,
+          "direct_peak_MAE_kPa": 9.547504425048828
+        }
+      ]
+    },
+    "3": {
+      "mean_posterior_waveform_MAE_kPa": 7.4453452825546265,
+      "mean_posterior_peak_MAE_kPa": 14.721796035766602,
+      "mean_posterior_90pct_pointwise_coverage": 0.9140365448504983,
+      "mean_posterior_90pct_interval_width_kPa": 37.64634002415108,
+      "mean_static_waveform_MAE_kPa": 3.6144593730568886,
+      "mean_static_peak_MAE_kPa": 5.3400737047195435,
+      "mean_direct_waveform_MAE_kPa": 3.2127793729305267,
+      "mean_direct_peak_MAE_kPa": 5.0508434772491455,
+      "per_cell": [
+        {
+          "cell": 227,
+          "posterior_waveform_MAE_kPa": 2.9336628913879395,
+          "posterior_peak_MAE_kPa": 1.0228652954101562,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 24.308779182954627,
+          "static_waveform_MAE_kPa": 1.6090962886810303,
+          "static_peak_MAE_kPa": 3.3886184692382812,
+          "direct_waveform_MAE_kPa": 1.2094683647155762,
+          "direct_peak_MAE_kPa": 5.228096008300781
+        },
+        {
+          "cell": 273,
+          "posterior_waveform_MAE_kPa": 22.660507202148438,
+          "posterior_peak_MAE_kPa": 48.13082504272461,
+          "posterior_90pct_pointwise_coverage": 0.4485049833887043,
+          "posterior_mean_90pct_interval_width_kPa": 40.07388291258452,
+          "static_waveform_MAE_kPa": 12.458870887756348,
+          "static_peak_MAE_kPa": 16.981231689453125,
+          "direct_waveform_MAE_kPa": 14.027074813842773,
+          "direct_peak_MAE_kPa": 16.507156372070312
+        },
+        {
+          "cell": 383,
+          "posterior_waveform_MAE_kPa": 3.9281959533691406,
+          "posterior_peak_MAE_kPa": 3.1608352661132812,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 34.332736402292085,
+          "static_waveform_MAE_kPa": 3.298438787460327,
+          "static_peak_MAE_kPa": 7.83514404296875,
+          "direct_waveform_MAE_kPa": 2.0953691005706787,
+          "direct_peak_MAE_kPa": 3.5768661499023438
+        },
+        {
+          "cell": 996,
+          "posterior_waveform_MAE_kPa": 2.4870758056640625,
+          "posterior_peak_MAE_kPa": 0.7703800201416016,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 30.39876204303703,
+          "static_waveform_MAE_kPa": 1.7883992195129395,
+          "static_peak_MAE_kPa": 3.4229888916015625,
+          "direct_waveform_MAE_kPa": 0.6428478360176086,
+          "direct_peak_MAE_kPa": 1.5580329895019531
+        },
+        {
+          "cell": 1175,
+          "posterior_waveform_MAE_kPa": 18.80609703063965,
+          "posterior_peak_MAE_kPa": 38.272987365722656,
+          "posterior_90pct_pointwise_coverage": 0.6511627906976745,
+          "posterior_mean_90pct_interval_width_kPa": 49.6144650226168,
+          "static_waveform_MAE_kPa": 8.232192993164062,
+          "static_peak_MAE_kPa": 5.138519287109375,
+          "direct_waveform_MAE_kPa": 8.175979614257812,
+          "direct_peak_MAE_kPa": 1.9354705810546875
+        },
+        {
+          "cell": 1556,
+          "posterior_waveform_MAE_kPa": 5.348367691040039,
+          "posterior_peak_MAE_kPa": 2.459625244140625,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 60.6943874403958,
+          "static_waveform_MAE_kPa": 1.469361424446106,
+          "static_peak_MAE_kPa": 2.0257034301757812,
+          "direct_waveform_MAE_kPa": 1.737381935119629,
+          "direct_peak_MAE_kPa": 5.509925842285156
+        },
+        {
+          "cell": 1587,
+          "posterior_waveform_MAE_kPa": 7.258540630340576,
+          "posterior_peak_MAE_kPa": 18.982460021972656,
+          "posterior_90pct_pointwise_coverage": 0.9667774086378738,
+          "posterior_mean_90pct_interval_width_kPa": 31.41578716904024,
+          "static_waveform_MAE_kPa": 1.8378723859786987,
+          "static_peak_MAE_kPa": 1.8705368041992188,
+          "direct_waveform_MAE_kPa": 2.088014841079712,
+          "direct_peak_MAE_kPa": 0.7854766845703125
+        },
+        {
+          "cell": 2095,
+          "posterior_waveform_MAE_kPa": 1.4710993766784668,
+          "posterior_peak_MAE_kPa": 1.119171142578125,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 46.35234416063343,
+          "static_waveform_MAE_kPa": 2.4939253330230713,
+          "static_peak_MAE_kPa": 3.4330902099609375,
+          "direct_waveform_MAE_kPa": 1.4468352794647217,
+          "direct_peak_MAE_kPa": 4.10107421875
+        },
+        {
+          "cell": 2388,
+          "posterior_waveform_MAE_kPa": 5.749870300292969,
+          "posterior_peak_MAE_kPa": 6.012977600097656,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 30.740208528302848,
+          "static_waveform_MAE_kPa": 3.191511392593384,
+          "static_peak_MAE_kPa": 6.996219635009766,
+          "direct_waveform_MAE_kPa": 1.884121060371399,
+          "direct_peak_MAE_kPa": 1.6866455078125
+        },
+        {
+          "cell": 2428,
+          "posterior_waveform_MAE_kPa": 3.1549270153045654,
+          "posterior_peak_MAE_kPa": 4.9766693115234375,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 32.63504245401517,
+          "static_waveform_MAE_kPa": 1.5827295780181885,
+          "static_peak_MAE_kPa": 1.6626052856445312,
+          "direct_waveform_MAE_kPa": 1.6998779773712158,
+          "direct_peak_MAE_kPa": 7.84307861328125
+        },
+        {
+          "cell": 2612,
+          "posterior_waveform_MAE_kPa": 5.318309783935547,
+          "posterior_peak_MAE_kPa": 10.597400665283203,
+          "posterior_90pct_pointwise_coverage": 0.6877076411960132,
+          "posterior_mean_90pct_interval_width_kPa": 41.85041828679285,
+          "static_waveform_MAE_kPa": 3.926933765411377,
+          "static_peak_MAE_kPa": 7.292652130126953,
+          "direct_waveform_MAE_kPa": 2.860783100128174,
+          "direct_peak_MAE_kPa": 3.2291259765625
+        },
+        {
+          "cell": 2904,
+          "posterior_waveform_MAE_kPa": 8.364437103271484,
+          "posterior_peak_MAE_kPa": 23.992820739746094,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 43.073721095341625,
+          "static_waveform_MAE_kPa": 2.129082202911377,
+          "static_peak_MAE_kPa": 1.8997726440429688,
+          "direct_waveform_MAE_kPa": 0.9198152422904968,
+          "direct_peak_MAE_kPa": 2.9491500854492188
+        },
+        {
+          "cell": 3087,
+          "posterior_waveform_MAE_kPa": 14.018481254577637,
+          "posterior_peak_MAE_kPa": 38.6909065246582,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 53.26715994704935,
+          "static_waveform_MAE_kPa": 7.41734504699707,
+          "static_peak_MAE_kPa": 13.813972473144531,
+          "direct_waveform_MAE_kPa": 7.420836925506592,
+          "direct_peak_MAE_kPa": 12.990516662597656
+        },
+        {
+          "cell": 3923,
+          "posterior_waveform_MAE_kPa": 11.556486129760742,
+          "posterior_peak_MAE_kPa": 21.526473999023438,
+          "posterior_90pct_pointwise_coverage": 0.8704318936877077,
+          "posterior_mean_90pct_interval_width_kPa": 27.943066641876463,
+          "static_waveform_MAE_kPa": 3.0111427307128906,
+          "static_peak_MAE_kPa": 0.42327117919921875,
+          "direct_waveform_MAE_kPa": 3.219503164291382,
+          "direct_peak_MAE_kPa": 6.798454284667969
+        },
+        {
+          "cell": 4442,
+          "posterior_waveform_MAE_kPa": 3.000309705734253,
+          "posterior_peak_MAE_kPa": 6.177831649780273,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 33.640492244829666,
+          "static_waveform_MAE_kPa": 2.1324100494384766,
+          "static_peak_MAE_kPa": 5.966535568237305,
+          "direct_waveform_MAE_kPa": 0.9499646425247192,
+          "direct_peak_MAE_kPa": 1.4364585876464844
+        },
+        {
+          "cell": 4635,
+          "posterior_waveform_MAE_kPa": 3.0691566467285156,
+          "posterior_peak_MAE_kPa": 9.65450668334961,
+          "posterior_90pct_pointwise_coverage": 1.0,
+          "posterior_mean_90pct_interval_width_kPa": 22.00018685465474,
+          "static_waveform_MAE_kPa": 1.2520378828048706,
+          "static_peak_MAE_kPa": 3.2903175354003906,
+          "direct_waveform_MAE_kPa": 1.0265960693359375,
+          "direct_peak_MAE_kPa": 4.677967071533203
+        }
+      ]
+    }
+  }
+}

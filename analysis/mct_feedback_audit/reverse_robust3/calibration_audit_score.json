@@ -1,0 +1,141 @@
+{
+  "prespecified_ids": [
+    "test_000",
+    "test_005",
+    "test_010",
+    "test_015"
+  ],
+  "rows": [
+    {
+      "id": "test_000",
+      "mode": "clean_low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 1.9234351344488143e-05
+      }
+    },
+    {
+      "id": "test_000",
+      "mode": "clean_lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00017606996541469355
+      }
+    },
+    {
+      "id": "test_000",
+      "mode": "clean_lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 2.988431561723459e-05
+      }
+    },
+    {
+      "id": "test_005",
+      "mode": "clean_low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0004535228240185041
+      }
+    },
+    {
+      "id": "test_005",
+      "mode": "clean_lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0001203431649169362
+      }
+    },
+    {
+      "id": "test_005",
+      "mode": "clean_lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.000574981680621145
+      }
+    },
+    {
+      "id": "test_010",
+      "mode": "clean_low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 4.280652545474162e-05
+      }
+    },
+    {
+      "id": "test_010",
+      "mode": "clean_lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00039009302552767133
+      }
+    },
+    {
+      "id": "test_010",
+      "mode": "clean_lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0008164932814316295
+      }
+    },
+    {
+      "id": "test_015",
+      "mode": "clean_low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.000633541117582459
+      }
+    },
+    {
+      "id": "test_015",
+      "mode": "clean_lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00046514440153255787
+      }
+    },
+    {
+      "id": "test_015",
+      "mode": "clean_lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0008838371362528408
+      }
+    }
+  ],
+  "summary": {
+    "clean_low": {
+      "APD_above_minus67_mV_ms": {
+        "mean_AE": 0.0,
+        "max_AE": 0.0
+      },
+      "Ca_peak_uM": {
+        "mean_AE": 0.0002872762046000482,
+        "max_AE": 0.000633541117582459
+      }
+    },
+    "clean_lowmid": {
+      "APD_above_minus67_mV_ms": {
+        "mean_AE": 0.0,
+        "max_AE": 0.0
+      },
+      "Ca_peak_uM": {
+        "mean_AE": 0.0004321058714143386,
+        "max_AE": 0.0008838371362528408
+      }
+    }
+  },
+  "scope": "Four fixed held-out test identities; descriptive native ODE calibration audit."
+}

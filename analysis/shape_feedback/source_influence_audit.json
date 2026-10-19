@@ -1,0 +1,66 @@
+{
+  "all_source_mean_error": 2.041138635655884,
+  "leave_one_source_cell_out": [
+    {
+      "removed_source_cell": 1,
+      "confirmation_mean_error": 2.0955041889720305,
+      "confirmation_median_error": 2.201425592917102
+    },
+    {
+      "removed_source_cell": 2,
+      "confirmation_mean_error": 0.46715769193035567,
+      "confirmation_median_error": 0.42721472132408916
+    },
+    {
+      "removed_source_cell": 3,
+      "confirmation_mean_error": 2.3947898591012424,
+      "confirmation_median_error": 2.5325367486695853
+    },
+    {
+      "removed_source_cell": 4,
+      "confirmation_mean_error": 2.051957791135584,
+      "confirmation_median_error": 2.1746717058106557
+    },
+    {
+      "removed_source_cell": 5,
+      "confirmation_mean_error": 2.062032827010426,
+      "confirmation_median_error": 2.181035089476214
+    },
+    {
+      "removed_source_cell": 6,
+      "confirmation_mean_error": 2.051439637004814,
+      "confirmation_median_error": 2.195972017744305
+    },
+    {
+      "removed_source_cell": 7,
+      "confirmation_mean_error": 2.1344837848836384,
+      "confirmation_median_error": 2.3123089106714616
+    },
+    {
+      "removed_source_cell": 8,
+      "confirmation_mean_error": 2.0799433340015496,
+      "confirmation_median_error": 2.2620210977196007
+    },
+    {
+      "removed_source_cell": 9,
+      "confirmation_mean_error": 2.0371558144073734,
+      "confirmation_median_error": 2.129374101660578
+    },
+    {
+      "removed_source_cell": 10,
+      "confirmation_mean_error": 2.2702424327916084,
+      "confirmation_median_error": 2.395792427004605
+    },
+    {
+      "removed_source_cell": 11,
+      "confirmation_mean_error": 2.154814004659063,
+      "confirmation_median_error": 2.287070746076705
+    },
+    {
+      "removed_source_cell": 12,
+      "confirmation_mean_error": 2.1698754951767385,
+      "confirmation_median_error": 2.290444259252266
+    }
+  ],
+  "warning": "Exploratory audit performed after inspecting confirmation errors; removal is not an unbiased model-selection result."
+}

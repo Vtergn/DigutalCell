@@ -1,0 +1,13 @@
+{
+  "compiled_eager_max_abs_rhs_difference_by_length": [
+    9.966546421491529e-09,
+    9.966546421491529e-09,
+    9.96654647700268e-09
+  ],
+  "native_rhs_default_api_difference": 0.0,
+  "strict_solver_runtime_seconds": 40.91193969990127,
+  "strict_vs_default_voltage_MAE_mV": 0.000278422200508535,
+  "strict_vs_default_Ca_MAE_uM": 1.4359754500964684e-06,
+  "strict_vs_default_lambda_MAE": 8.530227373906452e-07,
+  "strict_vs_default_voltage_max_mV": 0.003947530130943733
+}

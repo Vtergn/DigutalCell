@@ -1,0 +1,12 @@
+# Tested in the local Windows Python 3.13.4 environment on 2026-10-19.
+# PyTorch was installed as a CPU build (2.9.1+cpu); choose the appropriate
+# wheel for the target machine before installing this file.
+numpy==2.3.0
+scipy==1.18.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+torch==2.9.1
+h5py==3.16.0
+pillow==12.3.0
+pyarrow==25.0.1
+

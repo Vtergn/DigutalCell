@@ -1,0 +1,237 @@
+{
+  "domain": "rabbit MCT2024 Shannon-Bers/Negroni model",
+  "design": "CL 0.02 versus 0.10 crossed with MCT gain 0, 0.5, 1, 1.5",
+  "initial_state": "common author-supplied yfinal_2000.mat",
+  "pacing_ms": 1000,
+  "beats": 20,
+  "apd_metric": "last-beat milliseconds above -67 mV; not APD90",
+  "rows": [
+    {
+      "gain": 0.0,
+      "load": "lo",
+      "case": "lo_off",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.36138779701155926,
+      "Ca_peak_uM_beat17_to20_change": 0.000712682150834254,
+      "Ca_amplitude_uM": 0.2753631931136362,
+      "Ca_amplitude_uM_beat17_to20_change": 0.0006857212867997786,
+      "APD_above_minus67_mV_ms": 242.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -2.0,
+      "gel_stress_peak_kPa": 0.025311563382398476,
+      "gel_stress_peak_kPa_beat17_to20_change": 4.295462113430501e-05,
+      "pCa_multiplier_peak": 1.0,
+      "pCa_multiplier_peak_beat17_to20_change": 0.0
+    },
+    {
+      "gain": 0.0,
+      "load": "hi",
+      "case": "hi_off",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.3614023005385785,
+      "Ca_peak_uM_beat17_to20_change": 0.0007261537034747301,
+      "Ca_amplitude_uM": 0.2753776290331856,
+      "Ca_amplitude_uM_beat17_to20_change": 0.0006992124043143089,
+      "APD_above_minus67_mV_ms": 242.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -2.0,
+      "gel_stress_peak_kPa": 1.0859730863617776,
+      "gel_stress_peak_kPa_beat17_to20_change": 0.0043903936845588465,
+      "pCa_multiplier_peak": 1.0,
+      "pCa_multiplier_peak_beat17_to20_change": 0.0
+    },
+    {
+      "gain": 0.5,
+      "load": "lo",
+      "case": "lo_half",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.3911092336563384,
+      "Ca_peak_uM_beat17_to20_change": 0.0005048628489646712,
+      "Ca_amplitude_uM": 0.3038467930557385,
+      "Ca_amplitude_uM_beat17_to20_change": 0.0004884906109250964,
+      "APD_above_minus67_mV_ms": 252.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -3.0,
+      "gel_stress_peak_kPa": 0.026899994315312575,
+      "gel_stress_peak_kPa_beat17_to20_change": 2.8775599423554177e-05,
+      "pCa_multiplier_peak": 1.0431135574190846,
+      "pCa_multiplier_peak_beat17_to20_change": 1.937779583682797e-06
+    },
+    {
+      "gain": 0.5,
+      "load": "hi",
+      "case": "hi_half",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.4993651967689452,
+      "Ca_peak_uM_beat17_to20_change": -0.0005321573515744138,
+      "Ca_amplitude_uM": 0.40770056692129675,
+      "Ca_amplitude_uM_beat17_to20_change": -0.0005054229158688028,
+      "APD_above_minus67_mV_ms": 296.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -4.0,
+      "gel_stress_peak_kPa": 1.7956648925377778,
+      "gel_stress_peak_kPa_beat17_to20_change": -0.00283266607623478,
+      "pCa_multiplier_peak": 1.2218446769698965,
+      "pCa_multiplier_peak_beat17_to20_change": -3.585646535242404e-07
+    },
+    {
+      "gain": 1.0,
+      "load": "lo",
+      "case": "lo_on",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.42550175586752464,
+      "Ca_peak_uM_beat17_to20_change": 0.00011001114223951891,
+      "Ca_amplitude_uM": 0.3368716368267197,
+      "Ca_amplitude_uM_beat17_to20_change": 0.00011153114504069972,
+      "APD_above_minus67_mV_ms": 264.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -3.0,
+      "gel_stress_peak_kPa": 0.028604056290728767,
+      "gel_stress_peak_kPa_beat17_to20_change": 1.1196659780436657e-05,
+      "pCa_multiplier_peak": 1.0864567883364622,
+      "pCa_multiplier_peak_beat17_to20_change": 1.5101572004017072e-06
+    },
+    {
+      "gain": 1.0,
+      "load": "hi",
+      "case": "hi_on",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.6729400939598257,
+      "Ca_peak_uM_beat17_to20_change": -0.0021214460467740004,
+      "Ca_amplitude_uM": 0.5753847896420088,
+      "Ca_amplitude_uM_beat17_to20_change": -0.002037777442084887,
+      "APD_above_minus67_mV_ms": 351.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -5.0,
+      "gel_stress_peak_kPa": 2.4569196322759232,
+      "gel_stress_peak_kPa_beat17_to20_change": -0.007287063339136424,
+      "pCa_multiplier_peak": 1.443688841276702,
+      "pCa_multiplier_peak_beat17_to20_change": -8.120844370296254e-07
+    },
+    {
+      "gain": 1.5,
+      "load": "lo",
+      "case": "lo_gain15",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.46608193359917405,
+      "Ca_peak_uM_beat17_to20_change": -0.0006530047101618863,
+      "Ca_amplitude_uM": 0.3759120837371582,
+      "Ca_amplitude_uM_beat17_to20_change": -0.0006214417615683643,
+      "APD_above_minus67_mV_ms": 278.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -4.0,
+      "gel_stress_peak_kPa": 0.03045308239187043,
+      "gel_stress_peak_kPa_beat17_to20_change": -2.304782564523447e-05,
+      "pCa_multiplier_peak": 1.130059557424604,
+      "pCa_multiplier_peak_beat17_to20_change": -4.6701897860046415e-06
+    },
+    {
+      "gain": 1.5,
+      "load": "hi",
+      "case": "hi_gain15",
+      "beats_scored": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "Ca_peak_uM": 0.777966244626989,
+      "Ca_peak_uM_beat17_to20_change": -0.002888068450910719,
+      "Ca_amplitude_uM": 0.6772471101130833,
+      "Ca_amplitude_uM_beat17_to20_change": -0.002775348580100645,
+      "APD_above_minus67_mV_ms": 383.0,
+      "APD_above_minus67_mV_ms_beat17_to20_change": -6.0,
+      "gel_stress_peak_kPa": 2.7349433617075833,
+      "gel_stress_peak_kPa_beat17_to20_change": -0.00771685914973208,
+      "pCa_multiplier_peak": 1.6655243520682808,
+      "pCa_multiplier_peak_beat17_to20_change": 1.064114670956684e-05
+    }
+  ],
+  "paired_challenge_contrasts": [
+    {
+      "gain": 0.0,
+      "delta_Ca_peak_uM": 1.450352701926061e-05,
+      "interaction_Ca_peak_uM": 0.0,
+      "delta_Ca_amplitude_uM": 1.443591954936041e-05,
+      "interaction_Ca_amplitude_uM": 0.0,
+      "delta_APD_above_minus67_mV_ms": 0.0,
+      "interaction_APD_above_minus67_mV_ms": 0.0,
+      "delta_gel_stress_peak_kPa": 1.0606615229793792,
+      "interaction_gel_stress_peak_kPa": 1.0408340855860843e-16,
+      "delta_pCa_multiplier_peak": 0.0,
+      "interaction_pCa_multiplier_peak": 0.0
+    },
+    {
+      "gain": 0.5,
+      "delta_Ca_peak_uM": 0.10825596311260682,
+      "interaction_Ca_peak_uM": 0.10824145958558756,
+      "delta_Ca_amplitude_uM": 0.10385377386555827,
+      "interaction_Ca_amplitude_uM": 0.10383933794600891,
+      "delta_APD_above_minus67_mV_ms": 44.0,
+      "interaction_APD_above_minus67_mV_ms": 44.0,
+      "delta_gel_stress_peak_kPa": 1.7687648982224653,
+      "interaction_gel_stress_peak_kPa": 0.7081033752430862,
+      "delta_pCa_multiplier_peak": 0.1787311195508119,
+      "interaction_pCa_multiplier_peak": 0.1787311195508119
+    },
+    {
+      "gain": 1.0,
+      "delta_Ca_peak_uM": 0.24743833809230104,
+      "interaction_Ca_peak_uM": 0.24742383456528177,
+      "delta_Ca_amplitude_uM": 0.23851315281528906,
+      "interaction_Ca_amplitude_uM": 0.2384987168957397,
+      "delta_APD_above_minus67_mV_ms": 87.0,
+      "interaction_APD_above_minus67_mV_ms": 87.0,
+      "delta_gel_stress_peak_kPa": 2.4283155759851947,
+      "interaction_gel_stress_peak_kPa": 1.3676540530058154,
+      "delta_pCa_multiplier_peak": 0.35723205294023974,
+      "interaction_pCa_multiplier_peak": 0.35723205294023974
+    },
+    {
+      "gain": 1.5,
+      "delta_Ca_peak_uM": 0.311884311027815,
+      "interaction_Ca_peak_uM": 0.31186980750079574,
+      "delta_Ca_amplitude_uM": 0.3013350263759251,
+      "interaction_Ca_amplitude_uM": 0.3013205904563757,
+      "delta_APD_above_minus67_mV_ms": 105.0,
+      "interaction_APD_above_minus67_mV_ms": 105.0,
+      "delta_gel_stress_peak_kPa": 2.704490279315713,
+      "interaction_gel_stress_peak_kPa": 1.6438287563363339,
+      "delta_pCa_multiplier_peak": 0.5354647946436768,
+      "interaction_pCa_multiplier_peak": 0.5354647946436768
+    }
+  ],
+  "limitations": [
+    "Only MCT gain varies; these are controlled model variants, not independent cells.",
+    "CL is gel crosslinker concentration, a model load setting rather than a measured force trajectory.",
+    "No parameter inference, held-out prediction, alternans evaluation, or human model transfer is tested."
+  ]
+}

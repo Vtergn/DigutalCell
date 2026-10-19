@@ -1,0 +1,396 @@
+{
+  "source_cells": 64,
+  "confirmation_cells": 64,
+  "calibration_protocol": "lambda=1.10, onset 300 ms, hold 10 ms",
+  "future_protocols": "indices 5-7; full V/Ca/tension windows 40 ms before to 250 ms after onset, 5 ms spacing",
+  "distance": "Each time series normalized by source calibration modality scale; each modality and target protocol equal weight. Norm is dimensionless, not physical MAE.",
+  "scale_V_Ca_T": [
+    1.0,
+    0.01,
+    0.5
+  ],
+  "primary_full_waveform": {
+    "within_confirmation_neighbor": {
+      "baseline": 2.1674257416879144,
+      "challenge": 2.13904563070175,
+      "improvement95": [
+        0.003966561354206102,
+        0.056528515975041625
+      ]
+    },
+    "source_to_confirmation_knn5": {
+      "baseline": 1.5401542284123124,
+      "challenge": 1.5458588987206408,
+      "improvement95": [
+        -0.02270648510088578,
+        0.004337495263986264
+      ]
+    },
+    "source_to_confirmation_ridge10": {
+      "baseline": 0.9999140118868949,
+      "challenge": 0.72323259463819,
+      "improvement95": [
+        0.23380023380539156,
+        0.31943115324702614
+      ]
+    }
+  },
+  "source_cv_ridge_and_redundancy_control": {
+    "baseline": {
+      "source_cv_by_alpha": {
+        "0.1": 1.0384440004670166,
+        "1.0": 1.017774696290201,
+        "10.0": 1.0752077476959636,
+        "100.0": 1.3485921722044172
+      },
+      "selected_alpha": 1.0,
+      "confirmation_mean": 0.9850001904023296
+    },
+    "baseline_duplicated": {
+      "source_cv_by_alpha": {
+        "0.1": 1.0491749020846748,
+        "1.0": 1.0202052074071555,
+        "10.0": 1.0423705173191236,
+        "100.0": 1.2350436327900365
+      },
+      "selected_alpha": 1.0,
+      "confirmation_mean": 0.9881031421245781
+    },
+    "baseline_plus_challenge": {
+      "source_cv_by_alpha": {
+        "0.1": 0.4202788557344024,
+        "1.0": 0.5057902027596772,
+        "10.0": 0.849584298055416,
+        "100.0": 1.306007071640988
+      },
+      "selected_alpha": 0.1,
+      "confirmation_mean": 0.3576275911422106
+    },
+    "population_mean": 3.288674183132842,
+    "challenge_vs_baseline_95": [
+      0.5383938238069353,
+      0.720587239294639
+    ],
+    "challenge_vs_duplicated_95": [
+      0.5394039487967837,
+      0.7243769621418351
+    ],
+    "baseline_physical_MAE": {
+      "V_mV": 0.5969674629016155,
+      "Ca_uM": 0.0023618812785248526,
+      "T_model_units": 0.02629627395957471
+    },
+    "challenge_physical_MAE": {
+      "V_mV": 0.223740509354271,
+      "Ca_uM": 0.0004150562550164561,
+      "T_model_units": 0.015444306836459585
+    },
+    "confirmation_cells_improved": 64,
+    "cell_gain_quantiles_10_50_90": [
+      0.1851197663996704,
+      0.5790846533780765,
+      1.220128016471223
+    ]
+  },
+  "shape_normalized_waveform": {
+    "within_confirmation_neighbor": {
+      "baseline": 0.13568688249834643,
+      "challenge": 0.13413351072564395,
+      "improvement95": [
+        0.0004842777568460824,
+        0.0027940781667857074
+      ]
+    },
+    "source_to_confirmation_knn5": {
+      "baseline": 0.10231726525885117,
+      "challenge": 0.10191593643956295,
+      "improvement95": [
+        -0.0005426717722355223,
+        0.0013771135478583504
+      ]
+    },
+    "source_to_confirmation_ridge10": {
+      "baseline": 0.09353317559369019,
+      "challenge": 0.07413558557717981,
+      "improvement95": [
+        0.016417824820723948,
+        0.02255544793839708
+      ]
+    }
+  },
+  "per_modality": {
+    "voltage": {
+      "within_confirmation_neighbor": {
+        "baseline": 1.8254066597423435,
+        "challenge": 1.8077959597858249,
+        "improvement95": [
+          -0.011109860607738498,
+          0.048041068527084806
+        ]
+      },
+      "source_to_confirmation_knn5": {
+        "baseline": 1.2914644989243564,
+        "challenge": 1.3023052927500403,
+        "improvement95": [
+          -0.029471428834446124,
+          -0.0005551539029273057
+        ]
+      },
+      "source_to_confirmation_ridge10": {
+        "baseline": 0.9207845187052914,
+        "challenge": 0.644489910978149,
+        "improvement95": [
+          0.23158575023053637,
+          0.3210872237601262
+        ]
+      }
+    },
+    "calcium": {
+      "within_confirmation_neighbor": {
+        "baseline": 0.7567418328655444,
+        "challenge": 0.7329672876337417,
+        "improvement95": [
+          0.010671835415521814,
+          0.03860581387139622
+        ]
+      },
+      "source_to_confirmation_knn5": {
+        "baseline": 0.5760632105861583,
+        "challenge": 0.568046282614683,
+        "improvement95": [
+          -0.000675241046151161,
+          0.018829692651828513
+        ]
+      },
+      "source_to_confirmation_ridge10": {
+        "baseline": 0.31352151591953203,
+        "challenge": 0.2666287659732618,
+        "improvement95": [
+          0.03890064259211376,
+          0.054802825106733066
+        ]
+      }
+    },
+    "tension": {
+      "within_confirmation_neighbor": {
+        "baseline": 0.5327783400911295,
+        "challenge": 0.5205706482852369,
+        "improvement95": [
+          0.0028390157665182277,
+          0.022292319202522438
+        ]
+      },
+      "source_to_confirmation_knn5": {
+        "baseline": 0.38009597130705436,
+        "challenge": 0.37670636795364815,
+        "improvement95": [
+          -0.007852428483976222,
+          0.015201139340053633
+        ]
+      },
+      "source_to_confirmation_ridge10": {
+        "baseline": 0.09775599433559515,
+        "challenge": 0.09233272266840749,
+        "improvement95": [
+          0.002184752879852771,
+          0.008822166965098157
+        ]
+      }
+    }
+  },
+  "challenge_cell_permutation": {
+    "observed_neighbor_gain": 0.028380110986164442,
+    "null_mean": -0.0008992799369671814,
+    "p_one_sided": 0.015984015984015984
+  },
+  "observational_pca_source_variance": [
+    0.8558426730587809,
+    0.11581209915298718,
+    0.010572063103587584,
+    0.007774506582197982,
+    0.00542741895460809
+  ],
+  "trajectory_density_components": {
+    "raw": [
+      {
+        "components": 1,
+        "source_BIC": 1390.55617991417,
+        "confirmation_log_density_per_cell": -10.107698771521608
+      },
+      {
+        "components": 2,
+        "source_BIC": 1419.540432959205,
+        "confirmation_log_density_per_cell": -10.05265953870495
+      },
+      {
+        "components": 3,
+        "source_BIC": 1431.1237174988962,
+        "confirmation_log_density_per_cell": -10.732237058729549
+      },
+      {
+        "components": 4,
+        "source_BIC": 1433.0541102502539,
+        "confirmation_log_density_per_cell": -10.630290178827291
+      }
+    ],
+    "challenge_innovation": [
+      {
+        "components": 1,
+        "source_BIC": -338.2213871670081,
+        "confirmation_log_density_per_cell": 2.9891808673098237
+      },
+      {
+        "components": 2,
+        "source_BIC": -270.1270826365418,
+        "confirmation_log_density_per_cell": 3.005246428645621
+      },
+      {
+        "components": 3,
+        "source_BIC": -184.11074865578274,
+        "confirmation_log_density_per_cell": 2.9983831588264156
+      },
+      {
+        "components": 4,
+        "source_BIC": -97.25707370212575,
+        "confirmation_log_density_per_cell": 2.9958681186389464
+      }
+    ]
+  },
+  "paired_model_form_perturbation": {
+    "saturating_SAC": {
+      "n_paired_cells": 12,
+      "median_delta_per_pc": [
+        0.021912508491327573,
+        -0.00021533290857082832,
+        -0.004358680592329085,
+        0.0022171630147174957,
+        -0.0028081766152804476
+      ],
+      "median_abs_delta_per_pc": [
+        0.021912508491327573,
+        0.0003871814874178321,
+        0.004358680592329085,
+        0.0022171630147174957,
+        0.0028081766152804476
+      ],
+      "median_vector_norm": 0.02268699086234201
+    },
+    "reduced_TnC_buffer": {
+      "n_paired_cells": 12,
+      "median_delta_per_pc": [
+        -0.17865443518330165,
+        -0.1677462611013581,
+        0.12319388251877116,
+        0.025496288252774744,
+        0.001299302632518826
+      ],
+      "median_abs_delta_per_pc": [
+        0.17865443518330165,
+        0.1798310344931648,
+        0.1416955381357367,
+        0.025496288252774744,
+        0.018836573161601262
+      ],
+      "median_vector_norm": 0.2988409356465417
+    }
+  },
+  "challenge_innovation": {
+    "definition": "Challenge waveform minus source-fitted baseline-to-continuation ridge prediction; source alpha fixed at 10.",
+    "pca_source_variance": [
+      0.7025116307950182,
+      0.14592054832080054,
+      0.11988196613454812,
+      0.012103324418860903,
+      0.008663985242323483
+    ],
+    "source_gradient_candidates": [
+      {
+        "pc": 1,
+        "parameter_index": 6,
+        "source_rho": 0.8983974358974357,
+        "confirm_rho": 0.92014652014652
+      },
+      {
+        "pc": 4,
+        "parameter_index": 4,
+        "source_rho": -0.6781593406593406,
+        "confirm_rho": -0.5387362637362637
+      },
+      {
+        "pc": 3,
+        "parameter_index": 11,
+        "source_rho": 0.6334706959706958,
+        "confirm_rho": 0.6514194139194138
+      },
+      {
+        "pc": 2,
+        "parameter_index": 11,
+        "source_rho": 0.6249542124542123,
+        "confirm_rho": 0.509065934065934
+      },
+      {
+        "pc": 5,
+        "parameter_index": 8,
+        "source_rho": -0.527106227106227,
+        "confirm_rho": -0.44162087912087905
+      },
+      {
+        "pc": 2,
+        "parameter_index": 2,
+        "source_rho": -0.4670787545787545,
+        "confirm_rho": -0.5516941391941391
+      }
+    ],
+    "beta1_rho_per_pc_source": [
+      0.30215201465201463,
+      0.6249542124542123,
+      0.6334706959706958,
+      0.020695970695970692,
+      0.06483516483516483
+    ],
+    "beta1_rho_per_pc_confirm": [
+      0.26794871794871794,
+      0.509065934065934,
+      0.6514194139194138,
+      0.03021978021978022,
+      -0.0341117216117216
+    ]
+  },
+  "baseline_parameter_negative_control": {
+    "g_ionic_source": [
+      0.31671245421245414,
+      0.03978937728937728,
+      0.24249084249084246,
+      0.12902930402930401,
+      0.06634615384615385
+    ],
+    "g_ionic_confirmation": [
+      0.016895604395604395,
+      0.1287087912087912,
+      0.11703296703296702,
+      0.24308608058608056,
+      -0.008012820512820512
+    ],
+    "beta1_source": [
+      0.19148351648351647,
+      0.15293040293040291,
+      -0.04116300366300366,
+      -0.08163919413919414,
+      -0.08589743589743588
+    ],
+    "beta1_confirmation": [
+      -0.038278388278388274,
+      0.09848901098901097,
+      -0.04615384615384615,
+      0.07014652014652015,
+      -0.07838827838827837
+    ]
+  },
+  "strongest_source_parameter_gradient": {
+    "pc": 2,
+    "parameter_index_zero_based": 3,
+    "source_spearman": -0.7494963369963369,
+    "confirmation_spearman": -0.6683150183150183
+  },
+  "caveat": "Source and confirmation cells share the same equations and protocols. Target protocol waveforms are available for source-cell supervised regression; this is cell-held-out, not population-level leave-protocol-out."
+}

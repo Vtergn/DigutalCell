@@ -1,0 +1,12 @@
+{
+  "duration_ms": 2.0,
+  "requested_duration_ms": 2.0,
+  "step_ms": 0.001,
+  "runtime_seconds": 35.001374300103635,
+  "finite": true,
+  "max_state_abs_error": 0.008091652898555068,
+  "max_voltage_abs_error_mV": 0.008091652898555068,
+  "max_cai_abs_error_uM": 7.488283775068487e-08,
+  "final_voltage_error_mV": 0.002124926808612315,
+  "final_cai_error_uM": 7.488283775068487e-08
+}

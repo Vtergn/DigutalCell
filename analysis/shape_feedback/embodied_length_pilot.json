@@ -1,0 +1,48 @@
+{
+  "resting_preload_kPa": 0.0014142330843802172,
+  "mechanical_stiffness_kPa_per_stretch": 220.0,
+  "mechanical_viscosity_kPa_ms_per_stretch": 5500.0,
+  "external_pulse_kPa": 12.0,
+  "scenarios": {
+    "free_feedback": {
+      "lambda_min": 0.9574683941025487,
+      "lambda_max": 1.0,
+      "V_delta_vs_free_max_mV": 0.0,
+      "Ca_delta_vs_free_max_uM": 0.0,
+      "peak_active_tension_kPa": 10.928793781459952,
+      "runtime_seconds": 24.94023340009153,
+      "rhs_calls": 4226
+    },
+    "load_feedback": {
+      "lambda_min": 0.9574683941025487,
+      "lambda_max": 1.045131962855096,
+      "V_delta_vs_free_max_mV": 4.5070201275098185,
+      "Ca_delta_vs_free_max_uM": 0.02012932345489804,
+      "peak_active_tension_kPa": 10.928793781459952,
+      "runtime_seconds": 26.64194910018705,
+      "rhs_calls": 4601
+    },
+    "load_no_sac": {
+      "lambda_min": 0.9574683941036535,
+      "lambda_max": 1.0451621259474728,
+      "V_delta_vs_free_max_mV": 0.1337279758558907,
+      "Ca_delta_vs_free_max_uM": 0.0077272797954163475,
+      "peak_active_tension_kPa": 10.92879378142245,
+      "runtime_seconds": 26.232144700130448,
+      "rhs_calls": 4593
+    },
+    "load_no_mef": {
+      "lambda_min": 0.9868877790119411,
+      "lambda_max": 1.0464326330828178,
+      "V_delta_vs_free_max_mV": 5.03812361296476,
+      "Ca_delta_vs_free_max_uM": 0.23447635207726222,
+      "peak_active_tension_kPa": 3.489189740764154,
+      "runtime_seconds": 24.734853999922052,
+      "rhs_calls": 4383
+    }
+  },
+  "sac_effect_under_load": {
+    "V_max_difference_mV": 4.550146445421618,
+    "Ca_max_difference_uM": 0.01700289384303244
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "model": "I(F)=G sigmoid((T0+lambda F-T50)/k)",
+  "force_domain_combinations": [
+    "F50_eff=(T50-T0)/lambda",
+    "sF_eff=k/lambda",
+    "G"
+  ],
+  "gauge_transformation": {
+    "T0": "a*T0+b",
+    "lambda": "a*lambda",
+    "T50": "a*T50+b",
+    "k": "a*k",
+    "G": "G",
+    "condition": "a>0"
+  },
+  "exact_invariance_verified": true,
+  "delta_tension_observation": "Breaks scale ambiguity a if calibrated in absolute units; leaves offset b.",
+  "absolute_tension_observation": "Can anchor offset and scale if genuinely calibrated, spatially co-localized, and sampled across input conditions.",
+  "one_shot": "One scalar peak cannot identify T0, lambda, and G simultaneously, even if T50 and k are fixed.",
+  "qualification": "The structural symmetry applies when T50 and k are not fixed exactly for the same cell. With exact known T50,k and a rich force-current curve spanning threshold and saturation, T0,lambda,G can in principle be identified; Duke one-shot and near-similar stimuli remain practically weak."
+}

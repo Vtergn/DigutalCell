@@ -1,0 +1,162 @@
+{
+  "selected_cases": [
+    {
+      "id": "g025_p105",
+      "mode": "low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00010085370867435328
+      }
+    },
+    {
+      "id": "g125_p095",
+      "mode": "low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0003412303228452207
+      }
+    },
+    {
+      "id": "g025_p100",
+      "mode": "low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00023210740020912501
+      }
+    },
+    {
+      "id": "g100_p090",
+      "mode": "low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0003845821097502866
+      }
+    },
+    {
+      "id": "g125_p100",
+      "mode": "low",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00012877018645895966
+      }
+    },
+    {
+      "id": "g025_p090",
+      "mode": "lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 1.0,
+        "Ca_peak_uM": 0.0035360724096191176
+      }
+    },
+    {
+      "id": "g025_p090",
+      "mode": "lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 3.0,
+        "Ca_peak_uM": 0.005499453617079764
+      }
+    },
+    {
+      "id": "g050_p095",
+      "mode": "lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0011556480691368165
+      }
+    },
+    {
+      "id": "g050_p095",
+      "mode": "lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 1.0,
+        "Ca_peak_uM": 0.0018998136185750525
+      }
+    },
+    {
+      "id": "g075_p100",
+      "mode": "lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00020706895703448414
+      }
+    },
+    {
+      "id": "g075_p100",
+      "mode": "lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.00045952604311949585
+      }
+    },
+    {
+      "id": "g100_p105",
+      "mode": "lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0017765833532503716
+      }
+    },
+    {
+      "id": "g100_p105",
+      "mode": "lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 3.0,
+        "Ca_peak_uM": 0.00823700051807208
+      }
+    },
+    {
+      "id": "g125_p110",
+      "mode": "lowmid",
+      "load": "l02",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0
+      }
+    },
+    {
+      "id": "g125_p110",
+      "mode": "lowmid",
+      "load": "l06",
+      "absolute_errors": {
+        "APD_above_minus67_mV_ms": 0.0,
+        "Ca_peak_uM": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "low": {
+      "APD_above_minus67_mV_ms": {
+        "mean_AE": 0.0,
+        "max_AE": 0.0
+      },
+      "Ca_peak_uM": {
+        "mean_AE": 0.00023750874558758905,
+        "max_AE": 0.0003845821097502866
+      }
+    },
+    "lowmid": {
+      "APD_above_minus67_mV_ms": {
+        "mean_AE": 0.8,
+        "max_AE": 3.0
+      },
+      "Ca_peak_uM": {
+        "mean_AE": 0.0022771166585887183,
+        "max_AE": 0.00823700051807208
+      }
+    }
+  },
+  "selection": "Five largest low-only gain errors; five grid-spread low+mid variants. Diagnostic, not random sample."
+}

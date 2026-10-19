@@ -1,0 +1,1 @@
+addpath('D:\MyProjects\AI细胞\Data\human_SAC_reference'); f=load('D:\MyProjects\AI细胞\analysis\torch_native_port\prepace_state_v5.mat'); par=[0.2203,10.3203,12.8208,1.4110,0.8742]; isac=[4.47,0.001248]; o=model_SAC(0,f.state,1,1,par,isac,-1,-1,0); save('D:\MyProjects\AI细胞\analysis\torch_native_port\rhs_reference.mat','o','-v7');

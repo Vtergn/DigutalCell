@@ -1,0 +1,24 @@
+[
+  {
+    "observation_kind": 0,
+    "n": 135,
+    "median_gate_by_form": [
+      1.0267166388438471,
+      1.05839455741616,
+      0.0
+    ],
+    "presence_AUC": 1.0,
+    "form_AUC": 0.8933333333333333
+  },
+  {
+    "observation_kind": 1,
+    "n": 135,
+    "median_gate_by_form": [
+      0.9959079028657356,
+      0.9945966008872748,
+      0.0
+    ],
+    "presence_AUC": 1.0,
+    "form_AUC": 0.9190123456790125
+  }
+]

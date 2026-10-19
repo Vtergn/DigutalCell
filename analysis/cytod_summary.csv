@@ -1,0 +1,5 @@
+channel,matched_dates,usable_dates,control_responsive_cells,cytod_responsive_cells,geometric_mean_day_median_threshold_ratio,stratified_permutation_two_sided_p
+Piezo1,6,6,12,12,0.9377077491123335,0.7126287371262874
+Piezo2,4,3,14,18,0.5652650475062216,0.016798320167983202
+TRAAK,4,4,10,19,0.8205696703061367,0.2886711328867113
+TREK1,2,2,8,10,1.119972910043379,0.832016798320168

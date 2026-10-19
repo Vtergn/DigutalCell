@@ -1,0 +1,14 @@
+{
+  "torch_version": "2.14.0+cpu",
+  "device": "cpu",
+  "dtype": "torch.float64",
+  "trace_seconds": 0.2650214999448508,
+  "eager_rhs_seconds": 0.008292554666598638,
+  "traced_rhs_seconds": 0.004064234999629358,
+  "speedup": 2.040372829660412,
+  "max_value_difference": 9.966498737412621e-09,
+  "max_state_gradient_difference": 1.3021016684433562e-05,
+  "length_gradient_difference": 1.7763568394002505e-15,
+  "length_input_effect": 0.8934471733285676,
+  "time_input_effect": 53.00000000000001
+}

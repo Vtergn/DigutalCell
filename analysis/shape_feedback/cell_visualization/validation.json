@@ -1,0 +1,19 @@
+{
+  "source_simulator": "51-state ToR-ORd/SAC-Land plus exploratory 1D mechanical closure",
+  "source_image": "D:\\MyProjects\\AI\u7ec6\u80de\\Data\\sarcomere_shape_pilot\\5kPa_cell_01.zip",
+  "real_and_simulated_are_paired": false,
+  "model_lambda_range_loaded": [
+    0.957471,
+    1.045132
+  ],
+  "real_length_range_displayed": [
+    0.8794,
+    1.014448
+  ],
+  "saved_wave_max_abs_deviation": {
+    "free": 0.0,
+    "loaded": 0.0,
+    "no_sac": 0.0,
+    "no_mef": 0.0
+  }
+}

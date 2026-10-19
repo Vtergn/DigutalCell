@@ -1,0 +1,11 @@
+{
+  "n_development_valid": 47,
+  "n_confirmation_valid": 45,
+  "shared_beta": 6.350453512422028,
+  "n_beta_development_cells": 47,
+  "beta_rule": "if individual C1/C2 slope > half shared: 75% shared + 25% individual; else 0",
+  "gate_rule": "C2 direct-SAC coefficient clipped [0,2]",
+  "prototype_rule": "nearest baseline AP/Ca/T at 10ms, channel-scaled",
+  "target_observation_used": false,
+  "scope": "bounded parametric SAC-flux pilot, not neural UDE"
+}

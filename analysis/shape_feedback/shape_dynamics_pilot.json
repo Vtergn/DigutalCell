@@ -1,0 +1,106 @@
+{
+  "data": "Haertter et al. Zenodo 17564384; 5/85 kPa cells train, all 15 kPa cells sealed",
+  "independent_training_cells": 4,
+  "independent_test_cells": 2,
+  "time_step_ms_approx": 16.4,
+  "history_frames": 12,
+  "forecast_frames": 10,
+  "best_validation_mse_scaled": 0.7732067108154297,
+  "training_epochs": 274,
+  "test_cell_first_300_frames_calibration_windows": 448,
+  "test_cell_calibration_gains": {
+    "load15_cell01": {
+      "mlp": 0.461267352104187,
+      "ridge": 1.2661992311477661,
+      "windows": 224
+    },
+    "load15_cell02": {
+      "mlp": 0.20608247816562653,
+      "ridge": 1.0705713033676147,
+      "windows": 224
+    }
+  },
+  "results": {
+    "train": {
+      "persistence": {
+        "mae_full_fraction": 0.006181695964187384,
+        "mae_1step_fraction": 0.0013528242707252502,
+        "mae_10step_fraction": 0.010319718159735203
+      },
+      "ridge": {
+        "mae_full_fraction": 0.005707422271370888,
+        "mae_1step_fraction": 0.0008583154412917793,
+        "mae_10step_fraction": 0.010349436663091183
+      },
+      "mlp": {
+        "mae_full_fraction": 0.0039649358950555325,
+        "mae_1step_fraction": 0.0007984939147718251,
+        "mae_10step_fraction": 0.006876449566334486
+      },
+      "windows": 2628
+    },
+    "valid": {
+      "persistence": {
+        "mae_full_fraction": 0.005739037413150072,
+        "mae_1step_fraction": 0.001375935273244977,
+        "mae_10step_fraction": 0.009302631951868534
+      },
+      "ridge": {
+        "mae_full_fraction": 0.005393567960709333,
+        "mae_1step_fraction": 0.0009587348322384059,
+        "mae_10step_fraction": 0.009575662203133106
+      },
+      "mlp": {
+        "mae_full_fraction": 0.004368524067103863,
+        "mae_1step_fraction": 0.0009695783373899758,
+        "mae_10step_fraction": 0.007356752175837755
+      },
+      "windows": 860
+    },
+    "test": {
+      "persistence": {
+        "mae_full_fraction": 0.004191437270492315,
+        "mae_1step_fraction": 0.0008844976546242833,
+        "mae_10step_fraction": 0.007253814022988081
+      },
+      "ridge": {
+        "mae_full_fraction": 0.0038615327794104815,
+        "mae_1step_fraction": 0.0005524369771592319,
+        "mae_10step_fraction": 0.007428320590406656
+      },
+      "mlp": {
+        "mae_full_fraction": 0.009393335320055485,
+        "mae_1step_fraction": 0.0014423193642869592,
+        "mae_10step_fraction": 0.01698450744152069
+      },
+      "calibrated_ridge": {
+        "mae_full_fraction": 0.0039830019514546415,
+        "mae_1step_fraction": 0.0005551445998575857,
+        "mae_10step_fraction": 0.007717050598474642
+      },
+      "calibrated_mlp": {
+        "mae_full_fraction": 0.004243024255942563,
+        "mae_1step_fraction": 0.0007631548761073409,
+        "mae_10step_fraction": 0.007281109495057442
+      },
+      "windows": 1716
+    },
+    "test_by_cell": {
+      "load15_cell01": {
+        "persistence": 0.005433595273643732,
+        "ridge": 0.005003265105187893,
+        "mlp": 0.009273449890315533,
+        "calibrated_ridge": 0.005244413501487584,
+        "calibrated_mlp": 0.0055253391458629
+      },
+      "load15_cell02": {
+        "persistence": 0.0032132386695593596,
+        "ridge": 0.0029624192975461483,
+        "mlp": 0.009487745352089405,
+        "calibrated_ridge": 0.002989640355803699,
+        "calibrated_mlp": 0.0032332012801302968
+      }
+    }
+  },
+  "limit": "LOIs within a cell are correlated; no paired AP/Ca, no unseen protocol, no long free rollout"
+}

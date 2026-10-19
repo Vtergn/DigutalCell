@@ -1,0 +1,40 @@
+{
+  "calcium_source": "same lambda=1.00 coupled PyTorch whole-beat Ca trajectory",
+  "published_parameter_source": "Data/human_torland_reference/src/Initializer/Initializer.jl",
+  "coupled_reference_tension_peak_kPa": 15.786801230143958,
+  "cases": {
+    "original_Land_intact": {
+      "success": true,
+      "warmup_beats": 0,
+      "warmup_last_state_change_max": null,
+      "tension_peak_kPa": 15.784243554737065,
+      "tension_time_to_peak_ms_from_stimulus": 102.0,
+      "runtime_seconds": 3.815405400004238,
+      "mae_vs_coupled_tension_kPa": 0.00042020859743948334
+    },
+    "only_ktm_unblock_0_021": {
+      "success": true,
+      "warmup_beats": 3,
+      "warmup_last_state_change_max": 3.08726377795665e-11,
+      "tension_peak_kPa": 5.318328767928947,
+      "tension_time_to_peak_ms_from_stimulus": 169.0,
+      "runtime_seconds": 14.47094519995153
+    },
+    "only_nperm_2_036": {
+      "success": true,
+      "warmup_beats": 2,
+      "warmup_last_state_change_max": 1.0702798022843574e-11,
+      "tension_peak_kPa": 33.304491042259734,
+      "tension_time_to_peak_ms_from_stimulus": 117.0,
+      "runtime_seconds": 11.770070699974895
+    },
+    "published_ToRORd_Land_kinetics": {
+      "success": true,
+      "warmup_beats": 2,
+      "warmup_last_state_change_max": 2.080813299443207e-11,
+      "tension_peak_kPa": 25.790199283446555,
+      "tension_time_to_peak_ms_from_stimulus": 168.0,
+      "runtime_seconds": 10.156744600040838
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "n_calibration_cells": 64,
+  "n_independent_test_cells": 64,
+  "target_lambda": 1.125,
+  "time_grid_ms": "0:2:600",
+  "nominal_simultaneous_coverage": 0.9,
+  "score_unit": "cell, max over 301 time samples",
+  "calibration_and_test_cell_disjoint": true,
+  "results": [
+    {
+      "condition": "low_noise",
+      "point_MAE_kPa": 1.384185194968184,
+      "methods": {
+        "uniform": {
+          "calibration_rank_k": 59,
+          "conformal_quantile": 5.284272509969897,
+          "simultaneous_cell_coverage": 0.890625,
+          "covered_cells": 57,
+          "pointwise_coverage": 0.9757578903654485,
+          "mean_interval_width_kPa": 9.595160924754076,
+          "mean_interval_score_alpha_0p1_kPa": 10.769623616288857
+        },
+        "time_scaled": {
+          "calibration_rank_k": 59,
+          "conformal_quantile": 2.5446716410143604,
+          "simultaneous_cell_coverage": 0.921875,
+          "covered_cells": 59,
+          "pointwise_coverage": 0.9649605481727574,
+          "mean_interval_width_kPa": 8.486258821239005,
+          "mean_interval_score_alpha_0p1_kPa": 10.195684437601829
+        }
+      }
+    },
+    {
+      "condition": "high_noise",
+      "point_MAE_kPa": 1.438440985333007,
+      "methods": {
+        "uniform": {
+          "calibration_rank_k": 59,
+          "conformal_quantile": 6.257624241379396,
+          "simultaneous_cell_coverage": 0.90625,
+          "covered_cells": 58,
+          "pointwise_coverage": 0.9772632890365448,
+          "mean_interval_width_kPa": 11.249737048691868,
+          "mean_interval_score_alpha_0p1_kPa": 12.100098702214384
+        },
+        "time_scaled": {
+          "calibration_rank_k": 59,
+          "conformal_quantile": 2.621905100631232,
+          "simultaneous_cell_coverage": 0.859375,
+          "covered_cells": 55,
+          "pointwise_coverage": 0.9606000830564784,
+          "mean_interval_width_kPa": 9.786081082465191,
+          "mean_interval_score_alpha_0p1_kPa": 11.403853151967324
+        }
+      }
+    },
+    {
+      "condition": "drift_sparse",
+      "point_MAE_kPa": 1.5493299802813916,
+      "methods": {
+        "uniform": {
+          "calibration_rank_k": 59,
+          "conformal_quantile": 6.399554114326875,
+          "simultaneous_cell_coverage": 0.859375,
+          "covered_cells": 55,
+          "pointwise_coverage": 0.9797549833887044,
+          "mean_interval_width_kPa": 11.500947341846459,
+          "mean_interval_score_alpha_0p1_kPa": 12.126598072590841
+        },
+        "time_scaled": {
+          "calibration_rank_k": 59,
+          "conformal_quantile": 2.981755018450715,
+          "simultaneous_cell_coverage": 0.859375,
+          "covered_cells": 55,
+          "pointwise_coverage": 0.982765780730897,
+          "mean_interval_width_kPa": 11.789042287316967,
+          "mean_interval_score_alpha_0p1_kPa": 12.280198736561399
+        }
+      }
+    }
+  ],
+  "scope": "Distribution-matched synthetic observation conditions only. This is a conformal predictive band around the frozen point twin, not a Bayesian credible interval. Pipeline settings were developed using the exploratory calibration cohort, so formal exchangeability guarantees are not asserted."
+}

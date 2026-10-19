@@ -1,0 +1,78 @@
+{
+  "n_development_cells": 47,
+  "dev_cell_ids_1based": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    14,
+    15,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    38,
+    39,
+    40,
+    41,
+    43,
+    44,
+    46,
+    47,
+    48,
+    50,
+    51,
+    52,
+    53,
+    55,
+    56,
+    60,
+    63,
+    64
+  ],
+  "candidate_qc_pass_counts": [
+    24,
+    8,
+    6,
+    47,
+    47,
+    44
+  ],
+  "eligible_arms": [
+    4,
+    5
+  ],
+  "five_fold_boundary_methods": {
+    "clip": {
+      "normalized_mae": 0.11543035638203675,
+      "ionic_feedback_mae": 0.10226230051894614,
+      "exact_boundary_fraction": 0.08019639934533551
+    },
+    "logit": {
+      "normalized_mae": 0.1401944916958707,
+      "ionic_feedback_mae": 0.12961946820147122,
+      "exact_boundary_fraction": 0.0
+    }
+  },
+  "boundary_method_selection": "no-C3 development CVaR90, before C3 choice",
+  "no_sealed_target_feature": true
+}

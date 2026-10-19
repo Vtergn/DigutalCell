@@ -1,0 +1,105 @@
+{
+  "source": "public GitLab ttm file, downloaded 2026-09-28; Dryad ZIP listed as 389,910 bytes but its download API returned 401 in this environment",
+  "rows": 19770,
+  "features": [
+    "CSD_RT90",
+    "CSD_TTP90",
+    "CSD_amplitude",
+    "VSD_APD90.APD30",
+    "VSD_RT90",
+    "VSD_TTP90",
+    "VSD_amplitude",
+    "contraction_RT90",
+    "contraction_TTP90",
+    "contraction_amplitude"
+  ],
+  "measurement_records": 1977,
+  "area_ids": 1060,
+  "baseline_records": 1039,
+  "added_records": 938,
+  "baseline_and_added_paired_areas": 917,
+  "fully_observed_paired_areas": 747,
+  "fully_observed_paired_putative_wells": 320,
+  "missing_numeric_feature_values": 875,
+  "putative_wells": 361,
+  "areas_per_putative_well": {
+    "1": 2,
+    "2": 19,
+    "3": 340
+  },
+  "drugs": {
+    "INP005": {
+      "areas": 88,
+      "paired_areas": 76,
+      "fully_observed_paired_areas": 74,
+      "putative_wells": 30
+    },
+    "INP007": {
+      "areas": 88,
+      "paired_areas": 84,
+      "fully_observed_paired_areas": 50,
+      "putative_wells": 30
+    },
+    "INP013": {
+      "areas": 88,
+      "paired_areas": 76,
+      "fully_observed_paired_areas": 54,
+      "putative_wells": 30
+    },
+    "INP017": {
+      "areas": 89,
+      "paired_areas": 84,
+      "fully_observed_paired_areas": 43,
+      "putative_wells": 30
+    },
+    "INP019": {
+      "areas": 90,
+      "paired_areas": 78,
+      "fully_observed_paired_areas": 72,
+      "putative_wells": 30
+    },
+    "INP020": {
+      "areas": 90,
+      "paired_areas": 79,
+      "fully_observed_paired_areas": 72,
+      "putative_wells": 30
+    },
+    "INP022": {
+      "areas": 89,
+      "paired_areas": 79,
+      "fully_observed_paired_areas": 74,
+      "putative_wells": 30
+    },
+    "INP025": {
+      "areas": 89,
+      "paired_areas": 83,
+      "fully_observed_paired_areas": 76,
+      "putative_wells": 30
+    },
+    "INP026": {
+      "areas": 81,
+      "paired_areas": 46,
+      "fully_observed_paired_areas": 40,
+      "putative_wells": 30
+    },
+    "INP028": {
+      "areas": 89,
+      "paired_areas": 77,
+      "fully_observed_paired_areas": 69,
+      "putative_wells": 30
+    },
+    "INP029": {
+      "areas": 88,
+      "paired_areas": 72,
+      "fully_observed_paired_areas": 69,
+      "putative_wells": 30
+    },
+    "ouabain": {
+      "areas": 91,
+      "paired_areas": 83,
+      "fully_observed_paired_areas": 54,
+      "putative_wells": 31
+    }
+  },
+  "unit_warning": "TTM paper reports monolayers, five wells per condition and three imaged areas per well. This table supports area-level pairing and likely well grouping, not single-cell identity or raw AP/Ca/contraction traces."
+}

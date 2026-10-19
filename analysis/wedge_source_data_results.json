@@ -1,0 +1,48 @@
+{
+  "source": "41467_2026_76927_MOESM4_ESM.xlsx",
+  "recovery": {
+    "WT_50ms_cells": 9,
+    "wedgeDEL_50ms_cells": 13,
+    "WT_sixth_median": 0.733,
+    "wedgeDEL_sixth_median": 0.991,
+    "sixth_pulse_Mann_Whitney_two_sided_p": 0.0016875050443365082,
+    "WT_interval_group_cell_counts": {
+      "50": 9,
+      "100": 7,
+      "200": 8,
+      "500": 6,
+      "1000": 8
+    },
+    "near_zero_1000ms_after_first": 5,
+    "second_pulse_median_fit_diagnostic_only": {
+      "depletion_fraction": 0.15673190905824216,
+      "tau_ms": 1411.0366328583098,
+      "rmse_ratio": 0.061095210758592804
+    },
+    "tau_leave_one_interval_out_ms": [
+      10727.594761190661,
+      1049.2940339577308,
+      1280.7127347978444,
+      78.87286319887434,
+      14319.495824730033
+    ]
+  },
+  "afm": {
+    "cell_count": 7,
+    "complete_six_speed_cells": 6,
+    "paired_fast_slow": {
+      "force_relaxation_tau_ms": {
+        "n": 6,
+        "slow_median": 179.625,
+        "fast_median": 31.347,
+        "one_sided_wilcoxon_p": 0.015625
+      },
+      "force_remaining_pct": {
+        "n": 6,
+        "slow_median": 64.72118965,
+        "fast_median": 42.44263515,
+        "one_sided_wilcoxon_p": 0.015625
+      }
+    }
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "note": "Exploratory same-equation synthetic geometry; not a measured biological topology.",
+  "source_cells": 64,
+  "confirmation_cells": 64,
+  "observation_features": 12,
+  "pca_explained_variance_ratio_source": [
+    0.5042444216206307,
+    0.20802785078493083,
+    0.16869633073322146,
+    0.08847238505582639,
+    0.023460098073844925
+  ],
+  "balanced_h0_proxy": {
+    "source": {
+      "balanced_mst_edge_over_median": 1.271486690567219,
+      "cut_group_sizes": [
+        15,
+        49
+      ],
+      "covariance_matched_gaussian_95pct": 1.374998010165903,
+      "null_tail_fraction": 0.146
+    },
+    "confirmation": {
+      "balanced_mst_edge_over_median": 1.330330354830762,
+      "cut_group_sizes": [
+        27,
+        37
+      ],
+      "covariance_matched_gaussian_95pct": 1.3470163606359598,
+      "null_tail_fraction": 0.064
+    }
+  },
+  "gaussian_mixtures": [
+    {
+      "k": 1,
+      "source_bic": 560.804652870449,
+      "confirmation_log_density_per_cell": -3.640428349295391,
+      "confirmation_component_counts": [
+        64
+      ]
+    },
+    {
+      "k": 2,
+      "source_bic": 616.4498986191196,
+      "confirmation_log_density_per_cell": -3.8161179732659702,
+      "confirmation_component_counts": [
+        52,
+        12
+      ]
+    },
+    {
+      "k": 3,
+      "source_bic": 662.8543526788983,
+      "confirmation_log_density_per_cell": -3.889283172535058,
+      "confirmation_component_counts": [
+        22,
+        29,
+        13
+      ]
+    },
+    {
+      "k": 4,
+      "source_bic": 698.7068186708441,
+      "confirmation_log_density_per_cell": -4.163840230778991,
+      "confirmation_component_counts": [
+        24,
+        19,
+        7,
+        14
+      ]
+    },
+    {
+      "k": 5,
+      "source_bic": 756.7562396323275,
+      "confirmation_log_density_per_cell": -4.757182936731025,
+      "confirmation_component_counts": [
+        10,
+        18,
+        15,
+        18,
+        3
+      ]
+    }
+  ],
+  "physical_gradient": {
+    "source_selected_pc": 4,
+    "source_selected_parameter": "beta1",
+    "source_spearman": 0.8653846153846154,
+    "confirmation_spearman_frozen_axes": 0.8764194139194138,
+    "source_familywise_permutation_p": 0.000999000999000999,
+    "all_source_and_confirmation_correlations": [
+      {
+        "pc": 1,
+        "parameter": "CaL",
+        "source": 0.4381868131868132,
+        "confirmation": 0.34088827838827834
+      },
+      {
+        "pc": 1,
+        "parameter": "SERCA",
+        "source": 0.7694139194139193,
+        "confirmation": 0.5613553113553112
+      },
+      {
+        "pc": 1,
+        "parameter": "NCX",
+        "source": -0.4896062271062271,
+        "confirmation": -0.5521978021978021
+      },
+      {
+        "pc": 1,
+        "parameter": "IKr",
+        "source": -0.009706959706959705,
+        "confirmation": -0.2038919413919414
+      },
+      {
+        "pc": 1,
+        "parameter": "IK1",
+        "source": -0.11616300366300364,
+        "confirmation": -0.19551282051282048
+      },
+      {
+        "pc": 1,
+        "parameter": "INaL",
+        "source": 0.18676739926739924,
+        "confirmation": 0.14075091575091572
+      },
+      {
+        "pc": 1,
+        "parameter": "g_ionic",
+        "source": 0.5193681318681318,
+        "confirmation": 0.28809523809523807
+      },
+      {
+        "pc": 1,
+        "parameter": "ca50",
+        "source": -0.047344322344322336,
+        "confirmation": -0.185485347985348
+      },
+      {
+        "pc": 1,
+        "parameter": "TRPN_n",
+        "source": -0.05068681318681318,
+        "confirmation": -0.003159340659340659
+      },
+      {
+        "pc": 1,
+        "parameter": "nperm",
+        "source": 0.041666666666666664,
+        "confirmation": 0.04963369963369963
+      },
+      {
+        "pc": 1,
+        "parameter": "beta0",
+        "source": 0.193040293040293,
+        "confirmation": 0.20320512820512818
+      },
+      {
+        "pc": 1,
+        "parameter": "beta1",
+        "source": 0.1793040293040293,
+        "confirmation": -0.03566849816849816
+      },
+      {
+        "pc": 1,
+        "parameter": "Tref",
+        "source": 0.03337912087912088,
+        "confirmation": 0.0694139194139194
+      },
+      {
+        "pc": 2,
+        "parameter": "CaL",
+        "source": -0.12678571428571428,
+        "confirmation": 0.04276556776556776
+      },
+      {
+        "pc": 2,
+        "parameter": "SERCA",
+        "source": 0.016666666666666666,
+        "confirmation": -0.14528388278388274
+      },
+      {
+        "pc": 2,
+        "parameter": "NCX",
+        "source": 0.22394688644688643,
+        "confirmation": 0.24505494505494504
+      },
+      {
+        "pc": 2,
+        "parameter": "IKr",
+        "source": -0.228021978021978,
+        "confirmation": -0.0010531135531135528
+      },
+      {
+        "pc": 2,
+        "parameter": "IK1",
+        "source": -0.04601648351648351,
+        "confirmation": -0.11231684981684982
+      },
+      {
+        "pc": 2,
+        "parameter": "INaL",
+        "source": 0.017948717948717947,
+        "confirmation": 0.10576923076923075
+      },
+      {
+        "pc": 2,
+        "parameter": "g_ionic",
+        "source": 0.7949175824175823,
+        "confirmation": 0.8973901098901097
+      },
+      {
+        "pc": 2,
+        "parameter": "ca50",
+        "source": 0.2054487179487179,
+        "confirmation": 0.16190476190476188
+      },
+      {
+        "pc": 2,
+        "parameter": "TRPN_n",
+        "source": 0.1426282051282051,
+        "confirmation": 0.08768315018315018
+      },
+      {
+        "pc": 2,
+        "parameter": "nperm",
+        "source": -0.07596153846153846,
+        "confirmation": -0.15306776556776555
+      },
+      {
+        "pc": 2,
+        "parameter": "beta0",
+        "source": -0.021978021978021976,
+        "confirmation": 0.07518315018315018
+      },
+      {
+        "pc": 2,
+        "parameter": "beta1",
+        "source": -0.16057692307692306,
+        "confirmation": -0.12545787545787543
+      },
+      {
+        "pc": 2,
+        "parameter": "Tref",
+        "source": -0.08594322344322343,
+        "confirmation": -0.016849816849816845
+      },
+      {
+        "pc": 3,
+        "parameter": "CaL",
+        "source": -0.06382783882783882,
+        "confirmation": 0.01607142857142857
+      },
+      {
+        "pc": 3,
+        "parameter": "SERCA",
+        "source": 0.030448717948717948,
+        "confirmation": 0.02962454212454212
+      },
+      {
+        "pc": 3,
+        "parameter": "NCX",
+        "source": 0.21185897435897433,
+        "confirmation": 0.047573260073260064
+      },
+      {
+        "pc": 3,
+        "parameter": "IKr",
+        "source": -0.745054945054945,
+        "confirmation": -0.657554945054945
+      },
+      {
+        "pc": 3,
+        "parameter": "IK1",
+        "source": -0.05444139194139194,
+        "confirmation": -0.10544871794871792
+      },
+      {
+        "pc": 3,
+        "parameter": "INaL",
+        "source": 0.6672161172161172,
+        "confirmation": 0.6217032967032966
+      },
+      {
+        "pc": 3,
+        "parameter": "g_ionic",
+        "source": -0.09706959706959707,
+        "confirmation": -0.06964285714285715
+      },
+      {
+        "pc": 3,
+        "parameter": "ca50",
+        "source": -0.07106227106227105,
+        "confirmation": 0.1784340659340659
+      },
+      {
+        "pc": 3,
+        "parameter": "TRPN_n",
+        "source": 0.20682234432234428,
+        "confirmation": -0.13374542124542124
+      },
+      {
+        "pc": 3,
+        "parameter": "nperm",
+        "source": -0.17770146520146518,
+        "confirmation": -0.15728021978021975
+      },
+      {
+        "pc": 3,
+        "parameter": "beta0",
+        "source": 0.18731684981684982,
+        "confirmation": -0.024587912087912087
+      },
+      {
+        "pc": 3,
+        "parameter": "beta1",
+        "source": 0.2993589743589743,
+        "confirmation": 0.27028388278388277
+      },
+      {
+        "pc": 3,
+        "parameter": "Tref",
+        "source": -0.1658424908424908,
+        "confirmation": 0.010943223443223443
+      },
+      {
+        "pc": 4,
+        "parameter": "CaL",
+        "source": -0.10265567765567765,
+        "confirmation": -0.1080128205128205
+      },
+      {
+        "pc": 4,
+        "parameter": "SERCA",
+        "source": 0.11456043956043957,
+        "confirmation": -0.003617216117216117
+      },
+      {
+        "pc": 4,
+        "parameter": "NCX",
+        "source": 0.024130036630036624,
+        "confirmation": 0.19771062271062267
+      },
+      {
+        "pc": 4,
+        "parameter": "IKr",
+        "source": 0.0809065934065934,
+        "confirmation": 0.388598901098901
+      },
+      {
+        "pc": 4,
+        "parameter": "IK1",
+        "source": 0.059798534798534794,
+        "confirmation": -0.08511904761904761
+      },
+      {
+        "pc": 4,
+        "parameter": "INaL",
+        "source": -0.11355311355311354,
+        "confirmation": 0.09276556776556776
+      },
+      {
+        "pc": 4,
+        "parameter": "g_ionic",
+        "source": 0.307554945054945,
+        "confirmation": 0.23484432234432231
+      },
+      {
+        "pc": 4,
+        "parameter": "ca50",
+        "source": 0.0993131868131868,
+        "confirmation": 0.15119047619047618
+      },
+      {
+        "pc": 4,
+        "parameter": "TRPN_n",
+        "source": -0.021794871794871794,
+        "confirmation": 0.21781135531135526
+      },
+      {
+        "pc": 4,
+        "parameter": "nperm",
+        "source": 0.028846153846153844,
+        "confirmation": -0.0829212454212454
+      },
+      {
+        "pc": 4,
+        "parameter": "beta0",
+        "source": 0.07834249084249084,
+        "confirmation": -0.11126373626373626
+      },
+      {
+        "pc": 4,
+        "parameter": "beta1",
+        "source": 0.8653846153846154,
+        "confirmation": 0.8764194139194138
+      },
+      {
+        "pc": 4,
+        "parameter": "Tref",
+        "source": -0.019688644688644685,
+        "confirmation": -0.17518315018315017
+      },
+      {
+        "pc": 5,
+        "parameter": "CaL",
+        "source": 0.027747252747252746,
+        "confirmation": 0.12046703296703296
+      },
+      {
+        "pc": 5,
+        "parameter": "SERCA",
+        "source": 0.3657509157509157,
+        "confirmation": 0.471062271062271
+      },
+      {
+        "pc": 5,
+        "parameter": "NCX",
+        "source": 0.1373168498168498,
+        "confirmation": 0.18919413919413916
+      },
+      {
+        "pc": 5,
+        "parameter": "IKr",
+        "source": 0.06895604395604396,
+        "confirmation": 0.2720695970695971
+      },
+      {
+        "pc": 5,
+        "parameter": "IK1",
+        "source": 0.01703296703296703,
+        "confirmation": 0.009752747252747253
+      },
+      {
+        "pc": 5,
+        "parameter": "INaL",
+        "source": -0.010027472527472525,
+        "confirmation": -0.1829212454212454
+      },
+      {
+        "pc": 5,
+        "parameter": "g_ionic",
+        "source": -0.08131868131868132,
+        "confirmation": -0.20915750915750914
+      },
+      {
+        "pc": 5,
+        "parameter": "ca50",
+        "source": 0.5193681318681318,
+        "confirmation": 0.36817765567765565
+      },
+      {
+        "pc": 5,
+        "parameter": "TRPN_n",
+        "source": 0.3518315018315018,
+        "confirmation": 0.5009615384615385
+      },
+      {
+        "pc": 5,
+        "parameter": "nperm",
+        "source": -0.06749084249084249,
+        "confirmation": 0.32678571428571423
+      },
+      {
+        "pc": 5,
+        "parameter": "beta0",
+        "source": -0.3691391941391941,
+        "confirmation": -0.03708791208791208
+      },
+      {
+        "pc": 5,
+        "parameter": "beta1",
+        "source": -0.21584249084249083,
+        "confirmation": -0.19647435897435897
+      },
+      {
+        "pc": 5,
+        "parameter": "Tref",
+        "source": -0.42513736263736257,
+        "confirmation": -0.12307692307692307
+      }
+    ],
+    "beta1_baseline_pc_correlations_source": [
+      0.18003663003663004,
+      0.14757326007326005,
+      0.05412087912087911
+    ],
+    "beta1_baseline_pc_correlations_confirmation": [
+      -0.03466117216117216,
+      0.0927197802197802,
+      0.012866300366300366
+    ]
+  }
+}

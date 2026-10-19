@@ -1,0 +1,77 @@
+{
+  "cell_id": 2,
+  "fixed_other_parameters": {
+    "Land_beta1": -2.3908232206919324,
+    "K_kPa_per_stretch": 185.7515672755399,
+    "viscosity_kPa_ms_per_stretch": 6758.228111829478
+  },
+  "strict_vs_original_voltage_MAE_mV": 0.0005755043402776006,
+  "strict_vs_original_voltage_max_difference_mV": 0.014721997044816248,
+  "strict_post_450_max_V_mV": 23.473472140339112,
+  "gain_scan": [
+    {
+      "gain": 0.0,
+      "post_450_max_V_mV": -89.46172893412758,
+      "post_450_max_dV_mV": 0.05762485470252443,
+      "triggered_post_450_V_above_0": false,
+      "runtime_s": 23.764882300049067
+    },
+    {
+      "gain": 0.9,
+      "post_450_max_V_mV": -79.76445794165443,
+      "post_450_max_dV_mV": 9.69411161077285,
+      "triggered_post_450_V_above_0": false,
+      "runtime_s": 24.205873900093138
+    },
+    {
+      "gain": 1.1,
+      "post_450_max_V_mV": -75.47327544556924,
+      "post_450_max_dV_mV": 13.985294106858035,
+      "triggered_post_450_V_above_0": false,
+      "runtime_s": 24.917561599984765
+    },
+    {
+      "gain": 1.25,
+      "post_450_max_V_mV": -70.66230662682591,
+      "post_450_max_dV_mV": 18.799773040548047,
+      "triggered_post_450_V_above_0": false,
+      "runtime_s": 26.261673599947244
+    },
+    {
+      "gain": 1.3,
+      "post_450_max_V_mV": -68.44011252330374,
+      "post_450_max_dV_mV": 21.023694295771705,
+      "triggered_post_450_V_above_0": false,
+      "runtime_s": 27.685147299896926
+    },
+    {
+      "gain": 1.35,
+      "post_450_max_V_mV": -65.29552837807225,
+      "post_450_max_dV_mV": 24.173272154187615,
+      "triggered_post_450_V_above_0": false,
+      "runtime_s": 28.269444200210273
+    },
+    {
+      "gain": 1.4,
+      "post_450_max_V_mV": 23.46687350408973,
+      "post_450_max_dV_mV": 112.96756860313107,
+      "triggered_post_450_V_above_0": true,
+      "runtime_s": 32.43238589982502
+    },
+    {
+      "gain": 1.4143584332446708,
+      "post_450_max_V_mV": 23.47338559555099,
+      "post_450_max_dV_mV": 112.97000013975483,
+      "triggered_post_450_V_above_0": true,
+      "runtime_s": 32.677564499899745
+    },
+    {
+      "gain": 1.5,
+      "post_450_max_V_mV": 23.552461169961802,
+      "post_450_max_dV_mV": 113.02370072760573,
+      "triggered_post_450_V_above_0": true,
+      "runtime_s": 34.18461829982698
+    }
+  ],
+  "interpretation": "Within-model threshold audit only; not evidence of biological arrhythmia or a population of discrete cell states."
+}

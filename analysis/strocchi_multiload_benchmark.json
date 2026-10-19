@@ -1,0 +1,1157 @@
+{
+  "source": "D:\\MyProjects\\AI细胞\\Data\\ventricular_cell_model",
+  "n_common_parameter_sets": 931,
+  "split_sizes_train_calibration_test": [
+    558,
+    186,
+    187
+  ],
+  "n_splits": 10,
+  "load_names": {
+    "0": "contraction_isometric_stretch1.0",
+    "1": "contraction_isometric_stretch1.1",
+    "2": "contraction_isotonic"
+  },
+  "output_names_by_load": [
+    [
+      "Tpeak,v",
+      "TTP,t,v",
+      "dT/dtMax,v",
+      "dT/dtMax,v",
+      "Tdur,v",
+      "Trest,v"
+    ],
+    [
+      "Tpeak,v",
+      "TTP,t,v",
+      "dT/dtMax,v",
+      "dT/dtMax,v",
+      "Tdur,v",
+      "Trest,v"
+    ],
+    [
+      "Tpeak,v",
+      "TTP,t,v",
+      "dT/dtMax,v",
+      "dT/dtMax,v",
+      "Tdur,v",
+      "Trest,v",
+      "Dlambda,v"
+    ]
+  ],
+  "inverse": {
+    "L1": {
+      "mae_standardized": 0.8024955925183344,
+      "coverage_90pct_marginal_mean": 0.9042780748663102,
+      "interval_fullwidth_standardized_mean": 3.0788116449723817,
+      "per_coordinate": {
+        "0:PCa": {
+          "mae_standardized": 0.8064955529386431,
+          "coverage_90pct": 0.9155080213903745,
+          "interval_fullwidth_standardized": 3.0748007093747045
+        },
+        "1:Jup": {
+          "mae_standardized": 0.7607573223684085,
+          "coverage_90pct": 0.8909090909090909,
+          "interval_fullwidth_standardized": 2.8900470203085242
+        },
+        "2:[TRPN]": {
+          "mae_standardized": 0.7959655238910553,
+          "coverage_90pct": 0.9005347593582889,
+          "interval_fullwidth_standardized": 3.2503667791481563
+        },
+        "3:Gncx": {
+          "mae_standardized": 0.7639134831594216,
+          "coverage_90pct": 0.9096256684491978,
+          "interval_fullwidth_standardized": 2.9998733402966025
+        },
+        "4:INaCa,SS": {
+          "mae_standardized": 0.8378776293699263,
+          "coverage_90pct": 0.895187165775401,
+          "interval_fullwidth_standardized": 3.145818738012335
+        },
+        "5:CaMKo": {
+          "mae_standardized": 0.8251086851196987,
+          "coverage_90pct": 0.9021390374331549,
+          "interval_fullwidth_standardized": 3.1856665692023824
+        },
+        "6:[BSL]": {
+          "mae_standardized": 0.8326819149644701,
+          "coverage_90pct": 0.8983957219251337,
+          "interval_fullwidth_standardized": 3.180751785131135
+        },
+        "7:aCaMK": {
+          "mae_standardized": 0.8281316598816971,
+          "coverage_90pct": 0.9122994652406418,
+          "interval_fullwidth_standardized": 3.230239060941168
+        },
+        "8:bCaMK": {
+          "mae_standardized": 0.8513613190285116,
+          "coverage_90pct": 0.899465240641711,
+          "interval_fullwidth_standardized": 3.094848142082871
+        },
+        "9:tau,diffCa": {
+          "mae_standardized": 0.8895445986045469,
+          "coverage_90pct": 0.8930481283422459,
+          "interval_fullwidth_standardized": 3.094874839135469
+        },
+        "10:Tref,v": {
+          "mae_standardized": 0.7214010253458639,
+          "coverage_90pct": 0.9080213903743315,
+          "interval_fullwidth_standardized": 2.815149853212022
+        },
+        "11:TRPN50,v": {
+          "mae_standardized": 0.7090721973825362,
+          "coverage_90pct": 0.9101604278074866,
+          "interval_fullwidth_standardized": 2.837097978539846
+        },
+        "12:nTm,v": {
+          "mae_standardized": 0.7527211406408163,
+          "coverage_90pct": 0.8914438502673798,
+          "interval_fullwidth_standardized": 2.858868417601418
+        },
+        "13:nTRPN,v": {
+          "mae_standardized": 0.6928866959783444,
+          "coverage_90pct": 0.9090909090909092,
+          "interval_fullwidth_standardized": 2.9004064283227846
+        },
+        "14:kTRPN,v": {
+          "mae_standardized": 0.8582456432078944,
+          "coverage_90pct": 0.8967914438502674,
+          "interval_fullwidth_standardized": 3.2091427439498097
+        },
+        "15:rs,v": {
+          "mae_standardized": 0.695923588571816,
+          "coverage_90pct": 0.9026737967914438,
+          "interval_fullwidth_standardized": 2.8177930555485498
+        },
+        "16:rw,v": {
+          "mae_standardized": 0.7732178591429391,
+          "coverage_90pct": 0.9128342245989305,
+          "interval_fullwidth_standardized": 3.0613180025312414
+        },
+        "17:Aeff,v": {
+          "mae_standardized": 0.8681485884110888,
+          "coverage_90pct": 0.9112299465240641,
+          "interval_fullwidth_standardized": 3.176064243784462
+        },
+        "18:ku,v": {
+          "mae_standardized": 0.7239838058093337,
+          "coverage_90pct": 0.9096256684491978,
+          "interval_fullwidth_standardized": 2.912290536832619
+        },
+        "19:beta1,v": {
+          "mae_standardized": 0.8126747965082679,
+          "coverage_90pct": 0.9,
+          "interval_fullwidth_standardized": 3.263175899129582
+        },
+        "20:beta0,v": {
+          "mae_standardized": 0.8776276529439118,
+          "coverage_90pct": 0.8796791443850267,
+          "interval_fullwidth_standardized": 3.2266053545977855
+        },
+        "21:gamma,s,v": {
+          "mae_standardized": 0.883160607605495,
+          "coverage_90pct": 0.9176470588235294,
+          "interval_fullwidth_standardized": 3.1760578177615506
+        },
+        "22:gamma,w,v": {
+          "mae_standardized": 0.8571903959207454,
+          "coverage_90pct": 0.9122994652406418,
+          "interval_fullwidth_standardized": 3.1934488778530343
+        },
+        "23:phi,v": {
+          "mae_standardized": 0.8654052393286265,
+          "coverage_90pct": 0.911764705882353,
+          "interval_fullwidth_standardized": 3.294463269734115
+        },
+        "24:ca50,v": {
+          "mae_standardized": 0.7346451576153503,
+          "coverage_90pct": 0.9176470588235294,
+          "interval_fullwidth_standardized": 3.0624133036060828
+        },
+        "25:nu,v": {
+          "mae_standardized": 0.8792155462377608,
+          "coverage_90pct": 0.8957219251336899,
+          "interval_fullwidth_standardized": 3.173532771189114
+        },
+        "26:mu,v": {
+          "mae_standardized": 0.7700233680178586,
+          "coverage_90pct": 0.9117647058823529,
+          "interval_fullwidth_standardized": 3.002798876426939
+        }
+      },
+      "selected_alpha": {
+        "1.0": 2,
+        "0.1": 8
+      },
+      "mae_calcium_related_10": 0.819183768932638,
+      "mae_mechanical_17": 0.7926790181569793,
+      "width_mechanical_17": 3.0576839665071147
+    },
+    "L1_L2": {
+      "mae_standardized": 0.7687292889373412,
+      "coverage_90pct_marginal_mean": 0.9043969102792632,
+      "interval_fullwidth_standardized_mean": 2.9738808878496563,
+      "per_coordinate": {
+        "0:PCa": {
+          "mae_standardized": 0.7837372082984696,
+          "coverage_90pct": 0.9112299465240641,
+          "interval_fullwidth_standardized": 2.992741870604603
+        },
+        "1:Jup": {
+          "mae_standardized": 0.7111360186111939,
+          "coverage_90pct": 0.8935828877005347,
+          "interval_fullwidth_standardized": 2.819875108243941
+        },
+        "2:[TRPN]": {
+          "mae_standardized": 0.7863372353509649,
+          "coverage_90pct": 0.9085561497326203,
+          "interval_fullwidth_standardized": 3.33651616755839
+        },
+        "3:Gncx": {
+          "mae_standardized": 0.7456341122908011,
+          "coverage_90pct": 0.9058823529411765,
+          "interval_fullwidth_standardized": 3.0095799847610656
+        },
+        "4:INaCa,SS": {
+          "mae_standardized": 0.8230810393647733,
+          "coverage_90pct": 0.9026737967914439,
+          "interval_fullwidth_standardized": 3.1785976249578383
+        },
+        "5:CaMKo": {
+          "mae_standardized": 0.8205561124288858,
+          "coverage_90pct": 0.8989304812834223,
+          "interval_fullwidth_standardized": 3.1548285127820397
+        },
+        "6:[BSL]": {
+          "mae_standardized": 0.82772928546494,
+          "coverage_90pct": 0.8925133689839573,
+          "interval_fullwidth_standardized": 3.149989525500222
+        },
+        "7:aCaMK": {
+          "mae_standardized": 0.8342098279418899,
+          "coverage_90pct": 0.9080213903743315,
+          "interval_fullwidth_standardized": 3.23397370997249
+        },
+        "8:bCaMK": {
+          "mae_standardized": 0.8461296406674327,
+          "coverage_90pct": 0.8828877005347595,
+          "interval_fullwidth_standardized": 3.051180418710509
+        },
+        "9:tau,diffCa": {
+          "mae_standardized": 0.8903015510403588,
+          "coverage_90pct": 0.8967914438502674,
+          "interval_fullwidth_standardized": 3.0979108176705523
+        },
+        "10:Tref,v": {
+          "mae_standardized": 0.49302877096105685,
+          "coverage_90pct": 0.9181818181818182,
+          "interval_fullwidth_standardized": 2.145472900310673
+        },
+        "11:TRPN50,v": {
+          "mae_standardized": 0.684316407458922,
+          "coverage_90pct": 0.9128342245989304,
+          "interval_fullwidth_standardized": 2.7624902771012723
+        },
+        "12:nTm,v": {
+          "mae_standardized": 0.7231142355236011,
+          "coverage_90pct": 0.8957219251336899,
+          "interval_fullwidth_standardized": 2.7917632390446596
+        },
+        "13:nTRPN,v": {
+          "mae_standardized": 0.6566212345706314,
+          "coverage_90pct": 0.9,
+          "interval_fullwidth_standardized": 2.745226354474078
+        },
+        "14:kTRPN,v": {
+          "mae_standardized": 0.8620625195709148,
+          "coverage_90pct": 0.897326203208556,
+          "interval_fullwidth_standardized": 3.170747052697913
+        },
+        "15:rs,v": {
+          "mae_standardized": 0.6868390628274633,
+          "coverage_90pct": 0.9155080213903745,
+          "interval_fullwidth_standardized": 2.8376665357939186
+        },
+        "16:rw,v": {
+          "mae_standardized": 0.7629964953846461,
+          "coverage_90pct": 0.9208556149732621,
+          "interval_fullwidth_standardized": 3.054406773171158
+        },
+        "17:Aeff,v": {
+          "mae_standardized": 0.8717398381514159,
+          "coverage_90pct": 0.8978609625668449,
+          "interval_fullwidth_standardized": 3.1725473102104775
+        },
+        "18:ku,v": {
+          "mae_standardized": 0.6839178121377465,
+          "coverage_90pct": 0.8914438502673796,
+          "interval_fullwidth_standardized": 2.65175438876252
+        },
+        "19:beta1,v": {
+          "mae_standardized": 0.6010872197954025,
+          "coverage_90pct": 0.9112299465240643,
+          "interval_fullwidth_standardized": 2.565269489673764
+        },
+        "20:beta0,v": {
+          "mae_standardized": 0.7963738482592907,
+          "coverage_90pct": 0.9032085561497325,
+          "interval_fullwidth_standardized": 3.1221607358258874
+        },
+        "21:gamma,s,v": {
+          "mae_standardized": 0.882242357306254,
+          "coverage_90pct": 0.9144385026737968,
+          "interval_fullwidth_standardized": 3.1921021370790954
+        },
+        "22:gamma,w,v": {
+          "mae_standardized": 0.8649947917261814,
+          "coverage_90pct": 0.909625668449198,
+          "interval_fullwidth_standardized": 3.219903497129161
+        },
+        "23:phi,v": {
+          "mae_standardized": 0.8722564276321974,
+          "coverage_90pct": 0.9010695187165775,
+          "interval_fullwidth_standardized": 3.279636475247375
+        },
+        "24:ca50,v": {
+          "mae_standardized": 0.6017480255484521,
+          "coverage_90pct": 0.9229946524064172,
+          "interval_fullwidth_standardized": 2.4508445740648583
+        },
+        "25:nu,v": {
+          "mae_standardized": 0.8803806230946014,
+          "coverage_90pct": 0.8930481283422459,
+          "interval_fullwidth_standardized": 3.167392607262328
+        },
+        "26:mu,v": {
+          "mae_standardized": 0.763119099899726,
+          "coverage_90pct": 0.9122994652406418,
+          "interval_fullwidth_standardized": 2.940205883329922
+        }
+      },
+      "selected_alpha": {
+        "1.0": 6,
+        "0.1": 4
+      },
+      "mae_calcium_related_10": 0.8068852031459711,
+      "mae_mechanical_17": 0.7462846335205002,
+      "width_mechanical_17": 2.8982111900693566
+    },
+    "L1_L3": {
+      "mae_standardized": 0.7655189350116407,
+      "coverage_90pct_marginal_mean": 0.902653990889285,
+      "interval_fullwidth_standardized_mean": 2.9755138859542813,
+      "per_coordinate": {
+        "0:PCa": {
+          "mae_standardized": 0.7890014656024266,
+          "coverage_90pct": 0.9155080213903745,
+          "interval_fullwidth_standardized": 3.0614473877617896
+        },
+        "1:Jup": {
+          "mae_standardized": 0.6686007920773216,
+          "coverage_90pct": 0.8973262032085563,
+          "interval_fullwidth_standardized": 2.693310969094046
+        },
+        "2:[TRPN]": {
+          "mae_standardized": 0.7906595655812214,
+          "coverage_90pct": 0.9090909090909092,
+          "interval_fullwidth_standardized": 3.30899266035484
+        },
+        "3:Gncx": {
+          "mae_standardized": 0.7511191393162393,
+          "coverage_90pct": 0.9160427807486631,
+          "interval_fullwidth_standardized": 3.067525171053942
+        },
+        "4:INaCa,SS": {
+          "mae_standardized": 0.8313622150215523,
+          "coverage_90pct": 0.9032085561497325,
+          "interval_fullwidth_standardized": 3.1868549467078453
+        },
+        "5:CaMKo": {
+          "mae_standardized": 0.8246748688457167,
+          "coverage_90pct": 0.8957219251336899,
+          "interval_fullwidth_standardized": 3.1771999660064396
+        },
+        "6:[BSL]": {
+          "mae_standardized": 0.8362087395690878,
+          "coverage_90pct": 0.8957219251336899,
+          "interval_fullwidth_standardized": 3.1636408363952624
+        },
+        "7:aCaMK": {
+          "mae_standardized": 0.828876402969016,
+          "coverage_90pct": 0.9085561497326203,
+          "interval_fullwidth_standardized": 3.254744635243739
+        },
+        "8:bCaMK": {
+          "mae_standardized": 0.8528455403685958,
+          "coverage_90pct": 0.8951871657754011,
+          "interval_fullwidth_standardized": 3.1328666536857006
+        },
+        "9:tau,diffCa": {
+          "mae_standardized": 0.8922087162866488,
+          "coverage_90pct": 0.8957219251336899,
+          "interval_fullwidth_standardized": 3.103860154415815
+        },
+        "10:Tref,v": {
+          "mae_standardized": 0.7211265134042579,
+          "coverage_90pct": 0.8978609625668449,
+          "interval_fullwidth_standardized": 2.7436390892757556
+        },
+        "11:TRPN50,v": {
+          "mae_standardized": 0.6733082174248148,
+          "coverage_90pct": 0.9240641711229947,
+          "interval_fullwidth_standardized": 2.8055916938465897
+        },
+        "12:nTm,v": {
+          "mae_standardized": 0.7387888326839734,
+          "coverage_90pct": 0.881283422459893,
+          "interval_fullwidth_standardized": 2.7962156562220764
+        },
+        "13:nTRPN,v": {
+          "mae_standardized": 0.6881687129538742,
+          "coverage_90pct": 0.9165775401069519,
+          "interval_fullwidth_standardized": 2.963346894962819
+        },
+        "14:kTRPN,v": {
+          "mae_standardized": 0.8584633820987051,
+          "coverage_90pct": 0.8967914438502674,
+          "interval_fullwidth_standardized": 3.222529201677355
+        },
+        "15:rs,v": {
+          "mae_standardized": 0.656529721597166,
+          "coverage_90pct": 0.906951871657754,
+          "interval_fullwidth_standardized": 2.681431690219038
+        },
+        "16:rw,v": {
+          "mae_standardized": 0.7097360566330259,
+          "coverage_90pct": 0.9058823529411765,
+          "interval_fullwidth_standardized": 2.8159046740172013
+        },
+        "17:Aeff,v": {
+          "mae_standardized": 0.6336923808890814,
+          "coverage_90pct": 0.9042780748663102,
+          "interval_fullwidth_standardized": 2.5356532394652347
+        },
+        "18:ku,v": {
+          "mae_standardized": 0.7270488860992333,
+          "coverage_90pct": 0.9010695187165775,
+          "interval_fullwidth_standardized": 2.8830435180019944
+        },
+        "19:beta1,v": {
+          "mae_standardized": 0.7307706288821643,
+          "coverage_90pct": 0.890909090909091,
+          "interval_fullwidth_standardized": 2.953205752600975
+        },
+        "20:beta0,v": {
+          "mae_standardized": 0.7920811747837148,
+          "coverage_90pct": 0.8983957219251337,
+          "interval_fullwidth_standardized": 3.0476830956057688
+        },
+        "21:gamma,s,v": {
+          "mae_standardized": 0.860349763088488,
+          "coverage_90pct": 0.9101604278074864,
+          "interval_fullwidth_standardized": 3.104426901861482
+        },
+        "22:gamma,w,v": {
+          "mae_standardized": 0.8506179592151091,
+          "coverage_90pct": 0.9064171122994653,
+          "interval_fullwidth_standardized": 3.1662973990206087
+        },
+        "23:phi,v": {
+          "mae_standardized": 0.7140708351194585,
+          "coverage_90pct": 0.8914438502673796,
+          "interval_fullwidth_standardized": 2.7593250593943663
+        },
+        "24:ca50,v": {
+          "mae_standardized": 0.6565647709548468,
+          "coverage_90pct": 0.9139037433155079,
+          "interval_fullwidth_standardized": 2.711893981788959
+        },
+        "25:nu,v": {
+          "mae_standardized": 0.8542934231743777,
+          "coverage_90pct": 0.8882352941176469,
+          "interval_fullwidth_standardized": 3.1045809934977475
+        },
+        "26:mu,v": {
+          "mae_standardized": 0.7378425406741816,
+          "coverage_90pct": 0.9053475935828879,
+          "interval_fullwidth_standardized": 2.893662698588208
+        }
+      },
+      "selected_alpha": {
+        "1.0": 6,
+        "0.1": 3,
+        "10.0": 1
+      },
+      "mae_calcium_related_10": 0.8065557445637825,
+      "mae_mechanical_17": 0.7413796352750867,
+      "width_mechanical_17": 2.8934371494144813
+    },
+    "L1_L2_L3": {
+      "mae_standardized": 0.7348406003199515,
+      "coverage_90pct_marginal_mean": 0.9039017627252921,
+      "interval_fullwidth_standardized_mean": 2.887435536043535,
+      "per_coordinate": {
+        "0:PCa": {
+          "mae_standardized": 0.7750072681646033,
+          "coverage_90pct": 0.9144385026737968,
+          "interval_fullwidth_standardized": 3.0140326532258985
+        },
+        "1:Jup": {
+          "mae_standardized": 0.643337240903638,
+          "coverage_90pct": 0.9048128342245988,
+          "interval_fullwidth_standardized": 2.6204620089842354
+        },
+        "2:[TRPN]": {
+          "mae_standardized": 0.7872830252256287,
+          "coverage_90pct": 0.909625668449198,
+          "interval_fullwidth_standardized": 3.3808753152516586
+        },
+        "3:Gncx": {
+          "mae_standardized": 0.7366761165331023,
+          "coverage_90pct": 0.9133689839572192,
+          "interval_fullwidth_standardized": 3.037350099050008
+        },
+        "4:INaCa,SS": {
+          "mae_standardized": 0.8177390229441552,
+          "coverage_90pct": 0.9005347593582889,
+          "interval_fullwidth_standardized": 3.2007882507326935
+        },
+        "5:CaMKo": {
+          "mae_standardized": 0.8218452863719744,
+          "coverage_90pct": 0.8962566844919786,
+          "interval_fullwidth_standardized": 3.1958016632301214
+        },
+        "6:[BSL]": {
+          "mae_standardized": 0.8297389689680582,
+          "coverage_90pct": 0.9016042780748663,
+          "interval_fullwidth_standardized": 3.1674985829089395
+        },
+        "7:aCaMK": {
+          "mae_standardized": 0.8322981176025245,
+          "coverage_90pct": 0.904812834224599,
+          "interval_fullwidth_standardized": 3.259222303722035
+        },
+        "8:bCaMK": {
+          "mae_standardized": 0.8545974730961936,
+          "coverage_90pct": 0.8764705882352942,
+          "interval_fullwidth_standardized": 3.0726353785218627
+        },
+        "9:tau,diffCa": {
+          "mae_standardized": 0.8921879930251168,
+          "coverage_90pct": 0.9032085561497327,
+          "interval_fullwidth_standardized": 3.1430318609512917
+        },
+        "10:Tref,v": {
+          "mae_standardized": 0.4632436772888167,
+          "coverage_90pct": 0.9187165775401068,
+          "interval_fullwidth_standardized": 2.0731365314653876
+        },
+        "11:TRPN50,v": {
+          "mae_standardized": 0.6515613452775366,
+          "coverage_90pct": 0.9181818181818182,
+          "interval_fullwidth_standardized": 2.6422064955005484
+        },
+        "12:nTm,v": {
+          "mae_standardized": 0.7021749337668938,
+          "coverage_90pct": 0.8967914438502674,
+          "interval_fullwidth_standardized": 2.7532542017508232
+        },
+        "13:nTRPN,v": {
+          "mae_standardized": 0.6504237462930597,
+          "coverage_90pct": 0.9117647058823529,
+          "interval_fullwidth_standardized": 2.7792846557353217
+        },
+        "14:kTRPN,v": {
+          "mae_standardized": 0.8622934404141483,
+          "coverage_90pct": 0.8994652406417114,
+          "interval_fullwidth_standardized": 3.1968256492501848
+        },
+        "15:rs,v": {
+          "mae_standardized": 0.6265177469275743,
+          "coverage_90pct": 0.9080213903743315,
+          "interval_fullwidth_standardized": 2.5821731791176714
+        },
+        "16:rw,v": {
+          "mae_standardized": 0.6798981952693325,
+          "coverage_90pct": 0.9069518716577539,
+          "interval_fullwidth_standardized": 2.72078116820244
+        },
+        "17:Aeff,v": {
+          "mae_standardized": 0.6312966168280967,
+          "coverage_90pct": 0.890909090909091,
+          "interval_fullwidth_standardized": 2.482763438077753
+        },
+        "18:ku,v": {
+          "mae_standardized": 0.6675327161939675,
+          "coverage_90pct": 0.8994652406417112,
+          "interval_fullwidth_standardized": 2.6556687585924883
+        },
+        "19:beta1,v": {
+          "mae_standardized": 0.6017940318098702,
+          "coverage_90pct": 0.9155080213903742,
+          "interval_fullwidth_standardized": 2.5987997850876257
+        },
+        "20:beta0,v": {
+          "mae_standardized": 0.7182548694755437,
+          "coverage_90pct": 0.897326203208556,
+          "interval_fullwidth_standardized": 2.9267519342180623
+        },
+        "21:gamma,s,v": {
+          "mae_standardized": 0.8474634202344256,
+          "coverage_90pct": 0.9181818181818183,
+          "interval_fullwidth_standardized": 3.1157358370713326
+        },
+        "22:gamma,w,v": {
+          "mae_standardized": 0.8496853977531824,
+          "coverage_90pct": 0.9144385026737967,
+          "interval_fullwidth_standardized": 3.1934947347314813
+        },
+        "23:phi,v": {
+          "mae_standardized": 0.7159452974848168,
+          "coverage_90pct": 0.8882352941176471,
+          "interval_fullwidth_standardized": 2.77196485995428
+        },
+        "24:ca50,v": {
+          "mae_standardized": 0.5951415891030937,
+          "coverage_90pct": 0.9155080213903742,
+          "interval_fullwidth_standardized": 2.4626372039448823
+        },
+        "25:nu,v": {
+          "mae_standardized": 0.8548424138230828,
+          "coverage_90pct": 0.8775401069518717,
+          "interval_fullwidth_standardized": 3.1030543140947335
+        },
+        "26:mu,v": {
+          "mae_standardized": 0.7319162578602558,
+          "coverage_90pct": 0.9032085561497327,
+          "interval_fullwidth_standardized": 2.810528609801684
+        }
+      },
+      "selected_alpha": {
+        "1.0": 7,
+        "0.1": 3
+      },
+      "mae_calcium_related_10": 0.7990710512834995,
+      "mae_mechanical_17": 0.6970579821060998,
+      "width_mechanical_17": 2.7570036092115706
+    }
+  },
+  "heldout_load": {
+    "L1_to_L3": {
+      "mae_standardized": 0.34428427460150185,
+      "coverage_90pct_marginal_mean": 0.9079449961802902,
+      "interval_fullwidth_standardized_mean": 1.5071243112959132,
+      "per_coordinate": {
+        "0:Tpeak,v": {
+          "mae_standardized": 0.38484228384333646,
+          "coverage_90pct": 0.9128342245989305,
+          "interval_fullwidth_standardized": 1.5343847478339172
+        },
+        "1:TTP,t,v": {
+          "mae_standardized": 0.36442181851081534,
+          "coverage_90pct": 0.9144385026737968,
+          "interval_fullwidth_standardized": 1.5870755712387628
+        },
+        "2:dT/dtMax,v": {
+          "mae_standardized": 0.37303317985580275,
+          "coverage_90pct": 0.9181818181818182,
+          "interval_fullwidth_standardized": 1.7393718589889562
+        },
+        "3:dT/dtMax,v": {
+          "mae_standardized": 0.2790122144314684,
+          "coverage_90pct": 0.8989304812834223,
+          "interval_fullwidth_standardized": 1.1529981335725918
+        },
+        "4:Tdur,v": {
+          "mae_standardized": 0.28251843419649986,
+          "coverage_90pct": 0.9016042780748664,
+          "interval_fullwidth_standardized": 1.1678802057152153
+        },
+        "5:Trest,v": {
+          "mae_standardized": 0.43230612318417183,
+          "coverage_90pct": 0.9005347593582889,
+          "interval_fullwidth_standardized": 2.0170100143668197
+        },
+        "6:Dlambda,v": {
+          "mae_standardized": 0.29385586818841813,
+          "coverage_90pct": 0.9090909090909092,
+          "interval_fullwidth_standardized": 1.3511496473551308
+        }
+      },
+      "selected_alpha": {
+        "10.0": 2,
+        "1.0": 5,
+        "0.1": 3
+      },
+      "train_mean_target_mae_standardized": 0.7888150129838203
+    },
+    "L1_L2_to_L3": {
+      "mae_standardized": 0.2698298354271657,
+      "coverage_90pct_marginal_mean": 0.9083269671504965,
+      "interval_fullwidth_standardized_mean": 1.1863564825177186,
+      "per_coordinate": {
+        "0:Tpeak,v": {
+          "mae_standardized": 0.34687860354528216,
+          "coverage_90pct": 0.916577540106952,
+          "interval_fullwidth_standardized": 1.4391809848734372
+        },
+        "1:TTP,t,v": {
+          "mae_standardized": 0.3421073524541217,
+          "coverage_90pct": 0.9155080213903745,
+          "interval_fullwidth_standardized": 1.5337977887377217
+        },
+        "2:dT/dtMax,v": {
+          "mae_standardized": 0.3516847693500753,
+          "coverage_90pct": 0.9133689839572193,
+          "interval_fullwidth_standardized": 1.6332105711977838
+        },
+        "3:dT/dtMax,v": {
+          "mae_standardized": 0.2715927742272995,
+          "coverage_90pct": 0.8983957219251337,
+          "interval_fullwidth_standardized": 1.1503249902228347
+        },
+        "4:Tdur,v": {
+          "mae_standardized": 0.16443038815955663,
+          "coverage_90pct": 0.8978609625668449,
+          "interval_fullwidth_standardized": 0.7230970426901755
+        },
+        "5:Trest,v": {
+          "mae_standardized": 0.13177254585712,
+          "coverage_90pct": 0.902139037433155,
+          "interval_fullwidth_standardized": 0.5048905481447679
+        },
+        "6:Dlambda,v": {
+          "mae_standardized": 0.28034241439670515,
+          "coverage_90pct": 0.9144385026737968,
+          "interval_fullwidth_standardized": 1.3199934517573098
+        }
+      },
+      "selected_alpha": {
+        "0.1": 8,
+        "1.0": 2
+      },
+      "train_mean_target_mae_standardized": 0.7888150129838203
+    },
+    "L1_to_L2": {
+      "mae_standardized": 0.2602032309584952,
+      "coverage_90pct_marginal_mean": 0.8987522281639929,
+      "interval_fullwidth_standardized_mean": 1.095026925677934,
+      "per_coordinate": {
+        "0:Tpeak,v": {
+          "mae_standardized": 0.26702851629293944,
+          "coverage_90pct": 0.9000000000000001,
+          "interval_fullwidth_standardized": 1.0854604553780944
+        },
+        "1:TTP,t,v": {
+          "mae_standardized": 0.19289885349883246,
+          "coverage_90pct": 0.9032085561497327,
+          "interval_fullwidth_standardized": 0.7872844344591068
+        },
+        "2:dT/dtMax,v": {
+          "mae_standardized": 0.20129700415507576,
+          "coverage_90pct": 0.8935828877005347,
+          "interval_fullwidth_standardized": 0.8496769172632351
+        },
+        "3:dT/dtMax,v": {
+          "mae_standardized": 0.2523279772203125,
+          "coverage_90pct": 0.9037433155080213,
+          "interval_fullwidth_standardized": 1.0589671269547314
+        },
+        "4:Tdur,v": {
+          "mae_standardized": 0.24078469532040608,
+          "coverage_90pct": 0.8946524064171124,
+          "interval_fullwidth_standardized": 0.9793024678818659
+        },
+        "5:Trest,v": {
+          "mae_standardized": 0.4068823392634048,
+          "coverage_90pct": 0.897326203208556,
+          "interval_fullwidth_standardized": 1.80947015213057
+        }
+      },
+      "selected_alpha": {
+        "0.1": 6,
+        "1.0": 4
+      },
+      "train_mean_target_mae_standardized": 0.802935420387301
+    },
+    "L1_L3_to_L2": {
+      "mae_standardized": 0.18373607673661427,
+      "coverage_90pct_marginal_mean": 0.9037433155080216,
+      "interval_fullwidth_standardized_mean": 0.7706032763216327,
+      "per_coordinate": {
+        "0:Tpeak,v": {
+          "mae_standardized": 0.24408422908291905,
+          "coverage_90pct": 0.8957219251336899,
+          "interval_fullwidth_standardized": 1.010961066441889
+        },
+        "1:TTP,t,v": {
+          "mae_standardized": 0.17084879394147462,
+          "coverage_90pct": 0.9133689839572193,
+          "interval_fullwidth_standardized": 0.714321229068857
+        },
+        "2:dT/dtMax,v": {
+          "mae_standardized": 0.18445980716555763,
+          "coverage_90pct": 0.8909090909090909,
+          "interval_fullwidth_standardized": 0.7787997562385504
+        },
+        "3:dT/dtMax,v": {
+          "mae_standardized": 0.23390047383191254,
+          "coverage_90pct": 0.9037433155080216,
+          "interval_fullwidth_standardized": 0.9733981625318172
+        },
+        "4:Tdur,v": {
+          "mae_standardized": 0.1423639269018797,
+          "coverage_90pct": 0.9112299465240641,
+          "interval_fullwidth_standardized": 0.6072065110185273
+        },
+        "5:Trest,v": {
+          "mae_standardized": 0.12675922949594215,
+          "coverage_90pct": 0.9074866310160428,
+          "interval_fullwidth_standardized": 0.5389329326301553
+        }
+      },
+      "selected_alpha": {
+        "0.1": 6,
+        "1.0": 4
+      },
+      "train_mean_target_mae_standardized": 0.802935420387301
+    },
+    "L2_to_L1": {
+      "mae_standardized": 0.25414134338530153,
+      "coverage_90pct_marginal_mean": 0.8996434937611408,
+      "interval_fullwidth_standardized_mean": 1.1369579486100698,
+      "per_coordinate": {
+        "0:Tpeak,v": {
+          "mae_standardized": 0.2652785309763807,
+          "coverage_90pct": 0.8957219251336899,
+          "interval_fullwidth_standardized": 1.1500700911289508
+        },
+        "1:TTP,t,v": {
+          "mae_standardized": 0.20971778590008122,
+          "coverage_90pct": 0.9085561497326202,
+          "interval_fullwidth_standardized": 0.8771614019236005
+        },
+        "2:dT/dtMax,v": {
+          "mae_standardized": 0.2110371823576928,
+          "coverage_90pct": 0.9048128342245988,
+          "interval_fullwidth_standardized": 0.9538114155208456
+        },
+        "3:dT/dtMax,v": {
+          "mae_standardized": 0.2278035387834799,
+          "coverage_90pct": 0.9053475935828879,
+          "interval_fullwidth_standardized": 1.0664446568701185
+        },
+        "4:Tdur,v": {
+          "mae_standardized": 0.22602723963364219,
+          "coverage_90pct": 0.8967914438502674,
+          "interval_fullwidth_standardized": 0.9481378826419716
+        },
+        "5:Trest,v": {
+          "mae_standardized": 0.38498378266053207,
+          "coverage_90pct": 0.8866310160427808,
+          "interval_fullwidth_standardized": 1.8261222435749331
+        }
+      },
+      "selected_alpha": {
+        "0.1": 5,
+        "1.0": 5
+      },
+      "train_mean_target_mae_standardized": 0.7725567678602391
+    },
+    "L2_L3_to_L1": {
+      "mae_standardized": 0.18477496336754057,
+      "coverage_90pct_marginal_mean": 0.904812834224599,
+      "interval_fullwidth_standardized_mean": 0.820393304940574,
+      "per_coordinate": {
+        "0:Tpeak,v": {
+          "mae_standardized": 0.1651285064520453,
+          "coverage_90pct": 0.9122994652406418,
+          "interval_fullwidth_standardized": 0.7317174155122541
+        },
+        "1:TTP,t,v": {
+          "mae_standardized": 0.1337401666189713,
+          "coverage_90pct": 0.8909090909090909,
+          "interval_fullwidth_standardized": 0.5480889959922141
+        },
+        "2:dT/dtMax,v": {
+          "mae_standardized": 0.14910355040955875,
+          "coverage_90pct": 0.9171122994652408,
+          "interval_fullwidth_standardized": 0.6771924525462544
+        },
+        "3:dT/dtMax,v": {
+          "mae_standardized": 0.17146695629698833,
+          "coverage_90pct": 0.9187165775401069,
+          "interval_fullwidth_standardized": 0.8030616648139552
+        },
+        "4:Tdur,v": {
+          "mae_standardized": 0.14602574544746996,
+          "coverage_90pct": 0.8983957219251337,
+          "interval_fullwidth_standardized": 0.6058048890742324
+        },
+        "5:Trest,v": {
+          "mae_standardized": 0.34318485498020973,
+          "coverage_90pct": 0.8914438502673796,
+          "interval_fullwidth_standardized": 1.5564944117045338
+        }
+      },
+      "selected_alpha": {
+        "1.0": 6,
+        "0.1": 4
+      },
+      "train_mean_target_mae_standardized": 0.7725567678602391
+    }
+  },
+  "per_split": [
+    {
+      "seed": 20260928,
+      "inverse_mae": {
+        "L1": 0.7974453432839533,
+        "L1_L2": 0.7601692290089651,
+        "L1_L3": 0.7605874341734616,
+        "L1_L2_L3": 0.7272942198495679
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.802345075240009,
+        "L1_L2": 0.7520054738618501,
+        "L1_L3": 0.7523238305093306,
+        "L1_L2_L3": 0.7037965225833845
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.3802106135589138,
+        "L1_L2_to_L3": 0.29644083522520753,
+        "L1_to_L2": 0.2786976087136729,
+        "L1_L3_to_L2": 0.19658925698575355,
+        "L2_to_L1": 0.2761735474827462,
+        "L2_L3_to_L1": 0.19717897336935586
+      }
+    },
+    {
+      "seed": 20260929,
+      "inverse_mae": {
+        "L1": 0.7933325551343463,
+        "L1_L2": 0.7620191572798926,
+        "L1_L3": 0.7558008729057191,
+        "L1_L2_L3": 0.7281034473048551
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.7802574345577595,
+        "L1_L2": 0.7371884302256833,
+        "L1_L3": 0.7258671492698611,
+        "L1_L2_L3": 0.6863604382776052
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.33817278361818787,
+        "L1_L2_to_L3": 0.25952073299064765,
+        "L1_to_L2": 0.266819049377681,
+        "L1_L3_to_L2": 0.1826316134917887,
+        "L2_to_L1": 0.2519790948765947,
+        "L2_L3_to_L1": 0.1856693575760784
+      }
+    },
+    {
+      "seed": 20260930,
+      "inverse_mae": {
+        "L1": 0.8016669388035456,
+        "L1_L2": 0.7683034601991408,
+        "L1_L3": 0.7610709919228142,
+        "L1_L2_L3": 0.7326108472064156
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.7946833563328718,
+        "L1_L2": 0.7479089311368634,
+        "L1_L3": 0.7364159763701654,
+        "L1_L2_L3": 0.6953874883225122
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.36237428580648806,
+        "L1_L2_to_L3": 0.2858618127247145,
+        "L1_to_L2": 0.25799209196316897,
+        "L1_L3_to_L2": 0.17622341726619264,
+        "L2_to_L1": 0.2614776501192757,
+        "L2_L3_to_L1": 0.1873502760006069
+      }
+    },
+    {
+      "seed": 20260931,
+      "inverse_mae": {
+        "L1": 0.8048264722072845,
+        "L1_L2": 0.7722020141926528,
+        "L1_L3": 0.7685484690707729,
+        "L1_L2_L3": 0.7382420111329593
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.7909296651942074,
+        "L1_L2": 0.7466728759333316,
+        "L1_L3": 0.7435284122947478,
+        "L1_L2_L3": 0.7004387643855007
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.3410338880950547,
+        "L1_L2_to_L3": 0.271298235071089,
+        "L1_to_L2": 0.25381784618460707,
+        "L1_L3_to_L2": 0.18308454648353553,
+        "L2_to_L1": 0.2545436291363314,
+        "L2_L3_to_L1": 0.18995255826995402
+      }
+    },
+    {
+      "seed": 20260932,
+      "inverse_mae": {
+        "L1": 0.8039260016226483,
+        "L1_L2": 0.7686614530633155,
+        "L1_L3": 0.7622641795081898,
+        "L1_L2_L3": 0.732708663537617
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.805497353857973,
+        "L1_L2": 0.7563132878468503,
+        "L1_L3": 0.7477219001877708,
+        "L1_L2_L3": 0.7035235377722954
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.3415650797373921,
+        "L1_L2_to_L3": 0.2683972239251269,
+        "L1_to_L2": 0.26365321205809705,
+        "L1_L3_to_L2": 0.1823198602947839,
+        "L2_to_L1": 0.2584809911077523,
+        "L2_L3_to_L1": 0.18387828565192701
+      }
+    },
+    {
+      "seed": 20260933,
+      "inverse_mae": {
+        "L1": 0.8024323675058467,
+        "L1_L2": 0.7719910141750316,
+        "L1_L3": 0.7622279794712312,
+        "L1_L2_L3": 0.7321106000101396
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.8010022303539646,
+        "L1_L2": 0.7546731790954818,
+        "L1_L3": 0.7438443907583735,
+        "L1_L2_L3": 0.6997354793904673
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.32446748508007495,
+        "L1_L2_to_L3": 0.25916527770574477,
+        "L1_to_L2": 0.24833913884877332,
+        "L1_L3_to_L2": 0.1763780138218937,
+        "L2_to_L1": 0.23099412656333648,
+        "L2_L3_to_L1": 0.17248958190493716
+      }
+    },
+    {
+      "seed": 20260934,
+      "inverse_mae": {
+        "L1": 0.8172173315551616,
+        "L1_L2": 0.7824690473937006,
+        "L1_L3": 0.7863551996111589,
+        "L1_L2_L3": 0.756081791007135
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.8004884392097404,
+        "L1_L2": 0.7525037074090942,
+        "L1_L3": 0.7543542147951122,
+        "L1_L2_L3": 0.710496278284639
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.3382009838001033,
+        "L1_L2_to_L3": 0.26216697520426774,
+        "L1_to_L2": 0.26892053670327576,
+        "L1_L3_to_L2": 0.1863054149442276,
+        "L2_to_L1": 0.27072864018104825,
+        "L2_L3_to_L1": 0.19422504731331414
+      }
+    },
+    {
+      "seed": 20260935,
+      "inverse_mae": {
+        "L1": 0.7941046077805891,
+        "L1_L2": 0.7595531113705214,
+        "L1_L3": 0.7595556629438037,
+        "L1_L2_L3": 0.7297107112616833
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.7780063587310189,
+        "L1_L2": 0.7321261512424346,
+        "L1_L3": 0.7335223865469664,
+        "L1_L2_L3": 0.6905824824787173
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.341622176231544,
+        "L1_L2_to_L3": 0.26532684545465124,
+        "L1_to_L2": 0.24933365709949848,
+        "L1_L3_to_L2": 0.17992207613230263,
+        "L2_to_L1": 0.23939784911630677,
+        "L2_L3_to_L1": 0.17918689157027212
+      }
+    },
+    {
+      "seed": 20260936,
+      "inverse_mae": {
+        "L1": 0.8006101818526157,
+        "L1_L2": 0.768610423765488,
+        "L1_L3": 0.7657351010518442,
+        "L1_L2_L3": 0.733625943375094
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.7846559501651135,
+        "L1_L2": 0.7408447871366429,
+        "L1_L3": 0.7387644173755624,
+        "L1_L2_L3": 0.6912891164900931
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.32752400668140946,
+        "L1_L2_to_L3": 0.26008770056231534,
+        "L1_to_L2": 0.24511637370837555,
+        "L1_L3_to_L2": 0.17795267456582353,
+        "L2_to_L1": 0.24120494922643124,
+        "L2_L3_to_L1": 0.1727200918928751
+      }
+    },
+    {
+      "seed": 20260937,
+      "inverse_mae": {
+        "L1": 0.809394125437353,
+        "L1_L2": 0.7733139789247038,
+        "L1_L3": 0.7730434594574115,
+        "L1_L2_L3": 0.7379177685140491
+      },
+      "inverse_mechanical_mae": {
+        "L1": 0.7889243179271355,
+        "L1_L2": 0.7426095113167692,
+        "L1_L3": 0.7374536746429757,
+        "L1_L2_L3": 0.6889697130757835
+      },
+      "heldout_load_mae": {
+        "L1_to_L3": 0.34767144340585004,
+        "L1_L2_to_L3": 0.2700327154078931,
+        "L1_to_L2": 0.26934279492780183,
+        "L1_L3_to_L2": 0.19595389337984112,
+        "L2_to_L1": 0.25643295604319183,
+        "L2_L3_to_L1": 0.1850985701260849
+      }
+    }
+  ],
+  "train_only_forward_linear_screen_top10_frequency": {
+    "ca50,v": 10,
+    "nTRPN,v": 10,
+    "Tref,v": 10,
+    "rs,v": 10,
+    "TRPN50,v": 10,
+    "nTm,v": 10,
+    "mu,v": 10,
+    "rw,v": 10,
+    "ku,v": 10,
+    "beta1,v": 10
+  },
+  "cautions": [
+    "No paired AP or Ca outputs are available for these exact 931 parameter samples.",
+    "Intervals are per-coordinate split-conformal prediction intervals under the simulator sampling distribution, not Bayesian parameter posteriors.",
+    "A direct supervised ridge map predicts held-out load features; it does not propagate a mechanistic parameter posterior through a forward solver.",
+    "The contraction output CSV repeats dT/dtMax,v as both column 3 and 4; positional indexing preserves both values but physiological sign interpretation requires source confirmation.",
+    "Intersection of completed simulations may be a selected subset of all designs; real-cell transportability is untested."
+  ]
+}

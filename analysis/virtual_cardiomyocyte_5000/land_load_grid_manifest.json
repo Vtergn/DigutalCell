@@ -1,0 +1,19 @@
+{
+  "cells": 128,
+  "target_lambdas": [
+    0.95,
+    0.975,
+    1.105,
+    1.115,
+    1.125,
+    1.15
+  ],
+  "calibration_lambdas": [
+    1.0,
+    1.1
+  ],
+  "predict_input_has_no_true_parameters_or_target_traces": true,
+  "predict_input_sha256": "b377408b2b8f6cb7d40444ebcf53b879b794eff0f6d4e88decd7688283bd9270",
+  "truth_input_sha256": "9b34c2e8aebfc8d36b74d8b21791a369792dec4d98d986f72ee7d1c228221be5",
+  "no_refitting_or_hyperparameter_selection": true
+}

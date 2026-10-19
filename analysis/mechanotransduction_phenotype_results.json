@@ -1,0 +1,143 @@
+{
+  "cross_validation": {
+    "four_feature": {
+      "cells": 22,
+      "dates": 11,
+      "cell_auc": 0.9669421487603306,
+      "date_auc": 1.0,
+      "cell_balanced_accuracy": 0.9090909090909091,
+      "date_balanced_accuracy": 1.0
+    },
+    "without_exponent": {
+      "cells": 22,
+      "dates": 11,
+      "cell_auc": 0.9752066115702479,
+      "date_auc": 1.0,
+      "cell_balanced_accuracy": 0.9545454545454546,
+      "date_balanced_accuracy": 1.0
+    },
+    "timing_only": {
+      "cells": 22,
+      "dates": 11,
+      "cell_auc": 0.9917355371900827,
+      "date_auc": 1.0,
+      "cell_balanced_accuracy": 0.9090909090909092,
+      "date_balanced_accuracy": 0.875
+    },
+    "threshold_retention": {
+      "cells": 22,
+      "dates": 11,
+      "cell_auc": 0.743801652892562,
+      "date_auc": 0.8333333333333334,
+      "cell_balanced_accuracy": 0.6818181818181819,
+      "date_balanced_accuracy": 0.875
+    },
+    "without_timing": {
+      "cells": 22,
+      "dates": 11,
+      "cell_auc": 0.768595041322314,
+      "date_auc": 0.9166666666666666,
+      "cell_balanced_accuracy": 0.7272727272727273,
+      "date_balanced_accuracy": 0.8125
+    }
+  },
+  "primary_axis": "without_exponent",
+  "date_label_permutation": {
+    "number_of_assignments": 165,
+    "observed_date_auc": 1.0,
+    "fraction_at_least_observed": 0.01818181818181818
+  },
+  "frozen_projection": {
+    "WT_mp1": {
+      "cells": 11,
+      "dates": 8,
+      "median_axis": 0.0,
+      "median_p_piezo2": 0.309681323085386
+    },
+    "WT_mp2": {
+      "cells": 11,
+      "dates": 3,
+      "median_axis": 1.0,
+      "median_p_piezo2": 0.7002610848734241
+    },
+    "chimA": {
+      "cells": 11,
+      "dates": 2,
+      "median_axis": 0.9950589430401672,
+      "median_p_piezo2": 0.6985469145724181
+    }
+  },
+  "ablation_projection": {
+    "timing_only": {
+      "WT_mp1": 0.0,
+      "WT_mp2": 1.0,
+      "chimA": 1.0
+    },
+    "threshold_retention": {
+      "WT_mp1": 0.0,
+      "WT_mp2": 1.0,
+      "chimA": 1.2677058843856428
+    },
+    "without_timing": {
+      "WT_mp1": 0.0,
+      "WT_mp2": 1.0,
+      "chimA": 0.8331636602125835
+    }
+  },
+  "dimension_positions": {
+    "log_wthresh": {
+      "p1_median": 5.071621490693513,
+      "p2_median": 4.743051806883701,
+      "chim_median": 4.516794894125664,
+      "chim_fraction_p1_to_p2": 1.6886116519776122
+    },
+    "work_alpha": {
+      "p1_median": 5.146512454160979,
+      "p2_median": 2.840294928094631,
+      "chim_median": 4.271645788996666,
+      "chim_fraction_p1_to_p2": 0.3793513210597047
+    },
+    "peak_delay_ms": {
+      "p1_median": 8.0,
+      "p2_median": 2.0,
+      "chim_median": 2.0,
+      "chim_fraction_p1_to_p2": 1.0
+    },
+    "postpeak20_retention": {
+      "p1_median": 0.5060769969177178,
+      "p2_median": 0.40227623930854445,
+      "chim_median": 0.1855445773862792,
+      "chim_fraction_p1_to_p2": 3.0879583821372005
+    }
+  },
+  "exponent_diagnostic": {
+    "wt_alpha_vs_log_span_slope": -8.865122333528719,
+    "common_log_span": 0.35777946454391474,
+    "by_group": {
+      "WT_mp1": {
+        "median_log_span": 0.20220651125835332,
+        "cells_span_below_0_2": 5,
+        "median_alpha_span_at_least_0_2": 4.40046112092262,
+        "median_alpha_linear_span_adjusted": 4.547035605541507
+      },
+      "WT_mp2": {
+        "median_log_span": 0.45089146847150463,
+        "cells_span_below_0_2": 0,
+        "median_alpha_span_at_least_0_2": 2.840294928094631,
+        "median_alpha_linear_span_adjusted": 4.506153642281416
+      },
+      "chimA": {
+        "median_log_span": 0.32302308336345265,
+        "cells_span_below_0_2": 1,
+        "median_alpha_span_at_least_0_2": 4.208975172911595,
+        "median_alpha_linear_span_adjusted": 4.1795425356634395
+      }
+    }
+  },
+  "frozen_standardized_weights": {
+    "log_wthresh": -0.5212775651883249,
+    "peak_delay_ms": -0.7370361413334224,
+    "postpeak20_retention": 0.004738170050078257
+  },
+  "warning": "Every WT date has only one channel; date holdout cannot identify a batch-independent channel effect."
+}

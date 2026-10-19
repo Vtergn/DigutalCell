@@ -1,0 +1,452 @@
+[
+  {
+    "id": "g025_p090",
+    "mode": "low",
+    "fit_loss_standardized_sse": 0.0003565653016055467,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.31956613818984336,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9
+  },
+  {
+    "id": "g025_p090",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0017995602141225896,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.3373729334054517,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9
+  },
+  {
+    "id": "g025_p095",
+    "mode": "low",
+    "fit_loss_standardized_sse": 4.335885128893613e-05,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.726481375608799,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9138922820676659
+  },
+  {
+    "id": "g025_p095",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.00017238834613859824,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.25,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9490614705879123
+  },
+  {
+    "id": "g025_p100",
+    "mode": "low",
+    "fit_loss_standardized_sse": 9.194908012475546e-15,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 1.1249861643312178,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 0.9327458360726968
+  },
+  {
+    "id": "g025_p100",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.00017567562922014547,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.25,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 1.0000539242488296
+  },
+  {
+    "id": "g025_p105",
+    "mode": "low",
+    "fit_loss_standardized_sse": 2.4924876953197345e-07,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 1.25,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 0.9695537104062352
+  },
+  {
+    "id": "g025_p105",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.00013817149114317518,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.29136251277298975,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.0468592897664464
+  },
+  {
+    "id": "g025_p110",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.010672231199789e-12,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.8567693789748402,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.0472733652975315
+  },
+  {
+    "id": "g025_p110",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0022916694357447945,
+    "true_mct_gain": 0.25,
+    "inferred_mct_gain": 0.25,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.0963086564740774
+  },
+  {
+    "id": "g050_p090",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.0458576792226537e-05,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.25,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9176415553225227
+  },
+  {
+    "id": "g050_p090",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.00010055053434085083,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.4447843795785422,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.903715071666139
+  },
+  {
+    "id": "g050_p095",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.902403319314829e-05,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.9343773638577436,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9167366200101352
+  },
+  {
+    "id": "g050_p095",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 9.052807542208261e-05,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.4845576808607334,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9494526222191167
+  },
+  {
+    "id": "g050_p100",
+    "mode": "low",
+    "fit_loss_standardized_sse": 2.618876928858159e-06,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.8754055725151949,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 0.9702115005170662
+  },
+  {
+    "id": "g050_p100",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 8.751885490769552e-05,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.511979736121991,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 0.9992685786764224
+  },
+  {
+    "id": "g050_p105",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.1277030640241384e-06,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 1.010204266032773,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.0083909205538666
+  },
+  {
+    "id": "g050_p105",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0003614085019984342,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.5125220318748855,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.0479241298218005
+  },
+  {
+    "id": "g050_p110",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.2675957356648533e-13,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.9430565148461886,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.0611971009002343
+  },
+  {
+    "id": "g050_p110",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0008641000610988299,
+    "true_mct_gain": 0.5,
+    "inferred_mct_gain": 0.49561330522591585,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.1
+  },
+  {
+    "id": "g075_p090",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.6503508945768824e-12,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.26599032654319255,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9350646363615979
+  },
+  {
+    "id": "g075_p090",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 6.365397451544411e-05,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.7326624819301992,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9022269656127553
+  },
+  {
+    "id": "g075_p095",
+    "mode": "low",
+    "fit_loss_standardized_sse": 3.8555398458270007e-13,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.37182847317382844,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9795172196895905
+  },
+  {
+    "id": "g075_p095",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 5.105996186016193e-05,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.7440020249611977,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9501451784239223
+  },
+  {
+    "id": "g075_p100",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.1990004795380649e-11,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.38044532258449926,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 1.0304585742315435
+  },
+  {
+    "id": "g075_p100",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 9.565564445907983e-05,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.7517547296352938,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 1.0001073985759836
+  },
+  {
+    "id": "g075_p105",
+    "mode": "low",
+    "fit_loss_standardized_sse": 4.579800964177127e-05,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.25,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.093776542016855
+  },
+  {
+    "id": "g075_p105",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0005112644731344301,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.7513112348220446,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.050146336457289
+  },
+  {
+    "id": "g075_p110",
+    "mode": "low",
+    "fit_loss_standardized_sse": 8.685839502489043e-12,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.9748188622899894,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.0795310406023546
+  },
+  {
+    "id": "g075_p110",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0004261184160967867,
+    "true_mct_gain": 0.75,
+    "inferred_mct_gain": 0.7439048599456604,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.1
+  },
+  {
+    "id": "g100_p090",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.1637862356253737e-13,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 0.36641319980834125,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9460984708439634
+  },
+  {
+    "id": "g100_p090",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0008484555056756048,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 1.0326420960798859,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9
+  },
+  {
+    "id": "g100_p095",
+    "mode": "low",
+    "fit_loss_standardized_sse": 2.394560885124171e-13,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 0.38990753212278384,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9974973063904986
+  },
+  {
+    "id": "g100_p095",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0001653272708596815,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 1.0029463035397925,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9497411548612555
+  },
+  {
+    "id": "g100_p100",
+    "mode": "low",
+    "fit_loss_standardized_sse": 3.901190404490112e-11,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 0.49854993790746605,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 1.0407958845210068
+  },
+  {
+    "id": "g100_p100",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.00012860215378861434,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 1.0096773197301094,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 0.9999965387789352
+  },
+  {
+    "id": "g100_p105",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.908908916473132e-06,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 1.1245407048731726,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.039752890631384
+  },
+  {
+    "id": "g100_p105",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0002534270580354937,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 0.9750322223051012,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.0505690639294207
+  },
+  {
+    "id": "g100_p110",
+    "mode": "low",
+    "fit_loss_standardized_sse": 0.000339457031492938,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 1.000579986137411,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.1
+  },
+  {
+    "id": "g100_p110",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.0009699860888556085,
+    "true_mct_gain": 1.0,
+    "inferred_mct_gain": 0.9967367285303138,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.1
+  },
+  {
+    "id": "g125_p090",
+    "mode": "low",
+    "fit_loss_standardized_sse": 2.247318757609369e-05,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.2410877406929806,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9
+  },
+  {
+    "id": "g125_p090",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 9.832194987860726e-05,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.1701220984788079,
+    "true_pCa0_scale": 0.9,
+    "inferred_pCa0_scale": 0.9058445248036392
+  },
+  {
+    "id": "g125_p095",
+    "mode": "low",
+    "fit_loss_standardized_sse": 3.5568658923038104e-05,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 0.25,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 1.0291336960322721
+  },
+  {
+    "id": "g125_p095",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.00019368661873206161,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.2306251206281664,
+    "true_pCa0_scale": 0.95,
+    "inferred_pCa0_scale": 0.9507853863939386
+  },
+  {
+    "id": "g125_p100",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.1854938545322762e-09,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 0.6252476329866008,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 1.0501116533533352
+  },
+  {
+    "id": "g125_p100",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 8.615263498264689e-05,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.2169915143126555,
+    "true_pCa0_scale": 1.0,
+    "inferred_pCa0_scale": 1.0029697467785728
+  },
+  {
+    "id": "g125_p105",
+    "mode": "low",
+    "fit_loss_standardized_sse": 1.472731630550648e-13,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.087752538173075,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.0610392942668812
+  },
+  {
+    "id": "g125_p105",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.001480948181974909,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.25,
+    "true_pCa0_scale": 1.05,
+    "inferred_pCa0_scale": 1.0472762365517605
+  },
+  {
+    "id": "g125_p110",
+    "mode": "low",
+    "fit_loss_standardized_sse": 0.08104693463169144,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.25,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.1
+  },
+  {
+    "id": "g125_p110",
+    "mode": "lowmid",
+    "fit_loss_standardized_sse": 0.4767047960278806,
+    "true_mct_gain": 1.25,
+    "inferred_mct_gain": 1.25,
+    "true_pCa0_scale": 1.1,
+    "inferred_pCa0_scale": 1.1
+  }
+]

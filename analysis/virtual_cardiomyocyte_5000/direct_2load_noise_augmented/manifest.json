@@ -1,0 +1,19 @@
+{
+  "epochs_run": 100,
+  "best_validation_MAE_kPa": 0.2522817862530549,
+  "training_target_lambdas": [
+    1.025,
+    1.05,
+    1.075
+  ],
+  "training_cells": 3496,
+  "validation_cells": 744,
+  "augmentation": [
+    "clean",
+    "low_noise",
+    "high_noise",
+    "drift_sparse"
+  ],
+  "architecture": "Same DirectLoadNetwork as clean baseline",
+  "selection": "Validation cells only, across four observation conditions"
+}

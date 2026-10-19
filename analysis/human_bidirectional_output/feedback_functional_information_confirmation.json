@@ -1,0 +1,65 @@
+{
+  "source_cells": 64,
+  "new_cells": 64,
+  "new_seed": 20261002,
+  "new_cohort_type": "Independent parameter draw and pre-pacing under the same source equation family; not independent model truth or experimental data.",
+  "neighbor_future_distance": {
+    "baseline": 1.2212152288562375,
+    "early150": 0.7300170114545809,
+    "mid300": 0.6408056620674657,
+    "late600": 0.6284393968503615,
+    "mid+late": 0.582000651961903
+  },
+  "mid_improvement_vs_baseline": 0.5804095667887719,
+  "mid_improvement_bootstrap95": [
+    0.5088390181175273,
+    0.6520267959743831
+  ],
+  "mid_challenge_permutation_p": 0.000999000999000999,
+  "pair_gain_over_better_single": 0.025712440397834012,
+  "pair_gain_bootstrap95": [
+    0.014147181692509548,
+    0.03797230745990145
+  ],
+  "pair_gain_over_better_duplicated_single": -0.008180330835395246,
+  "pair_gain_over_duplicate_bootstrap95": [
+    -0.01653284365837381,
+    -0.00028675293268752035
+  ],
+  "source_trained_new_cohort_prediction": {
+    "baseline": {
+      "PLS1": 0.8844386360774208,
+      "PLS2": 0.8679329808294431,
+      "PLS3": 0.848310507141756,
+      "full_RBF": 0.8970796422392273
+    },
+    "early150": {
+      "PLS1": 0.8006389059359778,
+      "PLS2": 0.6724134517765199,
+      "PLS3": 0.35511617913880605,
+      "PLS5": 0.2732470447518158,
+      "full_RBF": 0.18969372780167168
+    },
+    "mid300": {
+      "PLS1": 0.7292146940558635,
+      "PLS2": 0.5264964892339863,
+      "PLS3": 0.2773592819283624,
+      "PLS5": 0.187820737982037,
+      "full_RBF": 0.15674798993224148
+    },
+    "late600": {
+      "PLS1": 0.6356187622734399,
+      "PLS2": 0.519367123429153,
+      "PLS3": 0.3270150994039827,
+      "PLS5": 0.22673011322990572,
+      "full_RBF": 0.19841172112193106
+    },
+    "mid+late": {
+      "PLS1": 0.6270996431061483,
+      "PLS2": 0.49659943759461955,
+      "PLS3": 0.2713331863999173,
+      "PLS5": 0.1793509937446194,
+      "full_RBF": 0.13979642904199685
+    }
+  }
+}

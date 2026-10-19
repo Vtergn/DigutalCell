@@ -1,0 +1,182 @@
+{
+  "lif_files": [
+    {
+      "file": "FlimRealtime_Bleb01_Flim5D1_Bleb_04.lif",
+      "xml_characters": 1028592,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Bleb02_Flim5D1_Bleb_05.lif",
+      "xml_characters": 1071593,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Bleb03_Flim5D1_Bleb_06.lif",
+      "xml_characters": 1008892,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Bleb04_Flim5D1_Bleb_07.lif",
+      "xml_characters": 988593,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Bleb05_Flim5D1_Bleb_08.lif",
+      "xml_characters": 943038,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Cell01_Flim5D1_CellRT_01.lif",
+      "xml_characters": 1045993,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Cell01_Flim5D1_CellRT_02.lif",
+      "xml_characters": 1045233,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Cell01_Flim5D1_CellRT_03.lif",
+      "xml_characters": 1026613,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Cell01_Flim5D1_CellRT_04.lif",
+      "xml_characters": 996320,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtime_Cell01_Flim5D1_CellRT_05.lif",
+      "xml_characters": 1011911,
+      "channel_descriptions": 54,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 46,
+        "Green": 4,
+        "Time Contrast": 2,
+        "Red": 2
+      }
+    },
+    {
+      "file": "FlimRealtimeFig5c_Cell00_Flim4D1_Cell14_RealTime_Stepwise.lif",
+      "xml_characters": 2443359,
+      "channel_descriptions": 133,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 113,
+        "Green": 10,
+        "Time Contrast": 7,
+        "Red": 3
+      }
+    },
+    {
+      "file": "FlimRealtimeFig5d_Bleb00_Flim4D1_Cell04_RealTimeTrials_Bleb.lif",
+      "xml_characters": 1537919,
+      "channel_descriptions": 66,
+      "nonempty_measured_quantity_names": [],
+      "nonempty_channel_units": [],
+      "lut_counts": {
+        "Gray": 56,
+        "Green": 5,
+        "Time Contrast": 4,
+        "Red": 1
+      }
+    }
+  ],
+  "tiff_sample": {
+    "file": "Cell03_RT_t0000_ch3.tif",
+    "description_tag": null,
+    "software_tag": null,
+    "tag_ids": [
+      256,
+      257,
+      258,
+      259,
+      262,
+      273,
+      277,
+      278,
+      279,
+      282,
+      283,
+      296,
+      297,
+      254
+    ]
+  },
+  "conclusion": "Header/channel metadata alone does not establish the physical unit or lifetime identity of exported ch3 when name and unit attributes are empty."
+}

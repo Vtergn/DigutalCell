@@ -1,0 +1,170 @@
+{
+  "n_particles": 16384,
+  "split": {
+    "train": 558,
+    "likelihood_cal": 93,
+    "interval_cal": 93,
+    "test": 187
+  },
+  "gp_train_counts": [
+    1211,
+    644,
+    727
+  ],
+  "prior": "Gaussian copula fitted only to 558 paired training parameter vectors; rank marginals with correlation shrinkage 0.1",
+  "scoring": "all held-out output errors standardized using the 558 paired training parameter vectors; likelihood and conformal calibration use disjoint halves",
+  "tasks": {
+    "L1_to_L3": {
+      "twin_mae_standardized": 0.4659108215461551,
+      "direct_ridge_mae_standardized": 0.3769642386625721,
+      "twin_conformal_90pct_coverage": 0.8609625668449198,
+      "twin_conformal_90pct_width_standardized": 1.7432958964244116,
+      "twin_ess_median": 2949.2504979073146,
+      "twin_ess_min": 9.032489113929671,
+      "theta_posterior_mean_mae_standardized": 0.8133597351009049,
+      "particle_predictive_variance_z_mean": 0.7977661191226996,
+      "per_target_feature_mae_standardized": {
+        "0:Tpeak,v": {
+          "twin": 0.41846368437924697,
+          "direct_ridge": 0.3998790963211893
+        },
+        "1:TTP,t,v": {
+          "twin": 0.42188411395073483,
+          "direct_ridge": 0.39906864037474027
+        },
+        "2:dT/dtMax,v": {
+          "twin": 0.47881828171683494,
+          "direct_ridge": 0.44025085338409226
+        },
+        "3:dT/dtMax,v": {
+          "twin": 0.38459048160861314,
+          "direct_ridge": 0.3024424426508714
+        },
+        "4:Tdur,v": {
+          "twin": 0.4253008935270836,
+          "direct_ridge": 0.30571498191682106
+        },
+        "5:Trest,v": {
+          "twin": 0.7080450289807938,
+          "direct_ridge": 0.4558399149501566
+        },
+        "6:Dlambda,v": {
+          "twin": 0.4242732666597782,
+          "direct_ridge": 0.3355537410401341
+        }
+      }
+    },
+    "L1_L2_to_L3": {
+      "twin_mae_standardized": 0.39077142716900654,
+      "direct_ridge_mae_standardized": 0.29644083522520753,
+      "twin_conformal_90pct_coverage": 0.8869365928189458,
+      "twin_conformal_90pct_width_standardized": 1.604282252525144,
+      "twin_ess_median": 1014.2922268957905,
+      "twin_ess_min": 1.8670210854944695,
+      "theta_posterior_mean_mae_standardized": 0.7995206774062266,
+      "particle_predictive_variance_z_mean": 0.7179104777039063,
+      "per_target_feature_mae_standardized": {
+        "0:Tpeak,v": {
+          "twin": 0.36961375694844106,
+          "direct_ridge": 0.35430161328430476
+        },
+        "1:TTP,t,v": {
+          "twin": 0.404401900794178,
+          "direct_ridge": 0.37770315751715644
+        },
+        "2:dT/dtMax,v": {
+          "twin": 0.4436716788882475,
+          "direct_ridge": 0.4144015698968131
+        },
+        "3:dT/dtMax,v": {
+          "twin": 0.3585963729587483,
+          "direct_ridge": 0.296277558316453
+        },
+        "4:Tdur,v": {
+          "twin": 0.30475444355968034,
+          "direct_ridge": 0.16953907130884363
+        },
+        "5:Trest,v": {
+          "twin": 0.48013878710875535,
+          "direct_ridge": 0.14327630094567276
+        },
+        "6:Dlambda,v": {
+          "twin": 0.374223049924995,
+          "direct_ridge": 0.3195865753072089
+        }
+      }
+    },
+    "L1_to_L2": {
+      "twin_mae_standardized": 0.41463980717889504,
+      "direct_ridge_mae_standardized": 0.27861673190114883,
+      "twin_conformal_90pct_coverage": 0.8163992869875223,
+      "twin_conformal_90pct_width_standardized": 1.4040776030972202,
+      "twin_ess_median": 2949.2504979073146,
+      "twin_ess_min": 9.032489113929671,
+      "theta_posterior_mean_mae_standardized": 0.8133597351009049,
+      "particle_predictive_variance_z_mean": 0.6246450882187993,
+      "per_target_feature_mae_standardized": {
+        "0:Tpeak,v": {
+          "twin": 0.3687929521371621,
+          "direct_ridge": 0.2895144479784835
+        },
+        "1:TTP,t,v": {
+          "twin": 0.33111173869424126,
+          "direct_ridge": 0.202328662804219
+        },
+        "2:dT/dtMax,v": {
+          "twin": 0.3113178543542967,
+          "direct_ridge": 0.2172967120380098
+        },
+        "3:dT/dtMax,v": {
+          "twin": 0.3960689390628028,
+          "direct_ridge": 0.2763586420684526
+        },
+        "4:Tdur,v": {
+          "twin": 0.3995972936509612,
+          "direct_ridge": 0.25969765937894596
+        },
+        "5:Trest,v": {
+          "twin": 0.6809500651739062,
+          "direct_ridge": 0.4265042671387823
+        }
+      }
+    },
+    "L1_L3_to_L2": {
+      "twin_mae_standardized": 0.34286468533662046,
+      "direct_ridge_mae_standardized": 0.19658925698575355,
+      "twin_conformal_90pct_coverage": 0.8458110516934046,
+      "twin_conformal_90pct_width_standardized": 1.2305987133184273,
+      "twin_ess_median": 846.7407076423472,
+      "twin_ess_min": 1.0814544006546714,
+      "theta_posterior_mean_mae_standardized": 0.7946779437229653,
+      "particle_predictive_variance_z_mean": 0.5515195118892005,
+      "per_target_feature_mae_standardized": {
+        "0:Tpeak,v": {
+          "twin": 0.33023555714324093,
+          "direct_ridge": 0.2580977982810734
+        },
+        "1:TTP,t,v": {
+          "twin": 0.30357787972434397,
+          "direct_ridge": 0.17680016339838373
+        },
+        "2:dT/dtMax,v": {
+          "twin": 0.2769611500042348,
+          "direct_ridge": 0.20180612122877226
+        },
+        "3:dT/dtMax,v": {
+          "twin": 0.35280075443766695,
+          "direct_ridge": 0.2564060138616503
+        },
+        "4:Tdur,v": {
+          "twin": 0.2965552737946788,
+          "direct_ridge": 0.15930064875341918
+        },
+        "5:Trest,v": {
+          "twin": 0.4970574969155575,
+          "direct_ridge": 0.12712479639122254
+        }
+      }
+    }
+  }
+}

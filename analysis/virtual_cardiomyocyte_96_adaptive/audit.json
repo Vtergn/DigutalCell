@@ -1,0 +1,122 @@
+{
+  "sampled_cells": 96,
+  "passed_cells": 96,
+  "electrical_beats_used_q50_q95_max": [
+    12.0,
+    20.0,
+    20.0
+  ],
+  "max_passed_calcium_cycle_drift": 0.009802467479730124,
+  "max_passed_land_cycle_drift": 0.005966432787240969,
+  "strocchi_active_peak_sanity": {
+    "1.0": {
+      "ours_n": 96,
+      "ours_tpeak_q05_q50_q95_kPa": [
+        0.15611404553055763,
+        4.575341701507568,
+        43.02117729187012
+      ],
+      "strocchi_n": 1584,
+      "strocchi_tpeak_q05_q50_q95_kPa": [
+        14.334600000000002,
+        41.519999999999996,
+        96.44621999999997
+      ],
+      "ours_fraction_inside_strocchi_q05_q95": 0.2916666666666667
+    },
+    "1.1": {
+      "ours_n": 96,
+      "ours_tpeak_q05_q50_q95_kPa": [
+        1.1482972204685211,
+        33.6121883392334,
+        134.97440338134766
+      ],
+      "strocchi_n": 1017,
+      "strocchi_tpeak_q05_q50_q95_kPa": [
+        19.645960000000002,
+        60.3583,
+        128.89279999999997
+      ],
+      "ours_fraction_inside_strocchi_q05_q95": 0.59375
+    }
+  },
+  "held_out_cell_ridge_pilot": {
+    "AP": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.19677939677371642,
+      "electrical_parameter_absolute_error": 0.06085863931032992,
+      "mechanical_parameter_absolute_error": 0.26473977550540967,
+      "parameter_r2": {
+        "ICaL": 0.9824846280243744,
+        "Jup": 0.9186564675529395,
+        "INaCa": 0.8110129407396198,
+        "IKr": 0.9296543499522516,
+        "Tref": -0.18596509937303085,
+        "ca50": -0.06202238332250998,
+        "TRPN_n": -0.12571352121733614,
+        "nperm": 0.007044474971632186,
+        "beta0": -0.36175939046021943,
+        "beta1": -0.13193231298674002,
+        "phi": -0.23696000858774569,
+        "perm50": -0.2294570754185432
+      }
+    },
+    "AP+Ca": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.18602883223928102,
+      "electrical_parameter_absolute_error": 0.036660183811375355,
+      "mechanical_parameter_absolute_error": 0.26071315645323384,
+      "parameter_r2": {
+        "ICaL": 0.990850999342443,
+        "Jup": 0.9351521563544485,
+        "INaCa": 0.9811023650997166,
+        "IKr": 0.9750911666721046,
+        "Tref": -0.17024678207812016,
+        "ca50": -0.008905000352579462,
+        "TRPN_n": -0.10089627474991314,
+        "nperm": -0.012407101413304922,
+        "beta0": -0.16202652558981745,
+        "beta1": -0.07191032009067277,
+        "phi": -0.07348047287134207,
+        "perm50": -0.24413388267860658
+      }
+    },
+    "AP+Ca+T1.0": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.17313492716676304,
+      "electrical_parameter_absolute_error": 0.036275204229761965,
+      "mechanical_parameter_absolute_error": 0.24156478863526362,
+      "parameter_r2": {
+        "ICaL": 0.9909097753665584,
+        "Jup": 0.9392360936162855,
+        "INaCa": 0.9812199524731305,
+        "IKr": 0.9755180271361386,
+        "Tref": -0.22272585209477236,
+        "ca50": 0.15629726151407453,
+        "TRPN_n": 0.285089063542343,
+        "nperm": 0.20035893724355325,
+        "beta0": -0.14617879178601578,
+        "beta1": -0.03327816467641176,
+        "phi": -0.06850726134971974,
+        "perm50": 0.008449453684200359
+      }
+    },
+    "AP+Ca+T1.0+T1.1": {
+      "mean_parameter_absolute_error_on_prior_scale": 0.1644295095889987,
+      "electrical_parameter_absolute_error": 0.03692958709396116,
+      "mechanical_parameter_absolute_error": 0.22817947083651746,
+      "parameter_r2": {
+        "ICaL": 0.9906602388450314,
+        "Jup": 0.9363311551929966,
+        "INaCa": 0.980340599758811,
+        "IKr": 0.9739735698787372,
+        "Tref": -0.20260080759492838,
+        "ca50": 0.39196781120577473,
+        "TRPN_n": 0.3134699472403014,
+        "nperm": 0.18960912607540337,
+        "beta0": -0.14574170527203378,
+        "beta1": 0.2624259809086742,
+        "phi": -0.166462252857438,
+        "perm50": 0.1246658503145982
+      }
+    }
+  },
+  "scope": "small-sample diagnostic, not posterior inference or counterfactual prediction"
+}

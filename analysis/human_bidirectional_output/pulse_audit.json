@@ -1,0 +1,82 @@
+[
+  {
+    "onset_ms": 150,
+    "trpn_feedback": false,
+    "SAC_feedback": false,
+    "delta_APD_ms": 0,
+    "max_abs_post_pulse_delta_Vm_mV": 0.00018468941119920146,
+    "max_abs_post_pulse_delta_Ca_uM": 5.313274198393003e-08,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 7.82166475191265
+  },
+  {
+    "onset_ms": 150,
+    "trpn_feedback": false,
+    "SAC_feedback": true,
+    "delta_APD_ms": 5,
+    "max_abs_post_pulse_delta_Vm_mV": 6.779096392629803,
+    "max_abs_post_pulse_delta_Ca_uM": 0.003906524266104022,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 7.82174666528035
+  },
+  {
+    "onset_ms": 150,
+    "trpn_feedback": true,
+    "SAC_feedback": false,
+    "delta_APD_ms": 1,
+    "max_abs_post_pulse_delta_Vm_mV": 1.8393518367590076,
+    "max_abs_post_pulse_delta_Ca_uM": 0.07601481328301202,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 26.5362308107507
+  },
+  {
+    "onset_ms": 150,
+    "trpn_feedback": true,
+    "SAC_feedback": true,
+    "delta_APD_ms": 7,
+    "max_abs_post_pulse_delta_Vm_mV": 9.351097849404894,
+    "max_abs_post_pulse_delta_Ca_uM": 0.075075402862257,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 26.5371090372852
+  },
+  {
+    "onset_ms": 600,
+    "trpn_feedback": false,
+    "SAC_feedback": false,
+    "delta_APD_ms": 0,
+    "max_abs_post_pulse_delta_Vm_mV": 4.79425068533601e-08,
+    "max_abs_post_pulse_delta_Ca_uM": 3.7244703016137137e-09,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 4.12105234171344
+  },
+  {
+    "onset_ms": 600,
+    "trpn_feedback": false,
+    "SAC_feedback": true,
+    "delta_APD_ms": 0,
+    "max_abs_post_pulse_delta_Vm_mV": 9.421703078005606,
+    "max_abs_post_pulse_delta_Ca_uM": 0.004762330411109891,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 4.12105234171344
+  },
+  {
+    "onset_ms": 600,
+    "trpn_feedback": true,
+    "SAC_feedback": false,
+    "delta_APD_ms": 0,
+    "max_abs_post_pulse_delta_Vm_mV": 0.06414485081369037,
+    "max_abs_post_pulse_delta_Ca_uM": 0.009178547796884498,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 15.7100234826959
+  },
+  {
+    "onset_ms": 600,
+    "trpn_feedback": true,
+    "SAC_feedback": true,
+    "delta_APD_ms": 0,
+    "max_abs_post_pulse_delta_Vm_mV": 9.268212672536308,
+    "max_abs_post_pulse_delta_Ca_uM": 0.011599553682883693,
+    "delta_Ca_peak_uM": 0.0,
+    "max_active_tension_kPa": 15.7100234826959
+  }
+]

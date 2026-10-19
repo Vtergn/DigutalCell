@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "model": "tau_m dm/dt=F-m; tau_g dq/dt=m-q; I=Gq",
+  "time_constants_ms": [
+    2.0,
+    10.0
+  ],
+  "force_protocol": "unit pulse from 5 to 85 ms, total window 350 ms, 1 ms grid",
+  "max_abs_current_difference_after_swapping_ms_pA": 2.842170943040401e-14,
+  "max_abs_intermediate_mechanics_difference": 0.5349847627990263,
+  "expected_intermediate_delta_chisq_at_sd_0p05": {
+    "1ms_sampling": 2131.82937595396,
+    "40ms_sampling": 0.5972679809896216
+  },
+  "40ms_sample_phase_sensitivity_for_80ms_pulse": {
+    "min_median_max_delta_chisq": [
+      0.2683700419299905,
+      13.316875706313809,
+      228.99130312263242
+    ],
+    "fraction_below_unit_expected_noise_separation": 0.175
+  },
+  "qualifier": "Sampling contrast depends on pulse phase and assumed noise; exact current equivalence follows from linear filter commutation for any input."
+}

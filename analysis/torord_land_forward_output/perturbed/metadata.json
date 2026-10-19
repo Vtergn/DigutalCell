@@ -1,0 +1,21 @@
+{
+  "model": "ToR-ORd endocardial + Land2016 intact",
+  "coupling": "one-way Ca to tension",
+  "bcl_ms": 1000,
+  "electrical_prepace_beats": 3,
+  "land_conditioning_beats": 4,
+  "stretches": [
+    1,
+    1.05,
+    1.1
+  ],
+  "cell_parameters": {
+    "ICaL_Multiplier": 0.8,
+    "Jup_Multiplier": 1.2
+  },
+  "land_beta": [
+    2.3,
+    -2.4
+  ],
+  "Cai_conversion": "mM x 1000 = uM"
+}

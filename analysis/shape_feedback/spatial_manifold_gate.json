@@ -1,0 +1,504 @@
+{
+  "source": "H\u00e4rtter et al. Zenodo 17564384, six independent cells",
+  "task": "12 observed frames -> next 10 normalized mean length and spatial dispersion frames",
+  "validation": "leave-one-stiffness-out; both cells and all LOIs sealed for each fold",
+  "alpha": 10.0,
+  "history_frames": 12,
+  "future_frames": 10,
+  "stride": 5,
+  "feature_sets": {
+    "mean": "mean length history + log substrate stiffness",
+    "pair": "mean + spatial length SD, velocity SD, adjacent squared difference",
+    "pair_duplicated": "mean + two copies of pair features; same added feature count as triple",
+    "triple": "pair + length skewness, velocity skewness, adjacent triplet centered product"
+  },
+  "by_target_load_cell": {
+    "mean": {
+      "5": {
+        "persistence": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.00994981029618651,
+            "mae_last_fraction": 0.017312118255432565
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.0047193486461343,
+            "mae_last_fraction": 0.00799908945984901
+          }
+        },
+        "mean": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.009628660147271194,
+            "mae_last_fraction": 0.018361924022586372
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.004512398569436602,
+            "mae_last_fraction": 0.008340114759830212
+          }
+        },
+        "pair": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.00992677376133444,
+            "mae_last_fraction": 0.01869690358361899
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.004388002348131554,
+            "mae_last_fraction": 0.008233724310571757
+          }
+        },
+        "pair_duplicated": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.009931907540433507,
+            "mae_last_fraction": 0.018702956981048444
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.004386414698023717,
+            "mae_last_fraction": 0.008231834181584645
+          }
+        },
+        "triple": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.010076525543644415,
+            "mae_last_fraction": 0.018882369825584198
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.004461742027791698,
+            "mae_last_fraction": 0.008314115076864723
+          }
+        }
+      },
+      "15": {
+        "persistence": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.005433595393738903,
+            "mae_last_fraction": 0.00950478254810808
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.0032132383338664347,
+            "mae_last_fraction": 0.005481176808020782
+          }
+        },
+        "mean": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.004970749458325777,
+            "mae_last_fraction": 0.009704989263431305
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.0029442789598849565,
+            "mae_last_fraction": 0.005547105095550552
+          }
+        },
+        "pair": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.005520298473630084,
+            "mae_last_fraction": 0.010758785981314998
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.00274097752403842,
+            "mae_last_fraction": 0.005144928953048361
+          }
+        },
+        "pair_duplicated": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.0055250088149644315,
+            "mae_last_fraction": 0.010766094339868472
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.002740268468211234,
+            "mae_last_fraction": 0.005142605509062779
+          }
+        },
+        "triple": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.00548681173364464,
+            "mae_last_fraction": 0.010670087483207769
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.0027692255242803034,
+            "mae_last_fraction": 0.005193439301325048
+          }
+        }
+      },
+      "85": {
+        "persistence": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.0045507631329370695,
+            "mae_last_fraction": 0.006397905280712624
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.003996141352272445,
+            "mae_last_fraction": 0.006565109002638685
+          }
+        },
+        "mean": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.0065217402945578155,
+            "mae_last_fraction": 0.011215474798969272
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.005023482351703846,
+            "mae_last_fraction": 0.009902052998732992
+          }
+        },
+        "pair": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.00683013851742813,
+            "mae_last_fraction": 0.011842695790455144
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.005805796188017113,
+            "mae_last_fraction": 0.011335265743198585
+          }
+        },
+        "pair_duplicated": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.006831042788804824,
+            "mae_last_fraction": 0.0118445074573849
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.005807714684238466,
+            "mae_last_fraction": 0.011339146128968365
+          }
+        },
+        "triple": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.006951508122836815,
+            "mae_last_fraction": 0.01200686726049158
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.005907349418672069,
+            "mae_last_fraction": 0.011492009087264436
+          }
+        }
+      }
+    },
+    "dispersion": {
+      "5": {
+        "persistence": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.006988492983316472,
+            "mae_last_fraction": 0.009287171934075647
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.00559173813848014,
+            "mae_last_fraction": 0.007719447189782698
+          }
+        },
+        "mean": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.00814325769187361,
+            "mae_last_fraction": 0.010546006768603677
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.006051982263044268,
+            "mae_last_fraction": 0.00829772511291715
+          }
+        },
+        "pair": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.009312319314942238,
+            "mae_last_fraction": 0.013553075975401441
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.005306820256624726,
+            "mae_last_fraction": 0.0074071560331716
+          }
+        },
+        "pair_duplicated": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.009315201259351829,
+            "mae_last_fraction": 0.013557781315494241
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.005306806383557053,
+            "mae_last_fraction": 0.007405432597675818
+          }
+        },
+        "triple": {
+          "load5_cell01": {
+            "n_windows": 1040,
+            "mae_fraction": 0.008536329075098683,
+            "mae_last_fraction": 0.012564137084841682
+          },
+          "load5_cell02": {
+            "n_windows": 824,
+            "mae_fraction": 0.0057891750022007,
+            "mae_last_fraction": 0.0074840635460794785
+          }
+        }
+      },
+      "15": {
+        "persistence": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.008078731003350652,
+            "mae_last_fraction": 0.011281408405290454
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.005194076998368598,
+            "mae_last_fraction": 0.007627240331445471
+          }
+        },
+        "mean": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.007967446822370676,
+            "mae_last_fraction": 0.010904530229596386
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.0051168231905309,
+            "mae_last_fraction": 0.007490758964074525
+          }
+        },
+        "pair": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.007199726401104272,
+            "mae_last_fraction": 0.010156836362062509
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.006071853265198422,
+            "mae_last_fraction": 0.009532594075008163
+          }
+        },
+        "pair_duplicated": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.007199341992311392,
+            "mae_last_fraction": 0.010156437461908004
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.006074882454582213,
+            "mae_last_fraction": 0.00953788289291125
+          }
+        },
+        "triple": {
+          "load15_cell01": {
+            "n_windows": 756,
+            "mae_fraction": 0.008272760715729032,
+            "mae_last_fraction": 0.011332547239828884
+          },
+          "load15_cell02": {
+            "n_windows": 960,
+            "mae_fraction": 0.006961006774540911,
+            "mae_last_fraction": 0.010376486345950306
+          }
+        }
+      },
+      "85": {
+        "persistence": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.017575070551229543,
+            "mae_last_fraction": 0.027784871228923556
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.011849288874394853,
+            "mae_last_fraction": 0.018028720390951155
+          }
+        },
+        "mean": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.01727518486407737,
+            "mae_last_fraction": 0.02735815125729001
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.011808602886384186,
+            "mae_last_fraction": 0.01790772608676232
+          }
+        },
+        "pair": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.015003273380797206,
+            "mae_last_fraction": 0.021605105495576624
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.011564812315763345,
+            "mae_last_fraction": 0.017620195053948594
+          }
+        },
+        "pair_duplicated": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.015001821462739805,
+            "mae_last_fraction": 0.021601762087244243
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.011562807433759236,
+            "mae_last_fraction": 0.017618358612906174
+          }
+        },
+        "triple": {
+          "load85_cell01": {
+            "n_windows": 820,
+            "mae_fraction": 0.014864980164402861,
+            "mae_last_fraction": 0.021653697788212033
+          },
+          "load85_cell02": {
+            "n_windows": 804,
+            "mae_fraction": 0.011460976148889494,
+            "mae_last_fraction": 0.017599758619304032
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "mean": {
+      "persistence": {
+        "cell_macro_mae_fraction": 0.005310482859189277,
+        "cell_macro_last_mae_fraction": 0.008876696892460291,
+        "cells_better_than_mean": 2
+      },
+      "mean": {
+        "cell_macro_mae_fraction": 0.005600218296863364,
+        "cell_macro_last_mae_fraction": 0.010511943489850116,
+        "cells_better_than_mean": null
+      },
+      "pair": {
+        "cell_macro_mae_fraction": 0.00586866446876329,
+        "cell_macro_last_mae_fraction": 0.01100205072703464,
+        "cells_better_than_mean": 2
+      },
+      "pair_duplicated": {
+        "cell_macro_mae_fraction": 0.00587039283244603,
+        "cell_macro_last_mae_fraction": 0.011004524099652933,
+        "cells_better_than_mean": 2
+      },
+      "triple": {
+        "cell_macro_mae_fraction": 0.005942193728478324,
+        "cell_macro_last_mae_fraction": 0.011093148005789625,
+        "cells_better_than_mean": 2
+      }
+    },
+    "dispersion": {
+      "persistence": {
+        "cell_macro_mae_fraction": 0.009212899758190044,
+        "cell_macro_last_mae_fraction": 0.013621476580078165,
+        "cells_better_than_mean": 2
+      },
+      "mean": {
+        "cell_macro_mae_fraction": 0.009393882953046835,
+        "cell_macro_last_mae_fraction": 0.013750816403207343,
+        "cells_better_than_mean": null
+      },
+      "pair": {
+        "cell_macro_mae_fraction": 0.009076467489071701,
+        "cell_macro_last_mae_fraction": 0.013312493832528157,
+        "cells_better_than_mean": 4
+      },
+      "pair_duplicated": {
+        "cell_macro_mae_fraction": 0.009076810164383588,
+        "cell_macro_last_mae_fraction": 0.013312942494689955,
+        "cells_better_than_mean": 4
+      },
+      "triple": {
+        "cell_macro_mae_fraction": 0.00931420464681028,
+        "cell_macro_last_mae_fraction": 0.013501781770702735,
+        "cells_better_than_mean": 3
+      }
+    }
+  },
+  "exploratory_cell_bootstrap_contrasts": {
+    "mean": {
+      "pair_vs_mean": {
+        "mean_gain": -0.00026844617189992516,
+        "cell_bootstrap95": [
+          -0.0005450395900281183,
+          9.861347696112828e-06
+        ],
+        "n_cells_improved": 2
+      },
+      "pair_vs_persistence": {
+        "mean_gain": -0.0005581816095740135,
+        "cell_bootstrap95": [
+          -0.0014096398421053606,
+          0.000238968009313193
+        ],
+        "n_cells_improved": 3
+      },
+      "triple_vs_pair_duplicated": {
+        "mean_gain": -7.180089603229362e-05,
+        "cell_bootstrap95": [
+          -0.00011752145644789705,
+          -1.8715835327288842e-05
+        ],
+        "n_cells_improved": 1
+      }
+    },
+    "dispersion": {
+      "pair_vs_mean": {
+        "mean_gain": 0.00031741546397513363,
+        "cell_bootstrap95": [
+          -0.0005598941806103119,
+          0.001261597970322037
+        ],
+        "n_cells_improved": 4
+      },
+      "pair_vs_persistence": {
+        "mean_gain": 0.00013643226911834146,
+        "cell_bootstrap95": [
+          -0.0011142221296008882,
+          0.0013441807843725534
+        ],
+        "n_cells_improved": 4
+      },
+      "triple_vs_pair_duplicated": {
+        "mean_gain": -0.0002373944824266922,
+        "cell_bootstrap95": [
+          -0.00074667793712082,
+          0.00028152746933457094
+        ],
+        "n_cells_improved": 3
+      }
+    }
+  },
+  "interpretation_limit": "No paired AP/Ca or controlled acute stretch; third moments do not establish causal 3-body interactions; n=6 independent cells"
+}

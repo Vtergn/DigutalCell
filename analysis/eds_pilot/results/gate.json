@@ -1,0 +1,273 @@
+{
+  "scope": "spherical single-shell + small-deformation reduced model, not original EDS reproduction",
+  "source": "Du et al. Acta Biomater 2025 doi:10.1016/j.actbio.2024.12.012 Eq4, Eq11",
+  "assumptions": {
+    "epsilon_medium": 78,
+    "noise_sd_dimensionless": 0.0075,
+    "cell_radius_um": 3.9,
+    "geometry": "sphere; constant field scale"
+  },
+  "nominal": {
+    "epsilon_mem": 4.7,
+    "sigma_cyto": 0.65,
+    "mu": 2.5
+  },
+  "full_spectrum_singular_values": [
+    204.85498123623663,
+    51.67139067595279,
+    6.8831581798907235
+  ],
+  "unknown_gain_augmented_singular_values": [
+    2.1568262652186934,
+    0.3899857112208412,
+    0.0516796255094847,
+    3.7758307045810787e-13
+  ],
+  "mu_gain_jacobian_symmetry_max_abs": 6.016517284379574e-10,
+  "designs": {
+    "full21": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "frequencies_mhz": [
+        0.1,
+        0.12847,
+        0.16505,
+        0.21204,
+        0.27241,
+        0.34996,
+        0.4496,
+        0.57761,
+        0.74206,
+        0.95333,
+        1.22474,
+        1.57344,
+        2.02141,
+        2.59692,
+        3.33629,
+        4.28616,
+        5.50647,
+        7.0742,
+        9.08829,
+        11.6758,
+        15.0
+      ],
+      "singular_values": [
+        204.85498123623663,
+        51.67139067595279,
+        6.8831581798907235
+      ],
+      "jacobian_condition": 29.761771541837337,
+      "median_absolute_log_error_by_parameter": {
+        "epsilon_mem": 0.01832330350355603,
+        "sigma_cyto": 0.09029378682918585,
+        "mu": 0.00789680901338221
+      },
+      "median_mean_absolute_log_error": 0.045279971571033556,
+      "p90_mean_absolute_log_error": 0.1378646023523195,
+      "mismatched_membrane_conductance_median_error": 0.07561775777130722,
+      "mismatched_membrane_conductance_p90_error": 0.41812611082965545,
+      "bound_hit_cells": 2
+    },
+    "log3": {
+      "indices": [
+        0,
+        10,
+        20
+      ],
+      "frequencies_mhz": [
+        0.1,
+        1.22474,
+        15.0
+      ],
+      "singular_values": [
+        69.8987709423329,
+        32.44313301493341,
+        4.450908453247708
+      ],
+      "jacobian_condition": 15.704382976317936,
+      "median_absolute_log_error_by_parameter": {
+        "epsilon_mem": 0.02684280598771821,
+        "sigma_cyto": 0.1621312641891512,
+        "mu": 0.02030499196669127
+      },
+      "median_mean_absolute_log_error": 0.07256317147134145,
+      "p90_mean_absolute_log_error": 0.23018113712583735,
+      "mismatched_membrane_conductance_median_error": 0.10211826583929157,
+      "mismatched_membrane_conductance_p90_error": 0.3239810066337074,
+      "bound_hit_cells": 5
+    },
+    "dopt3": {
+      "indices": [
+        0,
+        11,
+        20
+      ],
+      "frequencies_mhz": [
+        0.1,
+        1.57344,
+        15.0
+      ],
+      "singular_values": [
+        69.94080354245165,
+        32.51441871519156,
+        4.4413273870365435
+      ],
+      "jacobian_condition": 15.747725273889198,
+      "median_absolute_log_error_by_parameter": {
+        "epsilon_mem": 0.026530117878818357,
+        "sigma_cyto": 0.11238763960842982,
+        "mu": 0.018842030513449896
+      },
+      "median_mean_absolute_log_error": 0.05819639281645118,
+      "p90_mean_absolute_log_error": 0.2537724155322662,
+      "mismatched_membrane_conductance_median_error": 0.0882774332185067,
+      "mismatched_membrane_conductance_p90_error": 0.2683826794503618,
+      "bound_hit_cells": 4
+    },
+    "log4": {
+      "indices": [
+        0,
+        7,
+        13,
+        20
+      ],
+      "frequencies_mhz": [
+        0.1,
+        0.57761,
+        2.59692,
+        15.0
+      ],
+      "singular_values": [
+        84.18811500610497,
+        32.85085207047339,
+        5.020772307767003
+      ],
+      "jacobian_condition": 16.767961151289047,
+      "median_absolute_log_error_by_parameter": {
+        "epsilon_mem": 0.027968054716036854,
+        "sigma_cyto": 0.15715948366239785,
+        "mu": 0.0170080633107475
+      },
+      "median_mean_absolute_log_error": 0.06958911326202845,
+      "p90_mean_absolute_log_error": 0.18811504088533837,
+      "mismatched_membrane_conductance_median_error": 0.09706925860973942,
+      "mismatched_membrane_conductance_p90_error": 0.39837115553281016,
+      "bound_hit_cells": 5
+    },
+    "dopt4": {
+      "indices": [
+        0,
+        10,
+        11,
+        20
+      ],
+      "frequencies_mhz": [
+        0.1,
+        1.22474,
+        1.57344,
+        15.0
+      ],
+      "singular_values": [
+        84.60925544267658,
+        33.105502756320654,
+        5.097846525400006
+      ],
+      "jacobian_condition": 16.59705819331971,
+      "median_absolute_log_error_by_parameter": {
+        "epsilon_mem": 0.02370663377890069,
+        "sigma_cyto": 0.13181465614942975,
+        "mu": 0.011837092163494541
+      },
+      "median_mean_absolute_log_error": 0.05715330109718209,
+      "p90_mean_absolute_log_error": 0.14896093306071698,
+      "mismatched_membrane_conductance_median_error": 0.07778183314567708,
+      "mismatched_membrane_conductance_p90_error": 0.22414983743712733,
+      "bound_hit_cells": 3
+    },
+    "log5": {
+      "indices": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "frequencies_mhz": [
+        0.1,
+        0.34996,
+        1.22474,
+        4.28616,
+        15.0
+      ],
+      "singular_values": [
+        95.89831130235063,
+        33.23351077532365,
+        5.1970334938338025
+      ],
+      "jacobian_condition": 18.45250976660675,
+      "median_absolute_log_error_by_parameter": {
+        "epsilon_mem": 0.022165728179785366,
+        "sigma_cyto": 0.1477270576813156,
+        "mu": 0.012702467792587553
+      },
+      "median_mean_absolute_log_error": 0.059507387292539786,
+      "p90_mean_absolute_log_error": 0.16970072540907905,
+      "mismatched_membrane_conductance_median_error": 0.09140624420812549,
+      "mismatched_membrane_conductance_p90_error": 0.46110552020881374,
+      "bound_hit_cells": 3
+    },
+    "dopt5": {
+      "indices": [
+        0,
+        1,
+        10,
+        11,
+        20
+      ],
+      "frequencies_mhz": [
+        0.1,
+        0.12847,
+        1.22474,
+        1.57344,
+        15.0
+      ],
+      "singular_values": [
+        90.6689334414408,
+        41.190401254937214,
+        5.107594994948397
+      ],
+      "jacobian_condition": 17.75178602279855,
+      "median_absolute_log_error_by_parameter": {
+        "epsilon_mem": 0.01740015138428245,
+        "sigma_cyto": 0.12350933066973224,
+        "mu": 0.011519269186069532
+      },
+      "median_mean_absolute_log_error": 0.05264319489967813,
+      "p90_mean_absolute_log_error": 0.13611322373514512,
+      "mismatched_membrane_conductance_median_error": 0.07672157342414684,
+      "mismatched_membrane_conductance_p90_error": 0.24118968008817157,
+      "bound_hit_cells": 3
+    }
+  }
+}

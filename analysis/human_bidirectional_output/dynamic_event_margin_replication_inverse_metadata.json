@@ -1,0 +1,7 @@
+{
+  "n_development": 47,
+  "n_test_observable": 128,
+  "model": "PLS20 hard clip, frozen from earlier C3 gate",
+  "test_target_used": false,
+  "test_parameters_used": false
+}

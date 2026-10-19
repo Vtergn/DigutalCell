@@ -1,0 +1,16 @@
+{
+  "strict_solver_boundary_endpoints": [
+    {
+      "gain": 1.35,
+      "post_450_max_V_mV": -65.29513882204026,
+      "triggered_post_450_V_above_0": false,
+      "runtime_s": 49.60359190008603
+    },
+    {
+      "gain": 1.4,
+      "post_450_max_V_mV": 23.467146478391896,
+      "triggered_post_450_V_above_0": true,
+      "runtime_s": 56.86664040014148
+    }
+  ]
+}

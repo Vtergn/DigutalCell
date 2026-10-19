@@ -1,0 +1,197 @@
+{
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "cells_per_family_seed": 10,
+  "true_parameter_regimes": {
+    "17": "base prior",
+    "29": "F50 +15 nN; tau times 0.7",
+    "43": "F50 -15 nN; tau times 1.5"
+  },
+  "development_families": [
+    "single_sigmoid",
+    "dual_sigmoid",
+    "no_history",
+    "power_single",
+    "threshold_drift",
+    "rate_sensitive",
+    "gain_drift",
+    "power_dual"
+  ],
+  "unseen_families": [
+    "force_fatigue",
+    "mechanical_hysteresis",
+    "nonmonotone_rate",
+    "late_gain_switch"
+  ],
+  "models_available_to_designer": [
+    "single_sigmoid",
+    "dual_sigmoid",
+    "no_history",
+    "power_single"
+  ],
+  "sixth_anchor": [
+    330.0,
+    10.0,
+    800.0
+  ],
+  "seventh_blind_challenge": [
+    310.0,
+    10.0,
+    200.0
+  ],
+  "summary": {
+    "development": {
+      "monotonic": {
+        "median_error": 0.03656510547605951,
+        "mean_error": 0.04828438116632349,
+        "worst_family_mean_error": 0.07725187195463595,
+        "family_mean_errors": {
+          "single_sigmoid": 0.05015847570940332,
+          "dual_sigmoid": 0.036845754692693564,
+          "no_history": 0.03472574351636937,
+          "power_single": 0.039133896737541106,
+          "threshold_drift": 0.05178320728606283,
+          "rate_sensitive": 0.04208967540487894,
+          "gain_drift": 0.07725187195463595,
+          "power_dual": 0.05428642402900281
+        },
+        "mean_short_count": 1.0
+      },
+      "balanced_random": {
+        "median_error": 0.03722272227451559,
+        "mean_error": 0.04640129422467721,
+        "worst_family_mean_error": 0.07463413257826032,
+        "family_mean_errors": {
+          "single_sigmoid": 0.0431716113573152,
+          "dual_sigmoid": 0.029020247858965186,
+          "no_history": 0.03587115793470625,
+          "power_single": 0.049976544209730044,
+          "threshold_drift": 0.040344925877901824,
+          "rate_sensitive": 0.04434585903758226,
+          "gain_drift": 0.07463413257826032,
+          "power_dual": 0.0538458749429566
+        },
+        "mean_short_count": 1.4291666666666667
+      },
+      "static_maximin": {
+        "median_error": 0.03933279549678401,
+        "mean_error": 0.05271745915128926,
+        "worst_family_mean_error": 0.0774782721852865,
+        "family_mean_errors": {
+          "single_sigmoid": 0.054484992535738436,
+          "dual_sigmoid": 0.044238720770646056,
+          "no_history": 0.04585075624401149,
+          "power_single": 0.04763600005042366,
+          "threshold_drift": 0.054906948070822664,
+          "rate_sensitive": 0.03747694618081768,
+          "gain_drift": 0.0774782721852865,
+          "power_dual": 0.05966703717256761
+        },
+        "mean_short_count": 1.3333333333333333
+      },
+      "local_fisher": {
+        "median_error": 0.03985803785893022,
+        "mean_error": 0.04694889125719775,
+        "worst_family_mean_error": 0.08209194251465335,
+        "family_mean_errors": {
+          "single_sigmoid": 0.04200195852474686,
+          "dual_sigmoid": 0.035147102659175894,
+          "no_history": 0.0343727390974239,
+          "power_single": 0.036250629469453274,
+          "threshold_drift": 0.0492764057885406,
+          "rate_sensitive": 0.03873552813994647,
+          "gain_drift": 0.08209194251465335,
+          "power_dual": 0.05771482386364167
+        },
+        "mean_short_count": 1.0083333333333333
+      },
+      "predictive_minimax": {
+        "median_error": 0.042610744576321774,
+        "mean_error": 0.05117569333812497,
+        "worst_family_mean_error": 0.08346843222206596,
+        "family_mean_errors": {
+          "single_sigmoid": 0.04414361368164146,
+          "dual_sigmoid": 0.03582512352070319,
+          "no_history": 0.036157078135820024,
+          "power_single": 0.048828647503965414,
+          "threshold_drift": 0.05089303624379683,
+          "rate_sensitive": 0.05608512334497163,
+          "gain_drift": 0.08346843222206596,
+          "power_dual": 0.05400449205203524
+        },
+        "mean_short_count": 1.4125
+      }
+    },
+    "unseen": {
+      "monotonic": {
+        "median_error": 0.045631439924066874,
+        "mean_error": 0.05611647989768285,
+        "worst_family_mean_error": 0.08794113964656186,
+        "family_mean_errors": {
+          "force_fatigue": 0.08794113964656186,
+          "mechanical_hysteresis": 0.03586652259909318,
+          "nonmonotone_rate": 0.051588601423857815,
+          "late_gain_switch": 0.04906965592121853
+        },
+        "mean_short_count": 1.0
+      },
+      "balanced_random": {
+        "median_error": 0.05368474807704274,
+        "mean_error": 0.072671686151915,
+        "worst_family_mean_error": 0.1298915482430988,
+        "family_mean_errors": {
+          "force_fatigue": 0.1298915482430988,
+          "mechanical_hysteresis": 0.0488645049183657,
+          "nonmonotone_rate": 0.044516954890691206,
+          "late_gain_switch": 0.06741373655550432
+        },
+        "mean_short_count": 1.425
+      },
+      "static_maximin": {
+        "median_error": 0.05936457413928378,
+        "mean_error": 0.07444030139040506,
+        "worst_family_mean_error": 0.12968384710676342,
+        "family_mean_errors": {
+          "force_fatigue": 0.12968384710676342,
+          "mechanical_hysteresis": 0.05224341379618339,
+          "nonmonotone_rate": 0.06786800752846144,
+          "late_gain_switch": 0.04796593713021203
+        },
+        "mean_short_count": 1.3333333333333333
+      },
+      "local_fisher": {
+        "median_error": 0.048145192509599616,
+        "mean_error": 0.061444016967695,
+        "worst_family_mean_error": 0.10645671117441097,
+        "family_mean_errors": {
+          "force_fatigue": 0.10645671117441097,
+          "mechanical_hysteresis": 0.037274030638900765,
+          "nonmonotone_rate": 0.05012330998858161,
+          "late_gain_switch": 0.0519220160688867
+        },
+        "mean_short_count": 1.0
+      },
+      "predictive_minimax": {
+        "median_error": 0.057765247589720015,
+        "mean_error": 0.07439632330798002,
+        "worst_family_mean_error": 0.13324661592105067,
+        "family_mean_errors": {
+          "force_fatigue": 0.13324661592105067,
+          "mechanical_hysteresis": 0.040079001071871616,
+          "nonmonotone_rate": 0.05743142186194202,
+          "late_gain_switch": 0.06682825437705571
+        },
+        "mean_short_count": 1.3916666666666666
+      }
+    }
+  },
+  "go_no_go": {
+    "median_below_random": false,
+    "worst_family_below_random": false,
+    "median_below_maximin": true,
+    "worst_family_below_maximin": false
+  }
+}

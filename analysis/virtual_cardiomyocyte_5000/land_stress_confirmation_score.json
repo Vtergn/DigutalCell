@@ -1,0 +1,103 @@
+{
+  "n_fresh_test_cells": 64,
+  "cells_excluded_from_prior_confirmation_and_pilots": true,
+  "target_lambda": 1.125,
+  "calibration_lambdas": [
+    1.0,
+    1.1
+  ],
+  "pipeline_fixed_before_fresh_cell_selection": true,
+  "results": [
+    {
+      "condition": "low_noise",
+      "n_cells": 64,
+      "waveform_MAE_kPa": {
+        "direct_NN": 2.7893757820129395,
+        "direct_NN_noise_augmented": 2.70296573638916,
+        "linear": 3.243614435195923,
+        "refined_twin": 1.3841851949681843
+      },
+      "median_waveform_MAE_kPa": {
+        "direct_NN": 1.8115167617797852,
+        "direct_NN_noise_augmented": 2.0717732906341553,
+        "linear": 2.682162284851074,
+        "refined_twin": 1.1501975748172084
+      },
+      "peak_MAE_kPa": {
+        "direct_NN": 3.925600051879883,
+        "direct_NN_noise_augmented": 4.255251884460449,
+        "linear": 4.2219648361206055,
+        "refined_twin": 2.5416794463737524
+      },
+      "augmented_direct_minus_twin_mean_MAE_kPa": 1.3187806652868783,
+      "augmented_direct_minus_twin_95pct_paired_bootstrap_CI_kPa": [
+        0.8857726881895034,
+        1.7898018853927689
+      ],
+      "cells_twin_better_than_augmented_direct": 54,
+      "nonpositive_exitflag_count": 8,
+      "median_function_evaluations": 24.0
+    },
+    {
+      "condition": "high_noise",
+      "n_cells": 64,
+      "waveform_MAE_kPa": {
+        "direct_NN": 2.805309772491455,
+        "direct_NN_noise_augmented": 2.717841148376465,
+        "linear": 3.300568103790283,
+        "refined_twin": 1.4384409853330071
+      },
+      "median_waveform_MAE_kPa": {
+        "direct_NN": 1.7798129320144653,
+        "direct_NN_noise_augmented": 2.1309123039245605,
+        "linear": 2.7080671787261963,
+        "refined_twin": 1.1023451981787655
+      },
+      "peak_MAE_kPa": {
+        "direct_NN": 3.931384801864624,
+        "direct_NN_noise_augmented": 4.2980756759643555,
+        "linear": 3.675464391708374,
+        "refined_twin": 2.5343102281493954
+      },
+      "augmented_direct_minus_twin_mean_MAE_kPa": 1.2793999618777816,
+      "augmented_direct_minus_twin_95pct_paired_bootstrap_CI_kPa": [
+        0.8391287472465526,
+        1.7722420215262957
+      ],
+      "cells_twin_better_than_augmented_direct": 52,
+      "nonpositive_exitflag_count": 8,
+      "median_function_evaluations": 24.0
+    },
+    {
+      "condition": "drift_sparse",
+      "n_cells": 64,
+      "waveform_MAE_kPa": {
+        "direct_NN": 2.864809513092041,
+        "direct_NN_noise_augmented": 2.637033462524414,
+        "linear": 3.4610133171081543,
+        "refined_twin": 1.5493299802813918
+      },
+      "median_waveform_MAE_kPa": {
+        "direct_NN": 2.025543689727783,
+        "direct_NN_noise_augmented": 2.0177764892578125,
+        "linear": 3.0832362174987793,
+        "refined_twin": 1.335310762356646
+      },
+      "peak_MAE_kPa": {
+        "direct_NN": 3.992723226547241,
+        "direct_NN_noise_augmented": 4.129590034484863,
+        "linear": 4.540482044219971,
+        "refined_twin": 2.874204892772604
+      },
+      "augmented_direct_minus_twin_mean_MAE_kPa": 1.0877035101826995,
+      "augmented_direct_minus_twin_95pct_paired_bootstrap_CI_kPa": [
+        0.6434362757441171,
+        1.591975887948563
+      ],
+      "cells_twin_better_than_augmented_direct": 45,
+      "nonpositive_exitflag_count": 3,
+      "median_function_evaluations": 24.0
+    }
+  ],
+  "scope": "Same forward Land model as virtual truth; synthetic noise assumptions, not real measurement noise. Target withheld from MATLAB inputs."
+}

@@ -1,0 +1,26 @@
+{
+  "dates": [
+    "20200930",
+    "20201013",
+    "20201014"
+  ],
+  "responders_control": 14,
+  "responders_treated": 18,
+  "results": {
+    "log_work_threshold": {
+      "mean_of_date_median_CytoD_minus_DMSO": -0.5687855444188107,
+      "within_date_label_permutation_two_sided_p": 0.013199560014666177
+    },
+    "peak_delay_ms": {
+      "mean_of_date_median_CytoD_minus_DMSO": -0.26,
+      "within_date_label_permutation_two_sided_p": 0.5696810106329789
+    }
+  },
+  "responder_audit": {
+    "DMSO_responders_over_total": "14/19",
+    "CytoD_responders_over_total": "18/18",
+    "conditional_probability_all_five_nonresponders_in_DMSO": 0.03106508875739645,
+    "interpretation": "Exact one-sided label-exchange calculation within dates, conditional on observed totals; not a randomized causal test."
+  },
+  "limits": "Responder-only analysis; 3 dates; unequal achieved peak forces; CytoD is a broad actin perturbation and not FLNB KO."
+}

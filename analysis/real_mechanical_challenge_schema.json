@@ -1,0 +1,37 @@
+{
+  "version": "0.1",
+  "status": "proposed; no matching real measurements currently available",
+  "sample_table": {
+    "required_columns": [
+      "sample_id", "donor_or_line_id", "differentiation_batch",
+      "preparation_type", "maturity_annotation"
+    ],
+    "primary_independent_unit": "sample_id"
+  },
+  "condition_table": {
+    "required_columns": [
+      "sample_id", "condition_id", "role", "sequence_order",
+      "pacing_cycle_ms", "precondition_beats", "recovery_interval_s",
+      "control_mode", "target_load", "actual_load_unit",
+      "temperature_C", "drug_condition"
+    ],
+    "role_values": ["baseline", "calibration", "blind_challenge"],
+    "control_mode_values": ["length_clamp", "force_clamp", "afterload"]
+  },
+  "timeseries_table": {
+    "required_columns": [
+      "sample_id", "condition_id", "beat_index", "time_ms",
+      "actual_length_um", "actual_force_uN", "voltage_mV",
+      "free_cai_uM", "contractile_force_uN", "quality_flag"
+    ],
+    "rule": "Record actual time-aligned mechanical input and every available output; use null for truly unavailable modalities, not inferred values."
+  },
+  "analysis_lock": {
+    "calibration_access": ["baseline", "calibration"],
+    "held_out_role": "blind_challenge",
+    "split_unit": "sample_id",
+    "report_missing_repolarization": true,
+    "report_input_tracking_error": true,
+    "report_batch_and_order_effects": true
+  }
+}

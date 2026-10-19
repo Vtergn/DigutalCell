@@ -1,0 +1,223 @@
+{
+  "source": "ETH Nature Methods 2024 Source Data Fig. 2",
+  "conversion_mN_per_m_per_ns": 1.325,
+  "indentation": {
+    "n_cells": 5,
+    "cell_curves": [
+      {
+        "cell": 1,
+        "dose": [
+          2.0,
+          12.5,
+          25.0,
+          37.5,
+          50.0
+        ],
+        "lifetime_ns": [
+          4.247775801,
+          4.091512019,
+          4.164947248,
+          4.218318628,
+          4.245721354
+        ],
+        "slope_ns_per_dose": 0.0011202585928225257,
+        "endpoint_delta_ns": -0.002054447000000792
+      },
+      {
+        "cell": 2,
+        "dose": [
+          2.0,
+          12.5,
+          25.0,
+          37.5,
+          50.0
+        ],
+        "lifetime_ns": [
+          4.202570866,
+          4.283474432,
+          4.267854167,
+          4.310825504,
+          4.292417293
+        ],
+        "slope_ns_per_dose": 0.0016717840637238395,
+        "endpoint_delta_ns": 0.08984642699999945
+      },
+      {
+        "cell": 3,
+        "dose": [
+          2.0,
+          12.5,
+          25.0,
+          37.5,
+          50.0
+        ],
+        "lifetime_ns": [
+          4.247990909,
+          4.235411765,
+          4.302076191,
+          4.495915254,
+          4.580987288
+        ],
+        "slope_ns_per_dose": 0.00773161789090536,
+        "endpoint_delta_ns": 0.3329963789999999
+      },
+      {
+        "cell": 4,
+        "dose": [
+          2.0,
+          12.5,
+          25.0,
+          37.5,
+          50.0
+        ],
+        "lifetime_ns": [
+          4.181346774,
+          4.1135,
+          4.294013158,
+          4.476907408,
+          4.535844828
+        ],
+        "slope_ns_per_dose": 0.008956193375724897,
+        "endpoint_delta_ns": 0.35449805400000045
+      },
+      {
+        "cell": 5,
+        "dose": [
+          2.0,
+          12.5,
+          25.0,
+          37.5,
+          50.0
+        ],
+        "lifetime_ns": [
+          4.036096591,
+          4.234795455,
+          4.380575,
+          4.407115132,
+          4.371125
+        ],
+        "slope_ns_per_dose": 0.006843157875622582,
+        "endpoint_delta_ns": 0.3350284090000004
+      }
+    ],
+    "mean_cell_slope_ns_per_dose": 0.005264602359759842,
+    "slope_95pct_t_ci_ns_per_dose": [
+      0.0007752625055389645,
+      0.00975394221398072
+    ],
+    "positive_cell_slopes": 5,
+    "mean_paired_endpoint_delta_ns": 0.2220629643999999,
+    "endpoint_delta_95pct_t_ci_ns": [
+      0.01586046501372071,
+      0.42826546378627905
+    ],
+    "positive_endpoint_deltas": 4,
+    "mean_endpoint_delta_tension_mN_per_m": 0.29423342782999984,
+    "mean_slope_tension_mN_per_m_per_dose": 0.0069755981266817904
+  },
+  "aspiration": {
+    "n_cells": 4,
+    "cell_curves": [
+      {
+        "cell": 1,
+        "dose": [
+          0.0,
+          50.0,
+          100.0
+        ],
+        "lifetime_ns": [
+          4.30636695,
+          4.276200923,
+          4.466686669
+        ],
+        "slope_ns_per_dose": 0.0016031971900000023,
+        "endpoint_delta_ns": 0.1603197190000003
+      },
+      {
+        "cell": 2,
+        "dose": [
+          0.0,
+          50.0,
+          100.0
+        ],
+        "lifetime_ns": [
+          4.313726959,
+          4.550990327,
+          4.554286197
+        ],
+        "slope_ns_per_dose": 0.0024055923800000074,
+        "endpoint_delta_ns": 0.24055923799999945
+      },
+      {
+        "cell": 3,
+        "dose": [
+          0.0,
+          50.0,
+          100.0
+        ],
+        "lifetime_ns": [
+          4.183583556,
+          4.272210056,
+          4.26362801
+        ],
+        "slope_ns_per_dose": 0.0008004445399999911,
+        "endpoint_delta_ns": 0.08004445399999938
+      },
+      {
+        "cell": 4,
+        "dose": [
+          0.0,
+          50.0,
+          100.0
+        ],
+        "lifetime_ns": [
+          4.262203141,
+          4.384150482,
+          4.498746894
+        ],
+        "slope_ns_per_dose": 0.002365437530000004,
+        "endpoint_delta_ns": 0.2365437530000003
+      }
+    ],
+    "mean_cell_slope_ns_per_dose": 0.0017936679100000012,
+    "slope_95pct_t_ci_ns_per_dose": [
+      0.0005873626933298817,
+      0.002999973126670121
+    ],
+    "positive_cell_slopes": 4,
+    "mean_paired_endpoint_delta_ns": 0.17936679099999986,
+    "endpoint_delta_95pct_t_ci_ns": [
+      0.0587362693329887,
+      0.299997312667011
+    ],
+    "positive_endpoint_deltas": 4,
+    "mean_endpoint_delta_tension_mN_per_m": 0.2376609980749998,
+    "mean_slope_tension_mN_per_m_per_dose": 0.0023766099807500016
+  },
+  "indentation_unpaired_zero_force_cells": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "tiff_qc": {
+    "frames": 147,
+    "cells_by_group": {
+      "Indentation": [
+        "Cell34",
+        "Cell37",
+        "Cell40",
+        "Cell44",
+        "Cell47"
+      ],
+      "Aspiration": [
+        "Cell36",
+        "Cell39",
+        "Cell42",
+        "Cell46"
+      ]
+    },
+    "note": "Channel identities and physical units are not encoded in exported XML; TIFF review is QC only."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "cohort": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_256\\cohort.mat",
+  "model": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_256\\cohort_posterior\\model.pt",
+  "model_sha256": "607d3c8a7654ab60e792ae0ad2b25437efeca2897425739623e8a3aa185ad32f",
+  "target_lambda": 1.125,
+  "test_cell_indices_zero_based": [
+    31,
+    133
+  ],
+  "draws_per_cell_per_mode": 2,
+  "modes": [
+    2,
+    3
+  ],
+  "note": "Parameter draws only; run torord_land_given_theta for true forward prediction."
+}

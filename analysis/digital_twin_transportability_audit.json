@@ -1,0 +1,43 @@
+{
+  "data_use": "34 Duke responding Piezo1/Piezo2 cells supply peak-force support only; all currents are synthetic",
+  "reference_parameters": {
+    "T0": 1.3,
+    "lam": 0.007,
+    "T50": 2.7,
+    "k": 0.7,
+    "G": 200.0
+  },
+  "gauge_scale_range": [
+    0.5,
+    2.0
+  ],
+  "gauge_offset_range_mN_m": [
+    -0.5,
+    0.5
+  ],
+  "same_force_current_max_abs_difference_pA": 1.1368683772161603e-13,
+  "at_force_200nN": {
+    "baseline_current_pA": 100.0,
+    "force_plus_50nN_prediction_range_pA": [
+      124.49186624037085,
+      124.49186624037097
+    ],
+    "plus_0p3mN_m_tension_prediction_range_pA": [
+      110.67347455993057,
+      140.41267397578594
+    ]
+  },
+  "on_34_observed_peak_force_inputs": {
+    "peak_force_median_nN": 396.6444308,
+    "delta_tension_prediction_spread_median_pA": 9.111100577486553,
+    "delta_tension_prediction_spread_q25_q75_pA": [
+      5.054668765689527,
+      27.691914094456347
+    ]
+  },
+  "absolute_tension_clamp_3mN_m_prediction_range_pA": [
+    22.380997033465693,
+    199.57116637100543
+  ],
+  "scope": "Exact non-identifiability is algebraic; magnitudes depend on chosen synthetic parameters and intervention. This is not a fitted biological effect."
+}

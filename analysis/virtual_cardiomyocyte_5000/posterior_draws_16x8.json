@@ -1,0 +1,30 @@
+{
+  "cohort": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\merged_cohort.h5",
+  "model": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\merged_cohort_posterior\\model.pt",
+  "model_sha256": "7c967b70f6cd74609dca39a0417b74ac6410b45ab640baf79ce0f442f088eb02",
+  "target_lambda": 1.125,
+  "test_cell_indices_zero_based": [
+    227,
+    273,
+    383,
+    996,
+    1175,
+    1556,
+    1587,
+    2095,
+    2388,
+    2428,
+    2612,
+    2904,
+    3087,
+    3923,
+    4442,
+    4635
+  ],
+  "draws_per_cell_per_mode": 8,
+  "modes": [
+    2,
+    3
+  ],
+  "note": "Parameter draws only; run torord_land_given_theta for true forward prediction."
+}

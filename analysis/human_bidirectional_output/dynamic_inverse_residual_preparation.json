@@ -1,0 +1,42 @@
+{
+  "shared_beta": 6.350453512422028,
+  "rule": "if individual C1/C2 slope > half shared: 75% shared + 25% individual; else 0",
+  "summary": [
+    {
+      "observation_kind": 0,
+      "saturation_confusion_present_only": [
+        [
+          38,
+          7
+        ],
+        [
+          8,
+          37
+        ]
+      ],
+      "active_fraction_by_form": [
+        0.15555555555555556,
+        0.8222222222222222,
+        0.0
+      ]
+    },
+    {
+      "observation_kind": 1,
+      "saturation_confusion_present_only": [
+        [
+          44,
+          1
+        ],
+        [
+          7,
+          38
+        ]
+      ],
+      "active_fraction_by_form": [
+        0.022222222222222223,
+        0.8444444444444444,
+        0.0
+      ]
+    }
+  ]
+}

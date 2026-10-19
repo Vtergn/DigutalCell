@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "clean",
+    "mean_waveform_MAE_kPa": {
+      "clean_trained": 2.170351266860962,
+      "noise_augmented": 2.0123655796051025,
+      "linear": 2.7668075561523438
+    }
+  },
+  {
+    "condition": "low_noise",
+    "mean_waveform_MAE_kPa": {
+      "clean_trained": 2.172844409942627,
+      "noise_augmented": 2.0116772651672363,
+      "linear": 2.776259660720825
+    }
+  },
+  {
+    "condition": "high_noise",
+    "mean_waveform_MAE_kPa": {
+      "clean_trained": 2.176328420639038,
+      "noise_augmented": 2.008622407913208,
+      "linear": 2.8435020446777344
+    }
+  },
+  {
+    "condition": "drift_sparse",
+    "mean_waveform_MAE_kPa": {
+      "clean_trained": 2.336965560913086,
+      "noise_augmented": 2.1639277935028076,
+      "linear": 2.804295778274536
+    }
+  }
+]

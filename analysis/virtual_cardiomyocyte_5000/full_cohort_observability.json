@@ -1,0 +1,138 @@
+{
+  "n_cells": 5000,
+  "train_n": 3496,
+  "validation_n": 744,
+  "test_n": 760,
+  "shards": [
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_01",
+      "seed": 20260929.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    },
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_02",
+      "seed": 20260930.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    },
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_03",
+      "seed": 20260931.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    },
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_04",
+      "seed": 20260932.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    },
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_05",
+      "seed": 20260933.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    },
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_06",
+      "seed": 20260934.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    },
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_07",
+      "seed": 20260935.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    },
+    {
+      "folder": "D:\\MyProjects\\AI\u7ec6\u80de\\analysis\\virtual_cardiomyocyte_5000\\shard_08",
+      "seed": 20260936.0,
+      "sampled": 625,
+      "passed": 625,
+      "failed_local_cell_ids": []
+    }
+  ],
+  "modalities": {
+    "AP": {
+      "validation_selected_alpha": 1.0,
+      "test_all_parameter_MAE_prior_scaled": 0.1717933179301612,
+      "test_electrical_MAE_prior_scaled": 0.013809656013326304,
+      "test_mechanical_MAE_prior_scaled": 0.2507851488885786,
+      "test_beta0_R2": -0.01462177813536547,
+      "test_beta1_R2": -0.012523884109859829,
+      "test_beta0_MAE_prior_scaled": 0.2530398668631456,
+      "test_beta1_MAE_prior_scaled": 0.24480205566711105
+    },
+    "AP+Ca": {
+      "validation_selected_alpha": 1.0,
+      "test_all_parameter_MAE_prior_scaled": 0.17038333045528942,
+      "test_electrical_MAE_prior_scaled": 0.00889567576649077,
+      "test_mechanical_MAE_prior_scaled": 0.25112715779968875,
+      "test_beta0_R2": -0.0194393812909186,
+      "test_beta1_R2": -0.016206626873513486,
+      "test_beta0_MAE_prior_scaled": 0.25338222813458144,
+      "test_beta1_MAE_prior_scaled": 0.24501325218169587
+    },
+    "AP+Ca+T1.0": {
+      "validation_selected_alpha": 1.0,
+      "test_all_parameter_MAE_prior_scaled": 0.15028195275641978,
+      "test_electrical_MAE_prior_scaled": 0.00886101808180714,
+      "test_mechanical_MAE_prior_scaled": 0.22099242009372613,
+      "test_beta0_R2": -0.02225890733775482,
+      "test_beta1_R2": -0.022188122911390717,
+      "test_beta0_MAE_prior_scaled": 0.25349682037704185,
+      "test_beta1_MAE_prior_scaled": 0.24586281160292592,
+      "all_parameter_MAE_reduction_vs_AP_Ca": 0.020101377698869664,
+      "paired_bootstrap_95pct_CI": [
+        0.018713949178833574,
+        0.0216490383902786
+      ],
+      "mechanical_MAE_reduction_vs_AP_Ca": 0.030134737705962675,
+      "mechanical_paired_bootstrap_95pct_CI": [
+        0.028051794578148728,
+        0.03245910050853634
+      ]
+    },
+    "AP+Ca+T1.0+T1.1": {
+      "validation_selected_alpha": 1.0,
+      "test_all_parameter_MAE_prior_scaled": 0.13495083448307066,
+      "test_electrical_MAE_prior_scaled": 0.008853090915040367,
+      "test_mechanical_MAE_prior_scaled": 0.19799970626708585,
+      "test_beta0_R2": 0.024872940033722646,
+      "test_beta1_R2": 0.5614106816392328,
+      "test_beta0_MAE_prior_scaled": 0.24487612401475792,
+      "test_beta1_MAE_prior_scaled": 0.1525933770215476,
+      "all_parameter_MAE_reduction_vs_AP_Ca": 0.035432495972218786,
+      "paired_bootstrap_95pct_CI": [
+        0.033600145398525155,
+        0.03736799254133226
+      ],
+      "mechanical_MAE_reduction_vs_AP_Ca": 0.05312745153260297,
+      "mechanical_paired_bootstrap_95pct_CI": [
+        0.05037378527655801,
+        0.056029100454868835
+      ]
+    }
+  },
+  "active_peak_kPa": {
+    "1.0": [
+      2.4387383580207826,
+      18.162273406982422,
+      50.30904464721681
+    ],
+    "1.1": [
+      12.00495958328247,
+      50.78128433227539,
+      99.09575767517092
+    ]
+  }
+}

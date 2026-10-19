@@ -1,0 +1,207 @@
+{
+  "synthetic": {
+    "PCA4": {
+      "held_base_cells": 60,
+      "shape_rmse": 0.17075583338737488,
+      "factor_alignment_mean_abs_spearman": 0.3711584982439792,
+      "mean_dominant_fraction": 0.6767386794090271,
+      "dominant_latent_indices_by_intervention": [
+        1,
+        1,
+        0
+      ],
+      "distinct_axes_used": 2
+    },
+    "plain_AE4": {
+      "held_base_cells": 60,
+      "shape_rmse": 0.23712866008281708,
+      "factor_alignment_mean_abs_spearman": 0.4464787093480123,
+      "mean_dominant_fraction": 0.3740464746952057,
+      "dominant_latent_indices_by_intervention": [
+        2,
+        0,
+        0
+      ],
+      "distinct_axes_used": 2
+    },
+    "paired_sparse_orth_AE4": {
+      "held_base_cells": 60,
+      "shape_rmse": 0.2291274070739746,
+      "factor_alignment_mean_abs_spearman": 0.4207579959707835,
+      "mean_dominant_fraction": 0.7268109321594238,
+      "dominant_latent_indices_by_intervention": [
+        2,
+        2,
+        1
+      ],
+      "distinct_axes_used": 2
+    },
+    "conditional_PCA4": {
+      "held_base_cells": 60,
+      "shape_rmse": 0.1702965348958969,
+      "factor_alignment_mean_abs_spearman": 0.4130207306753015,
+      "mean_dominant_fraction": 0.7122445106506348,
+      "dominant_latent_indices_by_intervention": [
+        1,
+        1,
+        0
+      ],
+      "distinct_axes_used": 2
+    },
+    "conditional_AE4": {
+      "held_base_cells": 60,
+      "shape_rmse": 0.25493139028549194,
+      "factor_alignment_mean_abs_spearman": 0.53185475342901,
+      "mean_dominant_fraction": 0.5017455220222473,
+      "dominant_latent_indices_by_intervention": [
+        2,
+        2,
+        2
+      ],
+      "distinct_axes_used": 1
+    },
+    "conditional_sparse_orth_AE4": {
+      "held_base_cells": 60,
+      "shape_rmse": 0.24086609482765198,
+      "factor_alignment_mean_abs_spearman": 0.5416357666671974,
+      "mean_dominant_fraction": 0.9082930088043213,
+      "dominant_latent_indices_by_intervention": [
+        3,
+        3,
+        2
+      ],
+      "distinct_axes_used": 2
+    }
+  },
+  "conditional_synthetic_three_seed_check": [
+    {
+      "seed": 20260928,
+      "intervention_constraint": 0,
+      "shape_rmse": 0.25493139028549194,
+      "factor_alignment_mean_abs_spearman": 0.53185475342901,
+      "mean_dominant_fraction": 0.5017455220222473,
+      "dominant_latent_indices_by_intervention": [
+        2,
+        2,
+        2
+      ],
+      "distinct_axes_used": 1
+    },
+    {
+      "seed": 20260928,
+      "intervention_constraint": 1,
+      "shape_rmse": 0.24086609482765198,
+      "factor_alignment_mean_abs_spearman": 0.5416357666671974,
+      "mean_dominant_fraction": 0.9082930088043213,
+      "dominant_latent_indices_by_intervention": [
+        3,
+        3,
+        2
+      ],
+      "distinct_axes_used": 2
+    },
+    {
+      "seed": 20260929,
+      "intervention_constraint": 0,
+      "shape_rmse": 0.24018827080726624,
+      "factor_alignment_mean_abs_spearman": 0.5545634327638642,
+      "mean_dominant_fraction": 0.41806307435035706,
+      "dominant_latent_indices_by_intervention": [
+        0,
+        0,
+        2
+      ],
+      "distinct_axes_used": 2
+    },
+    {
+      "seed": 20260929,
+      "intervention_constraint": 1,
+      "shape_rmse": 0.24186258018016815,
+      "factor_alignment_mean_abs_spearman": 0.4307890455154159,
+      "mean_dominant_fraction": 0.7166447639465332,
+      "dominant_latent_indices_by_intervention": [
+        0,
+        1,
+        2
+      ],
+      "distinct_axes_used": 3
+    },
+    {
+      "seed": 20260930,
+      "intervention_constraint": 0,
+      "shape_rmse": 0.26682448387145996,
+      "factor_alignment_mean_abs_spearman": 0.5148333907910299,
+      "mean_dominant_fraction": 0.3911387622356415,
+      "dominant_latent_indices_by_intervention": [
+        3,
+        3,
+        2
+      ],
+      "distinct_axes_used": 2
+    },
+    {
+      "seed": 20260930,
+      "intervention_constraint": 1,
+      "shape_rmse": 0.25069335103034973,
+      "factor_alignment_mean_abs_spearman": 0.42554026222316804,
+      "mean_dominant_fraction": 0.6302154660224915,
+      "dominant_latent_indices_by_intervention": [
+        0,
+        3,
+        1
+      ],
+      "distinct_axes_used": 3
+    }
+  ],
+  "real_WT_leave_whole_date_out": {
+    "PCA4": {
+      "WT_mp1": {
+        "dates": 8,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.05657635103755941
+      },
+      "WT_mp2": {
+        "dates": 3,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.044891755060396256
+      }
+    },
+    "plain_AE4": {
+      "WT_mp1": {
+        "dates": 8,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.05756005984342967
+      },
+      "WT_mp2": {
+        "dates": 3,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.04534226809110906
+      }
+    },
+    "conditional_PCA4": {
+      "WT_mp1": {
+        "dates": 8,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.0707260511815548
+      },
+      "WT_mp2": {
+        "dates": 3,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.0499072408148398
+      }
+    },
+    "conditional_AE4": {
+      "WT_mp1": {
+        "dates": 8,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.10801583650754765
+      },
+      "WT_mp2": {
+        "dates": 3,
+        "cells": 11,
+        "mean_of_date_mean_cell_rmse": 0.07085427245021694
+      }
+    }
+  },
+  "limits": "Synthetic pairs exist by construction; Duke perturbations are unpaired, CytoD is confounded with cell-number block, and WT channel is confounded with date. The autoencoder sees observed current, so held-date reconstruction does not show future prediction or biological factor identification."
+}

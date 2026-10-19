@@ -1,0 +1,27 @@
+{
+  "model": "Buonocunto ToR-ORd+SAC, author source",
+  "source": "https://github.com/melaniabuonoc/Electrophysiological-effects-of-stretch-activated-ion-channels",
+  "prepace_beats": 120,
+  "convergence_criterion_met": true,
+  "prepace_last10_apd_range_ms": 1,
+  "prepace_last10_ca_relative_range": 0.00058447430704549827,
+  "lambda": [
+    1,
+    1.05,
+    1.1
+  ],
+  "stretch_onset_ms": 600,
+  "stretch_offset_ms": 610,
+  "par": [
+    0.2203,
+    10.3203,
+    12.8208,
+    1.411,
+    0.8742
+  ],
+  "isac_factor": [
+    4.47,
+    0.001248
+  ],
+  "note": "Published human-ventricular ionic SAC module; no Land feedback or human-cell calibration"
+}

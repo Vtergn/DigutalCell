@@ -1,0 +1,261 @@
+{
+  "seed": 20260928,
+  "synthetic_cells": 50,
+  "pulses_per_cell": 6,
+  "parameters": "effective F50, delay, recovery tau, gain",
+  "summary_median": {
+    "in_model": {
+      "duke_like": {
+        "f50_abs_error_nN": 6.228394369416193,
+        "delay_abs_error_ms": 0.6971247619810024,
+        "tau_abs_log_error": 0.5285363350096683,
+        "gain_abs_log_error": 0.009824228249005983,
+        "challenge_peak_abs_error": 0.09807320317297408,
+        "challenge_timing_abs_error_ms": 0.3476071848010349,
+        "force_span_nN": 125.0,
+        "speed_levels": 1.0,
+        "interval_levels": 1.0
+      },
+      "random": {
+        "f50_abs_error_nN": 3.832184838156934,
+        "delay_abs_error_ms": 0.4755827736565599,
+        "tau_abs_log_error": 0.06791980270605569,
+        "gain_abs_log_error": 0.01676744971628171,
+        "challenge_peak_abs_error": 0.013181333916046145,
+        "challenge_timing_abs_error_ms": 0.27449979452115336,
+        "force_span_nN": 180.0,
+        "speed_levels": 3.0,
+        "interval_levels": 3.0
+      },
+      "information_optimal": {
+        "f50_abs_error_nN": 2.1917829790802728,
+        "delay_abs_error_ms": 0.46142586501274785,
+        "tau_abs_log_error": 0.059343778972123395,
+        "gain_abs_log_error": 0.018770073257010536,
+        "challenge_peak_abs_error": 0.010050293108571556,
+        "challenge_timing_abs_error_ms": 0.23878518353368428,
+        "force_span_nN": 180.0,
+        "speed_levels": 2.0,
+        "interval_levels": 2.0
+      }
+    },
+    "misspecified": {
+      "duke_like": {
+        "f50_abs_error_nN": 11.577896293448987,
+        "delay_abs_error_ms": 1.1053296311241847,
+        "tau_abs_log_error": 0.5285363290466272,
+        "gain_abs_log_error": 0.024015303400619456,
+        "challenge_peak_abs_error": 0.11883925011694238,
+        "challenge_timing_abs_error_ms": 0.4115005907885987,
+        "force_span_nN": 125.0,
+        "speed_levels": 1.0,
+        "interval_levels": 1.0
+      },
+      "random": {
+        "f50_abs_error_nN": 5.687286876541492,
+        "delay_abs_error_ms": 0.8186572902207052,
+        "tau_abs_log_error": 0.3183383904148447,
+        "gain_abs_log_error": 0.0366153969785762,
+        "challenge_peak_abs_error": 0.016730766411186343,
+        "challenge_timing_abs_error_ms": 0.25168759179063827,
+        "force_span_nN": 180.0,
+        "speed_levels": 3.0,
+        "interval_levels": 3.0
+      },
+      "information_optimal": {
+        "f50_abs_error_nN": 4.052056121976989,
+        "delay_abs_error_ms": 0.5507844376856648,
+        "tau_abs_log_error": 0.34421375143430044,
+        "gain_abs_log_error": 0.02914738233223072,
+        "challenge_peak_abs_error": 0.012243397210076279,
+        "challenge_timing_abs_error_ms": 0.19041397625494305,
+        "force_span_nN": 180.0,
+        "speed_levels": 2.0,
+        "interval_levels": 2.0
+      }
+    }
+  },
+  "optimal_minus_reference_paired": {
+    "in_model": {
+      "duke_like": {
+        "f50_abs_error_nN": {
+          "paired_median_difference": -2.140725981294352,
+          "cell_bootstrap_95pct": [
+            -6.11599067977113,
+            -0.41280311925328306
+          ]
+        },
+        "delay_abs_error_ms": {
+          "paired_median_difference": -0.10539408974522058,
+          "cell_bootstrap_95pct": [
+            -0.5769849191378295,
+            0.023665883175822966
+          ]
+        },
+        "tau_abs_log_error": {
+          "paired_median_difference": -0.44238949600692345,
+          "cell_bootstrap_95pct": [
+            -0.635605845721352,
+            -0.32829799315461194
+          ]
+        },
+        "gain_abs_log_error": {
+          "paired_median_difference": 0.005771760841149304,
+          "cell_bootstrap_95pct": [
+            0.002712351689140302,
+            0.013292216853904804
+          ]
+        },
+        "challenge_peak_abs_error": {
+          "paired_median_difference": -0.09355104811981951,
+          "cell_bootstrap_95pct": [
+            -0.11404631573534649,
+            -0.06414658616929234
+          ]
+        },
+        "challenge_timing_abs_error_ms": {
+          "paired_median_difference": -0.09153930252608689,
+          "cell_bootstrap_95pct": [
+            -0.15327308587412247,
+            -0.01712742423970846
+          ]
+        }
+      },
+      "random": {
+        "f50_abs_error_nN": {
+          "paired_median_difference": -1.033963345036284,
+          "cell_bootstrap_95pct": [
+            -2.0040925606969466,
+            0.22173210378261388
+          ]
+        },
+        "delay_abs_error_ms": {
+          "paired_median_difference": -0.08966332953778033,
+          "cell_bootstrap_95pct": [
+            -0.2501564050260381,
+            0.2139804504699918
+          ]
+        },
+        "tau_abs_log_error": {
+          "paired_median_difference": -0.006786822675944215,
+          "cell_bootstrap_95pct": [
+            -0.022556616146782726,
+            0.009199320775405731
+          ]
+        },
+        "gain_abs_log_error": {
+          "paired_median_difference": 0.0012828712964594452,
+          "cell_bootstrap_95pct": [
+            -0.0008491226729521496,
+            0.006050220994758382
+          ]
+        },
+        "challenge_peak_abs_error": {
+          "paired_median_difference": -0.0010907748740581202,
+          "cell_bootstrap_95pct": [
+            -0.0025447112212388934,
+            0.000262236656004472
+          ]
+        },
+        "challenge_timing_abs_error_ms": {
+          "paired_median_difference": -0.01315020519387744,
+          "cell_bootstrap_95pct": [
+            -0.038812525124008346,
+            0.02219180544945587
+          ]
+        }
+      }
+    },
+    "misspecified": {
+      "duke_like": {
+        "f50_abs_error_nN": {
+          "paired_median_difference": -7.013539739252735,
+          "cell_bootstrap_95pct": [
+            -10.197115151226967,
+            -2.924394996761349
+          ]
+        },
+        "delay_abs_error_ms": {
+          "paired_median_difference": -0.5176879538676535,
+          "cell_bootstrap_95pct": [
+            -0.8221061772512241,
+            -0.19474851269294247
+          ]
+        },
+        "tau_abs_log_error": {
+          "paired_median_difference": -0.25329077061771743,
+          "cell_bootstrap_95pct": [
+            -0.37358653065109,
+            -0.05419302136307854
+          ]
+        },
+        "gain_abs_log_error": {
+          "paired_median_difference": 0.00397187789844132,
+          "cell_bootstrap_95pct": [
+            -0.00515021020295104,
+            0.012319207064652605
+          ]
+        },
+        "challenge_peak_abs_error": {
+          "paired_median_difference": -0.09565951615586374,
+          "cell_bootstrap_95pct": [
+            -0.11902237225525591,
+            -0.0781183773735088
+          ]
+        },
+        "challenge_timing_abs_error_ms": {
+          "paired_median_difference": -0.21787470925620056,
+          "cell_bootstrap_95pct": [
+            -0.39201821440479634,
+            -0.07711992534360768
+          ]
+        }
+      },
+      "random": {
+        "f50_abs_error_nN": {
+          "paired_median_difference": -1.3735166993592998,
+          "cell_bootstrap_95pct": [
+            -3.0931175457646134,
+            0.8121473901132816
+          ]
+        },
+        "delay_abs_error_ms": {
+          "paired_median_difference": -0.10616704444854319,
+          "cell_bootstrap_95pct": [
+            -0.26152499757979686,
+            0.1601900576641495
+          ]
+        },
+        "tau_abs_log_error": {
+          "paired_median_difference": 0.05173477022933648,
+          "cell_bootstrap_95pct": [
+            0.03435069375350874,
+            0.07012145720401808
+          ]
+        },
+        "gain_abs_log_error": {
+          "paired_median_difference": -0.004530028832364752,
+          "cell_bootstrap_95pct": [
+            -0.012767918462551906,
+            0.001545559787274324
+          ]
+        },
+        "challenge_peak_abs_error": {
+          "paired_median_difference": -0.0036737363485271485,
+          "cell_bootstrap_95pct": [
+            -0.006743505954266593,
+            -0.000701609477587406
+          ]
+        },
+        "challenge_timing_abs_error_ms": {
+          "paired_median_difference": -0.023511063560778922,
+          "cell_bootstrap_95pct": [
+            -0.10928212563787554,
+            0.019760391807151743
+          ]
+        }
+      }
+    }
+  },
+  "limitation": "A stylized simulator with Gaussian peak/time noise. One scenario matches the fitted model. The second generates data with a 35-nN sigmoid width and a two-timescale recovery kernel while fitting the simpler 25-nN single-exponential model. Neither scenario is calibrated to Duke or PIEZO physiology. The misspecified scenario challenges transfer but remains synthetic."
+}

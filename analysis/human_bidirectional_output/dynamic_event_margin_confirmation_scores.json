@@ -1,0 +1,565 @@
+{
+  "seed": 20261021,
+  "n_source": 64,
+  "n_truth_complete": 44,
+  "n_native_success": 44,
+  "n_common": 44,
+  "n_tail_gt5": 2,
+  "n_truth_valid_native_failed": 0,
+  "n_truth_failed_native_valid": 0,
+  "v_mae_mean": 1.638691675172494,
+  "v_mae_median": 0.13276394471427463,
+  "v_mae_cvar90": 13.119584057830423,
+  "scores": {
+    "local_waveform_sensitivity": {
+      "AUROC": 1.0,
+      "average_precision": 1.0,
+      "top_decile_recall": 1.0,
+      "spearman_rho_with_error": 0.4900634249471459,
+      "n_local_QC_failure": 0,
+      "bootstrap_AUROC_ci95": [
+        0.9999999999999999,
+        1.0
+      ],
+      "bootstrap_AP_ci95": [
+        1.0,
+        1.0
+      ],
+      "bootstrap_valid_resamples": 2597
+    },
+    "bound_count": {
+      "AUROC": 0.5773809523809523,
+      "average_precision": 0.07272727272727272,
+      "top_decile_recall": 0.0,
+      "spearman_rho_with_error": 0.2819747925299245,
+      "n_local_QC_failure": 0,
+      "bootstrap_AUROC_ci95": [
+        0.23255813953488375,
+        0.9186046511627908
+      ],
+      "bootstrap_AP_ci95": [
+        0.022727272727272728,
+        0.3
+      ],
+      "bootstrap_valid_resamples": 2611
+    },
+    "calibration_residual": {
+      "AUROC": 0.5238095238095238,
+      "average_precision": 0.06847826086956521,
+      "top_decile_recall": 0.0,
+      "spearman_rho_with_error": 0.1967582804792107,
+      "n_local_QC_failure": 0,
+      "bootstrap_AUROC_ci95": [
+        0.37466971544715444,
+        0.6829268292682927
+      ],
+      "bootstrap_AP_ci95": [
+        0.038461538461538464,
+        0.2
+      ],
+      "bootstrap_valid_resamples": 2628
+    },
+    "predicted_duration": {
+      "AUROC": 0.738095238095238,
+      "average_precision": 0.5227272727272727,
+      "top_decile_recall": 0.5,
+      "spearman_rho_with_error": 0.40895300716122945,
+      "n_local_QC_failure": 0,
+      "bootstrap_AUROC_ci95": [
+        0.4534883720930233,
+        1.0
+      ],
+      "bootstrap_AP_ci95": [
+        0.022727272727272728,
+        1.0
+      ],
+      "bootstrap_valid_resamples": 2627
+    }
+  },
+  "per_cell": [
+    {
+      "cell": 1,
+      "v_mae_mV": 0.024417371939349647,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.16048749543077803,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.056396715400024666,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 3,
+      "v_mae_mV": 0.14189051950214715,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.21524697547567873,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 3,
+      "calibration_residual_mV": 0.027939652451871,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 4,
+      "v_mae_mV": 0.49570720243138194,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.29430880234674633,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.08103816962987824,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 5,
+      "v_mae_mV": 0.13035636548174928,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.2507042029815592,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.09866516467111246,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 6,
+      "v_mae_mV": 0.019345870870628105,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.42400933448358286,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.04212043567851201,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 7,
+      "v_mae_mV": 0.9323674258806848,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 1.0383615923105933,
+      "local_failure": 0,
+      "dominant_perturbation": "IKr",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.06961081746217164,
+      "pred_duration_above_minus50_ms": 64.0
+    },
+    {
+      "cell": 8,
+      "v_mae_mV": 53.32512720602731,
+      "tail_gt5": 1,
+      "local_waveform_sensitivity_mV": 53.695352605609926,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.05359608647385591,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 9,
+      "v_mae_mV": 1.0506378830663416,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 23.712900731572528,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.06952900645168936,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 11,
+      "v_mae_mV": 0.04511220565694847,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.15320833968111675,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.06688872150356112,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 13,
+      "v_mae_mV": 0.10378295696334333,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.1495289490206497,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.04704736595414338,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 14,
+      "v_mae_mV": 0.1482500998389642,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.5185811674178692,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.06642547506208703,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 17,
+      "v_mae_mV": 1.5662485754351743,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 52.91526720131086,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.02732591598362412,
+      "pred_duration_above_minus50_ms": 185.0
+    },
+    {
+      "cell": 22,
+      "v_mae_mV": 0.23416443376351667,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.1402832385719217,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.04251145383451423,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 24,
+      "v_mae_mV": 0.10514295969577815,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.21817264804827463,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.03996235616124036,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 25,
+      "v_mae_mV": 0.09303594425024576,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.17847937173213807,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.0890384246165573,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 26,
+      "v_mae_mV": 0.01469507280564466,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.377817144864988,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.01640701923714421,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 27,
+      "v_mae_mV": 0.28987659681711764,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.5056415314257388,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.034924748901471105,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 28,
+      "v_mae_mV": 0.19684742302294597,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.19396037195798188,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.07841082637640676,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 29,
+      "v_mae_mV": 0.04440456668272713,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.2720501748888808,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.024001544347763682,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 31,
+      "v_mae_mV": 0.08404796170872568,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.2371432396774113,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.04691599086128158,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 33,
+      "v_mae_mV": 0.49034032758498036,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.2724572287270347,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.18195173625553662,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 34,
+      "v_mae_mV": 0.07910434141853787,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.35788409598728493,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.0700892076198836,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 35,
+      "v_mae_mV": 0.1351715239468,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.15754282484174292,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.0925908771055651,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 36,
+      "v_mae_mV": 0.03471619561807999,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.22437825430297467,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.036972183475547295,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 39,
+      "v_mae_mV": 0.5349864328144401,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.4385554211288137,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.030032992127702718,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 43,
+      "v_mae_mV": 0.028010362031444018,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.208559900935698,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.09647903771018938,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 45,
+      "v_mae_mV": 0.02992857370945002,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.12667447741372728,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.039905507727593874,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 46,
+      "v_mae_mV": 8.7235391987426,
+      "tail_gt5": 1,
+      "local_waveform_sensitivity_mV": 54.303906872437835,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.060983416803571375,
+      "pred_duration_above_minus50_ms": 194.0
+    },
+    {
+      "cell": 47,
+      "v_mae_mV": 0.5693242407792451,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.431449721437643,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.045230997333078164,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 49,
+      "v_mae_mV": 0.10744675895236186,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.17077370074374842,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.012599052701824674,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 50,
+      "v_mae_mV": 0.1652768116123629,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.1371806020245778,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.08056458303944004,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 51,
+      "v_mae_mV": 0.2699959357053239,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.24488368295718635,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.07241652276518841,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 52,
+      "v_mae_mV": 0.11693388578907543,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.2642514639017396,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.01177611546977492,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 54,
+      "v_mae_mV": 0.16366945986716164,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.177648382248546,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.09029159748277134,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 55,
+      "v_mae_mV": 0.07016157946049772,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.3245966796621846,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.05696381350956815,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 56,
+      "v_mae_mV": 0.058451949365881106,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.13691546577114988,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.03719370089096182,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 57,
+      "v_mae_mV": 0.22986855412161114,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.15719166828409112,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.05129563682202361,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 58,
+      "v_mae_mV": 0.1524309322534018,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.1878145492631475,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.031726913793407995,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 59,
+      "v_mae_mV": 0.1288841197032802,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.16091365348308462,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.0528022907580331,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 60,
+      "v_mae_mV": 0.10212737835006208,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.13912459852362516,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.06110409234003938,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 61,
+      "v_mae_mV": 0.4668303483369335,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.7959547872193189,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 2,
+      "calibration_residual_mV": 0.5694251254074003,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 62,
+      "v_mae_mV": 0.03155820732874586,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.15027622684438732,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 0,
+      "calibration_residual_mV": 0.04762369796950604,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 63,
+      "v_mae_mV": 0.25603171847513967,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.21824108244948728,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 1,
+      "calibration_residual_mV": 0.06158861188591981,
+      "pred_duration_above_minus50_ms": 0.0
+    },
+    {
+      "cell": 64,
+      "v_mae_mV": 0.11218622978159923,
+      "tail_gt5": 0,
+      "local_waveform_sensitivity_mV": 0.14193514220884546,
+      "local_failure": 0,
+      "dominant_perturbation": "g_ionic",
+      "bound_count": 3,
+      "calibration_residual_mV": 0.29561331735727814,
+      "pred_duration_above_minus50_ms": 0.0
+    }
+  ]
+}

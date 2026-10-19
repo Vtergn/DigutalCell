@@ -1,0 +1,29 @@
+{
+  "domain": "rabbit MCT2024 with MCT, basal ICaL, and SERCA multipliers",
+  "design": "independent scrambled 3D Latin hypercube samples for train/test",
+  "train_n": 48,
+  "test_n": 16,
+  "train_seed": 20260929,
+  "test_seed": 20260930,
+  "parameter_ranges": {
+    "mct_gain": [
+      0.2,
+      1.3
+    ],
+    "pCa0_scale": [
+      0.9,
+      1.1
+    ],
+    "serca_scale": [
+      0.85,
+      1.15
+    ]
+  },
+  "loads_CL": [
+    0.02,
+    0.06,
+    0.1
+  ],
+  "beats": 40,
+  "pacing_ms": 1000
+}

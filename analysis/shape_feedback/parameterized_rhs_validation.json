@@ -1,0 +1,10 @@
+{
+  "eager_vs_traced_max_rhs_by_lambda": [
+    9.966546421491529e-09,
+    9.966546421491529e-09,
+    9.966546532513831e-09
+  ],
+  "gain_zero_vs_sac_off_max_rhs": 0.0,
+  "gain_one_vs_zero_voltage_rhs_difference": 0.57532433730153,
+  "note": "gain=0 removes direct stretch-electrical RHS difference; TnC coupling remains active in both."
+}

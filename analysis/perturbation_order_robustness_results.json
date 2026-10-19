@@ -1,0 +1,51 @@
+{
+  "drug_cell_number_sequence": {
+    "20200311": "1:mp2-cytod 2:mp2-cytod 3:mp2-cytod 4:mp2-cytod 6:mp2-dmso",
+    "20200930": "1:mp2-cytod 2:mp2-cytod 3:mp2-cytod 4:mp2-cytod 6:mp2-cytod 7:mp2-cytod 8:mp2-cytod 9:mp2-dmso 10:mp2-dmso 11:mp2-dmso 12:mp2-dmso 13:mp2-dmso 14:mp2-dmso 15:mp2-dmso",
+    "20201013": "1:mp2-cytod 2:mp2-cytod 3:mp2-cytod 4:mp2-cytod 5:mp2-cytod 6:mp2-dmso 7:mp2-dmso 8:mp2-dmso 9:mp2-dmso 10:mp2-dmso",
+    "20201014": "1:mp2-cytod 2:mp2-cytod 3:mp2-cytod 4:mp2-cytod 5:mp2-cytod 6:mp2-cytod 7:mp2-dmso 8:mp2-dmso 9:mp2-dmso 10:mp2-dmso 11:mp2-dmso 12:mp2-dmso 13:mp2-dmso"
+  },
+  "drug_leave_one_active_date_out": {
+    "20200930": {
+      "remaining_dates": [
+        "20201013",
+        "20201014"
+      ],
+      "date_median_geometric_threshold_ratio": 0.8792945796576185,
+      "parametric_responder_only_threshold_ratio": 0.725711580126033
+    },
+    "20201013": {
+      "remaining_dates": [
+        "20200930",
+        "20201014"
+      ],
+      "date_median_geometric_threshold_ratio": 0.40961726181122265,
+      "parametric_responder_only_threshold_ratio": 0.38835265557467835
+    },
+    "20201014": {
+      "remaining_dates": [
+        "20200930",
+        "20201013"
+      ],
+      "date_median_geometric_threshold_ratio": 0.5014686070932394,
+      "parametric_responder_only_threshold_ratio": 0.449528576305538
+    }
+  },
+  "chimera_cell_number_sequence": {
+    "20201108": "1:chimB 2:chimB 3:chimB 4:chimA 5:chimA 6:chimA 7:chimA 8:chimA 9:chimB 10:chimB 11:chimB",
+    "20201110": "1:chimA 2:chimA 3:chimA 5:chimB 6:chimB 7:chimB 8:chimB 9:chimA 10:chimA 12:chimB 13:chimB 14:chimB 15:chimA"
+  },
+  "chimera_A_minus_B_robust_delay_ms": {
+    "date_force_Cm": -1.6743237383972158,
+    "date_force_Cm_linear_cell_number": -1.5846651382357515,
+    "within_date_condition_cell_bootstrap_95pct_with_order": [
+      -2.803706954627236,
+      -0.627710714467626
+    ],
+    "single_date_with_order": {
+      "20201108": -1.8819968169710004,
+      "20201110": -1.2952158466141115
+    }
+  },
+  "interpretation_limit": "Cell suffix is a sequence proxy, not a verified timestamp. All Piezo2 CytoD and DMSO cell-number blocks are separated within date, so any time/order or coverslip effect is confounded with treatment. Chimeras are interleaved by cell number, but molecular identity of chimB remains unknown."
+}

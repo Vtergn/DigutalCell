@@ -1,0 +1,17 @@
+{
+  "samples": 10100,
+  "states": 50,
+  "time_points_per_condition": 101,
+  "lengths": [
+    1.0,
+    1.08
+  ],
+  "mean_absolute_derivative_error": 1.8045401148944685e-08,
+  "p99_absolute_derivative_error": 2.1349545135884727e-07,
+  "max_absolute_derivative_error": 1.1106298758889466e-05,
+  "worst_index_time_state_condition": [
+    100,
+    0,
+    1
+  ]
+}

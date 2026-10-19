@@ -1,0 +1,33 @@
+{
+  "drug_timing": {
+    "cells": 32,
+    "dates": 3,
+    "CytoD_coefficient_ms_OLS": -2.1404627711857196,
+    "CytoD_coefficient_ms_Huber_1ms": -0.640069614159041,
+    "CytoD_coefficient_ms_Huber_excluding_delay_over_15ms": -0.5648745621573992,
+    "conditional_cell_bootstrap_95pct_Huber_ms": [
+      -3.0042700787103627,
+      0.44705088383803065
+    ],
+    "covariates": "date fixed effects, log selected peak force, log cell capacitance",
+    "maximum_delay_ms": 26.955
+  },
+  "chimA_vs_WT_Piezo2_persistence": {
+    "cells_each": 11,
+    "chimA_coefficient_retention_OLS": -0.14068581094825047,
+    "chimA_coefficient_retention_Huber": -0.16251687264321163,
+    "conditional_cell_bootstrap_95pct_Huber": [
+      -0.27153328711392627,
+      -0.03586697229734038
+    ],
+    "leave_one_date_out_Huber_coefficients": {
+      "20190816": -0.18942148918272617,
+      "20190903": -0.0748731888526001,
+      "20190904": -0.2158562525400773,
+      "20201108": -0.18256281459753354,
+      "20201110": -0.1887646707782067
+    },
+    "covariates": "global AFM force 20-ms retention, log peak force, log cell capacitance",
+    "limitation": "No shared dates between chimA and WT Piezo2; fitted difference is descriptive and cannot remove batch effects or identify channel inactivation."
+  }
+}

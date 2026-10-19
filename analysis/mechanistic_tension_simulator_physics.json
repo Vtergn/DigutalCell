@@ -1,0 +1,23 @@
+{
+  "physics": {
+    "eth_alpha_force_mN_per_m_per_nN": 0.0069755981266817904,
+    "elife_piezo1_T50_mN_per_m": 2.487,
+    "elife_piezo1_k_mN_per_m": 0.680899999999999
+  },
+  "T0_grid": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "transfer_multipliers": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "notes": "T0 is a shared effective offset; G and V-Erev are not identified by one voltage."
+}

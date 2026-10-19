@@ -1,0 +1,48 @@
+{
+  "last_10_beats_APD_range_ms": 0.0,
+  "last_10_beats_Ca_peak_relative_range": 7.046373554034156e-05,
+  "beat_120_to_500_APD_change_ms": 7.0,
+  "beat_120_to_500_Ca_peak_change_uM": -0.0021715184864909975,
+  "scores": [
+    {
+      "prepace_beats": 120,
+      "stretch_onset_ms": 150,
+      "control_APD_above_minus67_ms": 251,
+      "delta_APD_ms": 3,
+      "control_Ca_peak_uM": 0.414538482094693,
+      "delta_Ca_peak_uM": 0.0,
+      "max_positive_delta_Vm_mV": 4.932219048194511,
+      "max_positive_delta_Ca_uM": 0.002708349365174084
+    },
+    {
+      "prepace_beats": 120,
+      "stretch_onset_ms": 600,
+      "control_APD_above_minus67_ms": 251,
+      "delta_APD_ms": 0,
+      "control_Ca_peak_uM": 0.414538482094693,
+      "delta_Ca_peak_uM": 0.0,
+      "max_positive_delta_Vm_mV": 8.045896173807407,
+      "max_positive_delta_Ca_uM": 0.0033291446349717063
+    },
+    {
+      "prepace_beats": 500,
+      "stretch_onset_ms": 150,
+      "control_APD_above_minus67_ms": 257,
+      "delta_APD_ms": 3,
+      "control_Ca_peak_uM": 0.4123895694863211,
+      "delta_Ca_peak_uM": 0.0,
+      "max_positive_delta_Vm_mV": 4.382796607674983,
+      "max_positive_delta_Ca_uM": 0.00258093668043316
+    },
+    {
+      "prepace_beats": 500,
+      "stretch_onset_ms": 600,
+      "control_APD_above_minus67_ms": 257,
+      "delta_APD_ms": 0,
+      "control_Ca_peak_uM": 0.4123895694863211,
+      "delta_Ca_peak_uM": 0.0,
+      "max_positive_delta_Vm_mV": 8.118840174628701,
+      "max_positive_delta_Ca_uM": 0.00332960202419999
+    }
+  ]
+}

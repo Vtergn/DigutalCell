@@ -1,0 +1,849 @@
+{
+  "n_cells": 16,
+  "prior_sd_uniform_unit_range": 0.2886751345948129,
+  "decision_rule": "SVD of observed-load Jacobian divided by cell-specific sigma; singular > 1/prior_sd is data-informed relative to prior.",
+  "median_observable_rank": 4.5,
+  "median_target_null_energy": {
+    "1.125": 0.00025726134711862025,
+    "1.15": 0.0006193815495340593
+  },
+  "median_target_variance_from_null": {
+    "1.125": 0.14319185159457531,
+    "1.15": 0.23095046507321396
+  },
+  "cells": [
+    {
+      "cell": 10,
+      "noise_whitened_singular_values": [
+        447.2706085649931,
+        65.53344404258914,
+        19.75658052662781,
+        3.4574053137229637,
+        2.7365149597692513,
+        1.2741091873370778,
+        0.25240784758709756,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 3,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9995147990108147,
+          "target_derivative_energy_in_null_subspace": 0.0004852009891852527,
+          "target_linearized_variance_from_null_subspace": 0.5385108753231345,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.961484853059688,
+            0.03475931538941853,
+            0.003270630561708149,
+            0.0003196912115573429,
+            4.8720220562815056e-05,
+            0.00010694763112989787,
+            9.84192593592968e-06,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.997723731597533,
+          "target_derivative_energy_in_null_subspace": 0.0022762684024669744,
+          "target_linearized_variance_from_null_subspace": 0.6927542298517176,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8998588527084606,
+            0.08411963513410277,
+            0.013745243754969586,
+            0.0001181733516846257,
+            0.0014971965806330502,
+            0.0005614316800074165,
+            9.946679014227617e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 32,
+      "noise_whitened_singular_values": [
+        281.18583169733324,
+        72.17226435217331,
+        23.615115513790446,
+        8.237945774042897,
+        4.3204699803978945,
+        2.219261988077744,
+        0.9499994090578252,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 5,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9998767724386874,
+          "target_derivative_energy_in_null_subspace": 0.00012322756131255552,
+          "target_linearized_variance_from_null_subspace": 0.06749747463052057,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.9057629269186943,
+            0.07840101890859079,
+            0.012347910557119928,
+            0.0023309887136669654,
+            0.0010339273406149063,
+            8.211522165002483e-05,
+            4.111233966224171e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9992510258458235,
+          "target_derivative_energy_in_null_subspace": 0.0007489741541765182,
+          "target_linearized_variance_from_null_subspace": 0.2566434829961535,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8253014831999472,
+            0.14443817869657638,
+            0.027475451401195828,
+            0.0005577877442392662,
+            0.001478124803864927,
+            0.0004989068394912979,
+            0.0002500673146851135,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 51,
+      "noise_whitened_singular_values": [
+        186.09617759430955,
+        18.541710982512516,
+        4.255979733607606,
+        1.6501579092269578,
+        0.6799207572568187,
+        0.22482701690876747,
+        0.08739869023035808,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 3,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9999063811260225,
+          "target_derivative_energy_in_null_subspace": 9.3618873977519e-05,
+          "target_linearized_variance_from_null_subspace": 0.047488517683227705,
+          "target_variance_relevant_directions_1pct": 6,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9697879674691866,
+            0.029004433517966537,
+            0.0011139801388693003,
+            2.5468443045466177e-05,
+            3.1336186913393454e-05,
+            2.022512100349221e-05,
+            1.6589123015049766e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9994715967423187,
+          "target_derivative_energy_in_null_subspace": 0.0005284032576813313,
+          "target_linearized_variance_from_null_subspace": 0.09315829532097662,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9075454038311783,
+            0.08786531852394212,
+            0.004060874387198255,
+            8.479468243568677e-05,
+            0.00024765127844568864,
+            0.0001253928006680222,
+            7.056449613226633e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 86,
+      "noise_whitened_singular_values": [
+        211.01916583341455,
+        37.60423056986258,
+        13.16946603490284,
+        4.169671408207582,
+        1.9636020513469323,
+        0.8433180690913114,
+        0.2608038665231129,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 4,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9988071189281689,
+          "target_derivative_energy_in_null_subspace": 0.0011928810718311311,
+          "target_linearized_variance_from_null_subspace": 0.3216924971690716,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9589864058195707,
+            0.02828797219104818,
+            0.009131048962337475,
+            0.00240169195521274,
+            0.0007928225886807335,
+            0.00033883435095197943,
+            6.122413219868339e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9984910661798803,
+          "target_derivative_energy_in_null_subspace": 0.00150893382011974,
+          "target_linearized_variance_from_null_subspace": 0.35512838707658984,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.9023551128342324,
+            0.08105222251940684,
+            0.014052212012005795,
+            0.0010315188142350025,
+            0.0009931132847333646,
+            0.00044339444056215274,
+            7.24260948247496e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 115,
+      "noise_whitened_singular_values": [
+        181.04535487277568,
+        18.588053504377818,
+        4.502948453018828,
+        1.6376976052029137,
+        1.103960334849507,
+        0.36255910374393213,
+        0.08042975912207301,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 3,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9996899326070486,
+          "target_derivative_energy_in_null_subspace": 0.0003100673929513631,
+          "target_linearized_variance_from_null_subspace": 0.11734275726973575,
+          "target_variance_relevant_directions_1pct": 5,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9675140107667842,
+            0.03049656705332833,
+            0.0016793547869361305,
+            0.00020667701638241295,
+            6.425476911254348e-05,
+            2.0214091439114364e-05,
+            1.8921516017683367e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9994360425536595,
+          "target_derivative_energy_in_null_subspace": 0.0005639574463405239,
+          "target_linearized_variance_from_null_subspace": 0.08933595374555882,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.8943965011572259,
+            0.10099962527952924,
+            0.00403991611690384,
+            0.00014855249959517278,
+            0.00025717459599655917,
+            9.773824303820628e-05,
+            6.049210771118098e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 145,
+      "noise_whitened_singular_values": [
+        196.68599358570503,
+        21.9797874686191,
+        5.433153632337476,
+        1.8136883896849125,
+        1.5661764354739056,
+        0.5973245328592923,
+        0.21261497416439604,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 3,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9995761367097429,
+          "target_derivative_energy_in_null_subspace": 0.00042386329025712044,
+          "target_linearized_variance_from_null_subspace": 0.18124783345022552,
+          "target_variance_relevant_directions_1pct": 6,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9613740677853627,
+            0.03673095184688608,
+            0.0014711170774938543,
+            0.00021529203811204107,
+            0.00010485062618100047,
+            8.621433027368169e-05,
+            1.7506295690371485e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9986634346816918,
+          "target_derivative_energy_in_null_subspace": 0.0013365653183081694,
+          "target_linearized_variance_from_null_subspace": 0.20525744715027439,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.8755220431248378,
+            0.11857759338855857,
+            0.004563798168295506,
+            0.0006087143464378649,
+            0.00023867330375071372,
+            0.00040667582170006444,
+            8.250184641957164e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 179,
+      "noise_whitened_singular_values": [
+        579.7141537242164,
+        212.77345811235955,
+        94.60053258545685,
+        43.53297439156411,
+        25.393839763059905,
+        15.471388155197477,
+        10.23968259488349,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 7,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 1.0,
+          "target_derivative_energy_in_null_subspace": 0.0,
+          "target_linearized_variance_from_null_subspace": 0.0,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8410717593992125,
+            0.12034830769317845,
+            0.03010135496690088,
+            0.006235153721209617,
+            0.0014604599963734526,
+            0.000392411914294551,
+            0.00039055230883023,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 1.0,
+          "target_derivative_energy_in_null_subspace": 0.0,
+          "target_linearized_variance_from_null_subspace": 0.0,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 4,
+          "target_energy_by_observation_direction": [
+            0.7935238268871784,
+            0.12422275945171625,
+            0.0701119002017074,
+            0.01001331920476062,
+            0.000992634684170437,
+            0.00019066763775231002,
+            0.0009448919327143205,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 187,
+      "noise_whitened_singular_values": [
+        595.7000560940577,
+        118.08976431074979,
+        42.560987617501226,
+        8.390958390459009,
+        7.14093047627355,
+        4.742367479162072,
+        0.4973588601813226,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 6,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9999719089627142,
+          "target_derivative_energy_in_null_subspace": 2.809103728584894e-05,
+          "target_linearized_variance_from_null_subspace": 0.0763592594468732,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9453011764781969,
+            0.04502137907872363,
+            0.00882228617652182,
+            0.00022591923876202636,
+            0.00024048812532159616,
+            0.0003606598651875635,
+            2.8091037286233386e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9999204313019815,
+          "target_derivative_energy_in_null_subspace": 7.956869801850619e-05,
+          "target_linearized_variance_from_null_subspace": 0.07921592988904666,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8775075991170018,
+            0.10049140659369911,
+            0.01957756486435689,
+            0.0006521997484059109,
+            0.00014135084912861542,
+            0.001550310129389019,
+            7.956869801854097e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 305,
+      "noise_whitened_singular_values": [
+        117.95791584184784,
+        15.314409557595294,
+        3.905230348739082,
+        0.9145778065932538,
+        0.6341085994857927,
+        0.3314918492859784,
+        0.12915697627705683,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 3,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9995624524273037,
+          "target_derivative_energy_in_null_subspace": 0.0004375475726963174,
+          "target_linearized_variance_from_null_subspace": 0.11906875279256103,
+          "target_variance_relevant_directions_1pct": 6,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9673831199147862,
+            0.030417703932638197,
+            0.001761628579879357,
+            0.0002294538673607413,
+            0.00013564173144714985,
+            5.94013590319713e-05,
+            1.305061485567408e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9986017331487987,
+          "target_derivative_energy_in_null_subspace": 0.0013982668512012575,
+          "target_linearized_variance_from_null_subspace": 0.17465239892874515,
+          "target_variance_relevant_directions_1pct": 6,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9105844130655428,
+            0.08480453292048633,
+            0.003212787162769913,
+            0.000649309005671382,
+            0.00045547248050320716,
+            0.00024163756767181275,
+            5.184779735421903e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 325,
+      "noise_whitened_singular_values": [
+        541.5313278898203,
+        105.84604858351068,
+        42.04508343969683,
+        11.558288004516166,
+        7.782589028621218,
+        4.292937639951476,
+        0.8319037735181904,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 6,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9999713360494016,
+          "target_derivative_energy_in_null_subspace": 2.8663950598417642e-05,
+          "target_linearized_variance_from_null_subspace": 0.03178807317993168,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.9411855691138485,
+            0.04007142470494608,
+            0.015038784082653207,
+            0.0021066819469806293,
+            0.0006535656201377475,
+            0.0009153105808357475,
+            2.8663950598087154e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9997857997986414,
+          "target_derivative_energy_in_null_subspace": 0.0002142002013586497,
+          "target_linearized_variance_from_null_subspace": 0.09983435026456433,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8914045706226956,
+            0.04884017868677804,
+            0.050215070335435256,
+            0.007073093184701978,
+            0.00031733295933207724,
+            0.0019355540096981266,
+            0.00021420020135938053,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 337,
+      "noise_whitened_singular_values": [
+        486.3207625901227,
+        146.77828438240027,
+        68.19992482166745,
+        24.652237120818015,
+        17.873471369564715,
+        14.320227746851117,
+        2.7445740250016586,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 6,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9998383418450955,
+          "target_derivative_energy_in_null_subspace": 0.0001616581549045426,
+          "target_linearized_variance_from_null_subspace": 0.2300709008241535,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8785359550651597,
+            0.08600024568487553,
+            0.03044871334138236,
+            0.0019141365009489283,
+            0.0019917080401613066,
+            0.0009475832125676796,
+            0.00016165815490494989,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.999569886107893,
+          "target_derivative_energy_in_null_subspace": 0.0004301138921070091,
+          "target_linearized_variance_from_null_subspace": 0.3223452740146653,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8427813056739858,
+            0.0807324114297743,
+            0.06621625917753092,
+            0.00485765502252107,
+            0.003778011213767408,
+            0.001204243590313258,
+            0.00043011389210755946,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 390,
+      "noise_whitened_singular_values": [
+        613.2601116906608,
+        150.1163969041809,
+        66.37345007203926,
+        16.142371610530812,
+        11.860193887515909,
+        11.052220369361422,
+        1.2174338505844529,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 6,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9999273039589383,
+          "target_derivative_energy_in_null_subspace": 7.269604106174832e-05,
+          "target_linearized_variance_from_null_subspace": 0.1673149503965896,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.9133859949716155,
+            0.06141937824349341,
+            0.021641094552375954,
+            0.0022637631794504925,
+            0.0006574993059673892,
+            0.0005595737060347984,
+            7.269604106198225e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9997129123477373,
+          "target_derivative_energy_in_null_subspace": 0.0002870876522627075,
+          "target_linearized_variance_from_null_subspace": 0.27454433606866324,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8632005703212486,
+            0.07342920528653654,
+            0.05418150524438926,
+            0.007012542493981592,
+            0.0015033047937834212,
+            0.0003857842077979955,
+            0.00028708765226287647,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 403,
+      "noise_whitened_singular_values": [
+        290.597460210352,
+        79.18851846484512,
+        26.615796891249627,
+        6.131702473141627,
+        4.572687459748762,
+        3.458390888399072,
+        0.9982205890370627,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 5,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9995568576960762,
+          "target_derivative_energy_in_null_subspace": 0.000443142303923838,
+          "target_linearized_variance_from_null_subspace": 0.21333212904068624,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8948968718342436,
+            0.09140213380154046,
+            0.011882838664613768,
+            0.0010102186751789308,
+            0.0003647947204994243,
+            0.0004054663467156693,
+            3.767595720881025e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9988460280797542,
+          "target_derivative_energy_in_null_subspace": 0.0011539719202457999,
+          "target_linearized_variance_from_null_subspace": 0.3207415326318788,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8205145981440793,
+            0.14617715320908364,
+            0.030062254433033005,
+            0.0018543394019412322,
+            0.00023768289161740986,
+            0.000921612323683616,
+            0.00023235959656284615,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 411,
+      "noise_whitened_singular_values": [
+        264.9368421660015,
+        41.995298080475685,
+        11.731880418313896,
+        3.0588595737192303,
+        1.557674852503245,
+        0.8523936023484402,
+        0.1745104699959284,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 3,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9996690855456861,
+          "target_derivative_energy_in_null_subspace": 0.0003309144543138798,
+          "target_linearized_variance_from_null_subspace": 0.2491878674532221,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.950266620316595,
+            0.04509424897295106,
+            0.004308216256140019,
+            6.908002925531907e-05,
+            0.00015444105469786763,
+            8.578376175581343e-05,
+            2.1609608604110226e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9986103496742895,
+          "target_derivative_energy_in_null_subspace": 0.0013896503257104786,
+          "target_linearized_variance_from_null_subspace": 0.4113790247540683,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.8711687136053105,
+            0.11825921013052487,
+            0.009182425938454539,
+            0.00019381386469244298,
+            0.0005639663832867901,
+            0.0005682391463736293,
+            6.363093135699257e-05,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 425,
+      "noise_whitened_singular_values": [
+        322.1160187235151,
+        61.629898372105735,
+        17.489524929623183,
+        3.656600567638845,
+        3.4761080726057623,
+        2.2565903253317616,
+        0.6526172688671203,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 5,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9997955446987141,
+          "target_derivative_energy_in_null_subspace": 0.0002044553012858774,
+          "target_linearized_variance_from_null_subspace": 0.11501874252003312,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.9285451561249545,
+            0.05945175860735661,
+            0.010807777744421493,
+            0.000474481414413627,
+            0.0005163708075679456,
+            0.000165084521403869,
+            3.937077988206011e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9996280230033756,
+          "target_derivative_energy_in_null_subspace": 0.0003719769966243902,
+          "target_linearized_variance_from_null_subspace": 0.11893280638498265,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8362881388831621,
+            0.13397188883004585,
+            0.027732709968134813,
+            0.00043925008946791737,
+            0.0011960352325648858,
+            0.0001494747172281025,
+            0.0002225022793967835,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "cell": 479,
+      "noise_whitened_singular_values": [
+        275.63570314369946,
+        58.56273190836149,
+        17.463580321820636,
+        4.677353727006343,
+        2.2322590223894796,
+        1.5019242410080127,
+        0.4528010209789596,
+        0.0
+      ],
+      "observable_rank_relative_to_uniform_prior": 4,
+      "targets": [
+        {
+          "lambda": 1.125,
+          "target_derivative_energy_in_observable_subspace": 0.9996249959928825,
+          "target_derivative_energy_in_null_subspace": 0.0003750040071175409,
+          "target_linearized_variance_from_null_subspace": 0.2674536193961078,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 2,
+          "target_energy_by_observation_direction": [
+            0.9218540449918391,
+            0.07137163952633299,
+            0.00590208698831832,
+            0.0004972244863919326,
+            0.00022344962258395788,
+            0.00012023073472428623,
+            3.132364980923785e-05,
+            0.0
+          ]
+        },
+        {
+          "lambda": 1.15,
+          "target_derivative_energy_in_observable_subspace": 0.9993251943472724,
+          "target_derivative_energy_in_null_subspace": 0.0006748056527275947,
+          "target_linearized_variance_from_null_subspace": 0.2739691107925167,
+          "target_variance_relevant_directions_1pct": 7,
+          "target_relevant_singular_directions_1pct": 3,
+          "target_energy_by_observation_direction": [
+            0.8302690166240353,
+            0.1530552784301078,
+            0.01525905203244533,
+            0.0007418472606839063,
+            0.00013822613233527222,
+            0.0004046552657588216,
+            0.0001319242546330599,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Local derivative geometry under assumed sigma and synthetic prior; not proof of globally identifiable parameters."
+}

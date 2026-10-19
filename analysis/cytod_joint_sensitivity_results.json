@@ -1,0 +1,87 @@
+{
+  "dates": {
+    "all_matched": [
+      "20200311",
+      "20200930",
+      "20201013",
+      "20201014"
+    ],
+    "usable_for_threshold": [
+      "20200930",
+      "20201013",
+      "20201014"
+    ]
+  },
+  "response_probability_component": {
+    "all_four_matched_dates": {
+      "mp2-dmso": {
+        "responsive": 14,
+        "total": 20
+      },
+      "mp2-cytod": {
+        "responsive": 18,
+        "total": 22
+      }
+    },
+    "three_dates_with_any_response": {
+      "mp2-dmso": {
+        "responsive": 14,
+        "total": 19
+      },
+      "mp2-cytod": {
+        "responsive": 18,
+        "total": 18
+      }
+    }
+  },
+  "right_censoring_component": {
+    "all_five_true_high_threshold": {
+      "threshold_ratio_cytod_control": 0.27838614666385253,
+      "log_threshold_difference": -1.2787461123064763,
+      "fitted_sigma_log_work": 0.8855792931593627,
+      "likelihood_ratio_statistic": 15.403119622154634,
+      "responders_control": 14,
+      "nonresponders_control": 5,
+      "responders_cytod": 18,
+      "nonresponders_cytod": 0
+    },
+    "none_of_five_assumed_true_high_threshold": {
+      "threshold_ratio_cytod_control": 0.49591469968949203,
+      "log_threshold_difference": -0.7013513434793276,
+      "fitted_sigma_log_work": 0.5756597225981738,
+      "likelihood_ratio_statistic": 9.95418758254769,
+      "responders_control": 14,
+      "nonresponders_control": 0,
+      "responders_cytod": 18,
+      "nonresponders_cytod": 0
+    },
+    "max_tested_work_exceeds_selected_in_cells": 3,
+    "scenario_ratio_range_by_number_censored": {
+      "0": {
+        "min_ratio": 0.49591469968949203,
+        "max_ratio": 0.49591469968949203
+      },
+      "1": {
+        "min_ratio": 0.43076455676503167,
+        "max_ratio": 0.44529696236394567
+      },
+      "2": {
+        "min_ratio": 0.38117297121106114,
+        "max_ratio": 0.39989372646382465
+      },
+      "3": {
+        "min_ratio": 0.3382231471138655,
+        "max_ratio": 0.3543490894114683
+      },
+      "4": {
+        "min_ratio": 0.3028618587048832,
+        "max_ratio": 0.3124445169298077
+      },
+      "5": {
+        "min_ratio": 0.27838614666385253,
+        "max_ratio": 0.27838614666385253
+      }
+    }
+  },
+  "limits": "A date with 0 responders in both arms cannot identify its threshold intercept. Right censoring assumes each retained nonresponder was functional and never responded at any recorded work. Other scenarios drop possible technical/expression failures. The two assumptions are not distinguishable here; no causal treatment estimate."
+}

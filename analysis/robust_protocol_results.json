@@ -1,0 +1,233 @@
+{
+  "seed": 20260928,
+  "cells_per_family": 20,
+  "shots_per_cell": 6,
+  "particles": 128,
+  "development_families": [
+    "single_sigmoid",
+    "dual_sigmoid",
+    "no_history",
+    "power_single"
+  ],
+  "unseen_families": [
+    "threshold_drift",
+    "rate_sensitive",
+    "gain_drift",
+    "power_dual"
+  ],
+  "challenge_panel": [
+    [
+      260.0,
+      7.0,
+      50.0
+    ],
+    [
+      330.0,
+      12.0,
+      200.0
+    ],
+    [
+      420.0,
+      7.0,
+      800.0
+    ]
+  ],
+  "summary": {
+    "development": {
+      "duke_like": {
+        "mean_challenge_mae": 0.17732991830007167,
+        "mean_challenge_timing_mae_ms": 0.6991045498608766,
+        "family_90pct_mae": 0.2646169866128001,
+        "worst_family_mae": 0.3031134852886236,
+        "per_family_mae": {
+          "single_sigmoid": 0.14219912654458824,
+          "dual_sigmoid": 0.17479182303587862,
+          "no_history": 0.3031134852886236,
+          "power_single": 0.08921523833119632
+        },
+        "development_model_accuracy": 0.5,
+        "short_interval_fraction": 0.0,
+        "mean_force_levels": 6.0,
+        "mean_speed_levels": 1.0,
+        "mean_interval_levels": 1.0
+      },
+      "random_diverse": {
+        "mean_challenge_mae": 0.04729585499000866,
+        "mean_challenge_timing_mae_ms": 0.6921591568805667,
+        "family_90pct_mae": 0.05804532118591836,
+        "worst_family_mae": 0.06314956105139871,
+        "per_family_mae": {
+          "single_sigmoid": 0.03438577469104222,
+          "dual_sigmoid": 0.046135428166464196,
+          "no_history": 0.06314956105139871,
+          "power_single": 0.04551265605112949
+        },
+        "development_model_accuracy": 0.775,
+        "short_interval_fraction": 0.4275,
+        "mean_force_levels": 4.0,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.7125
+      },
+      "local_fisher": {
+        "mean_challenge_mae": 0.050232660484528444,
+        "mean_challenge_timing_mae_ms": 0.6419355181583452,
+        "family_90pct_mae": 0.06312399690814807,
+        "worst_family_mae": 0.0637172034066894,
+        "per_family_mae": {
+          "single_sigmoid": 0.03425761167686699,
+          "dual_sigmoid": 0.041215978443005744,
+          "no_history": 0.0637172034066894,
+          "power_single": 0.06173984841155163
+        },
+        "development_model_accuracy": 0.775,
+        "short_interval_fraction": 0.0575,
+        "mean_force_levels": 2.05,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.2125
+      },
+      "robust_ensemble": {
+        "mean_challenge_mae": 0.048900893185174675,
+        "mean_challenge_timing_mae_ms": 0.7745637211440992,
+        "family_90pct_mae": 0.05586186770706112,
+        "worst_family_mae": 0.05923865153413108,
+        "per_family_mae": {
+          "single_sigmoid": 0.045259158753153644,
+          "dual_sigmoid": 0.043123057009516096,
+          "no_history": 0.05923865153413108,
+          "power_single": 0.04798270544389787
+        },
+        "development_model_accuracy": 0.775,
+        "short_interval_fraction": 0.725,
+        "mean_force_levels": 3.8125,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.1875
+      },
+      "family_informed": {
+        "mean_challenge_mae": 0.05301959239492171,
+        "mean_challenge_timing_mae_ms": 0.7713331355691725,
+        "family_90pct_mae": 0.06422942708238863,
+        "worst_family_mae": 0.06536824241455827,
+        "per_family_mae": {
+          "single_sigmoid": 0.032848532271519154,
+          "dual_sigmoid": 0.06536824241455827,
+          "no_history": 0.06157219130732615,
+          "power_single": 0.0522894035862833
+        },
+        "development_model_accuracy": 0.75,
+        "short_interval_fraction": 0.3625,
+        "mean_force_levels": 3.925,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.575
+      }
+    },
+    "unseen": {
+      "duke_like": {
+        "mean_challenge_mae": 0.13595690432424962,
+        "mean_challenge_timing_mae_ms": 1.1872748030718756,
+        "family_90pct_mae": 0.16896678717264174,
+        "worst_family_mae": 0.1751571503141113,
+        "per_family_mae": {
+          "threshold_drift": 0.15452260650921273,
+          "rate_sensitive": 0.13716557343534497,
+          "gain_drift": 0.1751571503141113,
+          "power_dual": 0.07698228703832952
+        },
+        "development_model_accuracy": null,
+        "short_interval_fraction": 0.0,
+        "mean_force_levels": 6.0,
+        "mean_speed_levels": 1.0,
+        "mean_interval_levels": 1.0
+      },
+      "random_diverse": {
+        "mean_challenge_mae": 0.06395875347994337,
+        "mean_challenge_timing_mae_ms": 1.0830844791218623,
+        "family_90pct_mae": 0.09079083090834063,
+        "worst_family_mae": 0.10707055833707649,
+        "per_family_mae": {
+          "threshold_drift": 0.04935558977423224,
+          "rate_sensitive": 0.04660406556717448,
+          "gain_drift": 0.10707055833707649,
+          "power_dual": 0.05280480024129025
+        },
+        "development_model_accuracy": null,
+        "short_interval_fraction": 0.4225,
+        "mean_force_levels": 4.0,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.775
+      },
+      "local_fisher": {
+        "mean_challenge_mae": 0.07799064199077796,
+        "mean_challenge_timing_mae_ms": 1.1555058881501041,
+        "family_90pct_mae": 0.11407997552732951,
+        "worst_family_mae": 0.12968250128860254,
+        "per_family_mae": {
+          "threshold_drift": 0.05834717058678686,
+          "rate_sensitive": 0.0776740820843591,
+          "gain_drift": 0.12968250128860254,
+          "power_dual": 0.04625881400336334
+        },
+        "development_model_accuracy": null,
+        "short_interval_fraction": 0.045,
+        "mean_force_levels": 2.1375,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.2125
+      },
+      "robust_ensemble": {
+        "mean_challenge_mae": 0.06697644761541062,
+        "mean_challenge_timing_mae_ms": 1.2039676776965387,
+        "family_90pct_mae": 0.08884861846111339,
+        "worst_family_mae": 0.10017231684717717,
+        "per_family_mae": {
+          "threshold_drift": 0.05469377377907941,
+          "rate_sensitive": 0.050613044275088004,
+          "gain_drift": 0.10017231684717717,
+          "power_dual": 0.06242665556029785
+        },
+        "development_model_accuracy": null,
+        "short_interval_fraction": 0.7325,
+        "mean_force_levels": 3.9,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.1875
+      },
+      "family_informed": {
+        "mean_challenge_mae": 0.07442801027755679,
+        "mean_challenge_timing_mae_ms": 1.279833934532834,
+        "family_90pct_mae": 0.11732332680104332,
+        "worst_family_mae": 0.14359770228795346,
+        "per_family_mae": {
+          "threshold_drift": 0.0523345942539124,
+          "rate_sensitive": 0.05601645066491958,
+          "gain_drift": 0.14359770228795346,
+          "power_dual": 0.04576329390344168
+        },
+        "development_model_accuracy": null,
+        "short_interval_fraction": 0.2425,
+        "mean_force_levels": 3.95,
+        "mean_speed_levels": 2.0,
+        "mean_interval_levels": 2.675
+      }
+    }
+  },
+  "paired_comparison": {
+    "development": {
+      "robust_minus_random_mean": 0.0016050381951660218,
+      "cell_bootstrap_95pct_conditional_on_families": [
+        -0.0034034568878615013,
+        0.006372210920270883
+      ]
+    },
+    "unseen": {
+      "robust_minus_random_mean": 0.0030176941354672507,
+      "cell_bootstrap_95pct_conditional_on_families": [
+        -0.003334844095805529,
+        0.009393863703828215
+      ]
+    }
+  },
+  "limitations": [
+    "All results are synthetic and parameter ranges are illustrative, not estimated from Duke.",
+    "Family-informed design knows the true generator class and is a reference, not a feasible prospective method.",
+    "Generator-family holdout tests four chosen discrepancies; it is not evidence of universal out-of-model robustness.",
+    "The score weights and candidate grid were fixed before this run; engineering cost is illustrative, not a damage model."
+  ]
+}
